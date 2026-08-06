@@ -104,6 +104,7 @@ export default async function LangLayout({
           .main-content {
             margin-left: 0;
             width: 100%;
+            max-width: 100%;
           }
           .topbar {
             padding: 0.75rem 1rem;
