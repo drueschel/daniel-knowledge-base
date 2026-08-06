@@ -21,7 +21,7 @@ export default function Sidebar({ nav, lang, currentSlug }: { nav: NavItem[], la
   
   const renderTree = (items: NavItem[], level = 0) => {
     return (
-      <ul className={styles.list} style={{ paddingLeft: level > 0 ? '1rem' : '0' }}>
+      <ul className={styles.list} style={{ paddingLeft: level === 1 ? '2.2rem' : level > 1 ? '1rem' : '0' }}>
         {items.map(item => {
           if (item.slug) {
             // Leaf node (File)
@@ -47,49 +47,20 @@ export default function Sidebar({ nav, lang, currentSlug }: { nav: NavItem[], la
                       <span className={styles.iconLevel0}>🔒</span>
                       <span>{item.title}</span>
                     </div>
-                    <span className={styles.arrowLevel0}>{isExpanded ? 'v' : '>'}</span>
+                    <span className={styles.arrowLevel0} style={{ transform: isExpanded ? 'rotate(0deg)' : 'rotate(-90deg)' }}>
+                      v
+                    </span>
                   </button>
                   {isExpanded && item.children && renderTree(item.children, level + 1)}
                 </li>
               );
             }
 
-            // Level 1: Sub-category (TRANSKRIPT-BIBLIOTHEK)
-            if (level === 1) {
-              let icon = '📖';
-              if (item.title.toLowerCase().includes('praxis')) icon = '🛠️';
-              
-              return (
-                <li key={item.title} className={styles.level1}>
-                  <button className={styles.btnLevel1} onClick={() => toggleFolder(item.title)}>
-                    <span className={styles.arrowLevel1}>{isExpanded ? '▾' : '▸'}</span>
-                    <span className={styles.iconLevel1}>{icon}</span>
-                    <span className={styles.textLevel1}>{item.title}</span>
-                  </button>
-                  {isExpanded && item.children && renderTree(item.children, level + 1)}
-                </li>
-              );
-            }
-
-            // Level 2: Sub-sub-category (Willkommen, Geldmangel)
-            if (level === 2) {
-              return (
-                <li key={item.title} className={styles.level2}>
-                  <button className={styles.btnLevel2} onClick={() => toggleFolder(item.title)}>
-                    <span className={styles.arrowLevel2}>{isExpanded ? '▾' : '▸'}</span>
-                    <span className={styles.textLevel2}>{item.title}</span>
-                  </button>
-                  {isExpanded && item.children && renderTree(item.children, level + 1)}
-                </li>
-              );
-            }
-
-            // Deeper levels (fallback)
+            // Level > 0 (Sub-folders) - No icons, no arrows!
             return (
-              <li key={item.title}>
-                <button className={styles.btnLevel2} onClick={() => toggleFolder(item.title)}>
-                  <span className={styles.arrowLevel2}>{isExpanded ? '▾' : '▸'}</span>
-                  <span className={styles.textLevel2}>{item.title}</span>
+              <li key={item.title} className={styles.fileItem}>
+                <button className={styles.link} style={{ width: '100%', textAlign: 'left', background: 'none', border: 'none', borderLeft: '3px solid transparent', cursor: 'pointer' }} onClick={() => toggleFolder(item.title)}>
+                  {item.title}
                 </button>
                 {isExpanded && item.children && renderTree(item.children, level + 1)}
               </li>

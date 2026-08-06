@@ -68,7 +68,7 @@
   font-size: 1.15rem;
   color: #0f172a;
   font-weight: 700;
-  padding: 8px 0;
+  padding: 12px 0;
   cursor: pointer;
 }
 
@@ -78,7 +78,7 @@
 }
 
 .iconLevel0 {
-  margin-right: 10px;
+  margin-right: 12px;
   font-size: 1.2rem;
 }
 
@@ -86,74 +86,11 @@
   color: #94a3b8;
   font-weight: 600;
   font-size: 0.9rem;
+  transition: transform 0.2s ease;
+  display: inline-block;
 }
 
-/* Level 1: Sub-category (TRANSKRIPT-BIBLIOTHEK) */
-.level1 {
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.btnLevel1 {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  background: none;
-  border: none;
-  text-align: left;
-  font-size: 0.85rem;
-  color: #0f172a;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  padding: 6px 0;
-  cursor: pointer;
-}
-
-.iconLevel1 {
-  margin-right: 6px;
-  font-size: 1rem;
-}
-
-.arrowLevel1 {
-  font-size: 0.65rem;
-  margin-right: 8px;
-  color: #0f172a;
-}
-
-.textLevel1 {
-  text-transform: uppercase;
-}
-
-/* Level 2: Sub-sub-category (Willkommen, Geldmangel) */
-.level2 {
-  margin-top: 0.5rem;
-}
-
-.btnLevel2 {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  background: none;
-  border: none;
-  text-align: left;
-  font-size: 1rem;
-  color: #0f172a;
-  font-weight: 700;
-  padding: 6px 0;
-  cursor: pointer;
-}
-
-.arrowLevel2 {
-  font-size: 0.65rem;
-  margin-right: 8px;
-  color: #94a3b8;
-}
-
-.textLevel2 {
-  /* standard casing */
-}
-
-/* Level 3: Files */
+/* Files and sub-folders */
 .fileItem {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
