@@ -4,10 +4,12 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import styles from './Sidebar.module.css';
 import { NavItem } from '@/lib/markdown';
+import { useMobileMenu } from './MobileMenuContext';
 
 export default function Sidebar({ nav, lang }: { nav: NavItem[], lang: string }) {
   const kbName = 'Daniel Knowledge Base';
   const pathname = usePathname();
+  const { isOpen: isMobileOpen, setIsOpen: setIsMobileOpen } = useMobileMenu();
 
   const displayTitle = (title: string) => {
     return title.replace(/^\d+[\._\s:-]+\s*/, '').replace(/_Summary$/i, '').trim();
@@ -75,7 +77,11 @@ function SidebarDetails({
             const isActive = url === pathname;
             return (
               <li key={item.slug!.join('/')}>
-                <Link href={url} className={isActive ? styles.active : ''}>
+                <Link 
+                  href={url} 
+                  className={isActive ? styles.active : ''}
+                  onClick={() => setIsMobileOpen(false)}
+                >
                   {displayTitle(item.title)}
                 </Link>
               </li>
@@ -96,7 +102,11 @@ function SidebarDetails({
             return (
               <ul key={item.slug!.join('/')} className={level === 1 ? styles.navLessonsFlat : styles.navLessons}>
                 <li>
-                  <Link href={url} className={isActive ? styles.active : ''}>
+                  <Link 
+                    href={url} 
+                    className={isActive ? styles.active : ''}
+                    onClick={() => setIsMobileOpen(false)}
+                  >
                     {displayTitle(item.title)}
                   </Link>
                 </li>
@@ -155,14 +165,24 @@ function SidebarDetails({
   };
 
   return (
-    <aside className={styles.sidebar}>
-      <Link href={`/${lang}`} className={styles.sidebarHeader}>
-        <div className={styles.sidebarLogoIcon}>DKB</div>
-        <div className={styles.sidebarLogo}>{kbName}</div>
-      </Link>
-      <nav className={styles.sidebarNav}>
-        {renderTree(nav)}
-      </nav>
-    </aside>
+    <>
+      {/* Backdrop for mobile */}
+      {isMobileOpen && (
+        <div 
+          className={styles.backdrop} 
+          onClick={() => setIsMobileOpen(false)}
+          aria-hidden="true"
+        />
+      )}
+      <aside className={`${styles.sidebar} ${isMobileOpen ? styles.sidebarOpen : ''}`}>
+        <Link href={`/${lang}`} className={styles.sidebarHeader} onClick={() => setIsMobileOpen(false)}>
+          <div className={styles.sidebarLogoIcon}>DKB</div>
+          <div className={styles.sidebarLogo}>{kbName}</div>
+        </Link>
+        <nav className={styles.sidebarNav}>
+          {renderTree(nav)}
+        </nav>
+      </aside>
+    </>
   );
 }

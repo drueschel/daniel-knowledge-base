@@ -1,10 +1,16 @@
 .breadcrumbs {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
   font-size: 0.9rem;
-  color: #1e293b; /* Dark slate */
-  font-weight: 700; /* Bold */
+  color: #1e293b;
+  font-weight: 700;
+  -ms-overflow-style: none;
+}
+.breadcrumbs::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome/Safari */
 }
 
 .segment {
@@ -23,6 +29,7 @@
 
 .link {
   transition: color 0.2s;
+  white-space: nowrap;
 }
 
 .link:hover {
@@ -31,6 +38,7 @@
 }
 
 .current {
-  color: #475569; /* Slightly lighter for current page, or keep dark? Mockup shows dark */
+  color: #475569;
   font-weight: 700;
+  white-space: nowrap;
 }

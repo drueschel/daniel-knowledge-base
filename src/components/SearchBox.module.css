@@ -6,6 +6,16 @@
   max-width: 300px;
 }
 
+@media (max-width: 768px) {
+  .container {
+    max-width: 160px;
+  }
+  .container .input {
+    font-size: 0.8rem;
+    padding: 6px 10px 6px 32px;
+  }
+}
+
 .container.large {
   max-width: 600px;
   margin: 0 auto;
