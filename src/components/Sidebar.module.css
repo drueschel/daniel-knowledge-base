@@ -1,16 +1,16 @@
 .sidebar {
-  width: 280px;
+  width: 320px;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
   overflow-y: auto;
   z-index: 100;
-  padding: 1.5rem;
+  padding: 2rem 1.5rem;
 }
 
 .header {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .logo {
@@ -32,7 +32,6 @@
 .nav {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
 }
 
 .categoryTitle {
@@ -54,7 +53,7 @@
 
 /* Level 0: Main Category (Die Befreiung) */
 .level0 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .btnLevel0 {
@@ -67,10 +66,10 @@
   border-top: 1px solid var(--primary);
   border-bottom: 1px solid var(--primary);
   text-align: left;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   color: var(--foreground);
   font-weight: 700;
-  padding: 12px 0;
+  padding: 1.25rem 0;
   cursor: pointer;
   transition: background 0.2s;
 }
@@ -81,20 +80,20 @@
 }
 
 .iconLevel0 {
-  margin-right: 8px;
-  font-size: 1.2rem;
+  margin-right: 12px;
+  font-size: 1.3rem;
 }
 
 .arrowLevel0 {
-  color: var(--text-muted);
-  font-weight: 400;
-  font-size: 0.9rem;
+  color: var(--foreground);
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 /* Level 1: Sub-category (TRANSKRIPT-BIBLIOTHEK) */
 .level1 {
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .btnLevel1 {
@@ -104,22 +103,22 @@
   background: none;
   border: none;
   text-align: left;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   color: var(--text-muted);
   font-weight: 700;
   letter-spacing: 0.05em;
-  padding: 6px 0;
+  padding: 8px 0;
   cursor: pointer;
 }
 
 .iconLevel1 {
-  margin-right: 6px;
-  font-size: 0.9rem;
+  margin-right: 8px;
+  font-size: 1rem;
 }
 
 .arrowLevel1 {
-  font-size: 0.7rem;
-  margin-right: 6px;
+  font-size: 0.75rem;
+  margin-right: 8px;
   color: var(--text-muted);
 }
 
@@ -129,7 +128,7 @@
 
 /* Level 2: Sub-sub-category (Willkommen, Geldmangel) */
 .level2 {
-  margin-top: 0.25rem;
+  margin-top: 0.5rem;
 }
 
 .btnLevel2 {
@@ -139,16 +138,16 @@
   background: none;
   border: none;
   text-align: left;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   color: var(--foreground);
   font-weight: 600;
-  padding: 6px 0;
+  padding: 10px 0;
   cursor: pointer;
 }
 
 .arrowLevel2 {
-  font-size: 0.7rem;
-  margin-right: 6px;
+  font-size: 0.75rem;
+  margin-right: 10px;
   color: var(--text-muted);
 }
 
@@ -158,19 +157,20 @@
 
 /* Level 3: Files */
 .fileItem {
-  margin-top: 2px;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .link {
   display: flex;
   align-items: center;
-  padding: 8px 12px;
-  border-radius: 0 6px 6px 0;
-  font-size: 0.9rem;
+  padding: 12px 16px;
+  border-radius: 0 8px 8px 0;
+  font-size: 1.05rem;
   color: var(--text-muted);
   transition: all 0.2s;
   border-left: 2px solid transparent;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .link:hover {
