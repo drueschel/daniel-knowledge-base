@@ -1,85 +1,166 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import styles from './Sidebar.module.css';
 import { NavItem } from '@/lib/markdown';
 
-export default function Sidebar({ nav, lang, currentSlug }: { nav: NavItem[], lang: string, currentSlug: string }) {
+export default function Sidebar({ nav, lang }: { nav: NavItem[], lang: string }) {
   const kbName = 'Daniel Knowledge Base';
-  
-  // Keep track of expanded folders
-  const [expanded, setExpanded] = useState<Record<string, boolean>>({
-    'Die Befreiung': true,
-    'Somatic Developmental Trauma': true,
-    'Embodied Relationship & Intimacy': true,
-    'Neo Emotional Release': true,
-  });
+  const pathname = usePathname();
 
-  const toggleFolder = (title: string) => {
-    setExpanded(prev => ({ ...prev, [title]: !prev[title] }));
+  const displayTitle = (title: string) => {
+    return title.replace(/^\d+[\._\s:-]+\s*/, '').replace(/_Summary$/i, '').trim();
   };
-  
+
+  const isItemActive = (item: NavItem): boolean => {
+    if (item.slug) {
+      const url = `/${lang}/${item.slug.join('/')}`;
+      return url === pathname;
+    }
+    if (item.children) {
+      return item.children.some(child => isItemActive(child));
+    }
+    return false;
+  };
+
+function SidebarDetails({ 
+  title, 
+  className, 
+  icon, 
+  isActive,
+  level,
+  children 
+}: { 
+  title: string; 
+  className: string; 
+  icon?: React.ReactNode; 
+  isActive: boolean;
+  level: number;
+  children: React.ReactNode 
+}) {
+  const [isOpen, setIsOpen] = useState(isActive || level === 0);
+
+  // Auto-expand if a child becomes active (e.g., from search or main content link)
+  useEffect(() => {
+    if (isActive) {
+      setIsOpen(true);
+    }
+  }, [isActive]);
+
+  return (
+    <details 
+      className={className} 
+      open={isOpen} 
+      onToggle={(e) => setIsOpen(e.currentTarget.open)}
+    >
+      <summary>
+        {icon && <span className={styles.navCourseIcon}>{icon}</span>}
+        {icon ? ' ' : ''}{title}
+      </summary>
+      {children}
+    </details>
+  );
+}
+
   const renderTree = (items: NavItem[], level = 0) => {
-    return (
-      <ul className={styles.list} style={{ paddingLeft: level === 1 ? '2.2rem' : level > 1 ? '1rem' : '0' }}>
-        {items.map(item => {
-          if (item.slug) {
-            // Leaf node (File)
-            const url = `/${lang}/${item.slug.join('/')}`;
-            const isActive = url === currentSlug;
+    // If it's a list of leaves, render them directly in a <ul>
+    const allLeaves = items.every(item => !!item.slug);
+    
+    if (allLeaves) {
+      return (
+        <ul className={level === 1 ? styles.navLessonsFlat : styles.navLessons}>
+          {items.map(item => {
+            const url = `/${lang}/${item.slug!.join('/')}`;
+            const isActive = url === pathname;
             return (
-              <li key={item.slug.join('/')} className={styles.fileItem}>
-                <Link href={url} className={`${styles.link} ${isActive ? styles.active : ''}`}>
-                  {item.title}
+              <li key={item.slug!.join('/')}>
+                <Link href={url} className={isActive ? styles.active : ''}>
+                  {displayTitle(item.title)}
                 </Link>
               </li>
             );
-          } else {
-            // Folder node
-            const isExpanded = expanded[item.title] !== false; // default true if not set
-            
-            // Level 0: Main Category (Die Befreiung)
-            if (level === 0) {
-              return (
-                <li key={item.title} className={styles.level0}>
-                  <button className={styles.btnLevel0} onClick={() => toggleFolder(item.title)}>
-                    <div className={styles.level0Content}>
-                      <span className={styles.iconLevel0}>🔒</span>
-                      <span>{item.title}</span>
-                    </div>
-                    <span className={styles.arrowLevel0} style={{ transform: isExpanded ? 'rotate(0deg)' : 'rotate(-90deg)' }}>
-                      v
-                    </span>
-                  </button>
-                  {isExpanded && item.children && renderTree(item.children, level + 1)}
-                </li>
-              );
-            }
+          })}
+        </ul>
+      );
+    }
 
-            // Level > 0 (Sub-folders) - No icons, no arrows!
+    return (
+      <>
+        {items.map(item => {
+          const isLeaf = !!item.slug;
+          
+          if (isLeaf) {
+            const url = `/${lang}/${item.slug!.join('/')}`;
+            const isActive = url === pathname;
             return (
-              <li key={item.title} className={styles.fileItem}>
-                <button className={styles.link} style={{ width: '100%', textAlign: 'left', background: 'none', border: 'none', borderLeft: '3px solid transparent', cursor: 'pointer' }} onClick={() => toggleFolder(item.title)}>
-                  {item.title}
-                </button>
-                {isExpanded && item.children && renderTree(item.children, level + 1)}
-              </li>
+              <ul key={item.slug!.join('/')} className={level === 1 ? styles.navLessonsFlat : styles.navLessons}>
+                <li>
+                  <Link href={url} className={isActive ? styles.active : ''}>
+                    {displayTitle(item.title)}
+                  </Link>
+                </li>
+              </ul>
             );
           }
+
+          const isActive = isItemActive(item);
+
+          if (level === 0) {
+            return (
+              <SidebarDetails 
+                key={item.title} 
+                title={displayTitle(item.title)} 
+                className={styles.navCourse} 
+                icon="🔓"
+                isActive={isActive}
+                level={level}
+              >
+                {item.children && renderTree(item.children, level + 1)}
+              </SidebarDetails>
+            );
+          }
+          
+          if (level === 1) {
+            const isPraxis = item.title.toLowerCase().includes('praxis') || item.title.toLowerCase().includes('arbeitsmaterial');
+            return (
+              <SidebarDetails 
+                key={item.title} 
+                title={displayTitle(item.title)} 
+                className={styles.navDim}
+                icon={isPraxis ? '🛠️' : '📖'}
+                isActive={isActive}
+                level={level}
+              >
+                {item.children && renderTree(item.children, level + 1)}
+              </SidebarDetails>
+            );
+          }
+
+          // Level 2+ (Modules)
+          return (
+            <SidebarDetails 
+              key={item.title} 
+              title={displayTitle(item.title)} 
+              className={styles.navMod}
+              isActive={isActive}
+              level={level}
+            >
+              {item.children && renderTree(item.children, level + 1)}
+            </SidebarDetails>
+          );
         })}
-      </ul>
+      </>
     );
   };
 
   return (
-    <aside className={`${styles.sidebar} glass`}>
-      <div className={styles.header}>
-        <Link href={`/${lang}`} className={styles.logo}>
-          <span className={styles.icon}>DKB</span>
-          <span className={styles.title}>{kbName}</span>
-        </Link>
-      </div>
-      <nav className={styles.nav}>
+    <aside className={styles.sidebar}>
+      <Link href={`/${lang}`} className={styles.sidebarHeader}>
+        <div className={styles.sidebarLogoIcon}>DKB</div>
+        <div className={styles.sidebarLogo}>{kbName}</div>
+      </Link>
+      <nav className={styles.sidebarNav}>
         {renderTree(nav)}
       </nav>
     </aside>

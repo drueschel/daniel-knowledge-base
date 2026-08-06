@@ -6,8 +6,6 @@ import styles from './LangSwitcher.module.css';
 export default function LangSwitcher({ currentLang }: { currentLang: string }) {
   const pathname = usePathname();
   
-  // Replace current lang in the path with the other lang
-  const togglePath = pathname.replace(`/${currentLang}`, currentLang === 'en' ? '/de' : '/en');
 
   return (
     <div className={styles.switcher}>

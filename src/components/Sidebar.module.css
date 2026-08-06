@@ -1,130 +1,178 @@
+:root {
+  --sidebar-w: 310px;
+  --primary: #0f172a;
+  --primary-light: #1e293b;
+  --accent: #2563eb;
+  --accent-light: #eff6ff;
+  --text: #334155;
+  --text-light: #64748b;
+  --text-muted: #94a3b8;
+  --border: #e2e8f0;
+  --bg: #ffffff;
+  --bg-alt: #f8fafc;
+  --bg-page: #f1f5f9;
+  --radius: 8px;
+}
+
+/* Sidebar Container */
 .sidebar {
-  width: 320px;
+  width: var(--sidebar-w);
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
+  background: var(--bg);
+  border-right: 1px solid var(--border);
   overflow-y: auto;
-  z-index: 100;
-  padding: 1.5rem;
-  background-color: #f8fafc; /* very light grayish blue background */
+  overflow-x: hidden;
+  z-index: 300;
+  display: flex;
+  flex-direction: column;
 }
 
-.header {
-  margin-bottom: 2rem;
-}
-
-.logo {
+/* Header */
+.sidebarHeader {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
   display: flex;
   align-items: center;
-  gap: 12px;
-  font-weight: 700;
-  font-size: 1.1rem;
+  justify-content: flex-start;
+  gap: 10px;
+  text-decoration: none;
 }
 
-.icon {
+.sidebarLogo {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.sidebarLogoIcon {
+  width: 30px;
+  height: 30px;
   background: var(--primary);
   color: white;
-  padding: 6px 8px;
-  border-radius: 6px;
-  font-size: 0.9rem;
-}
-
-.nav {
+  border-radius: 8px;
   display: flex;
-  flex-direction: column;
-}
-
-.categoryTitle {
+  align-items: center;
+  justify-content: center;
   font-size: 0.8rem;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  margin-bottom: 0.75rem;
-}
-
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Level 0: Main Category (Die Befreiung) */
-.level0 {
-  margin-bottom: 0.5rem;
-}
-
-.btnLevel0 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  background: none;
-  border: none;
-  text-align: left;
-  font-size: 1.15rem;
-  color: #0f172a;
   font-weight: 700;
-  padding: 12px 0;
+  flex-shrink: 0;
+}
+
+/* Nav Container */
+.sidebarNav {
+  flex: 1;
+  padding: 8px 0;
+  overflow-y: auto;
+}
+
+/* Base Summary Reset */
+.sidebar summary {
+  list-style: none;
   cursor: pointer;
+  user-select: none;
+}
+.sidebar summary::-webkit-details-marker {
+  display: none;
 }
 
-.level0Content {
-  display: flex;
-  align-items: center;
-}
-
-.iconLevel0 {
-  margin-right: 12px;
-  font-size: 1.2rem;
-}
-
-.arrowLevel0 {
-  color: #94a3b8;
-  font-weight: 600;
-  font-size: 0.9rem;
-  transition: transform 0.2s ease;
+/* Unified expand/collapse arrows for all levels */
+.navCourse > summary::before,
+.navDim > summary::before,
+.navMod > summary::before {
+  content: '▶';
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  opacity: 0.7;
   display: inline-block;
 }
-
-/* Files and sub-folders */
-.fileItem {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+.navCourse[open] > summary::before,
+.navDim[open] > summary::before,
+.navMod[open] > summary::before {
+  content: '▼';
 }
 
-.link {
+/* Level 0: Course level */
+.navCourse > summary {
   display: flex;
   align-items: center;
-  padding: 10px 12px;
-  border-radius: 6px;
-  font-size: 0.95rem;
-  color: #475569;
-  transition: all 0.2s;
-  border-left: 3px solid transparent;
-  line-height: 1.4;
-  font-weight: 500;
+  gap: 8px;
+  padding: 10px 16px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+.navCourseIcon {
+  font-size: 1rem;
 }
 
-.link:hover {
-  background: rgba(0,0,0,0.03);
-  color: #0f172a;
+/* Level 1: Dimension level (e.g. Transkript-Bibliothek) */
+.navDim > summary {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px 8px 28px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
-.active {
-  background: #eff6ff !important;
-  color: #2563eb !important;
-  border-left: 3px solid #2563eb;
+/* Level 2: Module level (e.g. Willkommen) */
+.navMod > summary {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px 6px 42px;
+  font-size: 0.87rem;
   font-weight: 600;
+  color: var(--primary-light);
+  border-radius: var(--radius);
 }
 
-@media (prefers-color-scheme: dark) {
-  .link:hover {
-    background: rgba(255,255,255,0.05);
-  }
+/* Level 3: Lesson links */
+.navLessons {
+  list-style: none;
+  padding: 2px 0 4px 0;
+  margin: 0;
+  margin-left: 0;
+  padding-left: 52px;
+}
+.navLessonsFlat {
+  list-style: none;
+  margin: 0;
+  padding-left: 38px;
+  padding-top: 2px;
+  padding-bottom: 4px;
+}
+
+.navLessons a, .navLessonsFlat a {
+  display: block;
+  padding: 5px 12px;
+  font-size: 0.84rem;
+  color: var(--text-light);
+  text-decoration: none;
+  border-radius: 6px;
+  border-left: 2px solid transparent;
+  line-height: 1.4;
+  margin-bottom: 2px;
+}
+
+.navLessons a:hover, .navLessonsFlat a:hover {
+  background: var(--bg-page);
+}
+
+.navLessons a.active, .navLessonsFlat a.active {
+  background: var(--accent-light);
+  color: var(--accent);
+  font-weight: 600;
+  border-left-color: var(--accent);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 @media (max-width: 768px) {

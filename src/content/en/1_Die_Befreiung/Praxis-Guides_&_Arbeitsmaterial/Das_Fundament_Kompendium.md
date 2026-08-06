@@ -57,8 +57,8 @@ Since the origins, projections and, above all, the **exact core questions for th
 
 As soon as you have recognized your tendency through the "First Impulse", please switch to the corresponding document for the in-depth work:
 
-*   **[Compendium: The Merge Type](MergeType_Compendium_v2.html)**
+*   **[Compendium: The Merge Type](MergeType_Compendium_v2)**
     *For everyone whose first impulse is to move forward and obsessively care.*
 
-*   **[Compendium: The Autonomy Type](AutonomyTyp_Compendium_v2.html)**
+*   **[Compendium: The Autonomy Type](AutonomyTyp_Compendium_v2)**
     *For everyone whose first impulse is withdrawal and isolation.*

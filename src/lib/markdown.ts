@@ -8,7 +8,7 @@ export interface MarkdownFile {
   slug: string[];
   lang: string;
   content: string;
-  data: { [key: string]: any };
+  data: Record<string, unknown>;
   title: string;
 }
 
@@ -35,7 +35,7 @@ export function getAllContent(): MarkdownFile[] {
     const relPath = path.relative(contentDir, file);
     const parts = relPath.split(path.sep);
     const lang = parts[0];
-    const slugParts = parts.slice(1).map(p => p.replace('.md', ''));
+    const slugParts = parts.slice(1).map(p => p.replace('.md', '').normalize('NFC'));
     
     const fileContents = fs.readFileSync(file, 'utf8');
     const { data, content } = matter(fileContents);
@@ -61,7 +61,8 @@ export function getAllContent(): MarkdownFile[] {
 
 export function getContentBySlug(lang: string, slug: string[]): MarkdownFile | null {
   const allContent = getAllContent();
-  return allContent.find(c => c.lang === lang && c.slug.join('/') === slug.join('/')) || null;
+  const decodedTargetSlug = slug.map(s => decodeURIComponent(s).normalize('NFC'));
+  return allContent.find(c => c.lang === lang && c.slug.join('/') === decodedTargetSlug.join('/')) || null;
 }
 
 export interface NavItem {
@@ -73,6 +74,68 @@ export interface NavItem {
 function cleanTitle(str: string): string {
   // Remove leading numbers and underscores (e.g., "1_Die_Befreiung" -> "Die Befreiung")
   return str.replace(/^\d+_/, '').replace(/_/g, ' ');
+}
+
+// Define explicit order for known titles (to match user's HTML screenshot exactly)
+const EXPLICIT_ORDER: Record<string, number> = {
+  // Main Categories
+  "Die Befreiung": 1,
+  "Somatic Developmental Trauma": 2,
+  "Embodied Relationship Intimacy": 3,
+  "Neo Emotional Release": 4,
+
+  // Die Befreiung - Subpages
+  "Autonomietyp Kompendium - Leitfaden für Therapeuten (Gopals Methode)": 10,
+  "Grundlagen & Praxis: Das Fundament": 20,
+  "Fallanalyse: Geldmangel auflösen": 30,
+  "Fallanalyse: Stress & Burnout auflösen": 40,
+  "Frageprotokoll: Reality Check (Verschmelzungstyp)": 50,
+  "Frageprotokoll: Stress & Burnout auflösen (Verschmelzungstyp)": 60,
+  "Kompendium: Verschmelzungstyp nach Gopal": 70,
+  "Transkripte Bibliothek": 80,
+  "Willkommen": 81,
+  "Das Grundprinzip": 82,
+  "Geldmangel": 83,
+  "Stress und Burnout": 84,
+  "Gopal antwortet": 85,
+  "Live Calls": 86,
+  "Praxis-Guides & Arbeitsmaterial": 90
+};
+
+function sortNavItems(items: NavItem[]) {
+  items.sort((a, b) => {
+    // 1. If both are in EXPLICIT_ORDER, use that
+    const orderA = EXPLICIT_ORDER[a.title];
+    const orderB = EXPLICIT_ORDER[b.title];
+    
+    if (orderA !== undefined && orderB !== undefined) {
+      return orderA - orderB;
+    }
+    if (orderA !== undefined) return -1;
+    if (orderB !== undefined) return 1;
+    
+    // 2. Otherwise sort by prefix numbers in slug if available, else title
+    const rawA = a.slug ? a.slug[a.slug.length - 1] : a.title;
+    const rawB = b.slug ? b.slug[b.slug.length - 1] : b.title;
+    const matchA = rawA.match(/^0*(\d+)/);
+    const matchB = rawB.match(/^0*(\d+)/);
+    if (matchA && matchB) {
+      const numA = parseInt(matchA[1], 10);
+      const numB = parseInt(matchB[1], 10);
+      if (numA !== numB) {
+        return numA - numB;
+      }
+    }
+    
+    // 3. Alphabetical
+    return rawA.localeCompare(rawB);
+  });
+
+  items.forEach(item => {
+    if (item.children) {
+      sortNavItems(item.children);
+    }
+  });
 }
 
 export function getSidebarNavigation(lang: string): NavItem[] {
@@ -110,12 +173,8 @@ export function getSidebarNavigation(lang: string): NavItem[] {
     }
   });
   
-  // Sort children alphabetically (or keep original sorting by numbers if we sort by original part name? 
-  // Wait, let's sort by title if they have one, but we removed the numbers from the title.
-  // The user had numbers like 1_, 2_ for order.
-  // Actually, let's sort the root level nodes manually if we can, or just sort them alphabetically by title.
-  // Or better, let's sort by the original folder names if we can.
-  // We'll leave it as they were processed, but they are processed in fs.readdirSync order which is alphabetical, so `1_`, `2_` are sorted correctly!
+  // Sort the entire tree according to the explicit order
+  sortNavItems(root);
   
   return root;
 }

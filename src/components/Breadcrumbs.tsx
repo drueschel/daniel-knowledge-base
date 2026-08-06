@@ -2,16 +2,19 @@
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import styles from './Breadcrumbs.module.css';
+import { NavItem } from '@/lib/markdown';
 
-export default function Breadcrumbs() {
+function cleanTitle(str: string): string {
+  return str.replace(/^\d+_/, '').replace(/_/g, ' ');
+}
+
+export default function Breadcrumbs({ nav }: { nav: NavItem[] }) {
   const pathname = usePathname();
-  // e.g. /de/1_Die_Befreiung/Transkripte_Bibliothek/01_Herzlich_Willkommen_Summary
   
   if (!pathname) return null;
   
   const segments = pathname.split('/').filter(Boolean);
   
-  // If we are at root /de or /en, just show Home
   if (segments.length <= 1) {
     return (
       <div className={styles.breadcrumbs}>
@@ -20,26 +23,54 @@ export default function Breadcrumbs() {
     );
   }
 
-  // Remove the lang segment
   const pathSegments = segments.slice(1);
-  const lang = segments[0];
+  const currentLang = segments[0];
+
+  let currentLevel = nav;
+  const breadcrumbItems = [];
+  
+  for (let i = 0; i < pathSegments.length; i++) {
+    const segment = pathSegments[i];
+    const decodedSegment = decodeURIComponent(segment).normalize('NFC');
+    let title = cleanTitle(decodedSegment);
+    
+    // Attempt to find real translated title in the nav tree
+    if (currentLevel) {
+      const node = currentLevel.find(n => {
+        if (n.slug) {
+          // Leaf node match by slug
+          return n.slug[n.slug.length - 1] === decodedSegment;
+        } else {
+          // Folder node match by clean title
+          return n.title === cleanTitle(decodedSegment);
+        }
+      });
+      
+      if (node) {
+        title = node.title;
+        currentLevel = node.children || [];
+      } else {
+        currentLevel = []; // Stop digging if path is broken
+      }
+    }
+    
+    const url = `/${currentLang}/${pathSegments.slice(0, i + 1).join('/')}`;
+    breadcrumbItems.push({ title, url });
+  }
 
   return (
     <div className={styles.breadcrumbs}>
-      <Link href={`/${lang}`} className={styles.link}>Home</Link>
-      {pathSegments.map((segment, index) => {
-        const isLast = index === pathSegments.length - 1;
-        // Clean up the text: remove numbers, underscores
-        const title = decodeURIComponent(segment).replace(/^\d+_/, '').replace(/_/g, ' ');
-        const url = `/${lang}/${pathSegments.slice(0, index + 1).join('/')}`;
+      <Link href={`/${currentLang}`} className={styles.link}>Home</Link>
+      {breadcrumbItems.map((item, index) => {
+        const isLast = index === breadcrumbItems.length - 1;
 
         return (
-          <span key={url} className={styles.segment}>
-            <span className={styles.separator}>/</span>
+          <span key={item.url} className={styles.segment}>
+            <span className={styles.separator}>{'>'}</span>
             {isLast ? (
-              <span className={styles.current}>{title}</span>
+              <span className={styles.current}>{item.title}</span>
             ) : (
-              <Link href={url} className={styles.link}>{title}</Link>
+              <Link href={item.url} className={styles.link}>{item.title}</Link>
             )}
           </span>
         );

@@ -2,6 +2,8 @@ import { getAllContent, getContentBySlug } from '@/lib/markdown';
 import { notFound } from 'next/navigation';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import Highlighter from '@/components/Highlighter';
+import { Suspense } from 'react';
 
 export async function generateStaticParams() {
   const content = getAllContent();
@@ -28,6 +30,9 @@ export default async function ContentPage({
 
   return (
     <article className="markdown">
+      <Suspense fallback={null}>
+        <Highlighter />
+      </Suspense>
       <ReactMarkdown remarkPlugins={[remarkGfm]}>
         {post.content}
       </ReactMarkdown>

@@ -57,8 +57,8 @@ Da die Ursprünge, Projektionen und vor allem die **exakten Kern-Fragen für den
 
 Sobald du durch den "Ersten Impuls" deine Tendenz erkannt hast, wechsle für die tiefgreifende Arbeit bitte in das entsprechende Dokument:
 
-*   **[Kompendium: Der Verschmelzungstyp](Verschmelzungstyp_Kompendium_v2.html)**
+*   **[Kompendium: Der Verschmelzungstyp](Verschmelzungstyp_Kompendium_v2)**
     *Für alle, deren erster Impuls die Hinbewegung und das zwanghafte Kümmern ist.*
 
-*   **[Kompendium: Der Autonomietyp](Autonomietyp_Kompendium_v2.html)**
+*   **[Kompendium: Der Autonomietyp](Autonomietyp_Kompendium_v2)**
     *Für alle, deren erster Impuls der Rückzug und die Isolation ist.*
