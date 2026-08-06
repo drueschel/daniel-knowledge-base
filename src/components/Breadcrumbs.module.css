@@ -1,0 +1,32 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.segment {
+  display: inline-flex;
+  align-items: center;
+}
+
+.separator {
+  margin: 0 8px;
+  color: var(--glass-border);
+  font-size: 0.9em;
+}
+
+.link {
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.current {
+  color: var(--foreground);
+  font-weight: 500;
+}

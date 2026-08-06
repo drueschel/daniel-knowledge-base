@@ -1,6 +1,7 @@
 import { getSidebarNavigation } from '@/lib/markdown';
 import Sidebar from '@/components/Sidebar';
 import LangSwitcher from '@/components/LangSwitcher';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export async function generateStaticParams() {
   return [{ lang: 'de' }, { lang: 'en' }];
@@ -22,9 +23,7 @@ export default async function LangLayout({
       
       <main className="main-content">
         <header className="topbar">
-          <div className="breadcrumb">
-            DKB Knowledge Base
-          </div>
+          <Breadcrumbs />
           <LangSwitcher currentLang={lang} />
         </header>
         
