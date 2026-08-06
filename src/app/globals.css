@@ -1,29 +1,14 @@
 :root {
-  --background: #ffffff;
+  --background: #f8fafc; /* slate-50 - very soft off-white */
   --foreground: #334155; /* slate-700 */
-  --primary: #3b82f6; /* blue-500 */
+  --primary: #3b82f6; /* blue-500 - elegant modern blue */
   --primary-hover: #eff6ff; /* blue-50 */
   --primary-border: #60a5fa; /* blue-400 */
-  --sidebar-bg: #ffffff;
+  --sidebar-bg: #ffffff; /* pure white sidebar */
   --glass-border: #e2e8f0; /* slate-200 */
   --card-bg: #ffffff;
   --text-muted: #64748b; /* slate-500 */
   --border-color: #f1f5f9; /* slate-100 */
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0f172a; /* slate-900 */
-    --foreground: #e2e8f0; /* slate-200 */
-    --primary: #60a5fa; /* blue-400 */
-    --primary-hover: rgba(59, 130, 246, 0.1);
-    --primary-border: #3b82f6; /* blue-500 */
-    --sidebar-bg: rgba(15, 23, 42, 0.95);
-    --glass-border: rgba(255, 255, 255, 0.05);
-    --card-bg: #1e293b;
-    --text-muted: #94a3b8; /* slate-400 */
-    --border-color: #334155; /* slate-700 */
-  }
 }
 
 html,

@@ -50,52 +50,115 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.15rem;
 }
 
-.folder {
-  margin-bottom: 0.25rem;
+/* Level 0: Main Category (Die Befreiung) */
+.level0 {
+  margin-bottom: 0.5rem;
 }
 
-.folderTitle {
+.btnLevel0 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: none;
+  border-top: 1px solid var(--primary);
+  border-bottom: 1px solid var(--primary);
+  text-align: left;
+  font-size: 1.1rem;
+  color: var(--foreground);
+  font-weight: 700;
+  padding: 12px 0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.level0Content {
+  display: flex;
+  align-items: center;
+}
+
+.iconLevel0 {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+.arrowLevel0 {
+  color: var(--text-muted);
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+/* Level 1: Sub-category (TRANSKRIPT-BIBLIOTHEK) */
+.level1 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.btnLevel1 {
   display: flex;
   align-items: center;
   width: 100%;
   background: none;
   border: none;
   text-align: left;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  color: var(--foreground);
+  font-size: 0.75rem;
+  color: var(--text-muted);
   font-weight: 700;
   letter-spacing: 0.05em;
-  padding: 8px 12px;
+  padding: 6px 0;
   cursor: pointer;
-  border-radius: 6px;
-  transition: background 0.2s;
 }
 
-.folderTitle:hover {
-  background: rgba(0,0,0,0.03);
+.iconLevel1 {
+  margin-right: 6px;
+  font-size: 0.9rem;
 }
 
-.folderArrow {
-  font-size: 0.6rem;
-  margin-right: 8px;
+.arrowLevel1 {
+  font-size: 0.7rem;
+  margin-right: 6px;
   color: var(--text-muted);
 }
 
-.folderIcon {
-  margin-right: 8px;
-  font-size: 1rem;
+.textLevel1 {
+  text-transform: uppercase;
 }
 
-.itemIcon {
-  font-size: 0.55rem;
-  margin-right: 8px;
+/* Level 2: Sub-sub-category (Willkommen, Geldmangel) */
+.level2 {
+  margin-top: 0.25rem;
+}
+
+.btnLevel2 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 0.95rem;
+  color: var(--foreground);
+  font-weight: 600;
+  padding: 6px 0;
+  cursor: pointer;
+}
+
+.arrowLevel2 {
+  font-size: 0.7rem;
+  margin-right: 6px;
   color: var(--text-muted);
-  display: inline-block;
-  transform: translateY(-1px);
+}
+
+.textLevel2 {
+  /* standard casing */
+}
+
+/* Level 3: Files */
+.fileItem {
+  margin-top: 2px;
 }
 
 .link {
@@ -103,10 +166,11 @@
   align-items: center;
   padding: 8px 12px;
   border-radius: 0 6px 6px 0;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: var(--text-muted);
   transition: all 0.2s;
-  border-left: 3px solid transparent;
+  border-left: 2px solid transparent;
+  line-height: 1.4;
 }
 
 .link:hover {
@@ -117,12 +181,12 @@
 .active {
   background: var(--primary-hover) !important;
   color: var(--primary) !important;
-  border-left: 3px solid var(--primary-border);
-  font-weight: 500;
+  border-left: 2px solid var(--primary);
+  font-weight: 600;
 }
 
 @media (prefers-color-scheme: dark) {
-  .folderTitle:hover, .link:hover {
+  .link:hover {
     background: rgba(255,255,255,0.05);
   }
 }
