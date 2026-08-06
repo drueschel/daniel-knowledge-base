@@ -46,12 +46,14 @@ export default async function LangLayout({
 
       <style>{`
         .layout {
-          display: flex;
           min-height: 100vh;
+          width: 100%;
+          overflow-x: hidden;
         }
         .main-content {
           margin-left: 310px; /* Sidebar width */
-          width: calc(100vw - 310px);
+          width: calc(100% - 310px);
+          max-width: calc(100% - 310px);
           display: flex;
           flex-direction: column;
         }
@@ -59,7 +61,7 @@ export default async function LangLayout({
           display: flex;
           justify-content: space-between;
           align-items: center;
-          padding: 1.25rem 4rem; /* More generous margins left/right */
+          padding: 1rem 2rem; /* Reduced padding to prevent overflow on medium screens */
           border-bottom: 1px solid var(--border-color);
           background: rgba(248, 250, 252, 0.95);
           backdrop-filter: blur(8px);
@@ -72,6 +74,7 @@ export default async function LangLayout({
           align-items: center;
           gap: 10px;
           min-width: 0;
+          flex: 1;
         }
         .breadcrumbs-container {
           min-width: 0;
@@ -83,7 +86,8 @@ export default async function LangLayout({
           display: flex;
           align-items: center;
           gap: 1rem;
-          flex-shrink: 0;
+          flex-shrink: 1; /* Allow shrinking so it doesn't overflow */
+          min-width: 0;
         }
         .breadcrumb {
           font-weight: 600;
@@ -99,7 +103,7 @@ export default async function LangLayout({
         @media (max-width: 768px) {
           .main-content {
             margin-left: 0;
-            width: 100vw;
+            width: 100%;
           }
           .topbar {
             padding: 0.75rem 1rem;

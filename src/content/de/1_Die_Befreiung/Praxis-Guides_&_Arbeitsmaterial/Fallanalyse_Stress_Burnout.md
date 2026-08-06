@@ -1,4 +1,4 @@
-# Fallanalyse: Stress & Burnout auflösen
+# Fallanalyse: Stress & Burnout
 *Wie chronischer Stress und Erschöpfung als unbewusste Überlebensstrategie fungieren und wie man sie durch die Gopal-Methode auflöst.*
 
 Egal wie oft wir das Thema Stress auf der logischen Ebene angehen (Zeitmanagement, Urlaub, weniger Aufgaben) – wenn ein ungelöstes Bindungstrauma dahintersteckt, wird das Nervensystem immer wieder dafür sorgen, dass die Überlastung bestehen bleibt. Stress und Burnout sind in der Methode nach Gopal **niemals das eigentliche Problem**, sondern immer ein Spiegel für die Beziehungs- und Bindungsebene.

@@ -1,4 +1,4 @@
-# Grundlagen & Praxis: Das Fundament
+# Kompendium: Das Fundament
 
 Das Fundament der Arbeit nach Gopal beruht auf einem grundlegenden Perspektivenwechsel und dem Verständnis, wie unser Nervensystem auf frühe Beziehungserfahrungen reagiert hat. Dieser Praxis-Guide vereint die essenziellen Kernprinzipien aus dem Modul "Das Fundament" mit dem konkreten Therapie-Leitfaden. Er dient als strukturierte Anleitung, um unbewusste Bindungsmuster (die "Kulissenschieberei") aufzudecken und durch direkte Reality-Checks zu transformieren.
 

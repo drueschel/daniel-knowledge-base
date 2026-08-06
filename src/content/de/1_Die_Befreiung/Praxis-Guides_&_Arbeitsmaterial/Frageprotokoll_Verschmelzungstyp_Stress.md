@@ -1,4 +1,4 @@
-# Frageprotokoll: Stress & Burnout auflösen (Verschmelzungstyp)
+# Frageprotokoll: Stress (VT)
 *Eine Vorlage für den Reality-Check nach der Gopal-Methode*
 
 Dieses Protokoll ist genau dafür gedacht, dass du es Schritt für Schritt mit einem sicheren Gegenüber (Partner/in, Freund/in, Therapeut/in) durchgehst. Das Ziel ist es, deinen aktuellen "Stress" (das Abarbeiten, das ständige Kümmern) als eine unbewusste Strategie zu entlarven, mit der du dir eigentlich Nähe erkaufen willst, weil du tief drinnen Angst hast, verlassen zu werden.

@@ -1,4 +1,4 @@
-# Kompendium: Verschmelzungstyp nach Gopal
+# Kompendium: Verschmelzungstyp
 
 ## 1. Zusammenfassung der Symptome
 Der Verschmelzungstyp zeigt in Beziehungen und in Konfliktsituationen folgende typische Symptome und Verhaltensweisen:

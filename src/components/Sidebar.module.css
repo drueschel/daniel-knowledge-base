@@ -109,6 +109,13 @@
   font-size: 1rem;
 }
 
+.lockedCourse > summary {
+  opacity: 0.45;
+}
+.lockedCourse > summary:hover {
+  opacity: 0.65;
+}
+
 /* Level 1: Dimension level (e.g. Transkript-Bibliothek) */
 .navDim > summary {
   display: flex;

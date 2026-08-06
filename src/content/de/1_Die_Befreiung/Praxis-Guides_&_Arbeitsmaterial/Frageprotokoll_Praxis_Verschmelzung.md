@@ -1,4 +1,4 @@
-# Frageprotokoll: Reality Check (Verschmelzungstyp)
+# Frageprotokoll: Reality Check
 *Eine Vorlage für den Reality-Check nach der Gopal-Methode*
 
 Dieses Protokoll ist genau dafür gedacht, dass du es Schritt für Schritt mit einem sicheren Gegenüber (Partner/in, Freund/in, Therapeut/in) durchgehst. 

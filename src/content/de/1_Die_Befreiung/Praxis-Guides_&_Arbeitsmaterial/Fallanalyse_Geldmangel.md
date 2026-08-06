@@ -1,4 +1,4 @@
-# Fallanalyse: Geldmangel auflösen
+# Fallanalyse: Geldmangel
 *Wie chronischer Geldmangel als unbewusste Überlebensstrategie fungiert und wie man ihn durch die Gopal-Methode auflöst.*
 
 Egal wie oft wir das Thema Geld auf der logischen Ebene angehen (Sparen, mehr arbeiten, investieren) – wenn ein ungelöstes Bindungstrauma dahintersteckt, wird das Nervensystem immer wieder dafür sorgen, dass der Mangel bestehen bleibt. Geldmangel ist in der Methode nach Gopal **niemals das eigentliche Problem**, sondern immer ein Spiegel für die Beziehungs- und Bindungsebene.

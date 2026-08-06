@@ -1,4 +1,4 @@
-# Autonomietyp Kompendium – Leitfaden für Therapeuten (Gopals Methode)
+# Kompendium: Autonomietyp
 
 Dieses Dokument bietet eine extrem strukturierte, einfache und übersichtliche Anleitung für Therapeuten, um in einer Sitzung effektiv mit dem **Autonomietyp** zu arbeiten. Es bündelt die neuesten Erkenntnisse zur Entstehung, dem mentalen Mechanismus und der praktischen Lösung.
 

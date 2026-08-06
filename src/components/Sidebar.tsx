@@ -117,12 +117,21 @@ function SidebarDetails({
           const isActive = isItemActive(item);
 
           if (level === 0) {
+            // A course is considered to have content if it has any child that is not a coming_soon file
+            const hasContent = item.children && item.children.some(child => {
+              if (child.slug) {
+                return !child.slug[child.slug.length - 1].includes('coming_soon');
+              }
+              // If it has folders/children, it implies it has content
+              return true;
+            });
+
             return (
               <SidebarDetails 
                 key={item.title} 
                 title={displayTitle(item.title)} 
-                className={styles.navCourse} 
-                icon="🔓"
+                className={`${styles.navCourse} ${!hasContent ? styles.lockedCourse : ''}`}
+                icon={hasContent ? '🔓' : '🔒'}
                 isActive={isActive}
                 level={level}
               >
