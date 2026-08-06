@@ -21,7 +21,7 @@ export default function Sidebar({ nav, lang, currentSlug }: { nav: NavItem[], la
   
   const renderTree = (items: NavItem[], level = 0) => {
     return (
-      <ul className={styles.list} style={{ paddingLeft: level === 3 ? '1.5rem' : level > 0 ? '1rem' : '0' }}>
+      <ul className={styles.list} style={{ paddingLeft: level > 0 ? '1rem' : '0' }}>
         {items.map(item => {
           if (item.slug) {
             // Leaf node (File)
