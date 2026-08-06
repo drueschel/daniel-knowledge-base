@@ -1,10 +1,37 @@
 import Link from 'next/link';
 import styles from './Sidebar.module.css';
-import { MarkdownFile } from '@/lib/markdown';
+import { NavItem } from '@/lib/markdown';
 
-export default function Sidebar({ nav, lang, currentSlug }: { nav: Record<string, MarkdownFile[]>, lang: string, currentSlug: string }) {
-  const kbName = lang === 'en' ? 'Knowledge Base' : 'Wissensdatenbank';
+export default function Sidebar({ nav, lang, currentSlug }: { nav: NavItem[], lang: string, currentSlug: string }) {
+  const kbName = 'Daniel Knowledge Base';
   
+  const renderTree = (items: NavItem[], level = 0) => {
+    return (
+      <ul className={styles.list} style={{ paddingLeft: level > 0 ? '1rem' : '0' }}>
+        {items.map(item => {
+          if (item.slug) {
+            const url = `/${lang}/${item.slug.join('/')}`;
+            const isActive = url === currentSlug;
+            return (
+              <li key={item.slug.join('/')}>
+                <Link href={url} className={`${styles.link} ${isActive ? styles.active : ''}`}>
+                  {item.title}
+                </Link>
+              </li>
+            );
+          } else {
+            return (
+              <li key={item.title} className={styles.folder}>
+                <span className={styles.folderTitle}>{item.title}</span>
+                {item.children && renderTree(item.children, level + 1)}
+              </li>
+            );
+          }
+        })}
+      </ul>
+    );
+  };
+
   return (
     <aside className={`${styles.sidebar} glass`}>
       <div className={styles.header}>
@@ -14,24 +41,7 @@ export default function Sidebar({ nav, lang, currentSlug }: { nav: Record<string
         </Link>
       </div>
       <nav className={styles.nav}>
-        {Object.keys(nav).sort().map(category => (
-          <div key={category} className={styles.category}>
-            <h3 className={styles.categoryTitle}>{category}</h3>
-            <ul className={styles.list}>
-              {nav[category].map(item => {
-                const url = `/${lang}/${item.slug.join('/')}`;
-                const isActive = url === currentSlug;
-                return (
-                  <li key={item.slug.join('/')}>
-                    <Link href={url} className={`${styles.link} ${isActive ? styles.active : ''}`}>
-                      {item.title}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        ))}
+        {renderTree(nav)}
       </nav>
     </aside>
   );

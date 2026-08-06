@@ -64,23 +64,58 @@ export function getContentBySlug(lang: string, slug: string[]): MarkdownFile | n
   return allContent.find(c => c.lang === lang && c.slug.join('/') === slug.join('/')) || null;
 }
 
-export function getSidebarNavigation(lang: string) {
+export interface NavItem {
+  title: string;
+  slug?: string[];
+  children?: NavItem[];
+}
+
+function cleanTitle(str: string): string {
+  // Remove leading numbers and underscores (e.g., "1_Die_Befreiung" -> "Die Befreiung")
+  return str.replace(/^\d+_/, '').replace(/_/g, ' ');
+}
+
+export function getSidebarNavigation(lang: string): NavItem[] {
   const allContent = getAllContent().filter(c => c.lang === lang);
   
-  // Group by category (first part of slug if it has multiple parts)
-  const nav: Record<string, MarkdownFile[]> = {
-    'Main': []
-  };
-  
+  const root: NavItem[] = [];
+
   allContent.forEach(item => {
-    if (item.slug.length === 1) {
-      nav['Main'].push(item);
-    } else {
-      const category = item.slug[0].replace(/_/g, ' ');
-      if (!nav[category]) nav[category] = [];
-      nav[category].push(item);
+    let currentLevel = root;
+    
+    // Traverse the slug parts to build the tree
+    for (let i = 0; i < item.slug.length; i++) {
+      const part = item.slug[i];
+      const isLeaf = i === item.slug.length - 1;
+      
+      let existingNode = currentLevel.find(n => 
+        (isLeaf && n.slug && n.slug.join('/') === item.slug.join('/')) ||
+        (!isLeaf && n.title === cleanTitle(part) && !n.slug)
+      );
+
+      if (!existingNode) {
+        existingNode = {
+          title: isLeaf ? item.title : cleanTitle(part),
+          ...(isLeaf ? { slug: item.slug } : { children: [] })
+        };
+        currentLevel.push(existingNode);
+      }
+
+      if (!isLeaf) {
+        if (!existingNode.children) {
+          existingNode.children = [];
+        }
+        currentLevel = existingNode.children;
+      }
     }
   });
   
-  return nav;
+  // Sort children alphabetically (or keep original sorting by numbers if we sort by original part name? 
+  // Wait, let's sort by title if they have one, but we removed the numbers from the title.
+  // The user had numbers like 1_, 2_ for order.
+  // Actually, let's sort the root level nodes manually if we can, or just sort them alphabetically by title.
+  // Or better, let's sort by the original folder names if we can.
+  // We'll leave it as they were processed, but they are processed in fs.readdirSync order which is alphabetical, so `1_`, `2_` are sorted correctly!
+  
+  return root;
 }

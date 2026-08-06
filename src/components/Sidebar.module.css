@@ -44,6 +44,20 @@
   margin-bottom: 0.75rem;
 }
 
+.folder {
+  margin-bottom: 0.5rem;
+}
+
+.folderTitle {
+  display: block;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 1.5rem 0 0.5rem 0;
+}
+
 .list {
   list-style: none;
   padding: 0;
