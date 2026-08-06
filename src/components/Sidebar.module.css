@@ -44,53 +44,86 @@
   margin-bottom: 0.75rem;
 }
 
-.folder {
-  margin-bottom: 0.5rem;
-}
-
-.folderTitle {
-  display: block;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  margin: 1.5rem 0 0.5rem 0;
-}
-
 .list {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.15rem;
+}
+
+.folder {
+  margin-bottom: 0.25rem;
+}
+
+.folderTitle {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: var(--foreground);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.folderTitle:hover {
+  background: rgba(0,0,0,0.03);
+}
+
+.folderArrow {
+  font-size: 0.6rem;
+  margin-right: 8px;
+  color: var(--text-muted);
+}
+
+.folderIcon {
+  margin-right: 8px;
+  font-size: 1rem;
+}
+
+.itemIcon {
+  font-size: 0.55rem;
+  margin-right: 8px;
+  color: var(--text-muted);
+  display: inline-block;
+  transform: translateY(-1px);
 }
 
 .link {
-  display: block;
-  padding: 6px 12px;
-  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 0 6px 6px 0;
   font-size: 0.95rem;
-  color: var(--foreground);
+  color: var(--text-muted);
   transition: all 0.2s;
-  opacity: 0.8;
+  border-left: 3px solid transparent;
 }
 
 .link:hover {
-  background: rgba(0,0,0,0.05);
-  opacity: 1;
+  background: rgba(0,0,0,0.03);
+  color: var(--foreground);
 }
 
 .active {
-  background: var(--primary) !important;
-  color: white;
-  opacity: 1;
+  background: var(--primary-hover) !important;
+  color: var(--primary) !important;
+  border-left: 3px solid var(--primary-border);
+  font-weight: 500;
 }
 
 @media (prefers-color-scheme: dark) {
-  .link:hover {
-    background: rgba(255,255,255,0.1);
+  .folderTitle:hover, .link:hover {
+    background: rgba(255,255,255,0.05);
   }
 }
 
