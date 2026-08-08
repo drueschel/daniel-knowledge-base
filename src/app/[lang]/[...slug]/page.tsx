@@ -2,6 +2,7 @@ import { getAllContent, getContentBySlug } from '@/lib/markdown';
 import { notFound } from 'next/navigation';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import rehypeRaw from 'rehype-raw';
 import Highlighter from '@/components/Highlighter';
 import { Suspense } from 'react';
 
@@ -33,7 +34,7 @@ export default async function ContentPage({
       <Suspense fallback={null}>
         <Highlighter />
       </Suspense>
-      <ReactMarkdown remarkPlugins={[remarkGfm]}>
+      <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
         {post.content}
       </ReactMarkdown>
     </article>
