@@ -95,11 +95,12 @@ const EXPLICIT_ORDER: Record<string, number> = {
   "Frageprotokoll: Stress (VT)": 70,
   "Transkripte Bibliothek": 80,
   "Willkommen": 81,
-  "Das Grundprinzip": 82,
+  "Das Fundament": 82,
   "Geldmangel": 83,
   "Stress und Burnout": 84,
-  "Gopal antwortet": 85,
-  "Live Calls": 86,
+  "Angst und Panik": 85,
+  "Gopal antwortet": 86,
+  "Live Calls": 87,
   "Praxis-Guides & Arbeitsmaterial": 90
 };
 
