@@ -1,36 +1,36 @@
-# Angst und Panik - Autonomy Type
+# Fear & Panic - Autonomy Type
 
-Dieser Text behandelt das Symptom "Angst und Panik" (eine der häufigsten psychischen Störungen) und erklärt, wie es sich beim Autonomy Type auf der Beziehungsebene manifestiert. Er zeigt auf, wie das tief verdrängte Bedürfnis nach Nähe zu Ängsten vor Kontakt führt und wie diese inneren Konzepte durch gezielte Kommunikation (Reality Check) aufgelöst werden können.
+This text addresses the symptom "fear and panic" (one of the most common psychological disorders) and explains how it manifests in the Autonomy Type on a relational level. It shows how the deeply repressed need for closeness leads to fears of contact and how these inner concepts can be resolved through targeted communication (Reality Check).
 
-## Phase 1: Grundprinzip des Symptoms
-* **Kernthemen:** Gefahr, Unklarheit, Orientierungslosigkeit, Hilflosigkeit (wie beim Merging Type).
+## Phase 1: Basic Principle of the Symptom
+* **Core Themes:** Danger, lack of clarity, lack of orientation, helplessness (similar to the Merging Type).
 
-## Phase 2: Übersetzung auf die Beziehungsebene (Das Prisma)
-* **Projektion:** Der Autonomy Type hat sein eigenes Bedürfnis nach Nähe und Kontakt so tief verdrängt, dass er es auf andere projiziert.
-* **Ergebnis:** Er erlebt den Kontakt zu anderen Menschen heute als bedrohlich oder sogar lebensbedrohlich. Er hat Angst davor, dass andere seine Grenzen überschreiten und ihn aus seiner Sicht quasi "auslöschen".
+## Phase 2: Translation to the Relational Level (The Prism)
+* **Projection:** The Autonomy Type has repressed their own need for closeness and contact so deeply that they project it onto others.
+* **Result:** They experience contact with other people today as threatening or even life-threatening. They are afraid that others will cross their boundaries and, from their perspective, essentially "extinguish" them.
 
-## Phase 3: Wie läuft das Spiel konkret ab?
-* **Selbstauslöschung:** Der Autonomy Type erschafft das ganze Szenario, indem er sich selbst wie auslöscht. Er tut unbewusst so, als gäbe es ihn, seine Feelings und seine Bedürfnisse einfach nicht.
-* **Aufmerksamkeitsabzug:** Er zieht seine Aufmerksamkeit komplett von sich selbst, seinen Feelingsn und dem Other ab.
-* **Flucht in den mentalen Raum:** Er flüchtet in mentale Konzepte, Theorien oder spirituelle Zusammenhänge. Dadurch ist er ganz weg von sich und dem anderen – als würden beide gar nicht existieren.
+## Phase 3: How Does the Game Actually Play Out?
+* **Self-Extinction:** The Autonomy Type creates the entire scenario by sort of extinguishing themselves. They unconsciously act as if they, their feelings, and their needs simply do not exist.
+* **Withdrawal of Attention:** They withdraw their attention completely from themselves, their feelings, and the other person.
+* **Flight into the Mental Space:** They flee into mental concepts, theories, or spiritual contexts. As a result, they are completely removed from themselves and the other – as if neither even existed.
 
-## Phase 4: Warum mache ich das? (Schutzfunktion)
-* **Distanzschaffung:** Wie alles Destruktive auf der Bindungsebene dient dieses Verhalten heute aktiv und unbewusst dazu, Distanz herzustellen.
-* **Schutz vor der Leere:** Der Autonomy Type will sich vor der Realisierung schützen, dass niemand da ist. Paradoxerweise ist es aber genau dieser Zustand der Isolation, den er heute selbst erschafft.
+## Phase 4: Why Do I Do This? (Protective Function)
+* **Creating Distance:** Like everything destructive on the attachment level, this behavior today actively and unconsciously serves to create distance.
+* **Protection from the Void:** The Autonomy Type wants to protect themselves from the realization that no one is there. Paradoxically, it is exactly this state of isolation that they create themselves today.
 
-## Phase 5: Was passiert, wenn die Angst (Niemand ist da) eintritt?
-* **Erstarrung und Dissoziation:** Wenn es tatsächlich so wäre, dass niemand vorhanden ist, mit dem er sich verbinden und austauschen kann, würde der Autonomy Type mit Erstarrung und Dissoziation reagieren.
-* **Der Kern-Glaubenssatz:** Er erklärt sich die (vermeintliche) Abwesenheit des anderen durch seine eigene Existenz. Er glaubt zutiefst: *Meine pure Existenz, meine Bedürfnisse und Feelings führen dazu, dass der andere verschwindet, nicht da ist oder keinen Kontakt möchte.* Die eigene Existenz ist angeblich das Problem.
-* **Der maximale Trigger (Befürchtung):** Der Autonomy Type glaubt, dass der andere sofort verschwindet oder gar nicht erst in seine Nähe kommt, sobald er (der Autonomy Type) auf den anderen zugeht und signalisiert: *"Hey, mich gibt's, hier bin ich, ich brauche etwas, ich habe Bedürfnisse und Feelings."*
-* **Kompensation (Projektion auf den anderen):** Um dieses Konstrukt logisch erscheinen zu lassen, projiziert der Autonomy Type auf den anderen, dass dieser ihm überlegen sei, völlig unabhängig sei, sich selbst groß und stark einstufe und nichts von ihm brauche. (In Wirklichkeit projiziert der Autonomy Type damit seine eigene Not auf den anderen, der oft selbst erstarrt und dissoziiert ist).
+## Phase 5: What Happens If the Fear (No One Is There) Occurs?
+* **Freeze and Dissociation:** If it were actually the case that no one is present with whom they can connect and exchange, the Autonomy Type would react with freeze and dissociation.
+* **The Core Belief:** They explain the (perceived) absence of the other through their own existence. They deeply believe: *My mere existence, my needs, and feelings cause the other to disappear, to not be there, or to not want contact.* Their own existence is allegedly the problem.
+* **The Maximum Trigger (Fear):** The Autonomy Type believes that the other person will immediately disappear or not even come close as soon as they (the Autonomy Type) approach the other and signal: *"Hey, I exist, here I am, I need something, I have needs and feelings."*
+* **Compensation (Projection onto the Other):** To make this construct appear logical, the Autonomy Type projects onto the other that they are superior, completely independent, consider themselves big and strong, and need nothing from them. (In reality, the Autonomy Type thereby projects their own distress onto the other, who is often themselves frozen and dissociated).
 
-## Reality Check / Honest Sharing (Übung)
-Um das Konstrukt aus diesen tief verinnerlichten Konzepten aufzulösen, muss der Autonomy Type sie abfragen und die eigenen Thoughts mit der Realität abgleichen.
+## Reality Check / Honest Sharing (Exercise)
+To dissolve the construct of these deeply internalized concepts, the Autonomy Type must question them and compare their own thoughts with reality.
 
-**Stelle einem nahestehenden Menschen konkret folgende drei Fragen:**
-1. *"Gibt es dich, bist du da?"*
-2. *"Stimmt es, dass wenn ich dir mitteile, dass es mich gibt, dass ich mich traurig und einsam fühle und Bedürfnisse habe, dass du dann irgendwie kollabierst, wegrennst oder verschwindest? Oder hast du damit vielleicht gar kein Problem?"*
-3. *"Stimmt es, dass du dich völlig unabhängig und übermächtig fühlst, dass du nichts von mir brauchst und ich dir eigentlich egal bin, und dass du aber in Wirklichkeit innerlich erstarrt und dissoziiert und in großer Not bist? Stimmt das überhaupt?"*
+**Ask a close person explicitly the following three questions:**
+1. *"Do you exist, are you there?"*
+2. *"Is it true that if I tell you that I exist, that I feel sad and lonely, and have needs, you will somehow collapse, run away, or disappear? Or do you perhaps have no problem with that at all?"*
+3. *"Is it true that you feel completely independent and overwhelmingly powerful, that you need nothing from me and I actually don't matter to you, but in reality you are inwardly frozen and dissociated and in great distress? Is that even true?"*
 
-**Achtung – Wichtiger Hinweis für den Autonomy Type:**
-Für den Autonomy Type ist das Zuhören in der Regel nicht die größte Herausforderung. Die wahre Hürde ist es, **an diese tiefen Thoughts überhaupt erst heranzukommen** und sich zu trauen, diese Fragen zu stellen. Wenn du dich traust und einfach nur hörst, was der andere sagt, kommt etwas an diese tiefen Schichten deines Lebens. Unabhängig davon, ob der andere die Fragen bestätigt oder nicht, hast du in diesem Moment bereits mindestens 50 Prozent der Arbeit getan, da die künstlich erschaffenen Leidensgedanken durch die Realität des Hier und Jetzt entlarvt werden.
+**Attention – Important Note for the Autonomy Type:**
+For the Autonomy Type, listening is usually not the biggest challenge. The true hurdle is **accessing these deep thoughts in the first place** and daring to ask these questions. If you dare and simply listen to what the other says, something reaches these deep layers of your life. Regardless of whether the other confirms the questions or not, in this moment you have already done at least 50 percent of the work, because the artificially created thoughts of suffering are exposed by the reality of the here and now.

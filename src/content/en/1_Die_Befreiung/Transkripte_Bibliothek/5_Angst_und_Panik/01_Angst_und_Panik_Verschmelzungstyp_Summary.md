@@ -1,36 +1,36 @@
-# Angst und Panik - Merging Type
+# Fear & Panic - Merging Type
 
-Dieser Text behandelt das Symptom "Angst und Panik" (eine der häufigsten psychischen Störungen) und erklärt, wie es sich beim Merging Type auf der Beziehungsebene manifestiert. Er zeigt auf, wie unterdrückte Emotionen zu Ängsten führen und wie diese durch gezielte Kommunikation (Reality Check) aufgelöst werden können.
+This text addresses the symptom "fear and panic" (one of the most common psychological disorders) and explains how it manifests in the Merging Type on a relational level. It shows how suppressed emotions lead to fears and how these can be resolved through targeted communication (Reality Check).
 
-## Phase 1: Grundprinzip des Symptoms
-* **Kernthemen:** Gefahr, Lebensgefahr, Bedrohung, Unklarheit, mangelnde Orientierung.
+## Phase 1: Basic Principle of the Symptom
+* **Core Themes:** Danger, mortal danger, threat, lack of clarity, lack of orientation.
 
-## Phase 2: Übersetzung auf die Beziehungsebene (Das Prisma)
-* **Projektion:** Der Merging Type unterdrückt sein gesamtes Autonomiespektrum (Wut und Hass) und projiziert dieses nach außen.
-* **Ergebnis:** Die Person entwickelt Angst vor der vermeintlichen Gefahr im Außen. Im Grunde ist es jedoch die Angst vor dem eigenen, unterdrückten Hass.
+## Phase 2: Translation to the Relational Level (The Prism)
+* **Projection:** The Merging Type suppresses their entire autonomy spectrum (anger and hatred) and projects it outwards.
+* **Result:** The person develops fear of the perceived external danger. Fundamentally, however, it is the fear of their own suppressed hatred.
 
-## Phase 3: Wie läuft das Spiel konkret ab?
-* **Aufopferung:** Der Merging Type kümmert sich um andere, arbeitet sich für sie ab und verleugnet die eigenen Bedürfnisse und Feelings.
-* **Aufbau von Aggression:** Durch diese ständige Verleugnung bauen sich unweigerlich Wut und Hass auf, da die eigenen Bedürfnisse zu kurz kommen.
-* **Verdrängung:** Da der Merging Type diese Wut in sich nicht wahrnehmen kann oder darf, baut sie sich unbewusst weiter auf und muss projiziert werden. Dies äußert sich schließlich in Form von Angst und Panik.
+## Phase 3: How Does the Game Actually Play Out?
+* **Self-Sacrifice:** The Merging Type cares for others, works themselves to the bone for them, and denies their own needs and feelings.
+* **Buildup of Aggression:** Through this constant denial, anger and hatred inevitably build up because their own needs are neglected.
+* **Repression:** Since the Merging Type cannot or is not allowed to perceive this anger within themselves, it unconsciously continues to build up and must be projected. This ultimately manifests in the form of fear and panic.
 
-## Phase 4: Warum mache ich das? (Schutzfunktion)
-* **Distanzschaffung:** Die Unterdrückung und Projektion dienen dazu, Distanz zu sich selbst und zu anderen herzustellen.
-* **Schutz vor dem Verlassenwerden:** Der Merging Type unterdrückt Wut und Hass in der Hoffnung, dass der andere ihn dann nicht verlässt. Er entwickelt gleichzeitig die Angst, dass der andere aufgrund eben dieser (projizierten) Wut weggehen könnte.
+## Phase 4: Why Do I Do This? (Protective Function)
+* **Creating Distance:** The suppression and projection serve to create distance from oneself and others.
+* **Protection from Abandonment:** The Merging Type suppresses anger and hatred in the hope that the other person will not leave them. At the same time, they develop the fear that the other person might leave because of this very (projected) anger.
 
-## Phase 5: Was passiert, wenn die Angst (Verlassenwerden) eintritt?
-* **Oberflächliche Schicht:** Zunächst würden Einsamkeit, Trauer, Not und Verzweiflung ins Bewusstsein treten.
-* **Die eigentliche Schicht:** Darunter liegt die tiefe Wut und der Hass, entstanden durch die massive Verleugnung der eigenen Bedürfnisse.
-* **Der maximale Trigger (Befürchtung):** Der Merging Type glaubt, dass der andere geht, sobald er (der Merging Type) in seine Kraft kommt, Wut und Hass fühlt, eigene Bedürfnisse äußert oder sein eigenes Ding macht.
-* **Kompensation:** Um das Verlassenwerden zu verhindern, opfert er sich weiter für den anderen auf. Dies funktioniert nur unter der Annahme (Projektion), dass der andere hilflos, klein, schwach und abhängig von ihm ist.
+## Phase 5: What Happens If the Fear (Abandonment) Occurs?
+* **Superficial Layer:** Initially, loneliness, grief, distress, and despair would surface in consciousness.
+* **The Actual Layer:** Underneath lies deep anger and hatred, caused by the massive denial of one's own needs.
+* **The Maximum Trigger (Fear):** The Merging Type believes that the other person will leave as soon as they (the Merging Type) step into their power, feel anger and hatred, express their own needs, or do their own thing.
+* **Compensation:** To prevent abandonment, they continue to sacrifice themselves for the other person. This only works under the assumption (projection) that the other person is helpless, small, weak, and dependent on them.
 
-## Reality Check / Honest Sharing (Übung)
-Um das Konstrukt aus diesen drei Projektionen aufzulösen, muss der Merging Type sie aussprechen und bei einer nahestehenden Person (z. B. Lebenspartner oder Therapeut) abfragen. 
+## Reality Check / Honest Sharing (Exercise)
+To dissolve the construct of these three projections, the Merging Type must voice them and check them with a close person (e.g., life partner or therapist).
 
-**Stelle deinem Other konkret folgende drei Fragen:**
-1. *"Hast du vor, mich jetzt zu verlassen?"*
-2. *"Wenn ich dir sage, dass ich Wut und Hass fühle, meine eigene Meinung habe und mein eigenes Ding mache, hast du dann ein Problem damit?"*
-3. *"Stimmt es, dass du dich klein, hilflos und abhängig von mir fühlst?"*
+**Ask the other person explicitly the following three questions:**
+1. *"Are you planning to leave me now?"*
+2. *"If I tell you that I feel anger and hatred, have my own opinion, and do my own thing, do you have a problem with that?"*
+3. *"Is it true that you feel small, helpless, and dependent on me?"*
 
-**Achtung – Wichtiger Hinweis für den Merging Type:**
-Du musst dich zwingen, die Antworten auf diese Fragen **wirklich zu hören**. Der Merging Type neigt stark dazu, Antworten, die nicht in sein Konstrukt passen, auszublenden. Wenn du genau hinhörst und die Antworten zulässt, können die tiefsten Schichten deines Bindungsmusters mit neuen Informationen konfrontiert und aktualisiert werden.
+**Attention – Important Note for the Merging Type:**
+You must force yourself to **really listen** to the answers to these questions. The Merging Type has a strong tendency to tune out answers that do not fit into their construct. If you listen closely and allow the answers in, the deepest layers of your attachment pattern can be confronted and updated with new information.
