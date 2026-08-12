@@ -135,7 +135,7 @@
   align-items: center;
   gap: 8px;
   padding: 10px 16px;
-  font-size: 0.92rem;
+  font-size: 0.85rem;
   font-weight: 700;
   color: var(--primary);
 }
@@ -156,7 +156,7 @@
   align-items: center;
   gap: 6px;
   padding: 8px 12px 8px 28px;
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 700;
   color: var(--text-muted);
   text-transform: uppercase;
@@ -169,7 +169,7 @@
   align-items: center;
   gap: 6px;
   padding: 6px 12px 6px 42px;
-  font-size: 0.87rem;
+  font-size: 0.80rem;
   font-weight: 600;
   color: var(--primary-light);
   border-radius: var(--radius);
@@ -194,7 +194,7 @@
 .navLessons a, .navLessonsFlat a {
   display: block;
   padding: 5px 12px;
-  font-size: 0.84rem;
+  font-size: 0.78rem;
   color: var(--text-light);
   text-decoration: none;
   border-radius: 6px;
