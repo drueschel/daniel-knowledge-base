@@ -1,4 +1,4 @@
-import { getSidebarNavigation } from '@/lib/markdown';
+import { getSidebarNavigation, getRouteMappings } from '@/lib/markdown';
 import Sidebar from '@/components/Sidebar';
 import LangSwitcher from '@/components/LangSwitcher';
 import Breadcrumbs from '@/components/Breadcrumbs';
@@ -19,6 +19,7 @@ export default async function LangLayout({
 }) {
   const { lang } = await params;
   const nav = getSidebarNavigation(lang);
+  const routeMappings = getRouteMappings();
 
   return (
     <MobileMenuProvider>
@@ -35,7 +36,7 @@ export default async function LangLayout({
             </div>
             <div className="topbar-right">
               <TopbarSearch lang={lang} />
-              <LangSwitcher currentLang={lang} />
+              <LangSwitcher currentLang={lang} routeMappings={routeMappings} />
             </div>
           </header>
           

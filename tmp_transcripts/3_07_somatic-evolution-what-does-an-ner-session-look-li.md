@@ -1,0 +1,454 @@
+# Transkript: 3 07 somatic-evolution-what-does-an-ner-session-look-li
+
+**Datei:** `3_07_somatic-evolution-what-does-an-ner-session-look-li.ts`  
+**Sprache:** Englisch  
+
+---
+
+## Inhalt:
+
+That feeling of acceptance is familiar to you?
+ Yeah, I like being in my own room and having this energy outside of my room.
+ And can you allow for that moment to step out of that childhood room?
+ Step out of it and close the door because you stayed so long in there and you already accepted.
+ What would be if you go out of that door and reclaim your right?
+ Can your being show your voice and get out of that?
+ Because you stayed there so long.
+ You heard that so long. All the voices.
+ Now it's the movement in the body.
+ Can you allow that just for that moment?
+ Try to connect with that feeling.
+ So the emotions come easy. This seems to be very familiar.
+ She has a good relationship with that emotion that she feels inside her child room.
+ Sophie is noticing that that's not the release. The release is to change it, to come out of it.
+ Try to connect with that feeling that is beneath that helplessness.
+ Beneath that helplessness there's another feeling, a strong feeling.
+ Trying to go deeper because that's not the release yet. Even if she's crying.
+ I feel like I'm a little teenager.
+ Yes.
+ You're right now a teenager?
+ Yes.
+ Okay. Like you've grown up a little bit.
+ Okay. Feel that what you're feeling right now.
+ Yes.
+ (breathing)
+ Yes. You're doing a good job.
+ No.
+ She's really holding her there in the uncomfortableness.
+ She's not feeling to expand as a teenager.
+ Trying to bring her deeper into that feeling.
+ Yes. You go.
+ Doing a great job.
+ (breathing)
+ Yes.
+ (breathing)
+ Yes, express it.
+ (breathing)
+ Because she wants to go deeper and not stay in the sadness, the melancholy,
+ but to get to that anger.
+ (breathing)
+ You can sense that that's more difficult here to reach.
+ My body is reacting.
+ Yes. Tell me about the reaction.
+ Still my hands.
+ Yes.
+ And the answer above my knees.
+ Yes.
+ And my arm down.
+ Yes.
+ (singing)
+ Yes.
+ (breathing)
+ Can you support that feeling with your voice?
+ (breathing)
+ That's also just being trapped, that stuck feeling.
+ It wants to come out of your body.
+ So her knees are related to the feeling of stability.
+ Feeling strong and stable.
+ Her hands could be related to holding on to things.
+ Being unable to let go.
+ (breathing)
+ Yes.
+ (breathing)
+ (singing)
+ Yes.
+ Shake your body a little bit.
+ Even your hands.
+ (breathing)
+ Yes. Try to do it.
+ (breathing)
+ Keep on doing your mouth open.
+ (breathing)
+ Yes.
+ Activating that power.
+ (breathing)
+ It's very uncomfortable for her, you can tell.
+ (breathing)
+ Yes.
+ Okay.
+ Do this again.
+ Do this again.
+ Pushing on the traps, the shoulders.
+ (singing)
+ Yes, that's good.
+ Dispersing the energy from the role ego.
+ (breathing)
+ That's the energy come out from the responsibility.
+ And come more into the body.
+ Yes.
+ It can be very important.
+ (breathing)
+ My hands are so stiff.
+ Yes. I will go to your hands.
+ (breathing)
+ Yeah.
+ (breathing)
+ Yes. Let it come. Let it come.
+ I trust you. Let it come.
+ (breathing)
+ Yes.
+ If you feel bound by responsibility.
+ Yes.
+ Pushing on the shoulders is so, so key.
+ Let it come.
+ (breathing)
+ Yeah. You can hear her.
+ There's more power activating in her body.
+ (breathing)
+ Yes. It should cycle.
+ We're in this together, right?
+ (breathing)
+ Yes. Okay.
+ (breathing)
+ (breathing)
+ Yes.
+ Once again.
+ (breathing)
+ Yes.
+ (breathing)
+ (breathing)
+ Yes.
+ So good.
+ (breathing)
+ So good.
+ (breathing)
+ So good.
+ (breathing)
+ (breathing)
+ (breathing)
+ (breathing)
+ Yeah. It's coming.
+ (breathing)
+ (breathing)
+ It's naturally coming.
+ So you can tell it's not about containing anything.
+ It's not trying to control the emotion.
+ (breathing)
+ It's naturally flowing out.
+ (breathing)
+ And it's actually helping.
+ The breath is helping to contain that emotion that's coming.
+ To process it more directly.
+ (breathing)
+ It's very natural.
+ (breathing)
+ Very moving.
+ I remember I was crying when I saw this.
+ (breathing)
+ Yes.
+ Do that.
+ (breathing)
+ You can tell it's about her power really coming through.
+ And feeling too small, too weak.
+ (breathing)
+ To step into her strength.
+ (breathing)
+ It's a moving archetypal process.
+ (breathing)
+ You just want to cheer her up.
+ (breathing)
+ Cheer her on.
+ You can do it, Leana.
+ You can.
+ (breathing)
+ You're strong enough.
+ (breathing)
+ Pure warrior.
+ (chuckles)
+ (breathing)
+ (breathing)
+ (breathing)
+ It's so overwhelming when you come in contact.
+ With those energies and there's so much resistance towards your power, towards your greatness.
+ (breathing)
+ It can be very overwhelming.
+ Especially when the ego says you're threatening if you are stepping to your greatness.
+ It's dangerous to be strong, to be powerful.
+ There's a lot of resistance in the body.
+ (breathing)
+ That's all intuitive.
+ She's just supporting her intuitively.
+ Feeling like, see dads and want to shake you up there in this part of your body.
+ (breathing)
+ (breathing)
+ Lots going on in the face.
+ Energy moving in the face.
+ Also have to do with shame, right?
+ We show ourselves with our face.
+ Shame is very connected to the face.
+ And when that energy, when we start working with that energy of shame,
+ and how our image, how we show ourselves, expresses on our face,
+ then the muscles and the energy in the face starts moving and warming up.
+ (breathing)
+ Yes. But you can move, Leana.
+ You can move.
+ Empowering her.
+ The voice in your head is telling you you can't, but you can.
+ You are allowed to.
+ Pushing her into a power instead of going deeper into the pain.
+ You can.
+ Yes.
+ The yes, activating the inner yes.
+ When you see someone stuck in the victim, you want to get them into the yes.
+ Being a victim means saying no to yourself.
+ And this is a yes to yourself.
+ Say with me I can.
+ I can.
+ Yes.
+ I am Leana and I can decide.
+ I am Leana and I can decide.
+ Yes.
+ Say it again.
+ I am Leana and I can decide.
+ Yes.
+ Give me your hands.
+ Give me your hands.
+ Grab my hands.
+ Okay.
+ (breathing)
+ Lifting some of that weight off the shoulders.
+ All that weight that she has to carry.
+ Thank God.
+ (breathing)
+ Yes.
+ Here you are.
+ Here you are, Leana.
+ And she's accessing more and more of her life force power that's been tucked away
+ under the guise that she has to stay small, non-threatening.
+ Feel the connection to me.
+ My hands.
+ Yes, grab my hands.
+ Yes, here we are.
+ So much.
+ This is your strength.
+ Yes, I am with you.
+ (breathing)
+ You're such a powerful woman.
+ And it's everywhere in your body.
+ Everywhere.
+ And you can also get that power into your hands.
+ That you can decide.
+ Feel that.
+ Grab my hands.
+ This is your power.
+ Yes.
+ This is your power.
+ Yes, getting her out of that victim.
+ Yes.
+ Into that personal power.
+ Tell me.
+ Yes, let it go.
+ Power dimension.
+ Let it go.
+ Let it go.
+ Mm.
+ By the channel you are in, I told you right.
+ Do whatever you want to do.
+ In these situations.
+ With your hands.
+ (breathing)
+ Feel.
+ Let it go.
+ (breathing)
+ (breathing)
+ (breathing)
+ Yes.
+ (breathing)
+ (gentle music)
+ (gentle music)
+ I feel so little.
+ Yes.
+ Can you?
+ Can you help yourself?
+ (gentle music)
+ Can you try to hug yourself?
+ Like being, like being this little embryo.
+ (gentle music)
+ Yes.
+ (gentle music)
+ It's allowed to be that little.
+ (gentle music)
+ It's also your strength.
+ (gentle music)
+ Just surrender into that littleness.
+ (gentle music)
+ Let you being held.
+ (gentle music)
+ Yes.
+ And in that littleness.
+ In that moment where I'm holding you.
+ You can let go, Liana.
+ (gentle music)
+ Just let go.
+ (gentle music)
+ Because it's your decision.
+ (gentle music)
+ Beautiful.
+ (gentle music)
+ It's all in you.
+ (gentle music)
+ You don't need to pretend anything.
+ (gentle music)
+ And you want to be small, you can be small.
+ (gentle music)
+ And you.
+ (gentle music)
+ We see you.
+ All of us in seeing you.
+ (gentle music)
+ Oh no, my right foot.
+ (gentle music)
+ She's really going into the mother energy.
+ She was first in the father energy pushing her.
+ (gentle music)
+ And now she's being the mother.
+ And it's a good therapist that can be a mother and a father.
+ (gentle music)
+ Know when it needs nurture and when it needs to be like,
+ "Let's get to your power."
+ (gentle music)
+ Sophie really embodies both of these aspects.
+ (gentle music)
+ Yeah.
+ (gentle music)
+ (gentle music)
+ Stretch yourself.
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ So how do you feel right now in your hands?
+ (gentle music)
+ Good.
+ So how do you feel in your body?
+ (gentle music)
+ Lively.
+ (gentle music)
+ (gentle music)
+ Really like really home.
+ Yes.
+ (gentle music)
+ So welcome home.
+ (gentle music)
+ Welcome home in your body.
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ Breathe in through your nose.
+ (gentle music)
+ And out.
+ (gentle music)
+ Breathe in.
+ (gentle music)
+ And out.
+ (gentle music)
+ Beautiful.
+ (gentle music)
+ Beautiful.
+ (gentle music)
+ So cool to be home in the body, right?
+ (gentle music)
+ (gentle music)
+ Thank you.
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ So you, everything.
+ (gentle music)
+ That's just that old pattern.
+ (gentle music)
+ In your hands.
+ (gentle music)
+ Just leave it in your hands.
+ Oh my gosh.
+ (gentle music)
+ And the rest is active.
+ (gentle music)
+ You can really tell that you shifted energetically
+ from the color of your skin as well.
+ (gentle music)
+ See you, sister.
+ (gentle music)
+ (gentle music)
+ You can be so proud of yourself.
+ (gentle music)
+ (gentle music)
+ Red feeling.
+ (gentle music)
+ Thanks for the journey.
+ (gentle music)
+ Thank you.
+ (gentle music)
+ Take your time, okay?
+ (gentle music)
+ This is how we bring light to others.
+ (gentle music)
+ Being there, supporting,
+ really in the trenches.
+ Really in the body.
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ Thank you.
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)
+ (gentle music)

@@ -1,0 +1,47 @@
+# Transkript: 22 02 somatic-evolution-how-to-use-conversions-lukas
+
+**Datei:** `22_02_somatic-evolution-how-to-use-conversions-lukas.ts`  
+**Sprache:** Englisch  
+
+---
+
+## Inhalt:
+
+Welcome to the third part of a course. In this part of the course I want to be
+ introducing you to conversions. Conversions being the process or the skill
+ of helping clients translate whatever we've been exploring so far their
+ sensations and emotions into visual symbols. And I'm saying visual because
+ usually what we'll be translating it into are visual symbols. It can also be
+ mostly kinesthetic, mostly body symbols, but usually in this process it's easier
+ for clients to work with whatever is going on if the symbols we are working
+ on are visual. So we will be exploring how we can help people convert what's
+ going on in their body, somatic, emotional into symbols, visual
+ representations. To do this we will be building on everything you've been doing
+ so far. This is why in every exercise I'll be explaining to you. I will be
+ telling you to use your skills, meaning in the beginning of the exercise, login.
+ Connected awareness, logging in with your client, starting the exercise with
+ whatever you'll be starting with for now and for the next conversion exercises.
+ These will be problems or resistances that people are having. Take them through
+ somatic integration, what they are noticing in their body and then from
+ that moving into defining emotions. You will be taking all the steps you've
+ been covering so far as you go into each exercise for now. But then once you've
+ done this we will be taking the emotions we have found or we have defined and we
+ will convert them into symbols. That is the new step of these new exercises and
+ I'll be taking you through specific conversions meaning different types of
+ conversions you can do which can be phantom dialogue where we define an
+ emotional. We convert an emotion into a phantom meaning a representation of a
+ person in your life, past or present that might be speaking to you through
+ these emotions and sensations. Another form of conversion will be parts work
+ where we explore are these emotions and sensations connected to specific parts
+ meaning a little kind of like little people kind of little versions of you
+ oftentimes from the past sometimes from the present that are speaking to you
+ through these emotions or sensations and we will be exploring a free conversion
+ meaning the skills you need to pick up on different symbols that are already
+ present in a person's inner world as you are working with them so that we don't
+ have to define or convert them to a phantom we don't have to convert them
+ to a part but we can just work with whatever and this is kind of a question
+ mark is going on in the inner world already those are going to be the
+ specific conversions we'll be covering and because this takes longer than what
+ we've done in the past each exercise that includes conversions will be
+ roughly 45 minutes as you're practicing that's the overview that's the intro now
+ let's get into the specific exercises

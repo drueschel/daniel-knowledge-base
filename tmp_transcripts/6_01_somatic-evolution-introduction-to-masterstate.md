@@ -1,0 +1,29 @@
+# Transkript: 6 01 somatic-evolution-introduction-to-masterstate
+
+**Datei:** `6_01_somatic-evolution-introduction-to-masterstate.ts`  
+**Sprache:** Englisch  
+
+---
+
+## Inhalt:
+
+Welcome to week one. Congratulations that you made it. When I was traveling around
+ the world, Thailand, Australia, all around Europe, I've come in contact with many many
+ different masters and healers. One quality that every master seemed to have was
+ this relentless capacity to just hold space, to be there for you, and not only
+ to be there for you, but to allow you to be fully accepting of how you are, to be
+ fully accepting of your ugliness, of your negativity, of your annoying parts, and
+ that allowing creates so much safety in the body that the person who's
+ experiencing this for the first time is able to process emotions just because of
+ this state of allowance. We call this state the master state. It is the most
+ powerful quality that makes a person that has no capacity to heal another being
+ to a master. And it's something that takes also years to master, but we all
+ have the seed of this already inside within our inner master. We all possess
+ an inner master that is able to give this kind of allowing and loving space to
+ another being. For me, the master state, there's another word for it. It's simply
+ called love, unconditional love, and now it makes sense why everybody is really
+ searching for love, because it's this love unconditional, allowing you to be
+ whoever you are, witnessing you with however you are, showing up, showing your
+ most ugliest side, showing your disgusting perverse, hateful whatever, and to
+ be there, and to not run away, and to say that is okay, is the most profound
+ stance you can have towards the healing process of another being.

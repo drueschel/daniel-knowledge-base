@@ -1,0 +1,42 @@
+# Transkript: 005 somatic-evolution-understanding-releases
+
+**Datei:** `005_somatic-evolution-understanding-releases.ts`  
+**Sprache:** Englisch  
+
+---
+
+## Inhalt:
+
+So what is a release? We really have to distinguish between what is a
+ transformation and what is just an a cathartic discharge of energy. Because
+ yes, you can scream, you can cry, you can shout and you can do all that, but that
+ doesn't mean that that's actually transforming. So what makes it
+ transforming and that is essentially depends on the inner awareness.
+ Meditation teaches us to create an inner space of awareness, to be aware of
+ ourselves and our body. And it's the same awareness that we call the self that
+ is breaking the blockages, integrating the fragmented parts of
+ ourselves. If this space, the self, the space of awareness, this master state, how
+ we sometimes call it, is firmly established and we then introduce
+ traumatic material or emotions, blocked emotions, repressed sensations into the
+ space. Then integration and healing can happen because healing means witnessing.
+ We have to be in touch with what we want to heal. When we are cathartic or just
+ discharging the emotions, a lot of energy is being moved and this can be
+ very good to discharge some of our inner protectors that prevent us from
+ actually feeling the underlying emotions. But when we get caught up in a loop of
+ discharging and not witnessing the underlying traumatic emotions, then we
+ stay in a loop where the discharge becomes another tool to make uncomfortable
+ sensations, uncomfortable emotional states away again. And so a release really
+ means not just discharging an emotion, which is sometimes what we refer to as a
+ phase one release, as a discharge, the expression of the emotion, but it's a
+ transforming. It's when we actually witness the underlying trauma energy,
+ the helplessness, the powerlessness, the shame that is there, the thing where we
+ basically want to look away from, but we don't. We invite it into our inner space
+ of awareness and we have enough safety there and enough distance to not get
+ taken over by it, but also not lose connection to it. So we're in this safety
+ zone of allowing the uncomfortableness to be witnessed and thus transformed. An
+ emotional release can only occur when enough safety in the system is present
+ to actually witness the difficult emotion. And that changes the relationship
+ we have and fundamentally rewires the way we relate to uncomfortableness,
+ uncomfortable emotions, uncomfortable situations, or even uncomfortable people.
+ And that changes how the energy system is wired and how energy is directed within
+ the body and that changes how different symptoms are expressing within the body.

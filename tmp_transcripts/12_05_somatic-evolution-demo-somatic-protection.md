@@ -1,0 +1,62 @@
+# Transkript: 12 05 somatic-evolution-demo-somatic-protection
+
+**Datei:** `12_05_somatic-evolution-demo-somatic-protection.ts`  
+**Sprache:** Englisch  
+
+---
+
+## Inhalt:
+
+So what I'm saying essentially is that you have everything to gain when you accept the versions of yourself that you that you don't accept.
+ And you're already resisting in total resistance to this version so you can only befriended the war there's already a war inside of you between you and the sick version of yourself.
+ So it can only get better you can only get more peaceful with this version.
+ It makes sense.
+ Yeah, just so I understand. So with this in mind, I just want you to invite this moment right now.
+ Can you invite this sick Andrea. Can you welcome her in. Can you welcome that is that it is you for a moment just for a moment.
+ Yes.
+ Yeah, she is you. And she needs love.
+ And we'll welcome her embraced her as much as possible right now. What's in your capacity.
+ And I want to ask you one question here. Can you enjoy her presence.
+ There's something you enjoy about her presence. One thing in one thing you enjoy about her presence.
+ Yes.
+ What, what feels enjoyable about her presence.
+ That she teaches me to be compassionate.
+ Yeah.
+ And now I want you to welcome this feeling of compassion that's within you.
+ Welcome in compassion. Welcome your big heart, your big and beautiful heart that you have that you're able to be this compassionate with yourself.
+ And really feel that allow it to expand from your into your, into your chest and your shoulders and your arms.
+ Thank you.
+ And how do you feel now Andrea.
+ Lighter.
+ Yeah, and just feel that life force that is there now that life force that is available to you, because stop fighting yourself, stop being at war with yourself.
+ And just feel that sense that life force.
+ How do you feel right now, Andrea.
+ Like, with more clarity.
+ I feel that I want to sleep a little bit straight, like more straight.
+ Happier, I guess.
+ Yeah.
+ So Andrea, just want to thank you for the still demonstration.
+ And take a moment to process this.
+ And for homework, I want you to enjoy the company more of that person that you're resisting the sick version of yourself that you're resisting this feeling of being sick this feeling of being weak.
+ Thank you so much, Andrea, people in the chat.
+ Beautiful hearts.
+ Thank you.
+ I was just crying, but like I didn't have any paper here.
+ Thank you.
+ So much Andrea.
+ So here, this was just a demonstration of, like, all the layers of protection, all the resistances to reality that we have just piled up and that's essentially what we are we're just a big pile of resistances to how reality really is.
+ And this one sentence essentially can bring people fully into process.
+ And you just have to, I guess the idea, it's very simple to use it, like you just ask, can you welcome this, whatever the thing is that you're resisting.
+ But it's kind of, as you saw, I used other techniques as well, you can do that, but keep it simple, just try this out.
+ And really notice that you're entering into this, you want, you want to get confused maybe a little bit, because you're entering into different layers of resistance now they're resisting that, and I can't accept this, but you can always say, can you accept and can you welcome that you're
+ struggling with that.
+ That's one thing you can do. And then the other thing you can do is, can you welcome 1% of it.
+ Can you welcome 2% of it, can you welcome 3% of it. And just understanding that this simple prompt of just asking, can you accept reality, how it is, can bring you from depression into embracement of life.
+ And that's all that depression is, depression is an embodied process of multiple layers of resistances will maybe transgenerationally, maybe from the childhood, all making more and more resistance to life.
+ And when you resist life your body is resisting life as well, that means your body becomes numb and shutting down more.
+ You become more less present in the body and the brain is using more resources more energy to actually keep you in the present moment. And so that means it costs energy.
+ So now, creating this wholeness, allowing ourselves welcoming ourselves, all of our parts in all of these emotions that we resist.
+ That allows us to fully embrace who we are and come back into integration without doing anything else.
+ So this is a truly, truly powerful mantra that the power of letting go and accepting who we are, and what we're resisting is enough to bring someone back into into wholeness with themselves.
+ But we don't we don't use this only this technique, because I mean, you could only use this technique then would probably be more something like the Sedona method or something.
+ But there's so many different ways we can creatively use this technique while using other techniques, different principles how they interact. So very important to understand for you just prompting that will be a vital vital principle that you will use in the, in the future, when you do this work.

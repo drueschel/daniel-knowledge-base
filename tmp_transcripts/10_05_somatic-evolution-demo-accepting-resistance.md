@@ -1,0 +1,123 @@
+# Transkript: 10 05 somatic-evolution-demo-accepting-resistance
+
+**Datei:** `10_05_somatic-evolution-demo-accepting-resistance.ts`  
+**Sprache:** Englisch  
+
+---
+
+## Inhalt:
+
+Yeah, sorry. Maybe I was too eager. But yeah, my thing, my issue that I've kind of been
+ struggling with is sort of ADD, attention deficit disorder symptoms. I was never really
+ diagnosed officially, but this is what I've been feeling kind of hard to focus on pretty
+ much everything, starting with my work. And it's just, it's hard to keep my attention
+ on something. It's hard to keep myself motivated and interested in something for a long time.
+ Okay. And right now, you're just saying this is a problem, but I don't really understand
+ what exactly the problem is. So when you're doing this exercise for the others and saying
+ it's important to understand like, what is the exact thing that they're struggling with?
+ What is the struggle about? What is, what is so uncomfortable about this?
+ Yeah, I guess, I guess I want to be, I want to have this ability to be really focused,
+ to be really, to have very sharp attention, to be like really good at something, to be
+ really good at my job, to be able to be productive and useful, I guess. And because I have this,
+ or it seems like I have this problem of focusing, of keeping my attention, of staying motivated,
+ it feels like I'm not able to, to become very good at something.
+ Beautiful. You just said it, right? Like, and right now we can dissect you with the tools
+ that we just explained. So you don't actually have a problem. You only have emotions that
+ you don't want to feel. You don't actually have a problem. Okay, you're making a problem,
+ your mind is constructing a problem out of your situation. And now we understand why it's
+ constructing the problem. There is you here, right? Little, little attention, not focused,
+ not getting shit done. And then that's where you want to be. So you're not accepting reality,
+ you're saying essentially, I should be there, but I'm here. And now I'm suffering. Right.
+ So, so it's, it's again, this projection outward of I want to be this other person, I want to
+ be this other version of me. Otherwise, I'm not happy. But wouldn't it be great if you
+ could experience happiness right now, without anything to having to change. So would you
+ rather be unhappy now or happy now right now? Yeah, I definitely want to be happy, I want
+ to accept myself as I, as I am. Exactly. So what we're going to do is do that. We're going
+ to just work on that. And funny thing, sometimes when you solve this problem, this other problem
+ also solves. So, so my question now is, you have the problem you want to be, you don't
+ feel focused, you don't feel productive, you don't feel whatever you just said, where do
+ you feel that in the body? Where is it? It sort of feels like a cloud over my head. Like
+ in my, my mind, like my mind is clouded. Sort of like a fuzzy sensation around my head.
+ Yeah. And can you maybe, maybe a little bit and like in my chest, kind of like, yeah,
+ down here as well. Beautiful. I always like to look for something that's more in the body
+ than in the head, but the head is of course part of the body as well. So let's be on the
+ chest. How does it chest feel right now? Feels, feels airy. Scary. Airy, like there is air,
+ like there's space, but it sort of stops around here. And beyond this like lower down, it feels
+ like it's more constricted. Okay. Can you welcome this airy sensation? Can you welcome
+ it? It is hard because I think this is why like I can't, I can't focus, I can't put
+ attention because it feels like there's nothing really to put attention on.
+ Yeah, it feels like you want to put your attention on something, but it's like, where
+ do I place my attention, right? Yeah. But you still feel a sensation in your chest, right?
+ It feels airy. Right? Can you welcome that airiness for 10%, 10% of the airiness. Can
+ you welcome it? Yeah, 10%. Yes. Okay. Just feel how that feels when you've accept 10%
+ of that airiness. And then can you accept 15% of that airiness in the chest? I think
+ so, yeah. Okay. Can you accept 20% of that airiness? Yeah. Can you accept 30%?
+ Yes. Can you accept 40%? Yes, but I'm starting to sort of feel like a little bit worried
+ for some reason. Yeah. So right now we reached this like threshold of acceptance, which was
+ the same with Andrea, where the reason why they can't accept it fully shows up by itself.
+ So you're feeling worried, right? And worry is what emotion. Fear? Yes. So where do you
+ feel that fear in the body? My solar plexus and my stomach, my lower part of my chest.
+ Yeah. And actually, can you welcome that fear for a moment? Yeah, for a moment, I think I can.
+ But I don't want it to stay. You don't want it to stay. Can you welcome it even more?
+ Just a little bit.
+ Yeah. And can you welcome it that it can stay even a little bit longer?
+ Yeah. Sure. Yeah. And can you welcome it even more?
+ Yes. But I'm sort of starting to feel like sadness or something come up instead.
+ Yeah. And can you welcome that sadness?
+ That's a little bit harder.
+ Can you welcome that it's difficult to welcome?
+ Yeah. Cool.
+ And breathe into that for a moment.
+ Yeah.
+ And how do you feel now?
+ I feel a bit sort of unbalanced a bit.
+ Say it again. Like a bit unbalanced, unfocused and still feel like sadness or emptiness.
+ Yeah. Beautiful. Beautiful. Can you welcome sadness and emptiness? Just for this moment.
+ Yeah. A little bit, yeah. Yeah. Beautiful. You don't have to cry. You can just accept that
+ you're feeling this way. There's no pressure to cry now. You can cry. But you're accepting that
+ it's showing up in a way it's showing up.
+ Yeah.
+ And how do you feel now?
+ I feel a little bit more accepted because I've been sort of like facing this feeling before
+ because I was trying to escape it for a long time and it always comes back. So I'm kind of
+ developing it where I was staying with it.
+ Yeah. And so the next question is, can you find something enjoyable about this feeling?
+ Name one thing that's enjoyable about this.
+ I think the only thing that is enjoyable is that I believe that there's
+ some kind of true authenticity underneath that I'm optimistic about bringing to the surface.
+ But I don't know if there is anything enjoyable about the feeling itself.
+ So do you feel some sort of hope right now towards this feeling?
+ Yeah. Yeah. And can you expand and welcome that hope?
+ Yes.
+ And can you expand and welcome it even more?
+ Can you enjoy it even more?
+ Yes.
+ Yeah. And what changes when you start to enjoy this?
+ I sort of feel like there is a source of energy that I can connect to,
+ that it's a source of energy in this hope.
+ And just take the source of energy and welcome it in your pahayati, welcome it more, breathing into it.
+ And with this energy,
+ you're feeling the sadness or the resistance to it, welcome it.
+ And how do you feel now?
+ I feel more energized, more kind of tingling my body and more.
+ Yeah. More hopeful.
+ Yeah. So there's energy being released that's coursing through the body.
+ And now, essentially, I didn't, we were very much on the physical level,
+ but we can ask again, can you accept that you're unfocused,
+ that you have little energy and all of that?
+ Let's come back to that real quick, because sometimes that's a little bit separate.
+ Can you welcome that?
+ I can welcome it more, because I feel more energy to kind of
+ more hope to overcome it, I guess, or to.
+ Yeah.
+ Yeah. It feels like it's still a struggle with it.
+ Yeah. Of course. That's normal. It's not easy to accept that.
+ But can you accept that there's a struggle with this right now,
+ that it's okay to have a struggle?
+ Yeah. Okay. I think that's enough. It's okay to be not at war with this struggle itself,
+ a little bit less at war with the struggle. It's already great.
+ It's already more energy there, because you're not resisting the struggle even.
+ Another layer of resistance will also resisting there.
+ Beautiful.
+ Thank you.
+ So thank you, Dennis. Thank you so much.

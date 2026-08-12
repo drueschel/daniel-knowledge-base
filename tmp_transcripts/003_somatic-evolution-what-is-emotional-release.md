@@ -1,0 +1,31 @@
+# Transkript: 003 somatic-evolution-what-is-emotional-release
+
+**Datei:** `003_somatic-evolution-what-is-emotional-release.ts`  
+**Sprache:** Englisch  
+
+---
+
+## Inhalt:
+
+Essentially what emotional release has become is a facilitation process that allows a person
+ to access their own self-feeling mechanism that was always there but that person's ego
+ was in the way of.
+ See animals and babies, they don't do this.
+ If they have sensory information that needs to be expressed, they just express it, right?
+ They don't care if the redness in their face, if they're crying, if their noise is bothering
+ anybody, the emotion comes in and it goes out, end of story.
+ But it is good as we grow older to learn to contain our emotion.
+ Not like a baby or an animal, but to learn to contain that energy.
+ Imagine being in a board meeting and everybody was just free out releasing and just crying,
+ yelling at your boss, what everybody's thinking, it wouldn't work.
+ So it's good that we have the ability to contain emotions.
+ But we kind of took it too far.
+ And because we took it too far, there's a disconnect now to the release, to the free
+ flowing of energy throughout the system and this suppression creates in the body different
+ holding patterns and blockages.
+ If they are not processed and they keep going on, they turn into all the various chronic
+ conditions we have today.
+ So emotional release helps us to directly communicate with those emotions, with the
+ emotional body and allow that deep self-organizing mechanism that wants to take place, that wants
+ to bring you back into wholeness to take place.
+ So that's why emotional release can create radical and rapid change in people's lives.

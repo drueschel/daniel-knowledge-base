@@ -1,0 +1,78 @@
+# Transkript: 23 03 somatic-evolution-►-week-9-practice-room-phantom-d
+
+**Datei:** `23_03_somatic-evolution-►-week-9-practice-room-phantom-d.ts`  
+**Sprache:** Englisch  
+
+---
+
+## Inhalt:
+
+For week nine of this course we will be stepping into conversions for the first time and we will
+ be doing this with the phantom dialogue. Let's keep my image out of this for a second. The phantom
+ dialogue is what we'll be diving in today and as always please use your skills, all the things
+ you've learned, you've practiced already, meaning logging in, starting with a problem, going through
+ somatic integration, defining whatever is happening in their body as an emotion, you will have to
+ guide your client or your practice partner through all of these steps to then get to the phantom
+ dialogue. Now, how do we get to the phantom dialogue? And this is where the process of conversion
+ becomes important. You will have guided somebody through all of these steps and then as you are
+ working with an emotion, we will build on the defined emotion and you will convert that into
+ a symbol and you will be doing that through the question, this is the first question into this
+ specific conversion process. Is this emotion that you have already defined connected to a male
+ or female person? This is where we go from, oh, there is an emotion to let's convert it into a
+ symbol, this phantom you can then interact with. Is this emotion connected to a male or female
+ person? Once you have a, yes, it's a male or it's a female, you can start off by figuring out who
+ that is and you start off by first starting off specific and then go into general. What does that
+ mean? If you've heard, yes, it's a female person, you can ask, could this be your mother? Could this
+ be your ex? Could this be somebody who's related to you, maybe your sister? And you will get more
+ general with each question. You start off with specific questions because let's face it, a lot
+ of times it's the mother or the ex or somebody like that. But if those questions come back, no,
+ you can get more specific. Is this person related to you? Is this somebody who was close to you?
+ Because somebody, sometimes it's not even somebody who was very close to you, but they had a big
+ impact on you. So this is specific to general. And then once we know, okay, it's the mother or it's
+ a teacher from primary school, then we are setting the frame for the phantom dialogue. The phantom
+ dialogue meaning bringing that person as a phantom, that's this drawing here, the slightly opaque person
+ here, as a phantom into the space to be able to dialogue with them. And this happens through setting
+ the frame, which is saying, we are feeling this person right now, or you are feeling this person
+ right now. So they are here. That's establishing they are here somewhere. Where are they in the
+ space, figuring out the location? What does this person appear like? Maybe it's mostly a feeling,
+ maybe it's a visual. We will try to get visual as we are working with these symbols. Is this person
+ close or distant to you? So we're trying to establish where are they so that we can then
+ communicate with them? That's the whole goal of all of these conversions, especially also the
+ phantom dialogue. And this is the slide that you can then use to work with communicating with the
+ phantom. And the slide is kind of organized in three sections. There are questions that are more
+ directed towards the you, meaning the person you're working with, the client, your practice partner.
+ There are questions that are more directed towards the phantom, meaning the representation, the symbol
+ of the person they are interacting with. And there are questions that are more directed
+ towards the interaction between them, meaning the relationship. I will get more into detail.
+ But first, let's talk about phantom dialogue. Overall, phantom dialogue has the assumption
+ that a lot of problems, a lot of symptoms, a lot of challenges, also physical,
+ actually come down to specific things that couldn't be expressed in the past. So phantom dialogue
+ tries to summon that person here. They are present right now, so that we can interact with them and
+ we can express what couldn't be expressed in the past. And we will see, is there something you
+ have to express? Is there something the phantom has to express? And as both of you are expressing,
+ what's happening in the relationship? Something you have to express something phantom has to express
+ while you express what's happening in the relationship. That's how the questions are
+ organized. Let's go through them quickly. I won't read all of them just so you have an
+ understanding of what the kind of questions are. So all the questions you will ask your client or the
+ practice partner directly, how do you feel when you're with this person? How do you feel towards
+ this person? What do you want to say to them? What do you want to say you couldn't express?
+ Is there anything you've been wanting to say? We kind of ask, hey, what is it you want to say?
+ What is it that was not able to be expressed? All of these are questions you can ask the client.
+ Very similar questions for the phantom. There is a bit more of what is the energy emanating
+ from them? What does their posture say? If their eyes could say something, what is that?
+ All of these are kind of geared towards reading the phantom, kind of reading what's the implicit
+ in how they are here that actually expresses something right now. But then beyond that,
+ there are all the questions of, do you want to tell me something? Is there anything you want to
+ say? How can I support you? Do you need anything from me? All of these questions that basically
+ go into, does this phantom need anything? Did this phantom want to say something that this person
+ in my relationship with them have something that couldn't be expressed? So both, do I,
+ as the practice partner in this case, have something to say? Does the phantom have something to say?
+ And as we are doing all of these expressions, things to express, we will see, we will see, hey,
+ as the phantom is sharing that with you, can you acknowledge that you see the phantom?
+ We can, as a facilitator, also say, I see that, I see the pain. We can ask the client again and again,
+ how is it for you to hear this, to say this, to express this? We can go back to, how does the
+ phantom react when you say that? So all of these relationship questions are basically all about
+ exploring the relationship as one of them expresses something, what happens in the other,
+ as the other one expresses something, what happens in you back and forth, back and forth.
+ That's the foundation of the phantom dialogue. And then after you've done the phantom dialogue,
+ come back for feedback.

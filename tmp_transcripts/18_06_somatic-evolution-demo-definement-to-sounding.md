@@ -1,0 +1,148 @@
+# Transkript: 18 06 somatic-evolution-demo-definement-to-sounding
+
+**Datei:** `18_06_somatic-evolution-demo-definement-to-sounding.ts`  
+**Sprache:** Englisch  
+
+---
+
+## Inhalt:
+
+The basics of the using the findment. You've seen the demo. You've seen the material already
+ Just want to show you really quickly what that looks like when I do it here. So who would be up for that?
+ Okay, Katal Zina was first
+ Hello
+ Hello, can you can you turn on your video?
+ I will try, but I'm not sure if you're gonna see me
+ That's the most I can do
+ That's good. That's good. Thank you. Yes and visual. Yeah
+ Yeah, okay. I just don't have electricity. So I'm sitting here with the candles and
+ Oh, what what country are you in right now? Oh, no, I'm I'm inside Bruce, but I'm kind of
+ Billing with very difficult housing situation right now with my landlady and she cut it off. So
+ Oh, okay. There's definitely some emotions to explore there, huh? Yes. That's why I was first, I think
+ Okay. Yeah, we're not gonna go do a full process, but let's let's do it. So um, right
+ So just to um, show you this principle in the simplest manner
+ Just gonna jump right into this. Okay. So
+ Um, we we what we do is we locate a sensation or resistance in the body. So I ask you where do you feel resistance in the body?
+ In my chest area
+ That's very here
+ Take a finger and point to the epicenter of it
+ There there and I can't see exactly where it is
+ Try
+ Is it is it where your ribs end right there?
+ Um, or a little bit more nearly a little bit higher. Maybe
+ Yeah, okay. Okay. That's good to know because the location of the affects can also help us but not to make things too complex
+ so
+ Now the next step
+ We have the resistance now. We understand the resistance is an emotion. It's always also an emotion
+ What emotion are you feeling?
+ I'm angry
+ You're angry
+ And how is your access to anger? Is are you easily angry or is it does it take or no easily? So so it's
+ Uh, maybe I will say it this way. Um, even when I am angry
+ I don't express it straight away. I'm kind of putting in inwards
+ then bottle up
+ and then I'm
+ Out there that used to be this way. I wasn't able to express my anger when I was a child
+ So it was very difficult to I'm still kind of in a in a process of learning
+ How to be beautiful. Yeah, beautiful. Thank you for sharing
+ So usually
+ The emotion we're looking for is the emotion that the person has a bad relationship to right?
+ That's the emotion that needs to be freed
+ That's the emotion that needs to be released because if if you have a good access to an emotion
+ It's it doesn't need to be released. It's it's already available to you
+ So we need to make sure that this is the the right emotion is actually something that's being held back and not something that's
+ You know readily available just to help us understand what we're looking for. Okay, so let's say it's anger, right?
+ Yeah, can you feel the anger?
+ I'm not sure
+ and
+ that's
+ I don't know
+ Seriously, I don't know
+ Yeah, okay. So can you breathe into that anger for a moment here?
+ Using the gps can you welcome it?
+ Can you breathe into it?
+ And as you're doing that what has changed in the body when you do that what is changing?
+ My toes relax a little bit your jaws relaxing a little bit. Yeah. Yeah
+ Okay
+ So this would actually complete almost the exercise because you know, she said immediately anger. I'm feeling anger and that's
+ We define the emotion but just to be a bit skeptical here. I want to see maybe it could be something else
+ So are you feeling?
+ sadness
+ Yeah, yeah
+ You're sad and disappointed. Yeah, so breathe into sadness for me here
+ And can you welcome that sadness?
+ I think I can
+ And and where in the body do you feel that right now?
+ In my head
+ In your head. Yeah
+ Okay, and then we breathe
+ Yeah
+ Breathing into that sadness and welcoming it fully here
+ It's okay to be sad
+ To be disappointed even
+ Acknowledging that you're sad
+ I
+ And now just for demonstration purposes, I'm gonna ask you about other emotions that might be present here
+ So the thing is that we all have
+ All emotions are available at all times
+ in theory
+ So whatever emotion is
+ Where there's a reaction is the emotion that is most present at that moment
+ So i'm going to ask you some other questions. Are you are you feeling shame?
+ No, but I think I'm feeling I'm feeling guilty guilty. Okay. Yeah
+ Can you welcome guilt?
+ You
+ Can you allow yourself to feel guilty
+ It's hard to allow it's very hard. Yeah, um, yeah
+ But see what happens when you actually welcome I feel guilty
+ I I am guilty in a way. I feel that I feel guilty
+ I
+ Feel hot
+ Hot yes
+ So so now that guilt emotion actually that seemed to be the most causing the most change
+ Like it seemed to be the most difficult relationship
+ So that's good. You're feeling hot breathing into that life force that warmth that is flooding your body
+ And see if you can expand it more into your body into your hands into your into your um
+ Into your feet
+ To your legs
+ Yeah, I feel um tingling in my toes. Hmm
+ You feel it tingling in your say again whole whole my toes in your toe in your toe. Yeah
+ And and
+ Stay present with this right now and really notice what has changed in your body since you've allowed the guilt
+ You
+ It's kind of like um relaxing
+ I was I felt tension kind of and now I feel a little bit
+ more
+ Um, like losing up. I'm not completely there yet, but I feel a little bit more
+ in
+ Yeah
+ Because guilt shame and fear are repressive forces. They split the system
+ So when we allow them and welcome them
+ They actually start to dissolve into life force and our body starts fragmenting itself starts coming back to peace
+ So i'm glad that you can experience a little bit of that calmness of that peace now
+ And um, I think that's a good point to end the exercise
+ Yeah, so thank you so much
+ Thank you for the demonstration. Yeah
+ Thank you
+ So this is what we're going to do now. We're essentially going to explore what happens when we just use this mechanism of like
+ What are you feeling?
+ What emotion are you feeling and then when they notice?
+ um
+ Then when there's the feeling of like, oh, um, I don't know what i'm feeling or i'm not really sure
+ Then you start to make suggestions. Are you feeling sadness?
+ Feeling anger just go through the list
+ and notice that people might have matches with multiple emotions
+ But usually it's the the the so you can explore you can
+ In a healthy person you can tell them to feel anger now feel sadness now feel shame now and then they can tap into it
+ Like an actor could do that a method actor for example
+ um, but um
+ for us we have
+ Variable relationships to our emotions
+ So whatever the usually the emotion that is
+ Most held back
+ To to increase the relationship to that emotion is usually the best thing we can do
+ And when when the person is usually saying i'm angry right away or i'm sad or i'm this i'm that
+ That's usually a sign that this is actually not so hidden this emotion
+ And it might not be the emotion that is transformative for them
+ But that doesn't matter just to keep that in mind
+ when you're exploring

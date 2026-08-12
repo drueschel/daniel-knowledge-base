@@ -1,0 +1,70 @@
+# Transkript: 10 03 somatic-evolution-exact-steps-equalising
+
+**Datei:** `10_03_somatic-evolution-exact-steps-equalising.ts`  
+**Sprache:** Englisch  
+
+---
+
+## Inhalt:
+
+So, this is how you use equalizing.
+ It's the first step we can do in order to gain access to the subconscious.
+ So every single moment that someone is alive, he or she has some sort of resistance inside
+ her body, and that resistance is basically an undefined energy, an emotion, if you will.
+ But the person doesn't know that.
+ And so what we do is we ask them this simple question, "Can you allow this resistance
+ to be there?
+ Can you welcome it?"
+ That's it.
+ And this simple question allows someone to equalize the resistance that their own ego
+ has to their own body, to their own emotions, and that creates more space for whatever that
+ resistance is to be there.
+ And that's how equalizing works.
+ Can you allow?
+ Can you welcome, just for this moment, that there is resistance there with your mother?
+ And how do you feel now?
+ Very tense around her.
+ Yes.
+ And yet it's like anger.
+ Anger, right?
+ And can you allow that there's anger here?
+ Can you welcome it?
+ And instead of asking, "Can you welcome this resistance?"
+ You could also ask, "Can you allow, can you witness this?"
+ And phrasing it as a question, as to not expect them to do it, but generally asking them if
+ they can or cannot.
+ It's not a rhetorical question.
+ It's an actual question.
+ Can you welcome this resistance?
+ So equalizing is the verbal expression of your master state.
+ If you speak from master state, this is what it would sound like.
+ So it's a communication principle that can be used at any moment.
+ That's all it is.
+ And it's simply an invitation to let go.
+ Let go of the resistance to the now moment, to the body, to the situation you're in.
+ When you speak for equalizing, you speak earnestly without force.
+ It means to ask questions or give prompts for your clients to either witness, feel or
+ let go.
+ It's super simple what we're describing here, yet it's so powerful.
+ That's why we have to break it down like this.
+ Simply asking the question, "Can you allow yourself to feel the resistance you have towards
+ your own sadness?"
+ But it can be any resistance.
+ So resistance to emotion, the resistance to a situation, the resistance to your thoughts,
+ the resistance to your reality, the resistance to the now moment.
+ Any of that, you just phrase it, "Can you allow that you feel that your mother is angry
+ at you?"
+ Can you allow that your leg is falling asleep right now?
+ Can you allow this moment to be how it is?
+ Can you allow to feel the strength that is also inside of you?
+ So you can use this with anything, you're just inviting equality in.
+ And this is almost always helpful because 99% of the time our ego is resisting reality.
+ So this question always creates a shift in the client.
+ Can you welcome the uncomfortable feeling?
+ Can you witness it as another variant?
+ And the finisher move, the highest one that we use is, can you allow your entire body
+ to resonate with that resistance?
+ Can you allow your arm to feel this emotion?
+ Can you allow your left arm to feel this emotion?
+ Can you allow your legs to feel this emotion?
+ So you can really build it up and involve the entire body into this invitation.

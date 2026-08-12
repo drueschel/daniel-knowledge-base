@@ -20,8 +20,10 @@ if (!url) {
   }
 
   console.log('Launching persistent context headless...');
+  const isHeadless = process.env.PLAYWRIGHT_HEADLESS === 'true';
   const context = await chromium.launchPersistentContext(userDataDir, {
-    headless: false
+    headless: isHeadless,
+    args: ['--disable-web-security', '--autoplay-policy=no-user-gesture-required']
   });
   
   const page = await context.newPage();

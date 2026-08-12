@@ -1,0 +1,94 @@
+# Transkript: 12 04 somatic-evolution-window-of-presence
+
+**Datei:** `12_04_somatic-evolution-window-of-presence.ts`  
+**Sprache:** Englisch  
+
+---
+
+## Inhalt:
+
+So this is basically what we're talking about here.
+ There's different ways to not feel here.
+ Very basic nervous system states.
+ So parasympathic is slow immobilization, freeze, depression, fatigue, disconnection, everything
+ down here.
+ So the anti-emotions are actually here.
+ They're actually below here, but they're like ice.
+ They're actually like ice.
+ And then there are super intense emotions like here, which is the level when we go into
+ the instincts, which is when somebody is raging and screaming and you're yelling or you can
+ even cry all the time and then not be in the window of presence.
+ So this place, in this place, there's no processing happening there.
+ So you don't have to think about this like, "How do I stay here and go here?"
+ It's just for you to understand right now that this is where the witnessing can happen.
+ This is where healing means witnessing.
+ And on this level, that means when we encounter a difficult emotion and it's repressed, it's
+ in the freeze response, we can't heal it because we can't witness it.
+ So it's almost like ice melting.
+ We have to bring it here.
+ And bringing everything here simply means, can you accept this emotion?
+ When you're in acceptance or you try to accept, you're trying to bring it here.
+ That's all it means.
+ When you say, can you hold this emotion instead of being overwhelmed by it, then you're bringing
+ it here.
+ When you say, can you witness this emotion, then you bring it here.
+ So can you hold it when it's too much?
+ Can you witness it?
+ Can you allow it?
+ All this will bring something that's overcharging or frozen back into the window of presence.
+ If they're in the window of presence and nothing is coming up, then it's like, yeah, they have
+ issues and they have traumas, but right now nothing is showing up.
+ Many times that means you have to be even more patient, more master state, not faster,
+ not harder, but less fast, more presence and more stable to be like, really help them to,
+ for me personally, I'm a slow-feeler and I have my biggest breakthrough at working with
+ Detlef.
+ So someone who wasn't pushing anything and wasn't asking me a thousand questions, was
+ just there holding space.
+ So when you notice that it's like, nothing is coming up, nothing, go slower, not faster,
+ go more presence, more patience and bring them more to the subtle sensations.
+ Because what they're saying is, their awareness is too gross and not subtle enough to feel.
+ And so how do you get someone to feel more subtle, to be more sensitive?
+ To get them more sensitive by being calmer, slower and more patient with them and tuning
+ them more into their body.
+ And that's master state work.
+ So you just go into focus on this and then you just leave them like focused for half
+ an hour on just one part of the body and ask them what changes every five minutes.
+ That's it.
+ And they will go, some things will come up and things will shift in their body.
+ So this is the window of presence, right, this is your day-to-day waking state.
+ And here you can witness emotions, you can feel and you're in control, you can contain
+ and witness your experience.
+ Then something happens that's overwhelming, you're in a car crash.
+ And there's too much happening.
+ Something overwhelming happens, trauma is too much, too fast.
+ And then what happens is we get overwhelmed, like we go from this window of presence we
+ get overwhelmed, we go into this hyper arousal and then the nervous system does something
+ amazing, it shuts down and creates trauma and it ends up here.
+ And this is trauma energy then.
+ There's no expression when you meet this juicy anti-emotion.
+ It's not juicy at all, it's super tight and boring but I just want to make it lucrative
+ for you if I want to make it excited.
+ So when you find these Pokemon, usually when there is no expression for shame, absolute
+ helplessness, powerlessness, meaninglessness, depression.
+ That's really important.
+ There's no, you can't cry away shame even but tears can come with shame and that's okay.
+ How are depressed people?
+ Are they expressive?
+ No.
+ No, because they're stuck in the state of like immobilization in a way and in the stuck
+ in the state of these anti-emotions.
+ So on the emotions map you have left, outward emotions and inward emotions, right?
+ Right?
+ Outward, left, inward.
+ Right?
+ Joy and anger.
+ Joy and anger is always connected to hands, it's always flowing outward.
+ Sadness and fear, it doesn't make hands more cold.
+ And extremity is more cold means it goes, there's in and out but with anti-emotions,
+ it's not really in or out, it's just, it's just no movement.
+ It's just cold.
+ It's also cold but it's like, it's really shut down.
+ That's why often it's boring and it's so connected.
+ Yes.
+ Boring is just resistance.
+ Boring, that's gray, that's annoying, that we hate, perfect, let's stay there.

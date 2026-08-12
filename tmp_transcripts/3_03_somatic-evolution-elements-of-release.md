@@ -1,0 +1,51 @@
+# Transkript: 3 03 somatic-evolution-elements-of-release
+
+**Datei:** `3_03_somatic-evolution-elements-of-release.ts`  
+**Sprache:** Englisch  
+
+---
+
+## Inhalt:
+
+So there are three elements that can cause a release.
+ The first is touch.
+ When you touched a person the right way with the right pressure,
+ just to pressing on the right place in the body,
+ on the right doorway, you can release a shift
+ because the person is now confronted with a charge
+ that is stored in that particular area of the body.
+ Then there's the breath.
+ You probably heard of breath work.
+ Breath increases the capacity to process emotions.
+ And then there is verbal guidance.
+ Through verbal guidance, just saying the right thing,
+ you can cause also profound releases.
+ You know, when you say the right thing at the right time
+ that hits the right spot, we call it a needle,
+ like an acupuncture needle.
+ We hit the spot, then a release can happen.
+ And so in neo-emotional release,
+ because we use all three of those elements,
+ we are able to work with almost any human being.
+ Because if you look at other therapies,
+ you have hypnosis, you have acupuncture,
+ you have osteopathy.
+ There are so many different methods
+ that work with the body and try to bring the body
+ into alignment, right?
+ Because there are so many different layers of the body,
+ of course.
+ You know, physical therapists, massage therapists,
+ osteopaths, they work with the body on the physical dimension.
+ And they manipulate the body so that the physical misalignment
+ can come back into alignment.
+ That will, of course, have an effect on the psyche
+ and on the human being.
+ But if we don't address the underlying emotional blockages,
+ the underlying emotional contraction that causes
+ the misalignment, we're not directly communicating
+ with the cause of disease and the cause of negativity
+ of your life.
+ And so this is where emotional release steps in.
+ What we're doing is directly communicating
+ with the consciousness that is behind and inside the emotion.

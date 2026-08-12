@@ -1,0 +1,207 @@
+# Transkript: 5 02 somatic-evolution-total-surrender-full-guided-rele
+
+**Datei:** `5_02_somatic-evolution-total-surrender-full-guided-rele.ts`  
+**Sprache:** Englisch  
+
+---
+
+## Inhalt:
+
+Welcome to this guided release, total surrender.
+ So sit on a relaxed posture, on a chair, or on a cushion.
+ Set aside some time where no one will distract you.
+ Use a space that you feel safe in and where you can make noise.
+ You will close your eyes for the duration of this guided release.
+ And let go of the idea of what you think a release has to look like.
+ Whatever picture you have in your mind, it's not it.
+ Just put it aside and remain curious and alert here.
+ All we are going to do is welcome more and more of this moment.
+ Take a couple of deep breaths here and allow gravity to settle you into the seat.
+ Allow yourself to be just raw and vulnerable.
+ Don't try to meditate here.
+ Do not try to manipulate your experience in any way.
+ Don't try to create any kind of special mental state.
+ Do not try to create or avoid any thoughts.
+ All you are doing is surrendering to how this moment is already.
+ And you are here, focused and alert.
+ Paying your attention to your body.
+ Feeling the weight of your body.
+ You are slowly sinking deeper into your body.
+ And you are not trying to do this.
+ Do not try to do this.
+ But simply allow to sink into your body.
+ Notice how awareness is sinking into your body.
+ Feeling your head and feeling your hands with more awareness.
+ Feeling your arms with more awareness.
+ Allow the front of your upper body to be filled with awareness.
+ And allow your back, your entire back to be filled with awareness.
+ Coming in.
+ Allow your entire upper body to be filled with awareness.
+ The front and your back of your body.
+ Now feel the back of your legs where you are sitting on to be filled with awareness.
+ Now allow the top of your legs, the front to be filled with your awareness.
+ Just place your attention here.
+ How do your feet feel?
+ Allow also your feet to be filled with awareness.
+ Now focus on your upper body, the entire upper body.
+ And now focus on your entire lower body, front of your legs, your feet and the back of your
+ legs.
+ All of it at once.
+ Now focus on your upper body, entire upper body, arms, chest, stomach, back, back of
+ your head and shoulders.
+ And now switch back to your lower body.
+ And switch slowly back and forth between your upper and your lower body, upper body, lower
+ body, upper body, lower body, good.
+ Now just allow your attention to fall on your body as a whole without focusing on anything
+ in particular.
+ We are now going to start the surrendering process.
+ Notice how your mind is resisting fully being here.
+ It's thinking when is this over or what is going to happen next.
+ Can you notice this?
+ This resistance?
+ Great, and now welcome this resistance.
+ Can you allow this resistance to be here fully for a moment?
+ Don't try to do anything, to push anything, just allow what is there to be there.
+ Become soft with this, and focus on your upper body.
+ Where do you feel this resistance to the present moment in the body?
+ Maybe it's resistance or tightness in your chest, shoulders, face, stomach, arms or legs.
+ Or maybe it's a lightness, a sensation.
+ It doesn't matter what it is, even if you feel nothing.
+ Can you welcome it?
+ Can you allow yourself to have resistance to this moment?
+ Give yourself permission here.
+ Inhale through the mouth, and out with a sigh.
+ And really allow to use your voice here.
+ There might be some resistance here at first, and that's totally welcome, one more time.
+ Inhale through the mouth, and out with a sigh.
+ Use your voice, one last time, make the sigh much louder than before.
+ Inhale through the mouth, and out with a sigh.
+ Okay, now allow yourself to let go of the resistance.
+ Can you let that resistance go?
+ Don't try to let it go, just allow what wants to go, go.
+ If that's 1%, or 100%, that's fine, even if it's just 1.1%.
+ Then you let that part of the resistance go.
+ Inhale through the mouth, and out with a sigh.
+ Now notice what is changing in your upper body.
+ And notice what is changing in your lower body as you are trying to let that go.
+ Maybe there is resistance, or tightness in your chest, shoulder, arm, legs, on the face,
+ just a sensation somewhere, your body is constantly changing.
+ Maybe you feel nothing, or it's hard to detect, but just allow your attention to draw you
+ wherever it wants to go in the body.
+ Just focus on that.
+ Doesn't matter what it is, just focus on one thing.
+ And don't try to do anything with this.
+ Just invite this feeling in.
+ And just witness.
+ Just witness some more.
+ Notice how it's changing.
+ Only check for yourself what is changing.
+ Now focus back to your lower body.
+ Your upper body, lower body, your upper body is letting go.
+ And your lower body is letting go.
+ Your upper body is letting go more and more, and your lower body is letting go more and
+ more.
+ Now notice your entire body as a whole, nowhere specific, just your entire body, and take a
+ deep breath in and out with a sigh.
+ One more time, take a deep breath in, out with a sigh.
+ See if you can invite more of yourself to be here.
+ Only invite more of yourself, of your being to be present here.
+ Calling upon all your parts to come to this moment.
+ Notice how you are more alert and present.
+ Give yourself permission to just be how you are.
+ Not trying to change anything, allow yourself to be how you are.
+ Be how you are.
+ How you are.
+ Now cancel all plans of the mind, there is nothing to do here.
+ Nothing to do here, nothing to do here.
+ Notice what's coming up for you, and surrender to that, surrender, surrender.
+ Cancel all plans of the mind you have right now.
+ There's nothing to fix, there's nothing to fix here.
+ There's nothing to heal here, nothing to heal.
+ There's no one to become here, you don't need to become anyone.
+ And there is nowhere else to be right now, nowhere else to be, nowhere else to be except
+ to be here in this moment.
+ That's all your soul wants.
+ This is all your soul wants to be here, fully.
+ Take a big breath in, out with a sigh, isn't that relieving?
+ Surrender to that, surrender to that.
+ There's nothing to fix.
+ Nothing to heal.
+ Nothing to do here, you don't need to do anything.
+ There's no one to become, there's no one to become.
+ Whatever you draw yourself out to become, let go of that.
+ You don't need to become anything other than what you are now, and you don't need to be
+ anywhere else, you are right where you're supposed to be, right here.
+ There's nowhere else to be except to be here.
+ That is all your soul wants.
+ That is all your soul wants.
+ That is all your heart wants, and that is all your body wants to be here.
+ Surrender.
+ Notice what is changing in your body.
+ Is there tension building up, or is there lightness coming through?
+ Whatever it is, allow it to be there, invite it in.
+ In a little bit, just a little bit, it's allowed to be here.
+ There's nothing to fix.
+ You're not broken.
+ You're not on a journey, the journey is over.
+ There's nothing to heal.
+ There's nothing to do, you don't need to accomplish anything great.
+ If you cannot be present with this moment, you're not here.
+ And that's what it's all about, just to be here.
+ There's nothing to do, nothing.
+ There's no one to become.
+ You don't need to be anyone else, in any other shape than what you are now.
+ There's nowhere else to be.
+ Home is here.
+ Be home here.
+ There's nowhere else to be, except to be here.
+ That's all your soul wants.
+ That's all your soul wants.
+ Surrender, surrender, surrender.
+ Notice what is changing in your body.
+ There's resistance building up.
+ That's okay.
+ Then welcome this resistance and take a deep breath in, out with a sigh.
+ And this resistance, or this sensation of lightness, whatever it is you're feeling,
+ can you be vulnerable with it?
+ Can you allow yourself to be vulnerable with it?
+ Allow yourself to breathe into that.
+ Now notice where in your body you're feeling sensation.
+ Just notice this place, maybe it's in the middle line, an emotion, sensation, resistance,
+ lightness, whatever it is.
+ Just focus on that and just witness it.
+ Just witness it.
+ And this sensation is also an emotion or has an emotional component.
+ Is it fear?
+ Is it anger?
+ Is it sadness?
+ Is it shame?
+ Is it guilt?
+ Is it joy?
+ Whatever it is, try to feel what resonates most with this.
+ Name that emotion for yourself and breathe into that emotion.
+ Don't get caught up with it, but if you feel a resonance, name the emotion and just be
+ with it.
+ Hey, you're welcome here.
+ I'm here for you.
+ Feel that emotion, I see you.
+ Big breath in, out with a sigh, surrender more.
+ Allow the rest of your body to vibrate with that emotion.
+ Can you feel that emotion in your left arm?
+ Can you feel that emotion in your right arm?
+ Can you feel that emotion in your upper chest?
+ Can you feel that emotion in your throat?
+ Can you feel that emotion in your face?
+ And what face does this emotion want to make?
+ Sad, angry, happy?
+ Whatever it is, make the face and notice what is changing in your body.
+ Take a deep breath in and out with a sigh and just be with this state right now.
+ Whoever wants to come, let it come.
+ Take a deep breath in and out with a sigh and just be with this state right now.
+ And notice if your feet are still there.
+ Notice if your legs are still there, and your upper body, your hands.
+ Then it's subtle and casual how you are right now.
+ Great, that's it.
+ Thank you.
+ Thank you for allowing yourself to be how you are.
+ Until next time, many blessings.

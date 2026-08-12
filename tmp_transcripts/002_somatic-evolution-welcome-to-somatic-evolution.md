@@ -1,0 +1,20 @@
+# Transkript: 002 somatic-evolution-welcome-to-somatic-evolution
+
+**Datei:** `002_somatic-evolution-welcome-to-somatic-evolution.ts`  
+**Sprache:** Englisch  
+
+---
+
+## Inhalt:
+
+Welcome to the neo-emotional release training, Somatic Evolution.
+ Emotional releases is a global movement that is training people all around the world
+ and how to hold space and facilitate deep emotional transformation in another human being.
+ I believe, by doing this, we can fundamentally change the way humans interact on this planet.
+ It is the collective suffering and the existential pathologies that we suffer from as society.
+ We suppress emotions, we suppress our creativity, we misinform about chronic illnesses
+ and all of these things suppress our potential that we have as humanity.
+ By training people all around the world to create more permission for humanity to be themselves,
+ we help to create a planet of health and well-being.
+ And by joining this training, you are also joining his mission.
+ And I'm super excited to have you on board.

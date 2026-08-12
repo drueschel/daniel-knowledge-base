@@ -1,0 +1,135 @@
+# Transkript: 10 04 somatic-evolution-understanding-the-power-of-accep
+
+**Datei:** `10_04_somatic-evolution-understanding-the-power-of-accep.ts`  
+**Sprache:** Englisch  
+
+---
+
+## Inhalt:
+
+And so there's this like huge misunderstanding that to feel good, to be whole, to be complete,
+ we have to create another circumstance outside or within our system.
+ So this is the game when I am, then I am.
+ When I go to yoga, then I feel good.
+ When I get the job, then I feel good.
+ When I have the ice cream, then I feel good.
+ Constantly creating condition after condition of condition about when you are complete,
+ but you never are by adding what you thought you needed to be complete.
+ And so we don't play that game.
+ This is not about when I release this emotion, then you are complete.
+ When you lose your wound, then you are complete.
+ When I feel my feelings, then I'm in the heart.
+ No, that is not true.
+ You can always be in the heart.
+ Yes, your heart can open in ecstasy and bliss and you can't always have that just like that,
+ but you can always, always act from the heart.
+ And what that means is you can be in depression and you can be in the, like you're walking on the dark side of the street.
+ Right? It's dark, there's darkness there.
+ But wherever you are on the planet, you can just turn and face the sun.
+ You can just change the street side and turn and face the sun.
+ And the heart is just like the sun.
+ It's always there.
+ It's always there.
+ That doesn't mean that you feel you're out of the darkness,
+ but it means that you can accept inside that darkness and you can see the sun within that darkness.
+ And so it's not about like, okay, I'm incomplete here.
+ I need to get there to be complete.
+ So I walk here, but it's so difficult to walk here because there's so much stuff.
+ No, it's about I'm here and the sun is always there.
+ So I just turn where the sun is, where the heart is.
+ And I just look in the direction and the direction is, can I accept this moment?
+ Boom. If the answer is yes, you're in the heart.
+ If you can't accept the moment, but you can accept that you can't accept the moment, you're in the heart.
+ You understand? It's like, that's all we can do at that moment.
+ Still there's emotions, still there's depression, still there's heaviness, there's hate, whatever there is.
+ But we can face the sun.
+ I have thoughts about the reason why you want from the client the agreement that he has no resistance.
+ And you know we are talking and then to the point they said yes, but there's no resistance.
+ I agree that I accept this situation like this.
+ Oh, that's not something I...
+ That's just the limit of the equalizing, you know?
+ You can just use equalizing in a whole coaching session if you ask the right questions.
+ And always find the right things to accept and bring into your heart because everything you accept you bring into your heart.
+ But that wasn't like a requirement. I wasn't like, you have to accept it fully.
+ But that's the end of the technique basically. That's where you go, okay, yes, you can accept it.
+ Yes, you can look at the sun, but it doesn't change where you're standing right now, right?
+ So changing where you stand within your consciousness happens through the Feynman technique more.
+ Because you're going into the process then.
+ With the acceptance, you're also activating the process but it's more like you're shifting your perspective about everything.
+ So it's not like you're directly walking within consciousness, you're just like turning towards the sun.
+ It's like a subtle shift that's super powerful that has answered your question.
+ I want to go a step further. Why is it so powerful in your opinion?
+ You mean the acceptance?
+ Ah, okay. The acceptance is powerful because every part of the ego and body-mind system is constantly strategizing
+ and creating an idea of what the future should look like
+ and creating different impressions of what to do next, what is the next step, what is this.
+ And the ego-mind has a fundamental discriminatory mechanism.
+ And it's either it's good for my survival or bad for my survival.
+ It's pleasure or it's pain, right?
+ It fundamentally rejects pain and tries to reach pleasure, but in a very contracted way.
+ So it's constantly discriminating, almost like a Nazi saying,
+ no, I don't want this.
+ Yes, I want this.
+ No, I don't want this.
+ Like that.
+ And accepting is reversing that process,
+ that blade that constantly cuts everything in half, right?
+ That says, this is black, this is white, this is good,
+ this is bad, this is up, this is down, this is what I want,
+ this is what I don't want.
+ You want something from me.
+ I want something from you.
+ These kind of things are constantly happening within us.
+ And through just being aware of just that mechanism,
+ just allowing reality to be the way it is,
+ is stopping that mechanism in its tracks.
+ And that stopping in its tracks, the mind
+ can take a break to really just be there.
+ And that's the heart.
+ The heart is the thing that merges dualities.
+ It's the thing that brings wholeness, that is already whole.
+ And so we bring some of that wholeness
+ from our awareness that is always there into the mind.
+ And so the mind starts to merge more,
+ instead of fragmenting more, having more panic attacks,
+ and worrying about the worry, and that whole echo chamber
+ about worrying about worrying about worrying
+ the fear of the fear of the fear.
+ Does that make sense?
+ Yeah.
+ And I had the observation that the acceptance also
+ opens up a little bit more the body, is this possible?
+ Yeah, yeah, of course.
+ Yeah, this was interesting for me.
+ Yeah.
+ I think the first time that the conscious mind has a chance
+ to look at it, and make a decision about it,
+ is the subconscious is continually fighting it off.
+ And so by prompting the awareness to actually accept it,
+ it's opening to it.
+ Yeah, you're breaking the code of 01, 01, 01.
+ And that's basically--
+ in Buddhism, they only work by awareness, by witnessing.
+ And that awareness itself has the same quality as equalizing.
+ It's the same quality.
+ It's just we allow it through the words
+ to arise more spontaneously.
+ And they just work on the code 01, 01, or 01.
+ And they stop there.
+ They just do that with all of the program,
+ with all of the karma, with all of the blockages.
+ And it's amazing how that works.
+ But here, we don't really do that.
+ We go further in the way that we go into the blockages
+ that are held, and directly target the blockages.
+ It's almost like a Buddhist is kind of like deconstructing
+ buildings brick by brick.
+ And we're going to specific buildings
+ to see what is in the infrastructure of the city
+ is needed right now to be deconstructed.
+ And they just randomly, just one brick by brick, like that.
+ And I think every resistance gives tension in the body.
+ So when you accept it, you let go.
+ And then you can go deeper.
+ The nervous system gets calmer.
+ And then a few more sayings.

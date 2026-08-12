@@ -1,0 +1,80 @@
+# Transkript: 8 05 somatic-evolution-how-trauma-shapes-the-psyche
+
+**Datei:** `8_05_somatic-evolution-how-trauma-shapes-the-psyche.ts`  
+**Sprache:** Englisch  
+
+---
+
+## Inhalt:
+
+So when we grow up it's it's kind of like with this young child, right, we're like
+ open wide eyes curious to explore the world you know the fontanelle hasn't
+ closed the baby is in this like really receptive theta brainwave state
+ delta state it's so open and soft right it's so innocent and when a baby cries
+ it doesn't control its impulses when it cries it goes full screaming right Lydia
+ and if a baby is angry it it yells it doesn't care if the vibrations and the
+ shame if there's somebody thinks it's something bad that they're doing they
+ don't care they just go the emotion goes in and out the expression happens
+ naturally right so but you grow up and this baby is kind of like almost like a
+ blank canvas it's not really a blank canvas but you know what I mean it's
+ open doesn't have shape yet it's around it's open and the energy goes in and out
+ and as we grow up right we built this new identity this role ego in the center
+ like a wall like the role ego is the outside right we create this new thing
+ where we can fragment ourselves and be someone else for others and that's a
+ critical moment what when we are someone else for someone else instead of being
+ our authentic self for ourselves we create a split the role ego and that's
+ that's not a poke ball by the way the role ego and we split into two parts
+ basically we become a new identity and the as we grow up older and older we
+ this part can become more complex so there's one part that we are for our
+ parents one part that we are for the world that we around in our partnership
+ with another part and so we so we fragmented off in all these different
+ directions all these different parts that that should have been whole right
+ and this fragmentation happens through the imprinting process so every time
+ you're asked to be this person this rich gets deeper and deeper and deeper and
+ deeper and deeper and deeper and deeper and deeper let's take a look at how
+ that imprinting process really happens because when we're young or when we be
+ faced in imprint there's always this event there is this especially with
+ chak you have this t - 2 t - 1 t 0 t 1 t 2 and you have this event right this is
+ your your normal state of consciousness just a regular up-and-down
+ consciousness but then something traumatic happens and it kind of looks
+ like this a shock and emotional spike that is there from your day-to-day waking
+ state and now what what happens is that if the shock is too great if this if the
+ charge of that moment is too unbearable for us to witness it's kind of we follow
+ this line we follow we witness we witness we witness but then it becomes
+ unbearable so something amazing happens we turn it off we leave our body and we
+ create instead a container within our own body that holds the memories the
+ emotions and the consciousness of that event and that's crazy that's it's
+ holographic in nature what that means is that it's not just a part of you it's
+ use your it's yourself it's your it could be your inner child it could be a
+ holograph works in a way that you have multiple parts creating a two dimensional
+ a two-dimensional image is used with other multiple parts to create a three
+ dimensional appearing space and so when you fragment a holograph you have all
+ the parts of that holograph no matter how small you make it within the smallest
+ part and the same thing happens here this for all sakes and purposes this is a
+ separate entity almost you're in a child or whatever was fragmented here is its
+ own kind of being and so it's amazing that this what we just did this
+ exercise there is the emotion there there is memory there is thoughts there is the
+ consciousness and so remember when I said point to where you feel it yeah well
+ that that created what we did is we opened this box and we opened everything
+ that was inside of it we unboxed the emotion the fragmented part and you
+ can do it so easily so understand that this fragmentation process is is what's
+ happening with life we meet life with our awareness and we constantly discover
+ challenges that that we have to overcome and we have to reintegrate
+ ourselves to meet the parts that are from our past because if this stays intact
+ if this fragmentation you could see it like this right this is inside your
+ psyche boxed off and when this stays intact what you have is looping right
+ the the energy inside this box is constantly circling like this it's
+ trying to find a resolution it's looping around looping around frozen so it's a
+ frozen aspect of yourself and if you don't open this box if that box can't
+ find that resolution then you'll end up repeating the past over and over again
+ basically staying in the same problems meeting the same damaging people doing
+ the same mistakes again being even driven to the same mistakes again because
+ your body is trying to go into those situations to find that resolution and
+ events within your own life they carry a frequency and so when you are
+ contacted with something that has a similar frequency as the content here
+ for example like said let's say it's 785 some it's like a frequency like what
+ happens when we contact that frequency what do we call that as a very common
+ name for this trigger exactly we triggered right because life is constantly
+ throwing things to us that that's helping us to reintegrate what's in the
+ box and so triggers happen all the time for us to come back with the container
+ to let it come out to reintegrate to become whole again

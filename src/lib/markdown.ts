@@ -67,6 +67,7 @@ export function getContentBySlug(lang: string, slug: string[]): MarkdownFile | n
 
 export interface NavItem {
   title: string;
+  originalName?: string;
   slug?: string[];
   children?: NavItem[];
 }
@@ -116,9 +117,9 @@ function sortNavItems(items: NavItem[]) {
     if (orderA !== undefined) return -1;
     if (orderB !== undefined) return 1;
     
-    // 2. Otherwise sort by prefix numbers in slug if available, else title
-    const rawA = a.slug ? a.slug[a.slug.length - 1] : a.title;
-    const rawB = b.slug ? b.slug[b.slug.length - 1] : b.title;
+    // 2. Otherwise sort by prefix numbers in slug or originalName if available, else title
+    const rawA = a.slug ? a.slug[a.slug.length - 1] : (a.originalName || a.title);
+    const rawB = b.slug ? b.slug[b.slug.length - 1] : (b.originalName || b.title);
     const matchA = rawA.match(/^0*(\d+)/);
     const matchB = rawB.match(/^0*(\d+)/);
     if (matchA && matchB) {
@@ -161,6 +162,7 @@ export function getSidebarNavigation(lang: string): NavItem[] {
       if (!existingNode) {
         existingNode = {
           title: isLeaf ? item.title : cleanTitle(part),
+          originalName: part,
           ...(isLeaf ? { slug: item.slug } : { children: [] })
         };
         currentLevel.push(existingNode);
@@ -179,4 +181,36 @@ export function getSidebarNavigation(lang: string): NavItem[] {
   sortNavItems(root);
   
   return root;
+}
+
+export function getRouteMappings(): Record<string, string> {
+  const allContent = getAllContent();
+  const routesMapping: Record<string, string> = {};
+
+  const deContent = allContent.filter(c => c.lang === 'de');
+  const enContent = allContent.filter(c => c.lang === 'en');
+
+  const getPrefix = (str: string) => {
+    const match = str.match(/^0*(\d+)_/);
+    return match ? match[1] : str; 
+  };
+
+  for (const de of deContent) {
+    const dePrefixes = de.slug.map(getPrefix);
+    const enMatch = enContent.find(en => {
+      if (en.slug.length !== de.slug.length) return false;
+      const enPrefixes = en.slug.map(getPrefix);
+      return dePrefixes.every((p, i) => p === enPrefixes[i]);
+    });
+
+    if (enMatch) {
+      // Create path mapping for leaves
+      const deUrl = `/de/${de.slug.join('/')}`;
+      const enUrl = `/en/${enMatch.slug.join('/')}`;
+      routesMapping[deUrl] = enUrl;
+      routesMapping[enUrl] = deUrl;
+    }
+  }
+
+  return routesMapping;
 }

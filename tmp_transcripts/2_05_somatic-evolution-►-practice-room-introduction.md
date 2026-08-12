@@ -1,0 +1,59 @@
+# Transkript: 2 05 somatic-evolution-►-practice-room-introduction
+
+**Datei:** `2_05_somatic-evolution-►-practice-room-introduction.ts`  
+**Sprache:** Englisch  
+
+---
+
+## Inhalt:
+
+Hello and welcome to the exercises for the somatic evolution course. This is the
+ first video. In this video I want to give you an intro and an overview to the
+ exercises. It covers who I am, the structure of the exercises and how to
+ practice. Let's go. Let's go to the partner exercises. This is important
+ because the whole course is structured in partner exercises, meaning for each
+ week of the course you should practice at least once with somebody. Now it's not
+ structured in such a way that you have one fixed or stable partner, but rather
+ that you will come to a course or you can come to a course where you will be
+ assigned a partner life. Now this partner might not have the same level as you.
+ You might be in week eight of the course and they might be in week one of the
+ course and this is fine because the course is structured to have independent
+ exercises. You know what you will practice in this week. You know how much
+ time it takes and then in the call you have 30 minutes each to practice on
+ each other and you can practice your practice for week eight. They can practice
+ their practice for week one and it's fine. You can just practice with each
+ other and that's why these instructions that I will be giving you are important
+ because they are all about what you need to know for your practice in that week.
+ And I want to give you an example of how these exercises are structured and are
+ building on top of each other. So this is the practice for week one. It's about
+ bringing the master state into the call. I won't even go into much detail, but
+ basically if you're in week one this is the handout for your practice and you
+ can guide your partner through this and just so you know all of these written
+ words are usually about what you can ask or guide your partner through. Now
+ moving on the exercises will get more complex and for instance this would be
+ week two about that covers the first somatic integration exercise and as you
+ can see what you have learned before connected awareness and logging and
+ bringing the master state into the practice is kind of assumed here. So
+ basically this means when things are next to the main exercise of the day it's
+ just assumed go through the steps that you have already learned here and then
+ build on top of that. So basically each exercise builds on the last. I will
+ pretend like you understood the last exercise you did. If you have questions
+ and you're reading a word there that's like what does logging in mean again? Go
+ back to that exercise it gives you all the instructions and you can use the
+ handouts like that just to give you one more example in one of the latest
+ somatic integration exercises. The steps you had in session two localizing,
+ describing and monitoring are assumed. I assume you know what those questions
+ mean and how to do that and then the questions are just for the new steps
+ including connected awareness and even how to open the session. So basically for
+ each week there will be an explicit exercise. It will build on the exercises
+ before that and I ask you to follow these exercises. In detail that means you can
+ practice on Zoom. There will be live Zoom calls for that and before each
+ practice please watch this video. This is the overview video. There will be one of
+ these for each week. Have the handout available for that practice. You can have
+ it available electronically. I would actually recommend printing it and make
+ such a difference to have something in your hand to have it to be able to write
+ on it to take notes etc. And then knowing what you will be practicing, having it
+ ready, come to the Zoom call, find a partner, they know what they're doing, you
+ know what you're doing, you can practice with each other. That's the structure for
+ this course. I'm looking forward to introducing you to all of these
+ practices and let's go!

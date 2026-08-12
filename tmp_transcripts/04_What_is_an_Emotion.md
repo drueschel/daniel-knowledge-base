@@ -1,0 +1,34 @@
+# Transkript: 04 What is an Emotion
+
+**Datei:** `04_What_is_an_Emotion.ts`  
+**Sprache:** Englisch  
+
+---
+
+## Inhalt:
+
+So an emotion is energy in motion. It is best described as a vibration with a
+ beginning, with a middle and an end where it vibrates out. This happens when
+ we're fully conducive to the emotional charges within our body. We can host the
+ charge and let it pass through us. But there's another state that happens when
+ we cannot do that. The process of vibrating out is interrupted and the
+ emotion is repressed inside our body and stored. In this sense the emotion creates
+ a storage of energy within our body. And it's the location of that storage that
+ says something about the frequency of stress that created the storage. That
+ means, for example, if you have a fight with your mom, a co-worker, or if you're
+ running late to work, or if you are unable to express your
+ truth, those are all different frequencies of stress. And they all
+ manifest in a different corresponding part of the body. And that's where all
+ the different conditions, chronic conditions, come in. Because when
+ someone in the hospital gets a heart attack or someone suffers from liver
+ disease or lung disease, that means that the topics that they haven't been able
+ to process all have different particular frequencies corresponding to that
+ organ. And when they are stored, the emotion, the energy in motion, is no
+ longer in motion. Our ecosystem then stabilizes and the contractile tissue
+ within our body holds on and contracts, literally contracts, to create this
+ storage of energy within our body. And so then our body is kind of armed to live
+ in resistance with reality, because we weren't able to process a part of
+ reality that made us feel a certain way. And that part lingers on, and lingers on,
+ and spirals around within our system. And all this emotion wants to do, and all a
+ blocked emotion is, is an emotion that we couldn't finish feeling, an emotion that
+ simply wants to vibrate out.

@@ -1,0 +1,168 @@
+# Transkript: 18 02 somatic-evolution-definement-theory-and-examples-o
+
+**Datei:** `18_02_somatic-evolution-definement-theory-and-examples-o.ts`  
+**Sprache:** Englisch  
+
+---
+
+## Inhalt:
+
+All right, so let's dive a little bit deeper into the theory of defilement now that you've seen already a lot of demos, a lot of like explanations of how it's done, how it's applied, how it can look like.
+ And we want to talk a little bit about the theory, about like problems that may arise when you use defilement and go a little bit more into the depth of these topics.
+ All right, so let's get started.
+ So defilement, what it means is we are knowing ourselves, we're getting to know ourselves and through this self-knowledge, we are able to define what's going on inside of us.
+ And this defilement, it's not just a mental thing, it doesn't have to do with can we mentally explain what's going on.
+ This is working on all the levels of our system, like defilement can mean I can dance what is going on, defilement can mean I can sing, I can resonate with my voice in the way that it expresses what I'm feeling inside of me.
+ I can draw a picture, I can visualize something that explains or gives me a deeper clue of understanding of defilement, of what's going on.
+ I can find a breathing pattern, I can reclaim a memory from my life that is related to a certain feeling that I'm having right now.
+ All of these things they have to do with my ability of knowing myself and therefore being able to clearly define what is going on and what is the best approach for myself to deal with this situation.
+ This is mainly what defilement is about and how we can help our clients with our ability to support them with defining what is going on.
+ Defilement then also means we are getting to know a part of ourselves or a depth of ourselves, an expression of ourselves that we have not yet the clarity of.
+ That always means we are diving into the unknown.
+ Obviously this unknown is sometimes something that has just been pushed aside, we know it already, but we don't have access to it right now.
+ We are not in the zone of being able to define it in this exact moment.
+ This can happen for example when you are in a state and there are a lot of things going on inside of you. You don't have clarity about things.
+ I'm dealing with a stressful situation that has happened to me last week and also I'm kind of angry at what happened yesterday and then I'm also stressed about what I have to do tomorrow.
+ All of these things they feel overwhelming so we don't really know what is there in regards to clearly define this emotion is related to what is going on.
+ What I'm stressed about tomorrow, this what I feel here is like what happened yesterday between me and my girlfriend and then this shakiness that I'm feeling this is still like an unresolved process that happened last week in work.
+ Something like this.
+ And then we want to help as a facilitator or we want to get clarity ourselves, the distinguishment between all of those things and like what we have to do is we have to focus on one thing first.
+ That's what we're often doing in emotional release.
+ We're starting a session very often with what do you feel in your body right now that is already the introduction to define it because we say, oh, yeah, there's a feeling.
+ I feel it here.
+ It's like in this chest.
+ I can expand it.
+ I can localize it.
+ I can monitor it and it's changing in a way.
+ And then we tell we find out a deeper story about it.
+ And that is very helpful.
+ But then there are a lot of ways and how to interact with this.
+ And the way or the best tool in order to do this is always resonance.
+ It's when we hit a certain spot and the energy rises and the energy can rise in many ways.
+ If you are talking about a certain thing and a person gets excited or like you name, as you saw in the examples, you name a certain emotion.
+ You ask, is it anger that you feel?
+ And the person is like, yes, yes, it's anger.
+ It's oh, yeah.
+ Oh, yeah.
+ Now I feel it like this is a form of resonance.
+ It's a positive resonance where we feel instantly this connection and this yes.
+ And the whole body is screaming.
+ Oh, yeah, that's it.
+ How didn't I think about it before?
+ Then we have the clarity and then we can tap into the anger and then we can express it.
+ But it can also be that it's a negative resonance.
+ Your client is saying, no, why would you ask like why would you propose I'm angry?
+ I'm not angry.
+ Yeah, but you can clearly tell you are reacting angry to me right now.
+ Can you tell me more about this reaction?
+ I'm very curious why this trigger is coming up.
+ And then work with this trigger as a form of resonance, which is also defining something
+ that is going on inside of you in a negative resonance.
+ And then there's also no resonance with, which means this is not the track where you would define something
+ or where you can define something because there is nothing to be found there.
+ There's just like, are you angry?
+ No, I'm not really angry.
+ I don't think that has something to do with that.
+ Like there's a neutral reaction from your client and you also feel that.
+ Both of you are like getting kind of bored by this question.
+ So again, what are responses of life force activation of energy coming up when it comes to define it?
+ So first is excitement.
+ The other one is defensiveness or anger.
+ You can hit a resonance with all that makes me sad when I hear that.
+ And it can also be that you're afraid that you say like, no, like, how can you do this?
+ Or the person might laugh when you ask a certain question where you want to define something
+ that is also like kind of a defensive mechanism, but in a way also a way to hit resonance inside of us.
+ I love about it because there's a flow of energy all of a sudden being hit.
+ And it really depends with what client you're working with.
+ So definement is also that what we call the basis of the introduction to the real emotional release work.
+ That's where we really dive into the depth of things.
+ And it's often the starting point on how to enter a conversion.
+ Conversions are things you will learn in the later weeks.
+ But it's already opening the door towards a conversion.
+ It's already opening the door to, OK, if you get access to this new piece of information that hasn't been there before for you,
+ then a new door will open.
+ You will learn doorway approach or like phantom dialogue, those things,
+ in order to dive deeper into that what has been previously defined.
+ So definement gives us a new information, a new side of view, a new mindset,
+ a new understanding, a reframing of things.
+ And this is also where we can help our clients with.
+ We can support them with reframing a certain situation.
+ So for example, a client might tell you a story and you listen to it with your ear of resonance
+ and you're feeling, OK, like, how does this situation make me feel?
+ How would I react in this situation?
+ What has helped me in the past in this situation?
+ Where do I feel there's still unclearity within you as a client?
+ And then we can mirror them that and we can give them a new framing
+ that in our experience has already solved that issue.
+ This is also why it's so important that we as a facilitator have done our work,
+ have had our insights and again have the understanding that we can actually only help our clients
+ when we have been there, where they are struggling with before and we have the clarity,
+ we have the definement already inside of us.
+ Otherwise, we will also struggle with having the access or being able to define something.
+ Still, this is often the case that we don't really have fully clarity.
+ Often, I'm sitting in sessions and my client is having a certain issue or a certain struggle
+ and I'm like, OK, I have no idea with what will be the best or where this session is going.
+ But let's find options, let's define the map of possibilities that we could go in
+ and see where is resonance guiding us, where is alignment guiding us,
+ where is the flow of life force and of excitement throughout the session guiding us.
+ And then the more you get familiar with the techniques that you learned before
+ and the more this comes to your heart, the more you can focus on, OK, where does energy want to flow?
+ Where is the excitement? Where do things feel like boring or like I'm losing energy
+ and where are things like lifting my energy and also the energy of my client?
+ And this is then where we can support with define, where we can define through
+ not just calling out an emotion, is it anger, is it this or that?
+ But also, can you embody this, can you define it like with an expression?
+ Because it's often the case, we are feeling something and we don't know yet what it is.
+ We have never felt this before, we just don't have access to it.
+ So we have to get into a certain access and explore something.
+ If we define it, then when it comes to something that has never been felt before or never been explored before,
+ in this deeper sense, we have to find ways in order to engage with it
+ and in order to get to know it first before we can actually call it a name.
+ There are so many murals of ways of how we can feel, of how our consciousness can be,
+ of in which state we can be in and we definitely don't have a name for all of these varieties of that.
+ So we have to really discern and find out and feel into what actually wants to be defined there
+ and how does it actually feel and that only works if we get into deeper contact with those things.
+ So defining can be an embodiment, can be a dance, can be a voice, a sound,
+ can be an expression of an emotion that is embodied,
+ can be also just a mental thing, mental expression of something or mental thought
+ and can be a vision that we have towards a certain moment or situation
+ where the definition gets more accurate and more deep or felt in the depth
+ when we combine all of those channels, when we get into access with all of those channels
+ and it becomes one whole singular expression of the definition towards the issue.
+ And then we have like a whole life force pointing into one direction which is solving the underlying issue
+ of what has been until now undefined and then we have clarity, then we have direction,
+ then we have motivation, then we have the universe having our back basically.
+ So maybe you notice sometimes in sessions people play very clever, they know already what's going on,
+ they already have the explanation, they have gone to certain feelings, situations,
+ embodiments in like previous therapy sessions or like stuff they mentally know about it
+ and they get very defensive in that way of like, "No, I know this already, this is not where it is."
+ But they never really have gone into the depth, into the resolution of the situation.
+ So this is what's happening when people start looping in their responses,
+ start looping in their issues, start looping in their trauma reactions
+ and they don't really solve the problem, the problem is still unsolved
+ and whenever they are presented with a possible solution they say, "No, I tried this already, that's not it."
+ And I mean that is accurate, that is accurate perception because until now this approach hasn't solved the issue
+ but also they are not allowing the full depth of really defining it, thinking it through, feeling it through
+ to find a solution where it points to the actual thing.
+ And this is where definement and then through definement conversion really helps to get in contact
+ with the deeper part, with the voice that is speaking from this frustration
+ and where we can really align our client with like the trust again that they can actually solve this issue
+ because like the frustration that is speaking is often speaking from a place of
+ "I don't even trust that this issue can be solved."
+ I've tried so many things and it didn't help me and now I'm sitting here within the session
+ and I am self-fulfilling my prophecy of like no one was able to help me before
+ so I'm not able to help me, to help myself, yeah?
+ And then these kind of things, they can be defined again, they can be mirrored back
+ and like define okay, like what is the emotion when you talk about those things?
+ This sounds like frustration, are you frustrated that you cannot find a solution?
+ What is frustration linked to in your life?
+ Who in your life made you frustrated that you cannot solve your problem
+ and you were constantly pushed to like find solutions but it was never enough to actually get the satisfaction
+ from maybe your dad in your life to like really believe in yourself?
+ Do you actually believe that you can do it or was this belief constantly broken again and again?
+ There are probably a lot of more things about definement
+ and if you have specific questions bring them into the Q&A call, ask them,
+ reflect also like where do you for yourself like feel undefined in your life?
+ Where would you want to like have more clarity, more depth?
+ Bring this into the practice sessions, bring this into the Q&A call, I hope to see you there
+ And yes, see you soon in the calls and thank you for listening to this class.

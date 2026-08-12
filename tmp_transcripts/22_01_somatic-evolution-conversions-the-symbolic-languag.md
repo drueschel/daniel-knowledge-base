@@ -1,0 +1,134 @@
+# Transkript: 22 01 somatic-evolution-conversions-the-symbolic-languag
+
+**Datei:** `22_01_somatic-evolution-conversions-the-symbolic-languag.ts`  
+**Sprache:** Englisch  
+
+---
+
+## Inhalt:
+
+This training in this technique is about to evolve into a radical shift as we move into
+ conversions. Conversions means we are turning a sensation and emotion into a symbol. This is the
+ language that the body is naturally speaking to us. Everyone can convert into a symbol. This
+ language is ancient and it's deeply ingrained into how our subconscious functions. Just think
+ about dreams. Dreams are this symbolic journey that we undergo every night even if we don't remember
+ it. And there we process the most wildest elements of our lives. We process emotions,
+ we process conflicts, we process conversations and people that we're not even aware of. We
+ possess what we call a dream consciousness meaning there is a separate part of our memory that we
+ don't have access to in our minds, in our day-to-day waking mind. But as we go to sleep,
+ we visit places that we sometimes don't even know that we go to these places. So we live
+ almost a separate life in our subconscious world. Many people report going to places sometimes for
+ all of their lives, visiting dream homes or families that they never remember when they wake up but
+ they remember as soon as they go into their dreams. And through using lucid dreaming techniques,
+ you can find out what these places are. So understand that there's a whole world in your
+ subconscious, a whole life in your subconscious that you're not tapping into. This is extremely
+ radical stuff. And this is the kind of symbolic journey that we undertake when we go, for example,
+ also on a psychedelic journey. It is truly transformational to dive with our consciousness
+ into this world what some people call the subtle realm. And in the subtle realm, all the symbols
+ have a connection to our real life. That's the important thing. And similarly, like if you would
+ approach a psychedelic integration session, if you want to interpret your dreams, it is not as
+ complicated as you might think. I'm going to give you just a little tip here. If you want to
+ interpret a dream, for example, and there is the wild symbol of a flying pig that you were
+ riding on, and it was it was riding straight into a volcano. If you would explain that to any person,
+ you would say, I have no freaking idea what that even means that is wild that can't have any
+ bearing to our day to day waking state. But that's not true. The questions we need to ask is, how
+ did you feel riding the pig? Did you feel free? Did you feel excited? Did you feel scared? And once
+ you ask that question, you go to the next question, which is, when in your life do you feel that kind
+ of fear? When did you in your life do you feel that kind of freedom? Same with the volcano. Was
+ the volcano scary? Was it exciting? Were you scared of it? Were you give was it giving you
+ power? Were you feeling peaceful with it? Well, where do you feel that emotion in your real life?
+ And what is your relationship to that emotion in real life? And that's how you get to interpret
+ dreams and psychedelics symbolisms. So this can help you to help people integrate their dreams,
+ or it can help people to integrate a psychedelic journey that involves symbols. And this is what
+ we're talking about here. We're talking about an active dreaming process conversions is kind of a
+ lucid journey where emotions and memories and traumas transform into vivid symbols,
+ scenes and images. The essence of conversions is that it functions as a bridge between our
+ conscious and our subconscious minds, creating a dialogue between the two. And when we're working
+ with symbols, the classical symbol is the inner child, that's a symbol. So we're converting our
+ inner experience, our sensations, our emotions into a symbol. This what we call the ICC, the
+ imprinted consciousness container. It's the inner child is one example of a conversion. And these
+ conversions are inspired and by the sensations and our subconscious processing. So they're never
+ random, our image, our imagination is never random, our imagination is significant. Okay,
+ it is important that we see it as what it is. On the other hand, there's sometimes called the
+ Vishnu complex is when people over interpret the subtle realm when they give too much meaning to
+ their ancestral symbols to their past life symbols, and they start believing that they're an
+ extraterrestrial and all of this stuff. It's just information. It's just information about us. And
+ it gives us an access to how we can work with our subconscious mind. Conversions can be used in many
+ different ways. They can be used as diagnosis, they can be used for tracking, and they can be used
+ for transformation. Let me give you an example. Conversions can be anything, let's say we allow
+ our anger to be symbolized as a flame. And in the session that I had, for example, when I used a
+ flame as a conversion, a client would see that the flame was small, and not really, not really a big
+ fire, but a very small fire. And this was representing how much anger they were allowing in
+ their body at that moment. So this is a diagnosis, right? This is showing us, this is serving as a
+ window into subconscious, it's showing us and giving us insight of how much anger they can allow in
+ that moment. And sometimes that's easier to welcome because this symbolistic language is ancient,
+ it's wired in our subconscious, it's what this is how our mind works. And so this is the language
+ that the mind likes to use. This is also what hypnosis works with hypnosis only uses this,
+ and we're integrating it here into emotional release into a truly integrative approach. You can use
+ these sessions throughout these symbols throughout to kind of track also your progress, you can leave
+ this symbol, keep going with the process and then come back to the fire and see, oh, the fire is now
+ way, way, way bigger, it's evolved into a giant forest fire, for example. But the most important
+ part of it is that we can directly interact with these conversions with the fire, for example,
+ we can ask the person to, can you make the fire bigger? And the fire becomes bigger, the fire
+ becomes stronger, and then other sensations in the body arise, which we're keenly aware of.
+ Resistances arise when the fire gets bigger, fear arises, and then we equalize that fear,
+ for example. It can also be that we need to add wood to the fire. And we add wood to the fire or
+ the fire is out of hand, and we need to actually make the fire less because there's too much fire
+ in the system. And we take a bucket of water and put it on the fire, anything is possible here. You
+ are essentially a video game designer, working this out. And this needs imagination, this needs
+ creativity. But this is so interesting, because we're actually navigating almost a wakeful dream,
+ a wake dream that leads to transformation of trauma and emotions. So this is super exciting. It needs
+ creativity, it needs ability to tap in and to commit to the symbols that are arising, right? And
+ there's different ways, you can different ways that we are going to explore conversions, we're
+ going to explore the phantom dialogue, which is the kind of internal family systemic processes
+ that happen with us. So whenever we were hurt, whenever there's an emotion, many, many times this
+ emotion is tied to another person. And when this emotion is tied to another person, we can access
+ the relationship to that person internally, which we call the phantom, then we can directly interact
+ with that phantom with that person inside of you, you can act, you can interact with your best friend
+ inside of you, you can interact with your ex boyfriend inside of you, you can interact with your
+ father inside of you. And that interaction has an impact on your trauma and on your emotions, a
+ direct impact. Not only that, this interaction also impacts the field, the quantum field, meaning
+ that this interaction, I've seen this many times, that people were going into a session, healing
+ things with their mother, healing things with their father, their phone was off as soon as they
+ turned the phone off, their father called them for the first time in 20 years, or the mother
+ initiates a forgiveness process that was never about to happen. So these kinds of things can
+ really, really impact your real life. These things are really, really potent. And this is also what
+ makes new motion is really unique, because I haven't seen approaches involving this layer of deep
+ connection with other people that we unwind in the system. And it's very easy to do very intuitive
+ because that's the language or mind is a natural speaking, we are constantly talking to people in
+ real life. So our subconscious knows exactly how to do that. It's so easy for the couple subconscious
+ to do that. That's the phantom dialogue, then we also have parts work and parts work is really
+ about this radical new understanding and this radically new addressing of ourselves as not one
+ ego, but multiple parts, multiple parts that all have different emotions, different responsibilities,
+ different roles. And to explore that and just to see a person in through through the lens of seeing
+ him as multiple parts is extremely helpful to distinguish where the blocked emotion is coming
+ from and how to transform it because sometimes the block the blocking is coming from two parts
+ that are interacting in a certain way. This is very intuitive stuff. This is stuff that you can
+ easily apply because again, it's the language that the body is naturally speaking. And then
+ we're going to move into free conversions, which is any symbol or any scene that might be available.
+ Maybe you're processing emotions all of a sudden you are in the childhood home on the floor. That's
+ without even the facilitator mentioning that you're all the sudden you're in you're feeling sad,
+ you're in the on the floor, and you're there and you see yourself that way as you're processing
+ the sadness, tapping into those vital symbolisms and scenes that are going on internally. That's
+ what free conversions are. But free conversions is not only tapping into kind of the natural
+ conversions that happen anyway, but it's also working with just creative symbols working with
+ the fire that might be your anger or the waters that might be your intuition or
+ the tree that might symbolize your womb. So free conversions are about really radically
+ using your imagination of how you interact with the symbol. And this is really key here
+ understanding that the important role is that any conversions, any conversion that you're using.
+ It's about how do you interact with that symbol.
+ Every symbol has a different way you can interact with it. I'm going to mention a few. Okay. So one
+ is a tree, the process tree is one conversion that I came up with. And the process tree has
+ different apples and some apples are ripe and some apples are not yet ripe. Then unwrap apples
+ represent processes that are not yet ready. They're still part of the tree just like unwrap
+ processes are still part of your protective mechanisms that you need. And so when we talk
+ about when we go to this tree and we identify the apples that are ripe to be processed, we connect
+ with the processes in the body that are ready to be processed. That's one symbolism. So there we
+ have the interaction level of reaching out with our hands, plucking an apple and eating that apple
+ and seeing what happens or reaching out and trying to pluck an apple and the apple just doesn't
+ want to come off the tree. That's another option. We can enforce the apple to come off the tree,
+ which I of course don't recommend, but there's different ways we can just work with that symbol.
+ We can also put our hand on the tree and connect to the tree, ask the tree questions. That's one
+ example. Another way is a door conversion. The door represents the protective mechanisms and so if
+ the door is completely open, it means there's no protection. If the door is completely closed,
+ it's protected a lot and anything in between represents something real.

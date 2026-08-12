@@ -1,0 +1,122 @@
+# Transkript: 8 04 somatic-evolution-the-relationship-between-trauma-
+
+**Datei:** `8_04_somatic-evolution-the-relationship-between-trauma-.ts`  
+**Sprache:** Englisch  
+
+---
+
+## Inhalt:
+
+So trauma simply is a Greek word for wound and the Buddhists already have a concept that
+ really describes how trauma can be created throughout our lives. So there is this concept
+ of sankara. A sankara there are three different intensities. One sankara can be a line on the
+ water. One second it's there the next second it's gone. That would be a very mild kind of
+ wounding where maybe someone gave you a bad look or said something that you were kind of
+ put off by. One second you think about it the next second you already forgot. Then there's the
+ second intensity which is the line on the sand on the beach. All day it's there and at the evening
+ the waves have washed it away. It could be for example a fight with a loved one where you think
+ about it in the shower you think about at work you come home at night and the next morning
+ you've let it go. And then there is the third intensity which is the sankara on rock. A deep
+ deep traumatic incision that can last a lifetime. And so what's understanding here is that when we
+ talk about the idea of sankara we're talking about shark trauma. To understand the difference of
+ shark trauma and developmental trauma in this concept is very easy. Shark trauma is the event
+ that overwhelms the system in one moment. And developmental trauma is when a sankara on water
+ that is repeated over and over again turns into a sankara on the beach which is then repeated over
+ again turns into a sankara on stone. And that's how you can differentiate developmental trauma
+ trauma that accumulates over a period of time and trauma that happens from one small or very
+ strong event. A classical trauma situation would be for example a car accident. There is a such
+ a shocking situation that your system is unable to witness all of the things happening. And as a
+ protection your mind shuts off. Your witnessing capability shuts off. And you almost many people
+ describe as leaving your body. You go out of the body and another part of your system takes over.
+ It's called the me. The instinctual part of yourself that can pick up a phone or run as fast as you
+ can without thinking about it just takes over without you really deciding or being present there.
+ That's but that's more classical idea of trauma. What we now have to understand
+ is that trauma is a day-to-day reality and in new emotional release we don't call it trauma that
+ often. We call it an imprint because that's all it is. We're all imprinted by life. Everybody who's
+ living is imprinted by life because we're living in a society that has essentially forgotten how
+ to feel. And because we have forgotten how to feel and process our emotions we kind of
+ keep carrying around imprint after imprint and unable to come and bring those blocked emotions
+ into a resolution. So it's very simple to understand. An imprint in a blocked emotion
+ is almost the same thing. An imprint creates a blocked emotion. A situation where your mind
+ has to go into a survivor mode creates the blockage of that aspect that you were supposed to be
+ processing and stores it within the body. So we have to radically rethink what we think emotions are
+ just as feelings because our whole system is an interchanging system. A matrix sounds kind of cool
+ but it's interwoven. Everything, every thought has an emotion. Every emotion is creating thoughts
+ around it. So everything in consciousness in the body is not like you can take an organ and say
+ here this is the beginning of the organ and this is the end. Everything is blended together.
+ And so many times when we hear the word trauma we think something really terrible happened like
+ a car accident. I think the first association with trauma. But it kind of takes away
+ of how life imprints us every single day and how we as humans are making an experience
+ every single day of being imprinted. So I don't use the word trauma that much because
+ if we think trauma we're going into this definition of something dramatic, something
+ trauma means wound, something that shouldn't have happened is this first association.
+ But an imprint can be something really really subtle. It can be something like
+ for example have you ever had the experience of losing something?
+ Like you lost some item, some important item, a key and you all day you've been like
+ where is this damn item? Where is my weed? Where's my whatever? And you're just like
+ I can't find it. It must be somewhere where's my clothes? Where's my scarf?
+ And it really takes you out of the present moment, right? It really takes you away.
+ And so in a sense that already is an imprint because it's an anticipation there that something will
+ find a resolution. The resolution in that case would be you find the scarf or the missing item.
+ And so similarly trauma blocked emotions. They're different words for the same things.
+ Imprint are simply in a way emotions that we couldn't finish feeling.
+ If your father promised you to go on a boat trip in the summer when you were really young
+ your whole system is still going to be like as an adult when is this boat trip? This boat trip
+ didn't happen like and you're going to attract people maybe with boats maybe men because you're
+ still trying your system is trying to find a resolution there. And so an emotion a blocked
+ emotion is simply an aspect that is trying to find a resolution. Every part of the body
+ is trying to self-organize and come together. It's trying to heal and come together. And so
+ we have to understand that that's a natural process of our system that is constantly trying to do
+ this by themselves. Is there's just that our mind and our ego is in the way of this natural healing
+ capacity to activate? Yeah let's take a look at how this imprint mechanism really works.
+ So we have we can we can make kind of like a understanding of different intensities.
+ In Buddhism for example there's a word for this imprint. Long since long times we have
+ words to describe this imprint in the psyche. And in Buddhism we call it sankara and it's
+ like a line on the water. One moment it's there and the next moment it's gone. Can somebody name
+ an example of what would be that kind of an imprint? What could be in what could be a situation
+ that is one moment it affects you and the next moment you already let it go.
+ Does anybody know?
+ Yeah?
+ Yeah beautiful example another example what could it be yeah.
+ Beautiful yeah what else?
+ Exactly we're expanding the idea what trauma is that's an imprint. Yeah so we all have this is
+ a daily occurrence right we're reacting to our environment it leaves a little mark next minute
+ it's gone we felt it we proceeded but then there's also the things the sankara which is like a line
+ on the beach all day it's there and in the beginning the ocean has washed it away right
+ that's a little bit stronger right what could be a good example of that. Does anybody know yeah?
+ Yeah exactly we're still in the showers. Yeah
+ Yeah depending on how strong you are feel involved by this yeah a breakup would probably be a little
+ bit stronger but it's also yeah it could be yeah a small breakup it was just your side your side
+ your boy toy isn't coming anymore so it's a small trauma.
+ Any other examples?
+ And then there is the and then there's the sankara on rock right put in stone strong
+ and this maybe it can last even a lifetime because it's so deep
+ and so have you ever heard of developmental trauma the word developmental trauma yeah do
+ you know what it is no no so there's two there's two there's two there's different ways you can get
+ traumatized you would say shock trauma and that would be this there's a strong
+ imprint on rock say an example for example what would be a strong imprint
+ yeah my mother once forgot me at the fuel station yeah that can be dramatic for a child how old were
+ you about eight yeah and that's you know it doesn't sound bad for an adult but it's the
+ perspective of the child and the loss of such an vital connection that makes it so dramatic right
+ it's romantic birth yeah totally
+ oh yeah
+ yeah a lot of mother abandonment issues here
+ another one
+ yeah exactly so that's a shock and so what when when shock happens we go out of our body we go
+ out this is an amazing mechanism our body system has to protect us from that i'm going to show you
+ how that works but to understand this is shock right it's it's a deep it creates a deep traumatic
+ imprint in our system yes if you go out of your body like we're not here there yeah if you go out and
+ but you also do something at that moment what is this for dissociation yeah but like like you have
+ actual trauma right now you see your mother in the car today yeah but you get your sister out of the
+ car and go and find someone to help you yes you do something yes but you are in shock
+ yet you are in shock there there is yes there is the there's biological you know when i'm
+ standing here and i'm just putting this i'm not thinking about like this walk left walk there's
+ an autism to my movement right an autism to my movement no and same way when you're in a car
+ accident there is the there's a part of you taken over that's called the me and it's a it's a higher
+ instant of functioning that's or you could say even a lower instant of functioning that takes over
+ your biological instincts and can do all the things you need to do to get out of danger but
+ you're not really present then you're not really here you're not really you're out you're witnessing
+ it but it there's a little you in that little experiencing and digesting of the situation itself
+ and so the difference between shock and developmental trauma is simply shock can this
+ can develop like that or it can develop that a sankara on water happens over and over again
+ then the sankara on the beach happens over over again and it turns into a sankara on rock

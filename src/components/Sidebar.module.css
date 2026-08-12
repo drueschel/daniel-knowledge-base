@@ -62,6 +62,40 @@
   flex-shrink: 0;
 }
 
+.sidebarControls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-alt);
+}
+
+.controlBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.controlIcon {
+  font-size: 0.65rem;
+  opacity: 0.8;
+}
+
+.controlBtn:hover {
+  background: var(--border);
+  color: var(--primary);
+}
+
 /* Nav Container */
 .sidebarNav {
   flex: 1;

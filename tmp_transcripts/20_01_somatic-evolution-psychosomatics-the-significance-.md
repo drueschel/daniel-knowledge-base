@@ -1,0 +1,77 @@
+# Transkript: 20 01 somatic-evolution-psychosomatics-the-significance-
+
+**Datei:** `20_01_somatic-evolution-psychosomatics-the-significance-.ts`  
+**Sprache:** Englisch  
+
+---
+
+## Inhalt:
+
+[Music]
+ Fascia is a very special organ. It is not like the other organs. It is the matrix organ,
+ an organ that contains all other organ systems. This is why it's so incredible. Every layer of
+ your body is embedded by fascia. Just like if you were to open a orange, when you open the orange,
+ it's surrounded, the skin surrounding it is the fascia. If you take out the piece of that
+ orange, that piece is surrounded by fascia. If you break that piece, you have those little pieces
+ inside. They're all surrounded by fascia. Fascia is a holarchy, a layer around a layer, around a
+ layer, around a smaller layer. The entire body is embedded into this type of tissue. The funny
+ thing is, is that we used to overlook this type of tissue. When a doctor cut open the stomach,
+ they were like, "Oh, let's remove that really unnecessary tissue that is in the way here. Let's
+ remove all of that. Let's cut through it. Let's remove that. It's just in the way of the actual
+ organ we're trying to look at." But now, since 2005, that fascia have been thoroughly researched,
+ now fascia have become sort of the star in bodywork world. Right? And rightfully so,
+ because fascia connect our body throughout, it is in a sense not only a connective tissue that is
+ binding and holding everything together, it is also a communication organ. This is so fascinating
+ because what that means is that fascia is part of our neuroception, the way of sensing and feeling
+ in our body. Fascia is not only contractile and contracts to stress responses, but fascia also
+ can sense. They have proprioceptors and noticeptors and they can feel heat and cold pain
+ where you are in your body. All this is being sensed just by the fascia. The fascia is
+ communicating throughout your body in all directions and are part of your nervous system
+ because they give you information, they give the body information about it themselves. There are
+ a sensing and communication organ system and this is why they are so amazing and so important in
+ this work what we're doing. Because when you touch the body, you always touch the fascia. You always
+ in connection with that sensing organ that is embedded within and embedded throughout. Even
+ in bones you have fascia. So this is quite a special organ system that we used to overlook.
+ So it's sort of like the internet of our own body. It is something that we simply overlooked
+ for years that we've now discovered as something so so so interconnected and so so so important especially for this type of work.
+ So hi everyone today as the role father I am I would like to tell you something about the importance
+ I think we find in fascia. So of course bones, muscles, any cell, any organ is very important
+ for our survival and our well-being and at the same time the fascia is. Some people even say
+ that you can take away all bones, all organs, all muscles out of the body and there are only fascia
+ left and the fascia makes us stand the way we stand. It gives us the posture we have and even there is
+ in the body world in Berlin one model that Robert Schleich created and this is a fascia model and we
+ can see how beautiful all the fascia together holds us upright as human beings. It's basically
+ very beautiful. So the fascia has a lot of functions for our musculoskeletal system and one is that it
+ is part of the passive movement system and this means together with bones, with ligaments
+ and with other structures it acts as the holding or binding apparatus of us. On the other hand of
+ course it is part of the active musculoskeletal system. So with its very high sensitivity and
+ flexibility it supports us in moving. So fascia consists of a large amount of collagen fibers
+ and they occur in bundles and they make our shape. These structural proteins are found everywhere where
+ we need stability, they are very tight and tense and they are not very stretchy. There are different
+ classifications for the collagen we find in the body. We have type one. Type one collagen is mostly
+ found in tendons and ligaments. Type two is around the organ sex. Type three this is what we find
+ around blood vessels and the skin and type four this is the fascia that connects everything
+ with each other. The second important component of fascia is elastin and as the word says it's
+ elastic and it has the capability to stretch 1.5 times longer than the original length and it has
+ the capacity to then when the stretch is over come back into its normal form again and this
+ is some kind of a miracle. It is made possible by an ingeniously created network, a matrix of
+ cross linked elastic fibers made of mechanoreceptors microfibrils and other cells. So the beauty here
+ also is the interplay with the nervous system. So there is a very high amount of little nerve
+ fibrils and there's a huge sensory interplay going on around fascia. So fascia has a matrix and this
+ consists of course of water and then we have collagen, elastin, we have mechanoreceptors
+ and we have these super nerve fibrils joining in and all of that depending on where the fascia
+ lies doesn't have to be a holding apparatus or can it be an elastic apparatus. There the
+ consistency of collagen and elastin is different. So due to this matrix of elastin, collagen and
+ mechanoreceptors and also these nerve endings fascia play an important role in generating
+ our force. So according to the elasticity we can stretch them and then let go until they're
+ generating a huge amount of force and what fascia also does it supports our lymph system
+ in transporting away with the fluidity of the poison or the toxic things we have in the body
+ and then it is not the eye, not the ear, not the skin that supplies our body with the most
+ sensory input. Now it is the fascia and so I come to the fascia as this organ that also
+ senses emotions. So fascia is not what we originally thought that fascia is, fascia is not only the
+ separation of structures in our body, fascia is not only our proprioceptive system, fascia
+ is much more than this. Fascia perceives in the depths on how we stand, how we feel,
+ how we position ourselves and then it can translate everything into our body system and
+ into our mind system and from the mind to the body and from the body to the mind and from here to
+ the outside world. So fascia basically is a connecting organs between ourselves and ourselves
+ and between the world and ourselves and between ourselves and the world.

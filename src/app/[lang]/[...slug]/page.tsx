@@ -41,21 +41,42 @@ export default async function ContentPage({
           iframe: ({ node, ...props }) => {
             if (typeof props.src === 'string' && props.src.endsWith('.pdf')) {
               return (
-                <div className="flex flex-col gap-4 my-6">
-                  {/* Mobile-friendly fallback button */}
-                  <a 
-                    href={props.src} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="md:hidden flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg font-medium transition-colors shadow-sm"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
-                    PDF im Vollbild öffnen (Mobile)
-                  </a>
+                <div className="w-full my-6 flex flex-col items-center">
+                  {/* Desktop View: Embedded PDF */}
+                  <div className="hidden md:block w-full h-[800px] border border-gray-200 rounded-xl overflow-hidden shadow-sm bg-gray-50 relative">
+                    <object 
+                      data={props.src} 
+                      type="application/pdf" 
+                      className="w-full h-full absolute top-0 left-0"
+                    >
+                      <div className="flex flex-col items-center justify-center h-full p-6 text-center">
+                        <p className="mb-4 text-gray-600">Dein Browser kann diese PDF nicht direkt anzeigen.</p>
+                        <a 
+                          href={props.src} 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition"
+                        >
+                          PDF herunterladen / öffnen
+                        </a>
+                      </div>
+                    </object>
+                  </div>
                   
-                  {/* Desktop iframe, hidden on small screens to prevent iOS scrolling issues */}
-                  <div className="hidden md:block w-full overflow-hidden rounded-xl border border-gray-200 shadow-sm bg-gray-50">
-                    <iframe {...props} className="w-full min-h-[800px] border-0" />
+                  {/* Mobile View: Button Only (Since iOS/Android don't embed PDFs well) */}
+                  <div className="md:hidden w-full p-6 border border-gray-200 rounded-xl bg-gray-50 flex flex-col items-center justify-center text-center">
+                    <svg className="w-12 h-12 text-red-500 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                    </svg>
+                    <p className="mb-4 text-gray-700 font-medium">PDF Dokument</p>
+                    <a 
+                      href={props.src} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="w-full sm:w-auto px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition"
+                    >
+                      PDF öffnen
+                    </a>
                   </div>
                 </div>
               );

@@ -1,0 +1,22 @@
+# Transkript: 4 09 somatic-evolution-joy
+
+**Datei:** `4_09_somatic-evolution-joy.ts`  
+**Sprache:** Englisch  
+
+---
+
+## Inhalt:
+
+Joy is a particularly interesting emotion. When we think of joy, we usually
+ think of happiness, laughing, and that's all part of joy. But the whole
+ category of joy as an emotion, it plays a much, much larger and important role in
+ the functioning of the ego. Any movement that is away from unpleasantness, away
+ from failure, away from something that makes you feel uneasy, can be experienced
+ as pleasant and as joyful. But that doesn't mean it's positive, for example.
+ Joy includes, for example, arrogance. And everybody knows a person who's
+ arrogant is not actually a self-confident person. A person who's
+ arrogant is a wounded person that's trying to create a stability and a
+ false sense of security on top of that wound. And so the movement of that can
+ also be included in joy. So understand that joy is a movement away from our own
+ vulnerability into the outside. So it stabilizes us within reality and away
+ from our own weakness, which can be super important.

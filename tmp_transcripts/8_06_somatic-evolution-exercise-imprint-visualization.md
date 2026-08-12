@@ -1,0 +1,32 @@
+# Transkript: 8 06 somatic-evolution-exercise-imprint-visualization
+
+**Datei:** `8_06_somatic-evolution-exercise-imprint-visualization.ts`  
+**Sprache:** Englisch  
+
+---
+
+## Inhalt:
+
+In this exercise I'm going to show you how to unlock and unpack the container.
+ Close your eyes and sit comfortably or lay down where you are undisturbed and feel safe
+ enough to go inward for a second. Take a deep breath with me here and another one and another one.
+ Notice how you feel more relaxed after those three breaths. Notice how you're carrying
+ resistance and tension in your body right now. This resistance is an actuality and emotion.
+ Where do you feel that emotion? Take your right finger and point to where you feel it. If it's a
+ general area just point in the middle of the area. You can put your hand back again in a relaxed state.
+ And now without thinking much about it, what color does this emotion have? Just real quick,
+ what color? First it comes to mind. Is there a number accompanied by that? How old are you
+ in this emotion? Just the first one that comes to mind. And if you were to look down to your hands,
+ would you see small hands or big hands? Little child hands or big adult grown hands? And if you look
+ around in that space, are you inside or outside? Is it day or is it night? Are you alone or are you
+ with people? What are you feeling in this moment? Is it fear? Sadness? Anger? Joy?
+ Guilt? Or helplessness? With what emotion does it most correspond with?
+ Can you allow for this moment, for that emotion to be fully here? And wherever you are right now,
+ in that emotion, can you allow to be there? And if there is another person, can you identify if
+ this person is masculine or feminine? All right, you can slowly come out of it again.
+ What we just did is we contacted the container, the storage of energy and unpacked the consciousness
+ within that container. Smells, feelings, sights are all within that container.
+ And when you point to where you feel it, you point to the somatic address of that container.
+ And so this is how we can understand that these container and storages are really
+ holographic in nature. When we unpack them, we create a consciousness, a lived experience
+ that we weren't able to process.

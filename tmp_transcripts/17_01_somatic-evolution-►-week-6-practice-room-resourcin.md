@@ -1,0 +1,40 @@
+# Transkript: 17 01 somatic-evolution-►-week-6-practice-room-resourcin
+
+**Datei:** `17_01_somatic-evolution-►-week-6-practice-room-resourcin.ts`  
+**Sprache:** Englisch  
+
+---
+
+## Inhalt:
+
+Welcome to week 6 of the exercises for the somatic evolution course.
+ In today's week, it's our last time to focus on somatic integration.
+ And we're going to do that once more with a resource and today having the new step of expanding the resource with sound.
+ So starting off, invite your client to think of a resource and find the sensation that correlates to it.
+ Localize it, describe it, monitor what happens then, see can they welcome it?
+ Can they enjoy it? The expanding questions? If no, stay with it.
+ Can they welcome or enjoy half of it? Can they welcome, 10% of it? Can they welcome that?
+ It is difficult. We want to get to some sort of yes with this.
+ If people stay stuck and no, again, you can change exercises, you can go back to breathing into it.
+ You can go back to doing a body scan, whatever works to move on from this.
+ Sometimes the best thing we can do in an exercise and in a session in general,
+ if somebody is stuck is to have some sort of intervention, maybe a somatic intervention, very helpful often to then return to the place we were just at.
+ So we will stay with no until we get some sort of yes.
+ And if the yes is yes, I can welcome this, maybe I can even welcome 10% of it.
+ We invite the person to expand this pleasurable sensation and we use a new tool today which is expanding with sound.
+ So we ask them, if this resource or the sensation were to vibrate, and again you can use the exact words here of this expansive, joyful sensation, were to vibrate, would it make a high or low sound?
+ Maybe high.
+ Then we can invite the client internally.
+ Now hear this sound internally and when you hear it, make it louder and louder and louder.
+ And can you make the sound right now and hold it for 20 seconds?
+ So going from internally to externally, holding the sound and if they can, and sometimes they can't, again, it's okay.
+ We monitor what's changing.
+ And we return to localizing, maybe it's with the sound, this expands.
+ Maybe it's a different sensation shows up, we don't know.
+ We're open to that and we again localize, we describe, we monitor and we see, can they welcome this, can they enjoy this?
+ If yes, expand with sound, if no, can they welcome half of it, can they welcome that it's difficult?
+ And then expand with sound. That's the exercise for today's week six.
+ And this is the last exercise for the somatic integration part, which means starting next week.
+ You will be asked to do the somatic integration, meaning localizing, describing, monitoring, equalizing.
+ Those are the main four steps in each session and I won't explain all of them anymore.
+ So yeah, I hope you enjoy this week's exercise. See you again soon.

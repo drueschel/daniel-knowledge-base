@@ -1,0 +1,81 @@
+# Transkript: 6 02 somatic-evolution-the-3-big-mistakes-of-masterstat
+
+**Datei:** `6_02_somatic-evolution-the-3-big-mistakes-of-masterstat.ts`  
+**Sprache:** Englisch  
+
+---
+
+## Inhalt:
+
+We're going to talk about what master state really means.
+ Master state simply means an unconditional space-holding.
+ And when you say space-holding, that might sound simple and easy to do,
+ but when you practically try to do it, it's not simple and it actually takes years to master.
+ But this is, like I said, one of the most profound principles of healing.
+ So many people get it wrong when they try to hold space for someone.
+ See, here's how you do it.
+ When you hold space for someone, don't try to see them as a problem.
+ Don't try to solve them on a mental level, on a logical level, giving them advice about what they should do.
+ Because most problems are not logical, but emotional in nature.
+ I always say there are no problems, only emotions that you don't want to feel.
+ So when you hold space, you are there listening or in a session,
+ you're just there non-judgmentally in a caring way, being present for them.
+ See, we are conditioned to be not allowed to feel.
+ You are not okay if you're vulnerable and that leaves a mark on our sense of self-worth.
+ If it's not accepted from your family that it's okay to be vulnerable, that it's okay to get angry,
+ that you're not allowed to be happy or not allowed to show your sexual side,
+ then expressing that which is not accepted in your family is connected with shame
+ and a sense of "I'm not okay" with that. That's a sense of low self-worth.
+ Throughout families, this is enforced by a network of shame that runs through the family.
+ A kind of unspoken contract that the family has about what behaviors are deemed okay and not okay.
+ And we as children, we feel this pressure inside of our body.
+ And we adjust accordingly that we feel accepted and connected to our parents.
+ For example, if your mother is always pessimistic and sad
+ and you're this like cheerful, happy dude and wanting to storm the world,
+ she's not going to accept that. It's too confronting for her.
+ And so she's subconsciously going to shame you and blame you, not even consciously,
+ and you're going to feel that it's not okay for this type of expression.
+ And that creates a mark in your sense of self-worth.
+ This makes you self-conscious in this expression and creates resistance around a particular expression
+ that was not allowed in your family.
+ So when you're holding space for someone, when you're in master state,
+ you're really giving them permission to be who they truly are.
+ This resistance that a person feels to go into that expression that wasn't allowed
+ and wasn't deemed okay and you're giving them that permission to be there,
+ then that resistance can melt away and that is so incredibly healing.
+ It gives someone the allowance to be who they truly are and how they truly are.
+ And for most people, it's probably their first experience of ever having that permission.
+ This allows them to feel a wider range of emotions and thus a wider range of who they are.
+ And that has a tremendous effect on your self-worth when it's okay to be who you are.
+ So typically, when holding space, there are three main mistakes that people make.
+ And the first mistake is one I already mentioned is staying on the mental level
+ and not connecting empathically with the problem.
+ You're going about this person that has emotional suffering.
+ You're going about it as a problem that you're trying to fix and trying to solve
+ and you want to give good actionable advice or new perspectives.
+ That doesn't necessarily help when the person is not allowed to feel how they are.
+ It can deflect from their feelings and emotions and it can validate the resistance
+ they already have about those emotions.
+ So that adds up with their own resistance to the emotion and now you're adding on to that.
+ That is not a conducive environment in space where the emotion can come up.
+ Another mistake I see a lot that not many people talk about in space holding
+ is done many times by very empathic beings or many times women do this in emotional release.
+ Someone breaks out and crying showing their vulnerable side and the instinctive reaction is to be overly motherly
+ and just be like, oh, it's okay and don't cry and go in this kind of soothing and comforting way.
+ And this can actually trigger another resistance to deeper emotions.
+ So this is when the crying is also a strategy to be seen as weak and as non-threatening.
+ And so when we have someone who in childhood needed to be in this victim mode
+ to seem non-threatening and non-confrontational and to get their way,
+ this emotional range of crying and vulnerability is not really an authentic emotion, what we call it.
+ It's more of another defense mechanism to underlying helplessness or even anger.
+ So going into this soothing, like over comforting space holding is also not conducive of healing taking place.
+ The third mistake people do when holding space is not having enough boundaries.
+ So you feel too much of their emotions.
+ You're too involved in their emotions trying to save them and you're not in touch with your body anymore.
+ You're kind of sacrificing your own life energy, your own dignity.
+ And you're not able to manage your own energy while empathically holding space.
+ And so understand that holding space in master state means you're balancing these two polarities.
+ You're either too far in connection, empathically feeling and kind of wanting to save them
+ or you are disconnected from them, not feeling their emotions and trying to solve them on a logical level.
+ And so what you want is you really want to come into the middle where you are connected with them.
+ You can feel their emotions, but you're also within your own boundary.
