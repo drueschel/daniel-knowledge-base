@@ -15,8 +15,8 @@ export async function GET(request: Request) {
 
   const searchResults = allContent
     .filter(item => {
-      // If a lang is provided, only match that language
-      if (lang && item.lang !== lang) return false;
+      // Search spans across all languages as requested
+      // if (lang && item.lang !== lang) return false;
 
       return (
         item.title.toLowerCase().includes(lowerQuery) ||

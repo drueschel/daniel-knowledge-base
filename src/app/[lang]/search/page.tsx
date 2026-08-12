@@ -29,7 +29,7 @@ export default async function SearchPage({
   if (query) {
     searchResults = allContent
       .filter(item => {
-        if (item.lang !== lang) return false;
+        // if (item.lang !== lang) return false;
         return (
           item.title.toLowerCase().includes(lowerQuery) ||
           item.content.toLowerCase().includes(lowerQuery)
