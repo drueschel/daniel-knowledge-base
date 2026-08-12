@@ -1,3 +1,3 @@
-# ► Week 7 Practice Room | Definement
+# Woche 7 Praxisraum | Definement
 
 *Diese Zusammenfassung wird bald hinzugefügt.*

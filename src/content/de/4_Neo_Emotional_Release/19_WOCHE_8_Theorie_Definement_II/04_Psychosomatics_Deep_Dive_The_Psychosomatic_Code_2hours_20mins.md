@@ -1,3 +1,3 @@
-# Psychosomatics Deep Dive | The Psychosomatic Code (2hours 20mins)
+# Psychosomatik Deep Dive | Der Psychosomatische Code (2 Stunden 20 Minuten)
 
 *Diese Zusammenfassung wird bald hinzugefügt.*

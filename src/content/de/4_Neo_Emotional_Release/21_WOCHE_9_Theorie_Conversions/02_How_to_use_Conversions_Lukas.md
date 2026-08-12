@@ -1,3 +1,3 @@
-# How to use Conversions | Lukas
+# Wie man Conversions nutzt | Lukas
 
 *Diese Zusammenfassung wird bald hinzugefügt.*

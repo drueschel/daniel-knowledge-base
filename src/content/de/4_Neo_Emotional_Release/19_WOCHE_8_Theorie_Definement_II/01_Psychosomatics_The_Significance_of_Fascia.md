@@ -1,3 +1,3 @@
-# Psychosomatics | The Significance of Fascia
+# Psychosomatik | Die Bedeutung der Faszien
 
 *Diese Zusammenfassung wird bald hinzugefügt.*

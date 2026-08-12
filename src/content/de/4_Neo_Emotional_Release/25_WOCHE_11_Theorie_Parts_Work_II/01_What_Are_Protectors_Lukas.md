@@ -1,3 +1,3 @@
-# What Are Protectors? | Lukas
+# Was sind Beschützer? | Lukas
 
 *Diese Zusammenfassung wird bald hinzugefügt.*

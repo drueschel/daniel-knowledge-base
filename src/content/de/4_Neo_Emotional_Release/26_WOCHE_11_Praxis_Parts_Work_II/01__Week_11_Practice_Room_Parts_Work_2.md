@@ -1,3 +1,3 @@
-# ► Week 11 Practice Room | Parts Work 2
+# Woche 11 Praxisraum | Parts Work 2
 
 *Diese Zusammenfassung wird bald hinzugefügt.*
