@@ -1,3 +1,12 @@
 # Phantom Dialogue - Demo Analizing Techniques | David
 
-*Diese Zusammenfassung wird bald hinzugefügt.*
+## Wichtige Konzepte
+- **Definition von Conversions (Umwandlungen)**: Die Fähigkeit, Klienten dabei zu helfen, somatische Empfindungen und Emotionen in visuelle Symbole zu übersetzen, um tiefergehende Arbeit zu ermöglichen.
+- **Integration bisheriger Fähigkeiten**: Conversions bauen auf grundlegenden Techniken wie Connected Awareness, dem "Log-in", somatischer Integration und dem Definieren von Emotionen auf.
+- **Arten von Conversions**: Umfassen Phantom Dialogue (Repräsentation einer Person aus Vergangenheit oder Gegenwart), Parts Work (Verbindung von Emotionen mit spezifischen inneren Anteilen) und Free Conversion (Arbeit mit bereits vorhandenen Symbolen in der inneren Welt des Klienten).
+- **Sitzungsstruktur**: Übungssitzungen, die Conversions beinhalten, werden auf etwa 45 Minuten verlängert, um den zusätzlichen Schritten gerecht zu werden.
+
+## Zusammenfassung
+In diesem Abschnitt des Kurses wird das Konzept der "Conversions" (Umwandlungen) eingeführt. Dabei handelt es sich um eine entscheidende Fähigkeit, die Klienten dabei unterstützt, ihre somatischen Empfindungen und definierten Emotionen in visuelle Symbole zu übersetzen. Dieser Prozess baut auf den grundlegenden Techniken der vorherigen Module auf. Praktizierende beginnen die Sitzungen weiterhin mit Connected Awareness, loggen sich beim Klienten ein und führen ihn durch die somatische Integration, bevor Emotionen definiert werden. Erst nach Abschluss dieser Schritte beginnt der eigentliche Umwandlungsprozess, bei dem diese Gefühle in greifbare visuelle oder kinästhetische Repräsentationen transformiert werden.
+
+Die Einführung skizziert drei Hauptarten von Conversions, die in den kommenden Übungen behandelt werden. Die erste ist der "Phantom Dialogue", bei dem eine Emotion in die Repräsentation einer Person aus dem Leben des Klienten umgewandelt wird, die möglicherweise durch diese Gefühle kommuniziert. Die zweite Art ist "Parts Work" (Teilearbeit), bei der Emotionen mit spezifischen inneren "Teilen" oder Versionen des Klienten (oft aus der Vergangenheit) in Verbindung gebracht werden. Zuletzt lehrt die "Free Conversion", wie Praktizierende Symbole erkennen und mit ihnen arbeiten können, die von Natur aus in der inneren Welt des Klienten auftauchen, ohne sie zwingend als Phantom oder inneren Anteil definieren zu müssen. Da dieser Prozess komplexer ist, dauern die entsprechenden Übungssitzungen jeweils etwa 45 Minuten.

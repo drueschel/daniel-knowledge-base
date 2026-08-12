@@ -1,3 +1,16 @@
 # Geführte Übung | Definement Reise
 
-*Diese Zusammenfassung wird bald hinzugefügt.*
+## Wichtige Konzepte
+- **Definement jenseits des Verstandes:** Definement (Klärung/Definition) ist ein ganzheitlicher Prozess der Selbsterkenntnis, der alle Ebenen einbezieht, wie etwa körperlichen Ausdruck, Stimme, Visualisierung und Atemmuster.
+- **Die Rolle der Resonanz:** Resonanz dient als Kompass zur richtigen Definition und zeigt sich in Form von positiven (Aufregung), negativen (Abwehr oder Trigger) oder neutralen Reaktionen.
+- **Der Weg zur Konversion:** Definement ist der erste, grundlegende Schritt in der Emotional Release Arbeit, der die nötige Klarheit schafft, um in tiefere Prozesse wie Konversionen einzusteigen.
+- **Umgang mit Widerstand:** Klienten können aus Frustration in intellektualisierten Antworten feststecken ("Das weiß ich schon"). Das Identifizieren und Definieren dieser zugrundeliegenden Frustration hilft, Vertrauen aufzubauen und tiefere Ursachen aufzudecken.
+- **Dem Fluss der Lebensenergie folgen:** Wenn die anfängliche Richtung in einer Sitzung unklar ist, orientieren sich Facilitatoren am Fluss von Energie, Aufregung und der Resonanz des Klienten.
+
+## Zusammenfassung
+
+Definement ist der entscheidende Prozess, um zu erkennen und klar auszudrücken, was im System eines Klienten vor sich geht. Es handelt sich dabei keineswegs nur um eine intellektuelle Leistung, sondern erfordert die Auseinandersetzung mit allen Aspekten des Selbst – sei es durch Bewegung, Klang, Visualisierung oder emotionale Verkörperung. Diese tiefe Selbsterforschung bedeutet oft, sich in das Unbekannte zu wagen oder mit beiseitegeschobenen Emotionen umzugehen. Wenn eine stimmige Definition über alle Sinneskanäle hinweg gefunden wird, bündelt sich die Lebensenergie in eine Richtung und liefert die Klarheit sowie Motivation, um das zugrundeliegende Problem zu lösen.
+
+Das wichtigste Werkzeug beim Definement ist die Resonanz. Facilitatoren müssen die energetischen Reaktionen des Klienten auf verschiedene Impulse genau beobachten. Positive Resonanz erzeugt Aufregung und ein sofortiges Gefühl der Stimmigkeit, während negative Resonanz – wie Abwehr, Lachen oder Wut – ebenso auf wichtige Trigger hinweisen kann, die es zu definieren gilt. Wenn Klienten in intellektuellen Schleifen feststecken und behaupten, sie wüssten bereits alles, verbirgt sich dahinter oft tiefe Frustration oder ein Mangel an Vertrauen. Genau diese Frustration zu definieren, ist oft der Schlüssel, um den Widerstand zu durchbrechen.
+
+Letztendlich legt das Definement das Fundament für die tiefere Emotional Release Arbeit und bereitet den Klienten auf die folgenden Konversionstechniken vor. Facilitatoren, die diesen Prozess bereits bei sich selbst durchlaufen haben, dienen als Spiegel, der Klienten hilft, Möglichkeiten aufzuzeigen und sie zur energetischen Ausrichtung zu führen. Indem man konsequent dem Fluss der Lebensenergie und der Resonanz folgt, können Facilitator und Klient die Oberfläche durchbrechen und sich mit den tiefen Ebenen der emotionalen Erfahrung verbinden.

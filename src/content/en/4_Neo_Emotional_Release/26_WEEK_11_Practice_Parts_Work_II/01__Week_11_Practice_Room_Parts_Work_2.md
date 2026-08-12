@@ -1,3 +1,15 @@
 # ► Week 11 Practice Room | Parts Work 2
 
-*This summary will be added soon.*
+## Key Concepts
+- **The Role of Protectors:** Protectors are parts of us that actively try to shield us from external threats (like rejection or failure) and internal pain (like past trauma or buried emotions).
+- **Positive Intent:** Every protective part operates with a positive intent, fundamentally aiming to keep our system safe and prevent us from re-experiencing past pain, even if their methods seem unhelpful.
+- **Managers vs. Firefighters:** Protectors fall into two categories. Managers are proactive and seek to control our lives to prevent exiles from being triggered. Firefighters are reactive and use extreme measures (like numbing or dissociation) to extinguish emotional pain once it arises.
+- **System Organized Around Exiles:** Our internal world and its protective strategies are intelligently organized around our vulnerable, exiled parts to help us navigate life without being overwhelmed by their pain.
+- **Separation of Role and Identity:** Protectors are not defined by their coping behaviors. They take on these roles out of perceived necessity, and often desire to change their roles once the system feels safe enough.
+
+## Summary
+In this continuation of the IFS theory, the focus shifts to a detailed exploration of "protectors." Protectors are parts of our psyche dedicated to shielding us from potential harm, whether that involves avoiding external situations like rejection and failure, or suppressing internal pain and traumatic memories associated with exiled parts. Recognizing that every protector has a "positive intent" is crucial; their ultimate goal is to maintain the safety of our internal system, no matter how counterproductive their specific behaviors might appear on the surface.
+
+Protectors are categorized into two main types: Managers and Firefighters. Managers operate proactively, attempting to control our environment, relationships, and behaviors to ensure that vulnerable feelings are never triggered. They might manifest as the inner critic, the perfectionist, or the people-pleaser. Firefighters, on the other hand, are reactive. When a manager fails and an exile's pain is triggered, firefighters rush in to put out the emotional fire by any means necessary, often resorting to impulsive, numbing, or dissociative behaviors like substance abuse, binge eating, or excessive screen time.
+
+Ultimately, understanding these dynamics reveals that our inner system is structurally organized around our exiles. Protectors build elaborate defensive strategies to help us function despite carrying unresolved pain. However, an essential therapeutic insight in IFS is that protectors are not synonymous with their roles. They engage in these behaviors because they believe they must, but given the choice and a safe environment, they would often prefer to relinquish these exhausting duties and take on healthier, more supportive roles within the system.

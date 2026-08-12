@@ -1,3 +1,16 @@
 # Woche 10 Praxisraum | Parts Work 1
 
-*Diese Zusammenfassung wird bald hinzugefügt.*
+## Wichtige Konzepte
+- **Internal Family Systems (IFS):** Ein von Richard Schwartz entwickelter Therapieansatz und eine Theorie der Psyche, die davon ausgeht, dass der menschliche Geist natürlicherweise aus mehreren Teilpersönlichkeiten ("Parts" oder "Teilen") besteht.
+- **Beschützer und Verbannte:** Teile fungieren entweder als *Verbannte (Exiles)*, die ungelösten alten Schmerz und Lasten tragen, oder als *Beschützer (Protectors)*, die das System aktiv davor bewahren, diesen Schmerz zu spüren.
+- **Manager vs. Feuerwehrmänner:** Beschützer unterteilen sich in *Manager* (proaktive Teile, die das Leben kontrollieren, um Auslöser zu vermeiden) und *Feuerwehrmänner* (reaktive Teile, die extreme Verhaltensweisen nutzen, um aufkommenden Schmerz zu betäuben).
+- **Positive Absicht:** Alle Teile, unabhängig davon, wie dysfunktional oder symptomatisch ihr Verhalten erscheinen mag, handeln aus der positiven Absicht heraus, das Individuum zu beschützen.
+- **Das Selbst (The Self):** Jenseits der Teile besitzt jeder Mensch einen spirituellen Kern, das "Selbst". Wenn beschützende Teile sich entspannen und zurücktreten, kommt das Selbst als eine bestärkende, nicht-pathologisierende Präsenz zum Vorschein.
+
+## Zusammenfassung
+
+In dieser Einführungssession in das Internal Family Systems (IFS) Modell liegt der Fokus auf dem Verständnis der grundlegenden Theorie der menschlichen Psyche, wie sie von Richard Schwartz konzipiert wurde. Im Zentrum von IFS steht das Paradigma der Multiplizität, welches besagt, dass unser Geist keine einzige, unveränderliche Einheit ist. Stattdessen setzt er sich aus verschiedenen Teilpersönlichkeiten oder "Teilen" zusammen, die miteinander interagieren und zu unterschiedlichen Zeiten die Führung übernehmen. Diese Perspektive bietet einen mitfühlenden, nicht-pathologisierenden Blick auf menschliches Verhalten und lässt uns erkennen, dass selbst die destruktivsten Symptome letztlich Strategien von Teilen sind, die dem System beim Überleben helfen wollen.
+
+Das Modell unterscheidet zwischen verschiedenen Arten von Teilen basierend auf ihren funktionalen Rollen. *Verbannte (Exiles)* sind die Teile, die in der Vergangenheit feststecken und ungelöste Traumata, Scham oder tiefen emotionalen Schmerz in sich tragen. Um zu verhindern, dass dieser Schmerz das System überwältigt, greifen die *Beschützer (Protectors)* ein. Diese Beschützer können proaktive *Manager* sein, die den Alltag kontrollieren, um Trigger zu vermeiden (z. B. durch Perfektionismus oder Überarbeitung), oder reaktive *Feuerwehrmänner*, die zu drastischen Maßnahmen greifen (wie Essanfälle, Dissoziation oder Selbstverletzung), sobald der Schmerz eines Verbannten an die Oberfläche zu kommen droht. Beide Arten von Beschützern teilen dasselbe zugrunde liegende Ziel: den Menschen vor Leid zu bewahren.
+
+Ein transformatives Element des IFS-Modells ist das Konzept des *Selbst*. Das Selbst ist kein Teil, sondern der angeborene, spirituelle Kern eines Menschen. Schwartz entdeckte, dass das Selbst nicht erst entwickelt oder gesucht werden muss; es kommt ganz natürlich zum Vorschein, sobald die Teile sich sicher genug fühlen, um sich zu entspannen und zurückzutreten. Die Führung aus dem Selbst heraus ermöglicht tiefgreifende Heilung und eine völlig andere Art, mit unserer inneren Welt und den Menschen um uns herum in Beziehung zu treten. Dies bildet die Grundlage für die tiefe Transformationsarbeit, die durch IFS ermöglicht wird.

@@ -1,3 +1,14 @@
 # Woche 6 Praxisraum | Resourcing II
 
-*Diese Zusammenfassung wird bald hinzugefügt.*
+## Wichtige Konzepte
+- **Die Beziehung zur Emotion**: Die spezifische Emotion eines Klienten ist weniger wichtig als seine Beziehung dazu; die Aufgabe des Begleiters ist es, einen sicheren Raum für unausgedrückte Emotionen zu schaffen.
+- **Heilung durch Bezeugen und Sicherheit**: Heilung geschieht, wenn wir vergangene schmerzhafte Ereignisse – die ursprünglich mit einem Verlust von Macht oder Sicherheit einhergingen – mit der Unterstützung und Sicherheit bezeugen und wiedererleben können, die zuvor fehlte.
+- **Vertrauen in die Intelligenz des Körpers**: Der Körper möchte von Natur aus heilen. Begleiter sind lediglich dazu da, den Prozess zu unterstützen, das Unwillkommene willkommen zu heißen, mit dem Herzen präsent zu bleiben und sich dem natürlichen Fluss hinzugeben.
+- **Alte Muster durchbrechen**: Die Unterbrechung gewohnter Reaktionen setzt verborgene Ressourcen frei und ermöglicht es den Klienten, aus repetitiven emotionalen Schleifen auszubrechen.
+
+## Zusammenfassung
+Der Heilungsprozess im Neo Emotional Release wird von neun grundlegenden Prinzipien geleitet, die den Fokus davon abwenden, einen Klienten "reparieren" zu wollen, hin zur sicheren Begleitung seiner angeborenen Fähigkeit zur Heilung. Anstatt sich auf die spezifische Emotion zu konzentrieren, die auftaucht, besteht das Hauptziel darin, die Beziehung des Klienten zu dieser Emotion zu verändern. Durch die Schaffung einer sicheren Umgebung ermöglichen Begleiter den Klienten, Gefühle auszudrücken, die sie zuvor unterdrückt haben. Das Wiedererleben vergangener Situationen, die einen Verlust von Macht oder Sicherheit verursacht haben – diesmal mit angemessener Unterstützung –, verdrahtet die Nervenbahnen neu und bietet eine neue Perspektive auf einst unerträgliche Ereignisse.
+
+Für Begleiter ist es entscheidend, sich daran zu erinnern, dass sie nicht dazu da sind, die Person zu "lösen". Der Körper möchte verzweifelt heilen; die Aufgabe des Begleiters ist es lediglich, Hindernisse aus dem Weg zu räumen und den Prozess zu bezeugen. Heilung erfordert grundlegend das Bezeugen, da wir nur heilen können, was wir fühlen können. Indem sie zuvor unwillkommene Gedanken und Emotionen willkommen heißen, transformieren die Klienten die Beziehung zu sich selbst.
+
+Letztendlich geht es bei wahrer Begleitung darum, mit einem offenen Herzen präsent zu bleiben und sich derselben natürlichen Intelligenz hinzugeben, die alles Leben lenkt. Bewusstsein an sich ist heilsam und verändert, wie das Ego reagiert. Indem Begleiter alte Muster durchbrechen und Klienten ermutigen, das Gegenteil ihrer gewohnten Reaktionen zu tun, helfen sie ihnen, verborgene Ressourcen freizusetzen und sich aus festgefahrenen emotionalen Schleifen zu befreien.
