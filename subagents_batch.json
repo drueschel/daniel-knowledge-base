@@ -1,0 +1,162 @@
+[
+  {
+    "TypeName": "transcript_summarizer",
+    "Role": "Summarizer for 01__Week_6_Practice_Room_Resourcing_II.md",
+    "Prompt": "Summarize the transcript at:\n/Users/danielrueschel/DEV/daniel-knowledge-base/tmp_transcripts/16_01_somatic-evolution-9-principles-of-healing.txt\n\nAnd save the German summary to:\nsrc/content/de/4_Neo_Emotional_Release/16_WOCHE_6_Praxis_Resourcing_II/01__Week_6_Practice_Room_Resourcing_II.md\n\nAnd the English summary to:\n/Users/danielrueschel/DEV/daniel-knowledge-base/src/content/en/4_Neo_Emotional_Release/16_WEEK_6_Practice_Resourcing_II/01__Week_6_Practice_Room_Resourcing_II.md\n\nBe sure to read the target files first to grab the correct H1 title. If no transcript file is found, just reply \"DONE: [transcript not found]\""
+  },
+  {
+    "TypeName": "transcript_summarizer",
+    "Role": "Summarizer for 01__Week_8_Practice_Room_Definement_II_30_MINS.md",
+    "Prompt": "Summarize the transcript at:\n/Users/danielrueschel/DEV/daniel-knowledge-base/tmp_transcripts/20_01_somatic-evolution-psychosomatics-the-significance-.txt\n\nAnd save the German summary to:\nsrc/content/de/4_Neo_Emotional_Release/20_WOCHE_8_Praxis_Definement_II/01__Week_8_Practice_Room_Definement_II_30_MINS.md\n\nAnd the English summary to:\n/Users/danielrueschel/DEV/daniel-knowledge-base/src/content/en/4_Neo_Emotional_Release/20_WEEK_8_Practice_Definement_II/01__Week_8_Practice_Room_Definement_II_30_MINS.md\n\nBe sure to read the target files first to grab the correct H1 title. If no transcript file is found, just reply \"DONE: [transcript not found]\""
+  },
+  {
+    "TypeName": "transcript_summarizer",
+    "Role": "Summarizer for 01_Conversions_The_Symbolic_Language_of_the_Body_David.md",
+    "Prompt": "Summarize the transcript at:\n/Users/danielrueschel/DEV/daniel-knowledge-base/tmp_transcripts/21_01_somatic-evolution-►-week-8-practice-room-definemen.txt\n\nAnd save the German summary to:\nsrc/content/de/4_Neo_Emotional_Release/21_WOCHE_9_Theorie_Conversions/01_Conversions_The_Symbolic_Language_of_the_Body_David.md\n\nAnd the English summary to:\n/Users/danielrueschel/DEV/daniel-knowledge-base/src/content/en/4_Neo_Emotional_Release/21_WEEK_9_Theory_Conversions/01_Conversions_The_Symbolic_Language_of_the_Body_David.md\n\nBe sure to read the target files first to grab the correct H1 title. If no transcript file is found, just reply \"DONE: [transcript not found]\""
+  },
+  {
+    "TypeName": "transcript_summarizer",
+    "Role": "Summarizer for 02_How_to_use_Conversions_Lukas.md",
+    "Prompt": "Summarize the transcript at:\nnull\n\nAnd save the German summary to:\nsrc/content/de/4_Neo_Emotional_Release/21_WOCHE_9_Theorie_Conversions/02_How_to_use_Conversions_Lukas.md\n\nAnd the English summary to:\n/Users/danielrueschel/DEV/daniel-knowledge-base/src/content/en/4_Neo_Emotional_Release/21_WEEK_9_Theory_Conversions/02_How_to_use_Conversions_Lukas.md\n\nBe sure to read the target files first to grab the correct H1 title. If no transcript file is found, just reply \"DONE: [transcript not found]\""
+  },
+  {
+    "TypeName": "transcript_summarizer",
+    "Role": "Summarizer for 01__Week_12_Practice_Room_Free_Conversions.md",
+    "Prompt": "Summarize the transcript at:\n/Users/danielrueschel/DEV/daniel-knowledge-base/tmp_transcripts/27_01_somatic-evolution-►-week-11-practice-room-parts-wo.txt\n\nAnd save the German summary to:\nsrc/content/de/4_Neo_Emotional_Release/27_WOCHE_12_Praxis_Free_Conversions/01__Week_12_Practice_Room_Free_Conversions.md\n\nAnd the English summary to:\n/Users/danielrueschel/DEV/daniel-knowledge-base/src/content/en/4_Neo_Emotional_Release/27_WEEK_12_Practice_Free_Conversions/01__Week_12_Practice_Room_Free_Conversions.md\n\nBe sure to read the target files first to grab the correct H1 title. If no transcript file is found, just reply \"DONE: [transcript not found]\""
+  },
+  {
+    "TypeName": "transcript_summarizer",
+    "Role": "Summarizer for 01__Week_11_Practice_Room_Parts_Work_2.md",
+    "Prompt": "Summarize the transcript at:\n/Users/danielrueschel/DEV/daniel-knowledge-base/tmp_transcripts/26_01_somatic-evolution-what-are-protectors-lukas.txt\n\nAnd save the German summary to:\nsrc/content/de/4_Neo_Emotional_Release/26_WOCHE_11_Praxis_Parts_Work_II/01__Week_11_Practice_Room_Parts_Work_2.md\n\nAnd the English summary to:\n/Users/danielrueschel/DEV/daniel-knowledge-base/src/content/en/4_Neo_Emotional_Release/26_WEEK_11_Practice_Parts_Work_II/01__Week_11_Practice_Room_Parts_Work_2.md\n\nBe sure to read the target files first to grab the correct H1 title. If no transcript file is found, just reply \"DONE: [transcript not found]\""
+  },
+  {
+    "TypeName": "transcript_summarizer",
+    "Role": "Summarizer for 02_What_are_Parts_Lukas.md",
+    "Prompt": "Summarize the transcript at:\n/Users/danielrueschel/DEV/daniel-knowledge-base/tmp_transcripts/23_02_somatic-evolution-phantom-dialogue-demo-analizing-.txt\n\nAnd save the German summary to:\nsrc/content/de/4_Neo_Emotional_Release/23_WOCHE_10_Theorie_Parts_Work_I/02_What_are_Parts_Lukas.md\n\nAnd the English summary to:\n/Users/danielrueschel/DEV/daniel-knowledge-base/src/content/en/4_Neo_Emotional_Release/23_Week_10_Theory_Parts_Work_I/02_What_are_Parts_Lukas.md\n\nBe sure to read the target files first to grab the correct H1 title. If no transcript file is found, just reply \"DONE: [transcript not found]\""
+  },
+  {
+    "TypeName": "transcript_summarizer",
+    "Role": "Summarizer for 01_Intro_Into_Parts_Work_IFS_Lukas.md",
+    "Prompt": "Summarize the transcript at:\n/Users/danielrueschel/DEV/daniel-knowledge-base/tmp_transcripts/23_01_somatic-evolution-phantom-dialogue-demo-david.txt\n\nAnd save the German summary to:\nsrc/content/de/4_Neo_Emotional_Release/23_WOCHE_10_Theorie_Parts_Work_I/01_Intro_Into_Parts_Work_IFS_Lukas.md\n\nAnd the English summary to:\n/Users/danielrueschel/DEV/daniel-knowledge-base/src/content/en/4_Neo_Emotional_Release/23_Week_10_Theory_Parts_Work_I/01_Intro_Into_Parts_Work_IFS_Lukas.md\n\nBe sure to read the target files first to grab the correct H1 title. If no transcript file is found, just reply \"DONE: [transcript not found]\""
+  },
+  {
+    "TypeName": "transcript_summarizer",
+    "Role": "Summarizer for 03_Guided_excercice_Parts_exploration_Mathias.md",
+    "Prompt": "Summarize the transcript at:\nnull\n\nAnd save the German summary to:\nsrc/content/de/4_Neo_Emotional_Release/25_WOCHE_11_Theorie_Parts_Work_II/03_Guided_excercice_Parts_exploration_Mathias.md\n\nAnd the English summary to:\n/Users/danielrueschel/DEV/daniel-knowledge-base/src/content/en/4_Neo_Emotional_Release/25_WEEK_11_Theory_Parts_Work_II/03_Guided_excercice_Parts_exploration_Mathias.md\n\nBe sure to read the target files first to grab the correct H1 title. If no transcript file is found, just reply \"DONE: [transcript not found]\""
+  },
+  {
+    "TypeName": "transcript_summarizer",
+    "Role": "Summarizer for 02_What_Are_Exiles_Lukas.md",
+    "Prompt": "Summarize the transcript at:\nnull\n\nAnd save the German summary to:\nsrc/content/de/4_Neo_Emotional_Release/25_WOCHE_11_Theorie_Parts_Work_II/02_What_Are_Exiles_Lukas.md\n\nAnd the English summary to:\n/Users/danielrueschel/DEV/daniel-knowledge-base/src/content/en/4_Neo_Emotional_Release/25_WEEK_11_Theory_Parts_Work_II/02_What_Are_Exiles_Lukas.md\n\nBe sure to read the target files first to grab the correct H1 title. If no transcript file is found, just reply \"DONE: [transcript not found]\""
+  },
+  {
+    "TypeName": "transcript_summarizer",
+    "Role": "Summarizer for 01_What_Are_Protectors_Lukas.md",
+    "Prompt": "Summarize the transcript at:\n/Users/danielrueschel/DEV/daniel-knowledge-base/tmp_transcripts/25_01_somatic-evolution-►-week-10-practice-room-parts-wo.txt\n\nAnd save the German summary to:\nsrc/content/de/4_Neo_Emotional_Release/25_WOCHE_11_Theorie_Parts_Work_II/01_What_Are_Protectors_Lukas.md\n\nAnd the English summary to:\n/Users/danielrueschel/DEV/daniel-knowledge-base/src/content/en/4_Neo_Emotional_Release/25_WEEK_11_Theory_Parts_Work_II/01_What_Are_Protectors_Lukas.md\n\nBe sure to read the target files first to grab the correct H1 title. If no transcript file is found, just reply \"DONE: [transcript not found]\""
+  },
+  {
+    "TypeName": "transcript_summarizer",
+    "Role": "Summarizer for 01_Psychosomatics_The_Significance_of_Fascia.md",
+    "Prompt": "Summarize the transcript at:\n/Users/danielrueschel/DEV/daniel-knowledge-base/tmp_transcripts/19_01_somatic-evolution-►-week-7-practice-room-definemen.txt\n\nAnd save the German summary to:\nsrc/content/de/4_Neo_Emotional_Release/19_WOCHE_8_Theorie_Definement_II/01_Psychosomatics_The_Significance_of_Fascia.md\n\nAnd the English summary to:\n/Users/danielrueschel/DEV/daniel-knowledge-base/src/content/en/4_Neo_Emotional_Release/19_WEEK_8_Theory_Definement_II/01_Psychosomatics_The_Significance_of_Fascia.md\n\nBe sure to read the target files first to grab the correct H1 title. If no transcript file is found, just reply \"DONE: [transcript not found]\""
+  },
+  {
+    "TypeName": "transcript_summarizer",
+    "Role": "Summarizer for 04_Psychosomatics_Deep_Dive_The_Psychosomatic_Code_2hours_20mins.md",
+    "Prompt": "Summarize the transcript at:\nnull\n\nAnd save the German summary to:\nsrc/content/de/4_Neo_Emotional_Release/19_WOCHE_8_Theorie_Definement_II/04_Psychosomatics_Deep_Dive_The_Psychosomatic_Code_2hours_20mins.md\n\nAnd the English summary to:\n/Users/danielrueschel/DEV/daniel-knowledge-base/src/content/en/4_Neo_Emotional_Release/19_WEEK_8_Theory_Definement_II/04_Psychosomatics_Deep_Dive_The_Psychosomatic_Code_2hours_20mins.md\n\nBe sure to read the target files first to grab the correct H1 title. If no transcript file is found, just reply \"DONE: [transcript not found]\""
+  },
+  {
+    "TypeName": "transcript_summarizer",
+    "Role": "Summarizer for 02_Demo_Intense_Release_through_Definement.md",
+    "Prompt": "Summarize the transcript at:\n/Users/danielrueschel/DEV/daniel-knowledge-base/tmp_transcripts/19_02_somatic-evolution-guided-exercise-definement-journ.txt\n\nAnd save the German summary to:\nsrc/content/de/4_Neo_Emotional_Release/19_WOCHE_8_Theorie_Definement_II/02_Demo_Intense_Release_through_Definement.md\n\nAnd the English summary to:\n/Users/danielrueschel/DEV/daniel-knowledge-base/src/content/en/4_Neo_Emotional_Release/19_WEEK_8_Theory_Definement_II/02_Demo_Intense_Release_through_Definement.md\n\nBe sure to read the target files first to grab the correct H1 title. If no transcript file is found, just reply \"DONE: [transcript not found]\""
+  },
+  {
+    "TypeName": "transcript_summarizer",
+    "Role": "Summarizer for 03_Demo_From_Sensation_to_Story.md",
+    "Prompt": "Summarize the transcript at:\n/Users/danielrueschel/DEV/daniel-knowledge-base/tmp_transcripts/19_03_somatic-evolution-week-7-demo-definement.txt\n\nAnd save the German summary to:\nsrc/content/de/4_Neo_Emotional_Release/19_WOCHE_8_Theorie_Definement_II/03_Demo_From_Sensation_to_Story.md\n\nAnd the English summary to:\n/Users/danielrueschel/DEV/daniel-knowledge-base/src/content/en/4_Neo_Emotional_Release/19_WEEK_8_Theory_Definement_II/03_Demo_From_Sensation_to_Story.md\n\nBe sure to read the target files first to grab the correct H1 title. If no transcript file is found, just reply \"DONE: [transcript not found]\""
+  },
+  {
+    "TypeName": "transcript_summarizer",
+    "Role": "Summarizer for 01_Phantom_Dialogue_Demo_David.md",
+    "Prompt": "Summarize the transcript at:\n/Users/danielrueschel/DEV/daniel-knowledge-base/tmp_transcripts/22_01_somatic-evolution-conversions-the-symbolic-languag.txt\n\nAnd save the German summary to:\nsrc/content/de/4_Neo_Emotional_Release/22_WOCHE_9_Praxis_Conversions/01_Phantom_Dialogue_Demo_David.md\n\nAnd the English summary to:\n/Users/danielrueschel/DEV/daniel-knowledge-base/src/content/en/4_Neo_Emotional_Release/22_WEEK_9_Practice_Conversions/01_Phantom_Dialogue_Demo_David.md\n\nBe sure to read the target files first to grab the correct H1 title. If no transcript file is found, just reply \"DONE: [transcript not found]\""
+  },
+  {
+    "TypeName": "transcript_summarizer",
+    "Role": "Summarizer for 02_Phantom_Dialogue_Demo_Analizing_Techniques_David.md",
+    "Prompt": "Summarize the transcript at:\n/Users/danielrueschel/DEV/daniel-knowledge-base/tmp_transcripts/22_02_somatic-evolution-how-to-use-conversions-lukas.txt\n\nAnd save the German summary to:\nsrc/content/de/4_Neo_Emotional_Release/22_WOCHE_9_Praxis_Conversions/02_Phantom_Dialogue_Demo_Analizing_Techniques_David.md\n\nAnd the English summary to:\n/Users/danielrueschel/DEV/daniel-knowledge-base/src/content/en/4_Neo_Emotional_Release/22_WEEK_9_Practice_Conversions/02_Phantom_Dialogue_Demo_Analizing_Techniques_David.md\n\nBe sure to read the target files first to grab the correct H1 title. If no transcript file is found, just reply \"DONE: [transcript not found]\""
+  },
+  {
+    "TypeName": "transcript_summarizer",
+    "Role": "Summarizer for 03__Week_9_Practice_Room_Phantom_Dialogue.md",
+    "Prompt": "Summarize the transcript at:\nnull\n\nAnd save the German summary to:\nsrc/content/de/4_Neo_Emotional_Release/22_WOCHE_9_Praxis_Conversions/03__Week_9_Practice_Room_Phantom_Dialogue.md\n\nAnd the English summary to:\n/Users/danielrueschel/DEV/daniel-knowledge-base/src/content/en/4_Neo_Emotional_Release/22_WEEK_9_Practice_Conversions/03__Week_9_Practice_Room_Phantom_Dialogue.md\n\nBe sure to read the target files first to grab the correct H1 title. If no transcript file is found, just reply \"DONE: [transcript not found]\""
+  },
+  {
+    "TypeName": "transcript_summarizer",
+    "Role": "Summarizer for 02_12_WEEK_PRACTICE_Workbook.md",
+    "Prompt": "Summarize the transcript at:\nnull\n\nAnd save the German summary to:\nsrc/content/de/4_Neo_Emotional_Release/01_Willkommen_bei_Somatic_Evolution/02_12_WEEK_PRACTICE_Workbook.md\n\nAnd the English summary to:\n/Users/danielrueschel/DEV/daniel-knowledge-base/src/content/en/4_Neo_Emotional_Release/01_WELCOME_TO_SOMATIC_EVOLUTION/02_12_WEEK_PRACTICE_Workbook.md\n\nBe sure to read the target files first to grab the correct H1 title. If no transcript file is found, just reply \"DONE: [transcript not found]\""
+  },
+  {
+    "TypeName": "transcript_summarizer",
+    "Role": "Summarizer for 03_12_WEEK_ONLINE_THERAPY_Workbook.md",
+    "Prompt": "Summarize the transcript at:\nnull\n\nAnd save the German summary to:\nsrc/content/de/4_Neo_Emotional_Release/01_Willkommen_bei_Somatic_Evolution/03_12_WEEK_ONLINE_THERAPY_Workbook.md\n\nAnd the English summary to:\n/Users/danielrueschel/DEV/daniel-knowledge-base/src/content/en/4_Neo_Emotional_Release/01_WELCOME_TO_SOMATIC_EVOLUTION/03_12_WEEK_ONLINE_THERAPY_Workbook.md\n\nBe sure to read the target files first to grab the correct H1 title. If no transcript file is found, just reply \"DONE: [transcript not found]\""
+  },
+  {
+    "TypeName": "transcript_summarizer",
+    "Role": "Summarizer for 06_Q_A_DATABASE.md",
+    "Prompt": "Summarize the transcript at:\nnull\n\nAnd save the German summary to:\nsrc/content/de/4_Neo_Emotional_Release/01_Willkommen_bei_Somatic_Evolution/06_Q_A_DATABASE.md\n\nAnd the English summary to:\n/Users/danielrueschel/DEV/daniel-knowledge-base/src/content/en/4_Neo_Emotional_Release/01_WELCOME_TO_SOMATIC_EVOLUTION/06_Q_A_DATABASE.md\n\nBe sure to read the target files first to grab the correct H1 title. If no transcript file is found, just reply \"DONE: [transcript not found]\""
+  },
+  {
+    "TypeName": "transcript_summarizer",
+    "Role": "Summarizer for 07_CLIENT_INTAKE_FORM.md",
+    "Prompt": "Summarize the transcript at:\nnull\n\nAnd save the German summary to:\nsrc/content/de/4_Neo_Emotional_Release/01_Willkommen_bei_Somatic_Evolution/07_CLIENT_INTAKE_FORM.md\n\nAnd the English summary to:\n/Users/danielrueschel/DEV/daniel-knowledge-base/src/content/en/4_Neo_Emotional_Release/01_WELCOME_TO_SOMATIC_EVOLUTION/07_CLIENT_INTAKE_FORM.md\n\nBe sure to read the target files first to grab the correct H1 title. If no transcript file is found, just reply \"DONE: [transcript not found]\""
+  },
+  {
+    "TypeName": "transcript_summarizer",
+    "Role": "Summarizer for 04_How_To_Use_The_Platform.md",
+    "Prompt": "Summarize the transcript at:\nnull\n\nAnd save the German summary to:\nsrc/content/de/4_Neo_Emotional_Release/01_Willkommen_bei_Somatic_Evolution/04_How_To_Use_The_Platform.md\n\nAnd the English summary to:\n/Users/danielrueschel/DEV/daniel-knowledge-base/src/content/en/4_Neo_Emotional_Release/01_WELCOME_TO_SOMATIC_EVOLUTION/04_How_To_Use_The_Platform.md\n\nBe sure to read the target files first to grab the correct H1 title. If no transcript file is found, just reply \"DONE: [transcript not found]\""
+  },
+  {
+    "TypeName": "transcript_summarizer",
+    "Role": "Summarizer for 05__Practice_Room_Introduction.md",
+    "Prompt": "Summarize the transcript at:\nnull\n\nAnd save the German summary to:\nsrc/content/de/4_Neo_Emotional_Release/01_Willkommen_bei_Somatic_Evolution/05__Practice_Room_Introduction.md\n\nAnd the English summary to:\n/Users/danielrueschel/DEV/daniel-knowledge-base/src/content/en/4_Neo_Emotional_Release/01_WELCOME_TO_SOMATIC_EVOLUTION/05__Practice_Room_Introduction.md\n\nBe sure to read the target files first to grab the correct H1 title. If no transcript file is found, just reply \"DONE: [transcript not found]\""
+  },
+  {
+    "TypeName": "transcript_summarizer",
+    "Role": "Summarizer for 03_Guided_Exercise_Progressive_Relaxation_of_the_Diaphragms_as_a_Resource.md",
+    "Prompt": "Summarize the transcript at:\nnull\n\nAnd save the German summary to:\nsrc/content/de/4_Neo_Emotional_Release/13_WOCHE_5_Theorie_Resourcing/03_Guided_Exercise_Progressive_Relaxation_of_the_Diaphragms_as_a_Resource.md\n\nAnd the English summary to:\n/Users/danielrueschel/DEV/daniel-knowledge-base/src/content/en/4_Neo_Emotional_Release/13_WEEK_5_Theory_Resourcing/03_Guided_Exercise_Progressive_Relaxation_of_the_Diaphragms_as_a_Resource.md\n\nBe sure to read the target files first to grab the correct H1 title. If no transcript file is found, just reply \"DONE: [transcript not found]\""
+  },
+  {
+    "TypeName": "transcript_summarizer",
+    "Role": "Summarizer for 02_Neurophysiology_Deep_Dive_The_Neuroscience_of_Emotional_Release_with_Satori_2_hours_40min.md",
+    "Prompt": "Summarize the transcript at:\nnull\n\nAnd save the German summary to:\nsrc/content/de/4_Neo_Emotional_Release/13_WOCHE_5_Theorie_Resourcing/02_Neurophysiology_Deep_Dive_The_Neuroscience_of_Emotional_Release_with_Satori_2_hours_40min.md\n\nAnd the English summary to:\n/Users/danielrueschel/DEV/daniel-knowledge-base/src/content/en/4_Neo_Emotional_Release/13_WEEK_5_Theory_Resourcing/02_Neurophysiology_Deep_Dive_The_Neuroscience_of_Emotional_Release_with_Satori_2_hours_40min.md\n\nBe sure to read the target files first to grab the correct H1 title. If no transcript file is found, just reply \"DONE: [transcript not found]\""
+  },
+  {
+    "TypeName": "transcript_summarizer",
+    "Role": "Summarizer for 01__Week_7_Practice_Room_Definement.md",
+    "Prompt": "Summarize the transcript at:\n/Users/danielrueschel/DEV/daniel-knowledge-base/tmp_transcripts/18_01_somatic-evolution-introduction-to-definement.txt\n\nAnd save the German summary to:\nsrc/content/de/4_Neo_Emotional_Release/18_WOCHE_7_Praxis_Definement/01__Week_7_Practice_Room_Definement.md\n\nAnd the English summary to:\n/Users/danielrueschel/DEV/daniel-knowledge-base/src/content/en/4_Neo_Emotional_Release/18_WEEK_7_Practice_Definement/01__Week_7_Practice_Room_Definement.md\n\nBe sure to read the target files first to grab the correct H1 title. If no transcript file is found, just reply \"DONE: [transcript not found]\""
+  },
+  {
+    "TypeName": "transcript_summarizer",
+    "Role": "Summarizer for 03_Week_7_Demo_Definement.md",
+    "Prompt": "Summarize the transcript at:\n/Users/danielrueschel/DEV/daniel-knowledge-base/tmp_transcripts/18_03_somatic-evolution-equalizing-definement.txt\n\nAnd save the German summary to:\nsrc/content/de/4_Neo_Emotional_Release/18_WOCHE_7_Praxis_Definement/03_Week_7_Demo_Definement.md\n\nAnd the English summary to:\n/Users/danielrueschel/DEV/daniel-knowledge-base/src/content/en/4_Neo_Emotional_Release/18_WEEK_7_Practice_Definement/03_Week_7_Demo_Definement.md\n\nBe sure to read the target files first to grab the correct H1 title. If no transcript file is found, just reply \"DONE: [transcript not found]\""
+  },
+  {
+    "TypeName": "transcript_summarizer",
+    "Role": "Summarizer for 02_Guided_Exercise_Definement_journey.md",
+    "Prompt": "Summarize the transcript at:\n/Users/danielrueschel/DEV/daniel-knowledge-base/tmp_transcripts/18_02_somatic-evolution-definement-theory-and-examples-o.txt\n\nAnd save the German summary to:\nsrc/content/de/4_Neo_Emotional_Release/18_WOCHE_7_Praxis_Definement/02_Guided_Exercise_Definement_journey.md\n\nAnd the English summary to:\n/Users/danielrueschel/DEV/daniel-knowledge-base/src/content/en/4_Neo_Emotional_Release/18_WEEK_7_Practice_Definement/02_Guided_Exercise_Definement_journey.md\n\nBe sure to read the target files first to grab the correct H1 title. If no transcript file is found, just reply \"DONE: [transcript not found]\""
+  },
+  {
+    "TypeName": "transcript_summarizer",
+    "Role": "Summarizer for 01__Week_10_Practice_Room_Parts_Work_1.md",
+    "Prompt": "Summarize the transcript at:\n/Users/danielrueschel/DEV/daniel-knowledge-base/tmp_transcripts/24_01_somatic-evolution-intro-into-parts-workifs-lukas.txt\n\nAnd save the German summary to:\nsrc/content/de/4_Neo_Emotional_Release/24_WOCHE_10_Praxis_Parts_Work_I/01__Week_10_Practice_Room_Parts_Work_1.md\n\nAnd the English summary to:\n/Users/danielrueschel/DEV/daniel-knowledge-base/src/content/en/4_Neo_Emotional_Release/24_WEEK_10_Practice_Parts_Work_I/01__Week_10_Practice_Room_Parts_Work_1.md\n\nBe sure to read the target files first to grab the correct H1 title. If no transcript file is found, just reply \"DONE: [transcript not found]\""
+  },
+  {
+    "TypeName": "transcript_summarizer",
+    "Role": "Summarizer for 01_Emotions_MAP_PDF.md",
+    "Prompt": "Summarize the transcript at:\n/Users/danielrueschel/DEV/daniel-knowledge-base/tmp_transcripts/3_01_somatic-evolution-why-everybody-has-the-potential-.txt\n\nAnd save the German summary to:\nsrc/content/de/4_Neo_Emotional_Release/03_Einfuehrung_in_Emotionen/01_Emotions_MAP_PDF.md\n\nAnd the English summary to:\n/Users/danielrueschel/DEV/daniel-knowledge-base/src/content/en/4_Neo_Emotional_Release/03_Introduction_Into_Emotions/01_Emotions_MAP_PDF.md\n\nBe sure to read the target files first to grab the correct H1 title. If no transcript file is found, just reply \"DONE: [transcript not found]\""
+  },
+  {
+    "TypeName": "transcript_summarizer",
+    "Role": "Summarizer for 02_Definement_Theory_and_Examples_of_Application_Mathias.md",
+    "Prompt": "Summarize the transcript at:\nnull\n\nAnd save the German summary to:\nsrc/content/de/4_Neo_Emotional_Release/17_WOCHE_7_Theorie_Definement/02_Definement_Theory_and_Examples_of_Application_Mathias.md\n\nAnd the English summary to:\n/Users/danielrueschel/DEV/daniel-knowledge-base/src/content/en/4_Neo_Emotional_Release/17_WEEK_7_Theory_Definement/02_Definement_Theory_and_Examples_of_Application_Mathias.md\n\nBe sure to read the target files first to grab the correct H1 title. If no transcript file is found, just reply \"DONE: [transcript not found]\""
+  }
+]
