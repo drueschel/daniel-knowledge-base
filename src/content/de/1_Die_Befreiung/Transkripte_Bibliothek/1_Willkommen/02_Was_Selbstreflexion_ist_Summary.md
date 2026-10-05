@@ -1,4 +1,4 @@
-# 03 Was Selbstreflexion Ist
+# Was Selbstreflexion Ist
 
 Selbstreflexion wird als tiefgehende und ehrliche Selbstwahrnehmung verstanden. Der Fokus liegt darauf, vom zwanghaften, mentalen Grübeln nach Lösungen abzurücken und stattdessen den gegenwärtigen inneren und äußeren Zustand klar und objektiv zu erfassen.
 

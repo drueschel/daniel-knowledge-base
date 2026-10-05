@@ -1,4 +1,4 @@
-# 04 Was Kontakt und Beziehung ist
+# Was Kontakt und Beziehung ist
 
 Zwischen echtem, nährendem Kontakt und dem alltäglichen "Pseudokontakt" besteht ein fundamentaler Unterschied. Viele Menschen fühlen sich trotz vermeintlicher Beziehungen isoliert und unglücklich, weil der für das Nervensystem überlebenswichtige, tiefe Informationsaustausch fehlt. Dieser direkte Kontakt ist notwendig, um Sicherheit und Regulation im eigenen Organismus zu erfahren, ohne sich dafür verändern oder anstrengende Prozesse durchlaufen zu müssen.
 

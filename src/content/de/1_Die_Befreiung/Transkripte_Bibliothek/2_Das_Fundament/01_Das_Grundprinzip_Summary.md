@@ -1,4 +1,4 @@
-# 01: Das Grundprinzip
+# Das Grundprinzip
 
 ## 1. Kernthema & Abstract
 Das Fundament der Arbeit: **Mit dir ist alles in Ordnung.** 

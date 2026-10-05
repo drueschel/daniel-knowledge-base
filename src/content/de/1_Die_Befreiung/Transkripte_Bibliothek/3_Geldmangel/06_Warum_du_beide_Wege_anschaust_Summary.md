@@ -1,4 +1,4 @@
-# 06 Warum du beide Wege anschaust
+# Warum du beide Wege anschaust
 
 ## Die Bedeutung des Gesamtverständnisses
 

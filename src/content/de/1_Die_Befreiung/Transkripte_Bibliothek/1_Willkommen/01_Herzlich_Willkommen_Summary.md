@@ -1,4 +1,4 @@
-# 01 Herzlich Willkommen
+# Herzlich Willkommen
 
 Probleme und Situationen lassen sich in den Bindungskontext übersetzen, um tieferliegende Ursachen auf der Beziehungsebene zu erkennen und anzugehen, die bei bisherigen Lösungsversuchen unentdeckt blieben.
 
