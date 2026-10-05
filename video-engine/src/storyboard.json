@@ -1,0 +1,29 @@
+{
+  "title": "Der Verschmelzungstyp",
+  "scenes": [
+    {
+      "headline": "DIÄTEN HELFEN NICHT",
+      "words": ["Warum", "Diäten", "beim", "Verschmelzungstyp", "oft", "scheitern"],
+      "durationInFrames": 90,
+      "gradient": ["#ff7e5f", "#feb47b"]
+    },
+    {
+      "headline": "DIE SCHUTZMAUER",
+      "words": ["Körperfülle", "als", "unbewusster", "Schutz", "vor", "Vereinnahmung"],
+      "durationInFrames": 120,
+      "gradient": ["#11998e", "#38ef7d"]
+    },
+    {
+      "headline": "DAS WAHRE BEDÜRFNIS",
+      "words": ["Der", "tiefe", "Hunger", "nach", "echter", "emotionaler", "Nähe"],
+      "durationInFrames": 120,
+      "gradient": ["#8E2DE2", "#4A00E0"]
+    },
+    {
+      "headline": "DIE LÖSUNG",
+      "words": ["Sicherheit", "durch", "klare", "Grenzen", "aufbauen"],
+      "durationInFrames": 150,
+      "gradient": ["#c31432", "#240b36"]
+    }
+  ]
+}
