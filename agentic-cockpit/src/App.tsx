@@ -50,7 +50,7 @@ const employees = [
 ];
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState<'team' | 'studio' | 'import'>('studio');
+  const [activeTab, setActiveTab] = useState<'team' | 'studio' | 'import'>('import');
   const [activeStep, setActiveStep] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
   const [topic, setTopic] = useState('Verschmelzungstyp - Lektion 14');
@@ -58,6 +58,7 @@ export default function App() {
   const [ytUrl, setYtUrl] = useState('');
   const [isImporting, setIsImporting] = useState(false);
   const [importStep, setImportStep] = useState(0);
+  const [importResponse, setImportResponse] = useState<any>(null);
 
   const startPipeline = () => {
     setIsRunning(true);
@@ -76,6 +77,7 @@ export default function App() {
     if(!ytUrl) return;
     setIsImporting(true);
     setImportStep(1);
+    setImportResponse(null);
 
     try {
       // Update step visual instantly to indicate backend processing
@@ -92,20 +94,20 @@ export default function App() {
       clearInterval(timer);
       
       if (response.ok) {
+        const data = await response.json();
+        setImportResponse(data);
         setImportStep(3);
       } else {
         alert("Fehler beim Importieren!");
         setImportStep(0);
       }
     } catch (e) {
-      alert("Backend nicht erreichbar!");
+      alert("Backend nicht erreichbar! Läuft der Node-Server auf Port 4000?");
       setImportStep(0);
     } finally {
       setTimeout(() => setIsImporting(false), 2000);
     }
-  }
-    }, 2000);
-  }
+  };
 
   // Filter studio agents (exclude Ingest & Analytics for the active render pipeline, include render step)
   const studioPipeline = [
@@ -195,7 +197,7 @@ export default function App() {
           </div>
         )}
 
-        {/* YOUTUBE IMPORT (Unchanged) */}
+        {/* YOUTUBE IMPORT */}
         {activeTab === 'import' && (
           <div className="p-10 max-w-4xl mx-auto">
              <header className="mb-10">
@@ -211,7 +213,41 @@ export default function App() {
                   <Database className="w-5 h-5" /> Import
                 </button>
               </div>
-              {/* ... status UI ... */}
+
+              {/* Status UI */}
+              <div className="bg-slate-900 rounded-xl p-6 border border-slate-700/50 min-h-[200px]">
+                {importStep === 0 && !importResponse && (
+                  <div className="h-full flex flex-col items-center justify-center text-slate-500">
+                    <Bot className="w-12 h-12 mb-3 opacity-20" />
+                    <p>Felix wartet auf einen Auftrag...</p>
+                  </div>
+                )}
+                
+                {importStep > 0 && (
+                  <div className="space-y-4">
+                    <div className={`flex items-center gap-3 transition-opacity ${importStep >= 1 ? 'opacity-100 text-blue-400' : 'opacity-30'}`}>
+                      {importStep > 1 ? <CheckCircle2 className="w-5 h-5 text-emerald-500" /> : <div className="w-5 h-5 border-2 border-blue-500 border-t-transparent rounded-full animate-spin"></div>}
+                      <span>Sende URL an lokales Backend...</span>
+                    </div>
+                    <div className={`flex items-center gap-3 transition-opacity ${importStep >= 2 ? 'opacity-100 text-purple-400' : 'opacity-30'}`}>
+                      {importStep > 2 ? <CheckCircle2 className="w-5 h-5 text-emerald-500" /> : (importStep === 2 ? <div className="w-5 h-5 border-2 border-purple-500 border-t-transparent rounded-full animate-spin"></div> : <div className="w-5 h-5 rounded-full border-2 border-slate-700"></div>)}
+                      <span>Agent Felix zieht Transkript und extrahiert Fakten...</span>
+                    </div>
+                    <div className={`flex items-center gap-3 transition-opacity ${importStep >= 3 ? 'opacity-100 text-emerald-400' : 'opacity-30'}`}>
+                       {importStep >= 3 ? <CheckCircle2 className="w-5 h-5 text-emerald-500" /> : <div className="w-5 h-5 rounded-full border-2 border-slate-700"></div>}
+                      <span>Als Markdown in Obsidian gespeichert!</span>
+                    </div>
+                  </div>
+                )}
+
+                {importResponse && (
+                  <div className="mt-8 p-4 bg-emerald-900/20 border border-emerald-500/30 rounded-lg">
+                    <p className="text-emerald-400 font-bold mb-2">{importResponse.message}</p>
+                    <p className="text-slate-300 text-sm">Gespeichert unter: <code className="bg-black/50 px-2 py-1 rounded">{importResponse.path}</code></p>
+                  </div>
+                )}
+              </div>
+
             </div>
           </div>
         )}
