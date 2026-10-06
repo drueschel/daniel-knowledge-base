@@ -1,9 +1,11 @@
 import { YoutubeTranscript } from 'youtube-transcript';
+import { GoogleGenerativeAI } from '@google/generative-ai';
 import { BaseAgent } from './BaseAgent';
 import { ObsidianWriter } from '../services/ObsidianWriter';
 
 export class FelixIngestionAgent extends BaseAgent {
   private writer: ObsidianWriter;
+  private genAI: GoogleGenerativeAI;
 
   constructor() {
     super({
@@ -14,6 +16,10 @@ export class FelixIngestionAgent extends BaseAgent {
       traits: ['Schnell', 'Strukturiert', 'Wissensdurstig']
     });
     this.writer = new ObsidianWriter();
+    
+    // Initialize Gemini SDK
+    const apiKey = process.env.GEMINI_API_KEY || '';
+    this.genAI = new GoogleGenerativeAI(apiKey);
   }
 
   public async processYouTubeVideo(url: string): Promise<string> {
@@ -26,11 +32,13 @@ export class FelixIngestionAgent extends BaseAgent {
       
       this.log(`Transkript extrahiert (${rawText.length} Zeichen).`);
 
-      // 2. Pass to LLM for structuring (Mocked if no API key)
-      const structuredMarkdown = await this.structureWithLLM(rawText);
+      // 2. Pass to Gemini for structuring
+      const structuredMarkdown = await this.structureWithLLM(rawText, url);
 
       // 3. Write to Obsidian Vault
-      const fileName = `YouTube_Import_${Date.now()}.md`;
+      // Clean up the URL to make a safe filename
+      const safeName = url.replace(/[^a-zA-Z0-9]/g, '_').substring(0, 30);
+      const fileName = `YouTube_${safeName}_${Date.now()}.md`;
       const savedPath = this.writer.saveToVault(fileName, structuredMarkdown);
       
       this.log(`Erfolgreich in Obsidian gespeichert: ${savedPath}`);
@@ -43,31 +51,36 @@ export class FelixIngestionAgent extends BaseAgent {
     }
   }
 
-  private async structureWithLLM(rawText: string): Promise<string> {
-    this.log(`Sende Daten an LLM zur Strukturierung...`);
+  private async structureWithLLM(rawText: string, url: string): Promise<string> {
+    this.log(`Sende Daten an Gemini KI zur Strukturierung...`);
     
-    // TODO: Replace with real OpenAI/Anthropic call once API keys are provided.
-    // For now, simulate the AI processing and structuring.
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(`
-# YouTube Video Import
-**Datum:** ${new Date().toISOString()}
+    try {
+      // We use gemini-1.5-flash as it's fast and has a huge context window
+      const model = this.genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+      
+      const prompt = `
+Du bist Felix, ein professioneller Daten-Analyst. 
+Deine Aufgabe ist es, unstrukturierte, rohe YouTube-Transkripte in sauberes, strukturiertes Markdown für eine Obsidian Knowledge-Base zu übersetzen.
 
-## 1. Zusammenfassung
-Dieses Dokument wurde automatisch von Agent Felix strukturiert. Es enthält die Kernessenz des Videos.
+Hier ist das Transkript eines YouTube-Videos (${url}):
+---
+${rawText.substring(0, 50000)} // Begrenzt auf 50.000 Zeichen zur Sicherheit
+---
 
-## 2. Key Facts & Learnings
-- **Fakt 1:** Automatische Extraktion funktioniert.
-- **Fakt 2:** Rauschen und Füllwörter wurden vom LLM entfernt.
+Bitte erstelle ein professionelles Markdown-Dokument mit folgender Struktur:
+1. Eine kurze Einleitung / Zusammenfassung (Was ist die Kernerkenntnis?).
+2. "Key Facts & Learnings" (Die wichtigsten psychologischen oder inhaltlichen Fakten als Aufzählungsliste).
+3. "Bemerkenswerte Zitate" (Extrahiere 2-3 sehr gute, starke Aussagen direkt aus dem Text und nutze Markdown Blockquotes '>').
 
-## 3. Bemerkenswerte Zitate
-> "Das ist ein simuliertes Zitat aus dem rohen Transkript."
+Formatiere alles sauber in Deutsch. Sei präzise und wirf irrelevantes Rauschen (Füllwörter, Werbung) weg.
+      `;
 
-## Rohdaten (Auszug)
-${rawText.substring(0, 300)}...
-        `.trim());
-      }, 1500);
-    });
+      const result = await model.generateContent(prompt);
+      const response = await result.response;
+      return response.text();
+    } catch (err: any) {
+      this.log(`KI-Fehler: ${err.message}`);
+      return `Fehler bei der KI-Zusammenfassung: ${err.message}\n\nRohdaten:\n${rawText.substring(0, 2000)}`;
+    }
   }
 }
