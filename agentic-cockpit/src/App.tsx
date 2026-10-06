@@ -1,16 +1,16 @@
 import { useState } from 'react';
-import { Bot, FileText, Image as ImageIcon, Mic, Settings, Play, CheckCircle2, ChevronRight, Wand2, Users, Star, TrendingUp, BrainCircuit, Youtube, Database } from 'lucide-react';
+import { Bot, FileText, Image as ImageIcon, Mic, Settings, Play, CheckCircle2, ChevronRight, Wand2, Users, Star, TrendingUp, BrainCircuit, Video, Database } from 'lucide-react';
 
 const employees = [
   { 
     id: 'ingest', 
     name: 'Felix', 
     role: 'Head of Ingestion (Data)', 
-    level: 15,
+    level: 1,
     avatar: '👨🏽‍💻',
     traits: ['Schnell', 'Strukturiert', 'Wissensdurstig'],
-    performance: 99,
-    stats: '1.200 Min. YT transkribiert',
+    performance: 0,
+    stats: '0 Videos importiert',
     description: 'Felix saugt externe Quellen (wie YouTube) auf. Er zieht blitzschnell das Transkript, filtert das Rauschen heraus und formatiert die pure Essenz sauber in deine Obsidian-Vault.',
     color: 'bg-red-500/20 text-red-400 border-red-500/30'
   },
@@ -18,11 +18,11 @@ const employees = [
     id: 'research', 
     name: 'Dr. Elena', 
     role: 'Head of Knowledge (RAG)', 
-    level: 12,
+    level: 1,
     avatar: '👩🏻‍🏫',
     traits: ['Analytisch', 'Detailverliebt'],
-    performance: 98,
-    stats: '45 Dokumente analysiert',
+    performance: 0,
+    stats: '0 Dokumente analysiert',
     description: 'Elena liest deine Obsidian-Vault wie ein Buch. Sie findet die tiefsten psychologischen Muster und bringt sie auf den Punkt.',
     color: 'bg-blue-500/20 text-blue-400 border-blue-500/30'
   },
@@ -30,11 +30,11 @@ const employees = [
     id: 'script', 
     name: 'Leo', 
     role: 'Creative Director (Script)', 
-    level: 8,
+    level: 1,
     avatar: '🧑🏽‍🎨',
     traits: ['Gen Z Experte', 'Hook-Meister'],
-    performance: 85,
-    stats: '14 virale Hooks geschrieben',
+    performance: 0,
+    stats: '0 Hooks geschrieben',
     description: 'Leo übersetzt Elenas staubige Fakten in hochgradig konvertierende Skripte für HyperFrames Reels.',
     color: 'bg-purple-500/20 text-purple-400 border-purple-500/30'
   },
@@ -42,11 +42,11 @@ const employees = [
     id: 'voice', 
     name: 'Arthur', 
     role: 'Voice Actor (TTS)', 
-    level: 24,
+    level: 1,
     avatar: '🎙️',
     traits: ['Empathisch', 'Warm'],
-    performance: 99,
-    stats: '120 Minuten Audio',
+    performance: 0,
+    stats: '0 Minuten generiert',
     description: 'Arthur hat die Stimme eines Radiomoderators und nutzt ElevenLabs für maximale Emotion.',
     color: 'bg-green-500/20 text-green-400 border-green-500/30'
   },
@@ -54,11 +54,11 @@ const employees = [
     id: 'visuals', 
     name: 'Maya', 
     role: 'Art Director (Visuals)', 
-    level: 5,
+    level: 1,
     avatar: '👩🏼‍🎤',
     traits: ['Ästhetisch', 'Comic-Fan'],
-    performance: 76,
-    stats: 'Lernt deinen Stil',
+    performance: 0,
+    stats: '0 Bilder generiert',
     description: 'Maya generiert die Bilder für HyperFrames basierend auf Leos Prompts (Fal.ai Flux).',
     color: 'bg-pink-500/20 text-pink-400 border-pink-500/30'
   },
@@ -135,7 +135,7 @@ export default function App() {
               activeTab === 'import' ? 'bg-red-500/10 text-red-400' : 'text-slate-400 hover:bg-slate-800/50 hover:text-slate-200'
             }`}
           >
-            <Youtube className="w-5 h-5" />
+            <Video className="w-5 h-5" />
             <span className="font-medium">Wissens-Import</span>
           </button>
           
