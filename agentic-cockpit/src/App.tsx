@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Bot, FileText, Image as ImageIcon, Mic, Settings, Play, CheckCircle2, ChevronRight, Wand2, Users, Star, TrendingUp, BrainCircuit, Youtube, Database, Activity, Share2 } from 'lucide-react';
+import { Bot, FileText, Image as ImageIcon, Mic, Settings, Play, CheckCircle2, ChevronRight, Wand2, Users, Star, TrendingUp, BrainCircuit, Video, Database, Activity, Share2 } from 'lucide-react';
 
 const employees = [
   { 
@@ -72,17 +72,38 @@ export default function App() {
     }, 2800);
   };
 
-  const startImport = () => {
+  const startImport = async () => {
     if(!ytUrl) return;
     setIsImporting(true);
-    let step = 0;
-    const interval = setInterval(() => {
-      step += 1;
-      setImportStep(step);
-      if (step >= 3) {
-        clearInterval(interval);
-        setTimeout(() => setIsImporting(false), 2000);
+    setImportStep(1);
+
+    try {
+      // Update step visual instantly to indicate backend processing
+      const timer = setInterval(() => {
+         setImportStep(s => s < 2 ? s + 1 : s);
+      }, 1500);
+
+      const response = await fetch("http://localhost:4000/api/ingest/youtube", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ url: ytUrl })
+      });
+      
+      clearInterval(timer);
+      
+      if (response.ok) {
+        setImportStep(3);
+      } else {
+        alert("Fehler beim Importieren!");
+        setImportStep(0);
       }
+    } catch (e) {
+      alert("Backend nicht erreichbar!");
+      setImportStep(0);
+    } finally {
+      setTimeout(() => setIsImporting(false), 2000);
+    }
+  }
     }, 2000);
   }
 
@@ -118,7 +139,7 @@ export default function App() {
             <span className="font-medium">Mitarbeiter Portal ({employees.length})</span>
           </button>
           <button onClick={() => setActiveTab('import')} className={`w-full flex items-center gap-3 p-3 rounded-xl transition-all ${activeTab === 'import' ? 'bg-red-500/10 text-red-400' : 'text-slate-400 hover:bg-slate-800/50 hover:text-slate-200'}`}>
-            <Youtube className="w-5 h-5" />
+            <Video className="w-5 h-5" />
             <span className="font-medium">Wissens-Import (Felix)</span>
           </button>
           <button onClick={() => setActiveTab('studio')} className={`w-full flex items-center gap-3 p-3 rounded-xl transition-all ${activeTab === 'studio' ? 'bg-indigo-500/10 text-indigo-400' : 'text-slate-400 hover:bg-slate-800/50 hover:text-slate-200'}`}>
