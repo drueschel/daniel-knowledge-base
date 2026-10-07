@@ -406,7 +406,14 @@ export default function App() {
     try {
       const res = await fetch(`http://localhost:4000/api/studio/session/${sessionId}`);
       const state = await res.json();
-      if (!state || Object.keys(state).length === 0) return;
+      if (!state || Object.keys(state).length === 0) {
+        // Backend doesn't know this session (server restart or deleted). Clear it.
+        setIsRunning(false);
+        localStorage.removeItem('activePipelineSession');
+        setActiveStep(0);
+        showToast('Pipeline-Session abgelaufen oder ungültig.', 'error');
+        return;
+      }
       
       if (state.status === 'review') {
         setActiveStep(6);
