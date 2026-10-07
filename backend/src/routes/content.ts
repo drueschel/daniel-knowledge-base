@@ -105,4 +105,39 @@ router.post('/:id/error', (req, res) => {
   res.json({ success: true });
 });
 
+
+router.post('/:id/regenerate-script', async (req, res) => {
+  const { id } = req.params;
+  const piece = contentManager.getById(id);
+  if (!piece) return res.status(404).json({ error: 'Not found' });
+
+  // Update DB to scripting
+  contentManager.createOrUpdate({
+    id: piece.id,
+    topic: piece.topic,
+    scriptData: null,
+    qaData: null,
+    status: 'scripting'
+  });
+
+  res.json({ status: 'scripting' });
+
+  // Call studio orchestrator to resume pipeline
+  try {
+    const fetch = require('node-fetch'); // Make sure fetch works
+    await fetch('http://localhost:4000/api/studio/pipeline/start', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ 
+        sessionId: piece.id, 
+        prompt: piece.topic,
+        researchScope: 'kb_and_web',
+        moduleFilter: 'all'
+      })
+    });
+  } catch (e) {
+    console.error('Error restarting pipeline for script generation:', e);
+  }
+});
+
 export default router;

@@ -980,6 +980,20 @@ export default function App() {
                   <div key={piece.id} className="bg-slate-100 rounded-2xl border border-slate-200 p-6 shadow-xl relative overflow-hidden">
                     {/* Actions & Status Badge */}
                     <div className="absolute top-6 right-6 flex items-center gap-3">
+                      {(piece.status === 'review' || piece.status === 'production') && (
+                        <button onClick={async () => {
+                          setToast({ message: 'Skript wird neu generiert...', type: 'success' });
+                          await fetch(`http://localhost:4000/api/studio/pipeline/regenerate-script/${piece.id}`, { method: 'POST' });
+                          setActiveTab('studio');
+                          setIsRunning(true);
+                          setActiveStep(3);
+                          localStorage.setItem('activePipelineSession', piece.id);
+                          checkPipelineStatus(piece.id);
+                        }} className="text-indigo-500 hover:text-indigo-600 transition-colors bg-indigo-50 p-2 rounded-full shadow-sm hover:shadow-md border border-indigo-100 flex items-center gap-1" title="Skript neu generieren (Calliope & Themis)">
+                          <RefreshCcw className="w-4 h-4" />
+                          <span className="text-xs font-bold pr-1">Regenerate</span>
+                        </button>
+                      )}
                       <button onClick={() => deleteContent(piece.id)} className="text-slate-400 hover:text-red-500 transition-colors bg-white p-2 rounded-full shadow-sm hover:shadow-md border border-slate-200" title="Eintrag löschen">
                         <Trash2 className="w-4 h-4" />
                       </button>

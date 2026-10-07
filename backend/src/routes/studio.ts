@@ -230,4 +230,44 @@ router.post('/:agentId', async (req, res) => {
   }
 });
 
+
+// ----------------- REGENERATE SCRIPT -----------------
+router.post('/pipeline/regenerate-script/:sessionId', async (req, res) => {
+  const { sessionId } = req.params;
+  
+  // Clear memory cache for script and qa
+  if (sessionCache[sessionId]) {
+    sessionCache[sessionId].script = null;
+    sessionCache[sessionId].qa = null;
+    sessionCache[sessionId].qaFeedback = null;
+    sessionCache[sessionId].status = 'scripting';
+  }
+
+  // Clear DB
+  const piece = contentManager.getById(sessionId);
+  if (!piece) return res.status(404).json({ error: 'Not found' });
+  
+  contentManager.createOrUpdate({
+    id: sessionId,
+    topic: piece.topic,
+    scriptData: null,
+    qaData: null,
+    status: 'scripting'
+  });
+
+  res.json({ status: 'scripting', sessionId });
+
+  // Start pipeline
+  try {
+    const prompt = piece.topic; // approximate
+    await fetch(`http://localhost:4000/api/studio/pipeline/start`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ sessionId, prompt, researchScope: 'kb_and_web', moduleFilter: 'all' })
+    });
+  } catch (err) {
+    console.error('Failed to restart pipeline', err);
+  }
+});
+
 export default router;
