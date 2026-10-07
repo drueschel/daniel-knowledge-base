@@ -982,6 +982,21 @@ export default function App() {
                       <h3 className="text-xl font-bold text-slate-900">{piece.topic}</h3>
                     </div>
 
+                    {piece.audioUrl && (
+                      <div className="mb-6 p-4 bg-emerald-50 border border-emerald-200 rounded-xl">
+                        <div className="flex items-center gap-2 mb-2">
+                          <div className="w-8 h-8 rounded-full bg-white shadow-sm flex items-center justify-center">
+                            <span className="text-xl">🎙️</span>
+                          </div>
+                          <div>
+                            <p className="text-sm font-bold text-emerald-800">Voiceover Generiert (Hephaistos)</p>
+                            <p className="text-xs text-emerald-600">ElevenLabs API</p>
+                          </div>
+                        </div>
+                        <audio controls className="w-full mt-2 h-10" src={piece.audioUrl}></audio>
+                      </div>
+                    )}
+
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
                       <div>
                         <h4 className="text-slate-500 font-bold mb-3 uppercase tracking-wider text-xs flex items-center gap-2">
