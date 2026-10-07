@@ -334,6 +334,40 @@ export default function App() {
     }
   };
 
+  const resumePipeline = async (id: string) => {
+    const piece = contentPieces.find(p => p.id === id);
+    if (!piece) return;
+    
+    setToast({ message: 'Pipeline wird fortgesetzt...', type: 'info' });
+    setActiveTab('studio');
+    setIsRunning(true);
+    
+    // Determine the step to resume from visually
+    if (piece.scriptData) setActiveStep(6);
+    else if (piece.strategyData) setActiveStep(3);
+    else if (piece.researchData) setActiveStep(2);
+    else setActiveStep(1);
+    
+    localStorage.setItem('activePipelineSession', id);
+    
+    try {
+      await fetch('http://localhost:4000/api/studio/pipeline/start', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ 
+          sessionId: id, 
+          prompt: piece.topic,
+          researchScope: 'kb_and_web',
+          moduleFilter: 'all'
+        })
+      });
+      checkPipelineStatus(id);
+    } catch (e) {
+      console.error(e);
+      setToast({ message: 'Fehler beim Fortsetzen', type: 'error' });
+    }
+  };
+
   const approveHook = async (id: string, hookKey: string) => {
     try {
       await fetch(`http://localhost:4000/api/content/${id}/approve`, {

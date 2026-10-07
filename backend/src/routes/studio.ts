@@ -61,6 +61,12 @@ router.post('/pipeline/start', async (req, res) => {
       const topic = prompt.substring(0, 50) + '...';
       const state = getState(sessionId, topic);
       
+      // If resuming from error, reset status to scripting
+      if (state.status === 'error') {
+        state.status = 'scripting';
+        contentManager.createOrUpdate({ id: sessionId, topic: prompt.substring(0, 50) + '...', status: 'scripting' });
+      }
+
       const hrLogger = new ActivityLogger();
       hrLogger.log({
         agentId: 'human',
