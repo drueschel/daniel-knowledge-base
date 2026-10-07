@@ -24,7 +24,7 @@ export class HephaistosVoiceAgent extends BaseAgent {
 
     try {
       // Voice ID: Adam (standard default for deep male voice)
-      const voiceId = 'pNInz6obpgDQGcFmaJgB'; 
+      const voiceId = 'IKne3meq5aSn9XLyUdCD'; // Charlie - sehr natürlich, gesprächig, leichte Atemgeräusche 
       const url = `https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`;
 
       const response = await fetch(url, {
@@ -38,8 +38,10 @@ export class HephaistosVoiceAgent extends BaseAgent {
           text: cleanText,
           model_id: 'eleven_multilingual_v2', // Good for German!
           voice_settings: {
-            stability: 0.5,
-            similarity_boost: 0.75
+            stability: 0.35, // Niedriger = mehr Emotion und Betonungsvarianz (weniger Roboter)
+            similarity_boost: 0.85,
+            style: 0.15, // Gibt dem Multilingual-v2 Modell etwas mehr Ausdruckskraft
+            use_speaker_boost: true
           }
         })
       });
