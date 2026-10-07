@@ -3,14 +3,10 @@ import path from 'path';
 import { BaseAgent } from './BaseAgent';
 
 export class HephaistosVoiceAgent extends BaseAgent {
+  private sessionId: string;
   constructor(sessionId: string) {
-    super(
-      'production',
-      'Hephaistos',
-      'Chief Audio Engineer',
-      'Du bist Hephaistos, der Meister der Akustik. Du bist verantwortlich für Voiceover und Sound-Design.',
-      sessionId
-    );
+    super('production', sessionId);
+    this.sessionId = sessionId;
   }
 
   public async generateVoiceover(hookText: string, bodyText: string, ctaText: string): Promise<string> {
