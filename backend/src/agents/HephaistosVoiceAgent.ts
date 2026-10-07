@@ -5,7 +5,7 @@ import { BaseAgent } from './BaseAgent';
 export class HephaistosVoiceAgent extends BaseAgent {
   constructor(sessionId: string) {
     super(
-      'hephaistos',
+      'production',
       'Hephaistos',
       'Chief Audio Engineer',
       'Du bist Hephaistos, der Meister der Akustik. Du bist verantwortlich für Voiceover und Sound-Design.',
