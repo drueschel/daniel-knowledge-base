@@ -9,7 +9,6 @@ function LogsTab() {
   const [filterStatus, setFilterStatus] = useState('all');
   const [filterSession, setFilterSession] = useState('all');
   const [expandedId, setExpandedId] = useState<string | null>(null);
-  const [confirmDeleteId, setConfirmDeleteId] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchLogs = () => {
@@ -230,6 +229,7 @@ const agentIds = ['all', ...Array.from(new Set(logs.map((l: any) => l.agentId)))
 }
 
 export default function App() {
+  const [confirmDeleteId, setConfirmDeleteId] = useState<string | null>(null);
   const [employees, setEmployees] = useState<any[]>([]);
     const [teamViewMode, setTeamViewMode] = useState<'grid' | 'list'>('grid');
   const [activeTab, setActiveTab] = useState<'team' | 'studio' | 'import' | 'hub' | 'logs'>(() => (localStorage.getItem('activeTab') as any) || 'team');
