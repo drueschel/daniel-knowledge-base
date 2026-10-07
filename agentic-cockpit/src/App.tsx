@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Bot, FileText, Play, CheckCircle2, Trash2, XCircle, Wand2, Users, BrainCircuit, Video, Database, Activity, X, LayoutGrid, List } from 'lucide-react';
+import { Bot, FileText, Play, CheckCircle2, Circle, Trash2, XCircle, Wand2, Users, BrainCircuit, Video, Database, Activity, X, LayoutGrid, List } from 'lucide-react';
 
 function LogsTab() {
   const [logs, setLogs] = useState<any[]>([]);
@@ -255,6 +255,7 @@ export default function App() {
   }, []);
 
   const [activeStep, setActiveStep] = useState(0);
+  const [stepTimes, setStepTimes] = useState<Record<string, string>>({});
   const [isRunning, setIsRunning] = useState(false);
   const [topic, setTopic] = useState(() => localStorage.getItem('studioTopic') || '');
   const [researchScope, setResearchScope] = useState<'kb_only' | 'kb_and_web' | 'web_only'>(() => (localStorage.getItem('studioScope') as any) || 'kb_and_web');
@@ -406,6 +407,16 @@ export default function App() {
     try {
       const res = await fetch(`http://localhost:4000/api/studio/session/${sessionId}`);
       const state = await res.json();
+      setStepTimes(prev => {
+        const next = { ...prev };
+        const now = new Date().toLocaleTimeString('de-DE');
+        if (state.research && !next.prometheus) next.prometheus = now;
+        if (state.strategy && !next.athena) next.athena = now;
+        if (state.script && !next.calliope) next.calliope = now;
+        if (state.qa && !next.themis) next.themis = now;
+        if (state.status === 'review' && !next.done) next.done = now;
+        return next;
+      });
       if (!state || Object.keys(state).length === 0) {
         // Backend doesn't know this session (server restart or deleted). Clear it.
         setIsRunning(false);
@@ -459,6 +470,7 @@ export default function App() {
     const sessionId = `session_${Date.now()}`;
     setIsRunning(true);
     setActiveStep(1);
+    setStepTimes({});
     localStorage.setItem('activePipelineSession', sessionId);
     
     try {
