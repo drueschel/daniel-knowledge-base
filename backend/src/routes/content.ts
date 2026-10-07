@@ -51,9 +51,9 @@ router.post('/:id/approve', (req, res) => {
       const scriptData = piece.scriptData;
       if (!scriptData) throw new Error("Kein Script Data gefunden");
 
-      const hookText = scriptData.hooks[selectedHook];
+      const hookText = scriptData[selectedHook];
       const bodyText = scriptData.body;
-      const ctaText = scriptData.cta;
+      const ctaText = scriptData.call_to_action;
 
       const hephaistos = new HephaistosVoiceAgent(piece.id);
       const audioUrl = await hephaistos.generateVoiceover(hookText, bodyText, ctaText);
@@ -65,8 +65,23 @@ router.post('/:id/approve', (req, res) => {
         audioUrl: audioUrl
       });
 
-    } catch (err) {
+    } catch (err: any) {
       console.error("[Production Pipeline Error]", err);
+      
+      const errLogger = new ActivityLogger();
+      errLogger.log({
+        agentId: 'system',
+        sessionId: piece.id,
+        action: 'Fehler in Produktion',
+        details: err.message || 'Unbekannter Fehler bei Hephaistos',
+        status: 'error'
+      });
+
+      contentManager.createOrUpdate({
+        id: piece.id,
+        topic: piece.topic,
+        status: 'error'
+      });
     }
   })();
 });
