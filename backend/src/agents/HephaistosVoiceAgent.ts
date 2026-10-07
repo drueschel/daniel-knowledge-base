@@ -14,11 +14,11 @@ export class HephaistosVoiceAgent extends BaseAgent {
   }
 
   public async generateVoiceover(hookText: string, bodyText: string, ctaText: string): Promise<string> {
-    this.logActivity('Voiceover Generierung gestartet', `Sende Skript an ElevenLabs API...`);
+    this.log('Voiceover Generierung gestartet', 'info', { details: 'Sende Skript an ElevenLabs API...' });
 
     const apiKey = process.env.ELEVENLABS_API_KEY;
     if (!apiKey) {
-      this.logError('Kein ElevenLabs API Key in .env gefunden!');
+      this.log('Kein ElevenLabs API Key in .env gefunden!', 'error');
       throw new Error('Missing ELEVENLABS_API_KEY');
     }
 
@@ -69,14 +69,11 @@ export class HephaistosVoiceAgent extends BaseAgent {
 
       const fileUrl = `http://localhost:4000/audio/${fileName}`;
 
-      this.logActivity(
-        'Voiceover erfolgreich generiert',
-        `Audio-Datei gespeichert: ${fileName} (${(buffer.length / 1024 / 1024).toFixed(2)} MB)`
-      );
+      this.log('Voiceover erfolgreich generiert', 'success', { fileName, sizeMB: (buffer.length / 1024 / 1024).toFixed(2) });
 
       return fileUrl;
     } catch (error: any) {
-      this.logError(`ElevenLabs API fehlgeschlagen: ${error.message}`);
+      this.log(`ElevenLabs API fehlgeschlagen: ${error.message}`, 'error');
       throw error;
     }
   }
