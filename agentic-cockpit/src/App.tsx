@@ -917,28 +917,31 @@ export default function App() {
                 </div>
 
                 {/* Status Console */}
-                <div className="bg-slate-900 rounded-lg p-5 min-h-[160px] border border-slate-800 shadow-inner font-mono text-sm leading-relaxed">
-                                    {activeStep === 0 && !isRunning && <p className="text-slate-500">Warten auf Creative Director Briefing (Dein Prompt)...</p>}
-                  {activeStep === 0 && isRunning && <p className="text-cyan-400">» Zeus: Initialisiere Studio Pipeline...</p>}
-                  {activeStep === 1 && <p className="text-blue-600">» Prometheus: Scanne Knowledge Base via Semantic Search und extrahiere Fakten...</p>}
-                  {activeStep === 2 && <p className="text-purple-600">» Athena: Analysiere Prompt-Intent. Passe Content-Format und visuelle Strategie an...</p>}
-                  {activeStep === 3 && <p className="text-green-400">» Calliope: Schreibe dynamisches Skript/Drehbuch (inkl. 3 A/B Hooks) basierend auf Strategie...</p>}
-                  {activeStep === 4 && <p className="text-pink-400">» Hephaistos: Generiere Voiceover (ElevenLabs) & visuelle B-Roll Assets...</p>}
-                  {activeStep === 5 && <p className="text-amber-400">» System: HyperFrames rendert fertige Video-Versionen...</p>}
-                  {activeStep === 6 && <p className="text-teal-400">» Themis: Multimodal QA! Prüfe Videomaterial und Skript. Sende an Content Hub zur Freigabe.</p>}
+                <div className="bg-slate-900 rounded-lg p-5 min-h-[220px] border border-slate-800 shadow-inner font-mono text-sm leading-relaxed flex flex-col gap-2">
+                  {activeStep === 0 && !isRunning && <p className="text-slate-500">Warten auf Creative Director Briefing (Dein Prompt)...</p>}
                   
-                  {activeStep >= 7 && (
-                    <div className="text-emerald-400 mt-2 bg-emerald-900/20 p-4 rounded-lg border border-emerald-500/30">
-                      <p className="font-bold flex items-center gap-2 text-base mb-2">
-                        <CheckCircle2 className="w-6 h-6" /> Reel-Paket 100% fertig für deinen Upload!
-                      </p>
-                      <ul className="text-slate-600 text-xs space-y-1 list-disc ml-6">
-                        <li>3 Video-Versionen (mp4) exportiert (Für Testing)</li>
-                        <li>Caption & Hashtags in Zwischenablage bereit</li>
-                        <li>ManyChat Call-to-Action verifiziert</li>
-                      </ul>
-                      <p className="text-orange-400 text-xs mt-3">⏳ Oliver wartet auf Insights 24h nach deinem Upload.</p>
+                  {isRunning && (
+                    <p className="text-cyan-400 animate-in fade-in slide-in-from-left-2 duration-300">» Zeus: Initialisiere Studio Pipeline...</p>
+                  )}
+                  {activeStep >= 1 && (
+                    <p className="text-blue-600 animate-in fade-in slide-in-from-left-2 duration-300">» Prometheus: Scanne Knowledge Base via Semantic Search und extrahiere Fakten...</p>
+                  )}
+                  {activeStep >= 2 && (
+                    <p className="text-purple-600 animate-in fade-in slide-in-from-left-2 duration-300">» Athena: Analysiere Prompt-Intent. Passe Content-Format und visuelle Strategie an...</p>
+                  )}
+                  {activeStep >= 3 && (
+                    <p className="text-green-400 animate-in fade-in slide-in-from-left-2 duration-300">» Calliope: Schreibe dynamisches Skript/Drehbuch (inkl. 3 A/B Hooks) basierend auf Strategie...</p>
+                  )}
+                  {activeStep >= 4 && (
+                    <p className="text-teal-400 animate-in fade-in slide-in-from-left-2 duration-300">» Themis: Multimodal QA! Prüfe Skript und Metriken.</p>
+                  )}
+                  {activeStep >= 6 && (
+                    <div className="mt-2 p-3 bg-emerald-500/20 border border-emerald-500/30 rounded text-emerald-400 flex items-center gap-2 animate-in fade-in slide-in-from-bottom-2 duration-500">
+                      <CheckCircle2 className="w-5 h-5" />
+                      <span>Pipeline gestoppt für Human-in-the-Loop. Content wartet im Hub auf Freigabe!</span>
                     </div>
+                  )}
+                </div>
                   )}
                 </div>
               </div>
