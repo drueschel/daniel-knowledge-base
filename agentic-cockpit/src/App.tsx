@@ -942,8 +942,6 @@ export default function App() {
                     </div>
                   )}
                 </div>
-                  )}
-                </div>
               </div>
 
               <div className="flex justify-end mb-6">
