@@ -23,6 +23,13 @@ function LogsTab() {
   }, []);
 
   
+  const clearLogs = async () => {
+    try {
+      await fetch('http://localhost:4000/api/activity', { method: 'DELETE' });
+      setLogs([]);
+    } catch(e) {}
+  };
+
   const friendlyAgentName = (id: string) => {
     const names: Record<string, string> = {
       data: 'Prometheus (Daten)',
@@ -94,9 +101,14 @@ const agentIds = ['all', ...Array.from(new Set(logs.map((l: any) => l.agentId)))
             {lastUpdated && <span className="ml-2 text-xs text-slate-400">· Zuletzt: {lastUpdated.toLocaleTimeString('de-DE')}</span>}
           </p>
         </div>
-        <div className="flex items-center gap-2">
-          <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-          <span className="text-xs text-emerald-600 font-medium">Live</span>
+        <div className="flex items-center gap-4">
+          <button onClick={clearLogs} className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-red-200 text-red-500 hover:bg-red-50 text-xs font-bold transition">
+            <Trash2 className="w-3 h-3" /> Logs leeren
+          </button>
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+            <span className="text-xs text-emerald-600 font-medium">Live</span>
+          </div>
         </div>
       </header>
 
