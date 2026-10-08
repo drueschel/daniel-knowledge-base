@@ -1052,16 +1052,30 @@ export default function App() {
 
                     {piece.audioUrl && (
                       <div className="mb-6 p-4 bg-emerald-50 border border-emerald-200 rounded-xl">
-                        <div className="flex items-center gap-2 mb-2">
-                          <div className="w-8 h-8 rounded-full bg-white shadow-sm flex items-center justify-center">
-                            <span className="text-xl">🎙️</span>
+                        <div className="flex items-center justify-between mb-2">
+                          <div className="flex items-center gap-2">
+                            <div className="w-8 h-8 rounded-full bg-white shadow-sm flex items-center justify-center">
+                              <span className="text-xl">🎙️</span>
+                            </div>
+                            <div>
+                              <p className="text-sm font-bold text-emerald-800">Voiceover Generiert (Hephaistos)</p>
+                              <p className="text-xs text-emerald-600">ElevenLabs API</p>
+                            </div>
                           </div>
-                          <div>
-                            <p className="text-sm font-bold text-emerald-800">Voiceover Generiert (Hephaistos)</p>
-                            <p className="text-xs text-emerald-600">ElevenLabs API</p>
-                          </div>
+                          {piece.selectedHook && (
+                            <button 
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                approveHook(piece.id, piece.selectedHook!);
+                              }}
+                              className="text-xs flex items-center gap-1 text-emerald-700 hover:text-emerald-900 bg-emerald-100 hover:bg-emerald-200 px-3 py-1.5 rounded-lg transition-colors font-bold shadow-sm"
+                            >
+                              <RefreshCcw className="w-3 h-3" />
+                              Neu vertonen
+                            </button>
+                          )}
                         </div>
-                        <audio controls className="w-full mt-2 h-10" src={piece.audioUrl}></audio>
+                        <audio controls className="w-full mt-2 h-10" src={`${piece.audioUrl}?t=${new Date(piece.updatedAt).getTime()}`} key={piece.audioUrl + piece.updatedAt}></audio>
                       </div>
                     )}
 
@@ -1074,7 +1088,11 @@ export default function App() {
                           {piece.status === 'error' ? (
                             <div className="p-6 rounded-xl border-2 border-red-100 bg-red-50/30 flex flex-col items-center justify-center h-40 text-center">
                               <p className="text-red-600 text-sm font-bold mb-1">Pipeline-Absturz</p>
-                              <p className="text-red-500 text-xs">Skript konnte nicht generiert werden.</p>
+                              <p className="text-red-500 text-xs mb-3">Ein Fehler ist aufgetreten.</p>
+                              <button onClick={() => resumePipeline(piece.id)} className="px-4 py-2 bg-red-600 text-white rounded-lg text-sm font-bold shadow-md hover:bg-red-700 transition-colors flex items-center gap-2">
+                                <Play className="w-4 h-4" />
+                                Fortsetzen
+                              </button>
                             </div>
                           ) : piece.status === 'scripting' ? (
                             <div className="p-6 rounded-xl border-2 border-indigo-100 bg-indigo-50/30 flex flex-col items-center justify-center h-40">
@@ -1109,8 +1127,12 @@ export default function App() {
                           <FileText className="w-4 h-4 text-slate-400" /> Body
                         </h4>
                         {piece.status === 'error' ? (
-                            <div className="p-6 rounded-xl border-2 border-slate-100 bg-slate-50 flex flex-col items-center justify-center h-40 text-center">
-                              <p className="text-slate-400 text-sm font-medium">Fehlgeschlagen</p>
+                            <div className="p-6 rounded-xl border-2 border-red-100 bg-red-50/30 flex flex-col items-center justify-center h-40 text-center">
+                              <p className="text-red-600 text-sm font-bold mb-1">Pipeline-Absturz</p>
+                              <button onClick={() => resumePipeline(piece.id)} className="mt-2 px-4 py-1.5 bg-red-600 text-white rounded-lg text-xs font-bold shadow-sm hover:bg-red-700 transition-colors flex items-center gap-1 mx-auto">
+                                <Play className="w-3 h-3" />
+                                Fortsetzen
+                              </button>
                             </div>
                         ) : piece.status === 'scripting' ? (
                             <div className="p-6 rounded-xl border-2 border-slate-100 bg-slate-50 flex flex-col items-center justify-center h-40">
