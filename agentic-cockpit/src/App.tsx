@@ -369,17 +369,25 @@ export default function App() {
   };
 
   const approveHook = async (id: string, hookKey: string) => {
+    setToast({ message: 'Voiceover wird generiert (Hephaistos arbeitet)...', type: 'info' });
     try {
-      await fetch(`http://localhost:4000/api/content/${id}/approve`, {
+      const resp = await fetch(`http://localhost:4000/api/content/${id}/approve`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ selectedHook: hookKey })
       });
+      
+      const json = await resp.json();
+      if (!resp.ok) throw new Error(json.error || 'Generierung fehlgeschlagen');
+      
+      setToast({ message: 'Voiceover erfolgreich generiert!', type: 'success' });
+    } catch (e: any) {
+      console.error(e);
+      setToast({ message: `Voiceover-Fehler: ${e.message}`, type: 'error' });
+    } finally {
       // Refresh
       const res = await fetch('http://localhost:4000/api/content');
       setContentPieces(await res.json());
-    } catch (e) {
-      console.error(e);
     }
   };
 
