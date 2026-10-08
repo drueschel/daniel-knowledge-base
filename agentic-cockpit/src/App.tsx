@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Bot, FileText, Play, CheckCircle2, Circle, Trash2, XCircle, Wand2, Users, BrainCircuit, Video, Database, Activity, X, LayoutGrid, List } from 'lucide-react';
+import { Bot, FileText, Play, CheckCircle2, Circle, Trash2, XCircle, Wand2, Users, BrainCircuit, Video, Database, Activity, X, LayoutGrid, List , RefreshCcw } from 'lucide-react';
 
 function LogsTab() {
   const [logs, setLogs] = useState<any[]>([]);
