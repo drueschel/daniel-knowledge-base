@@ -24,7 +24,7 @@ export class HephaistosVoiceAgent extends BaseAgent {
 
     try {
       // Voice ID: Adam (standard default for deep male voice)
-      const voiceId = 'IKne3meq5aSn9XLyUdCD'; // Charlie - sehr natürlich, gesprächig, leichte Atemgeräusche 
+      const voiceId = 'R24r0IV80Iw9eyByq1ps'; 
       const url = `https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`;
 
       const response = await fetch(url, {
