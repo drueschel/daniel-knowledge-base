@@ -1271,7 +1271,7 @@ export default function App() {
                 )}
                 {!isRunning ? (
                   <div className="flex gap-4">
-                    <button onClick={startPipeline} disabled={activeStep > 0 || !topic} className="bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-4 px-8 rounded-xl flex items-center gap-3 transition shadow-xl disabled:opacity-50 disabled:cursor-not-allowed">
+                    <button onClick={startPipeline} disabled={!topic} className="bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-4 px-8 rounded-xl flex items-center gap-3 transition shadow-xl disabled:opacity-50 disabled:cursor-not-allowed">
                       E2E Produktion starten
                     </button>
                     {activeStep > 0 && (
