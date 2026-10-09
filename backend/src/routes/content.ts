@@ -154,4 +154,13 @@ router.post('/:id/render', (req, res) => {
   })();
 });
 
+// DELETE by ID
+router.delete('/:id', (req, res) => {
+  const piece = contentManager.getById(req.params.id);
+  if (!piece) return res.status(404).json({ error: 'Not found' });
+  
+  contentManager.delete(req.params.id);
+  res.json({ success: true, message: 'Content Piece deleted' });
+});
+
 export default router;
