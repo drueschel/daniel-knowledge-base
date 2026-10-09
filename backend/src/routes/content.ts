@@ -4,24 +4,23 @@ import { HephaistosVoiceAgent } from '../agents/HephaistosVoiceAgent';
 import { MayaVisualAgent } from '../agents/MayaVisualAgent';
 import { ActivityLogger } from '../services/ActivityLogger';
 
-
 const router = Router();
 const contentManager = new ContentManager();
 
+// GET all
 router.get('/', (req, res) => {
   const pieces = contentManager.getAll();
-  // Sort newest first
-  pieces.sort((a, b) => new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime());
   res.json(pieces);
 });
 
+// GET by ID
 router.get('/:id', (req, res) => {
   const piece = contentManager.getById(req.params.id);
-  if (!piece) return res.status(404).json({ error: 'Not found' });
-  res.json(piece);
+  if (piece) res.json(piece);
+  else res.status(404).json({ error: 'Not found' });
 });
 
-// Update hook selection and trigger Phase 2
+// APPROVE HOOK -> Generate Voiceover & Timestamps
 router.post('/:id/approve', (req, res) => {
   const { selectedHook } = req.body;
   const piece = contentManager.getById(req.params.id);
@@ -34,7 +33,7 @@ router.post('/:id/approve', (req, res) => {
     status: 'voiceover'
   });
 
-  res.json({ success: true, message: 'Skript freigegeben. Voiceover Generierung gestartet.' });
+  res.json({ success: true, message: 'Skript freigegeben. Voiceover & Timestamp Generierung gestartet.' });
 
   // Fire off background Voiceover
   (async () => {
@@ -48,21 +47,22 @@ router.post('/:id/approve', (req, res) => {
         status: 'success'
       });
 
-      const scriptData = piece.scriptData;
+      const scriptData = piece.qaData?.final_script || piece.scriptData;
       if (!scriptData) throw new Error("Kein Script Data gefunden");
 
       const hookText = scriptData[selectedHook];
-      const bodyText = scriptData.body;
+      const scenes = scriptData.scenes || [];
       const ctaText = scriptData.call_to_action;
 
       const hephaistos = new HephaistosVoiceAgent(piece.id);
-      const audioUrl = await hephaistos.generateVoiceover(hookText, bodyText, ctaText);
+      const { audioUrl, timestamps } = await hephaistos.generateVoiceover(hookText, scenes, ctaText);
 
-      // Save audio URL back to DB and mark audio_ready
+      // Save audio URL and timestamps back to DB
       contentManager.createOrUpdate({
         id: piece.id,
         topic: piece.topic,
         audioUrl: audioUrl,
+        timestamps: timestamps,
         status: 'audio_ready'
       });
 
@@ -75,10 +75,48 @@ router.post('/:id/approve', (req, res) => {
   })();
 });
 
+// GENERATE VISUALS (STORYBOARD)
+router.post('/:id/visuals', (req, res) => {
+  const piece = contentManager.getById(req.params.id);
+  if (!piece) return res.status(404).json({ error: 'Not found' });
+  if (!piece.audioUrl) return res.status(400).json({ error: 'Audio fehlt für Visual Generierung' });
+
+  contentManager.createOrUpdate({
+    id: piece.id,
+    topic: piece.topic,
+    status: 'visuals' // Spinner state
+  });
+
+  res.json({ success: true, message: 'Storyboard Generierung (Maya) gestartet.' });
+
+  (async () => {
+    try {
+      const hrLogger = new ActivityLogger();
+      hrLogger.log({ agentId: 'human', sessionId: piece.id, action: 'Visuals gestartet', details: 'Maya baut das 3D Storyboard', status: 'success' });
+      
+      const scriptData = piece.qaData?.final_script || piece.scriptData;
+      const scenes = scriptData.scenes || [];
+      
+      const maya = new MayaVisualAgent(piece.id);
+      const storyboard = await maya.generateStoryboard(scenes);
+      
+      contentManager.createOrUpdate({
+        id: piece.id,
+        topic: piece.topic,
+        storyboard: storyboard,
+        status: 'visuals_ready'
+      });
+    } catch (err: any) {
+      contentManager.createOrUpdate({ id: piece.id, topic: piece.topic, status: 'error' });
+    }
+  })();
+});
+
+// RENDER VIDEO (HYPERFRAMES)
 router.post('/:id/render', (req, res) => {
   const piece = contentManager.getById(req.params.id);
   if (!piece) return res.status(404).json({ error: 'Not found' });
-  if (!piece.audioUrl) return res.status(400).json({ error: 'Audio fehlt für Video Rendering' });
+  if (!piece.storyboard) return res.status(400).json({ error: 'Storyboard fehlt für Video Rendering' });
 
   contentManager.createOrUpdate({
     id: piece.id,
@@ -86,7 +124,7 @@ router.post('/:id/render', (req, res) => {
     status: 'rendering'
   });
 
-  res.json({ success: true, message: 'Audio freigegeben. Video Rendering (Maya) gestartet.' });
+  res.json({ success: true, message: 'Storyboard freigegeben. Video Rendering (Remotion) gestartet.' });
 
   // Fire off background Render
   (async () => {
@@ -95,13 +133,13 @@ router.post('/:id/render', (req, res) => {
       hrLogger.log({
         agentId: 'human',
         sessionId: piece.id,
-        action: 'Audio freigegeben',
-        details: `Maya startet mit dem Remotion Rendering!`,
+        action: 'Storyboard freigegeben',
+        details: `HyperFrames startet mit dem Remotion Rendering!`,
         status: 'success'
       });
       
       const maya = new MayaVisualAgent(piece.id);
-      const { manifestPath, videoUrl } = await maya.generateVisualManifest(piece.scriptData, piece.audioUrl!);
+      const { videoUrl } = await maya.renderVideo({ storyboard: piece.storyboard, timestamps: piece.timestamps });
       
       contentManager.createOrUpdate({
         id: piece.id,
@@ -109,68 +147,11 @@ router.post('/:id/render', (req, res) => {
         status: 'completed',
         videoUrl: videoUrl
       });
-
     } catch (err: any) {
-      console.error("[Render Pipeline Error]", err);
-      const errLogger = new ActivityLogger();
-      errLogger.log({ agentId: 'system', sessionId: piece.id, action: 'Fehler im Rendering', details: err.message, status: 'error' });
+      console.error("[Render Error]", err);
       contentManager.createOrUpdate({ id: piece.id, topic: piece.topic, status: 'error' });
     }
   })();
-});
-
-router.delete('/:id', (req, res) => {
-  contentManager.delete(req.params.id);
-  res.json({ success: true, message: 'Content Piece gelöscht.' });
-});
-
-
-// Set error status if pipeline fails
-router.post('/:id/error', (req, res) => {
-  const piece = contentManager.getById(req.params.id);
-  if (piece) {
-    contentManager.createOrUpdate({
-      id: piece.id,
-      topic: piece.topic,
-      status: 'idea' // reset or set error state
-    });
-  }
-  res.json({ success: true });
-});
-
-
-router.post('/:id/regenerate-script', async (req, res) => {
-  const { id } = req.params;
-  const piece = contentManager.getById(id);
-  if (!piece) return res.status(404).json({ error: 'Not found' });
-
-  // Update DB to scripting
-  contentManager.createOrUpdate({
-    id: piece.id,
-    topic: piece.topic,
-    scriptData: null,
-    qaData: null,
-    status: 'scripting'
-  });
-
-  res.json({ status: 'scripting' });
-
-  // Call studio orchestrator to resume pipeline
-  try {
-    const fetch = require('node-fetch'); // Make sure fetch works
-    await fetch('http://localhost:4000/api/studio/pipeline/start', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ 
-        sessionId: piece.id, 
-        prompt: piece.topic,
-        researchScope: 'kb_and_web',
-        moduleFilter: 'all'
-      })
-    });
-  } catch (e) {
-    console.error('Error restarting pipeline for script generation:', e);
-  }
 });
 
 export default router;

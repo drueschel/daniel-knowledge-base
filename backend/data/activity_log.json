@@ -3,6 +3,24 @@
     "agentId": "production",
     "sessionId": "session_1791526477106",
     "action": "Voiceover erfolgreich generiert",
+    "details": "{\"fileName\":\"voice_session_1791526477106.mp3\",\"sizeMB\":\"0.53\"}",
+    "status": "success",
+    "id": "3d2zvmd",
+    "timestamp": "2026-10-09T06:52:45.465Z"
+  },
+  {
+    "agentId": "human",
+    "sessionId": "session_1791526477106",
+    "action": "Skript freigegeben",
+    "details": "Hook ausgewählt: hook_2\nVoiceover gestartet!",
+    "status": "success",
+    "id": "pctm22k",
+    "timestamp": "2026-10-09T06:52:40.274Z"
+  },
+  {
+    "agentId": "production",
+    "sessionId": "session_1791526477106",
+    "action": "Voiceover erfolgreich generiert",
     "details": "{\"fileName\":\"voice_session_1791526477106.mp3\",\"sizeMB\":\"0.50\"}",
     "status": "success",
     "id": "trod6qf",

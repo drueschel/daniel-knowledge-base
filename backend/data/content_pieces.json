@@ -75,7 +75,7 @@
     "updatedAt": "2026-10-09T06:06:31.940Z"
   },
   {
-    "status": "scripting",
+    "status": "error",
     "researchData": {
       "core_pain": "Erwachsene mit Depression erleben tiefe Hoffnungslosigkeit und haben den Kampf um Liebe/Nähe aufgegeben. Beim Verschmelzungstyp: Jahrelanges Sich-für-andere-Abarbeiten führt zu Erschöpfung, da die gewünschte Liebe nie kommt. Beim Autonomietyp: Flucht in Gedanken, Spiritualität oder Erfolg führt zu innerer Leere, wenn alle Fluchtmechanismen scheitern.",
       "aha_moment": "Depression ist nicht primär eine chemische Störung, sondern der sichtbare Ausdruck gescheiterter Bindungsstrategien aus der Kindheit. Der Verschmelzungstyp merkt: 'Meine Liebe reicht nicht aus, um den anderen bei mir zu halten.' Der Autonomietyp merkt: 'Alle meine Fluchtrouten führen ins Leere – und ich erkenne nicht, dass ich eigentlich nach Nähe hungere.'",
@@ -159,7 +159,7 @@
     "updatedAt": "2026-10-09T06:13:19.752Z"
   },
   {
-    "status": "scripting",
+    "status": "error",
     "researchData": {
       "core_pain": "Erwachsene mit Depression erleben tiefe Hoffnungslosigkeit und haben ihre Beziehungsstrategien aus der Kindheit aufgegeben. Beim Verschmelzungstyp: jahrelanges erfolglose Kämpfen um Liebe führt zu Erschöpfung und Rückzug. Beim Autonomietyp: gescheiterte Fluchtversuche (Verstand, Spiritualität, Erfolg) hinterlassen innere Leere, während unbewusste Nähesucht blockiert wird.",
       "aha_moment": "Depression ist nicht primär eine neurologische Dysfunktion, sondern ein Ausdruck fehlgeschlagener Bindungsstrategien aus der Kindheit. Die Depression signalisiert: 'Meine bisherigen Wege, Liebe/Nähe zu bekommen, funktionieren nicht mehr.' Beim Verschmelzungstyp zeigt sich dies als Resignation nach Aufopferung. Beim Autonomietyp als innere Leere nach Flucht in mentale Räume.",
@@ -252,7 +252,7 @@
     "id": "session_1791526477106",
     "topic": "Erstelle mir ein Video wie sich Depression für erw...",
     "createdAt": "2026-10-09T06:14:43.520Z",
-    "updatedAt": "2026-10-09T06:29:56.490Z",
+    "updatedAt": "2026-10-09T06:52:45.465Z",
     "selectedHook": "hook_2",
     "audioUrl": "http://localhost:4000/audio/voice_session_1791526477106.mp3"
   }
