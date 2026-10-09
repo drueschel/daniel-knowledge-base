@@ -96,9 +96,17 @@ router.post('/:id/visuals', (req, res) => {
       
       const scriptData = piece.qaData?.final_script || piece.scriptData;
       const scenes = scriptData.scenes || [];
+      const hookText = scriptData[piece.selectedHook!] || scriptData.hook_1;
+      const ctaText = scriptData.call_to_action || '';
+      
+      const allScenes = [
+        { voice: hookText, visual: 'High engagement opener, vivid striking image' },
+        ...scenes,
+        { voice: ctaText, visual: 'Call to action ending, clear focal point' }
+      ];
       
       const maya = new MayaVisualAgent(piece.id);
-      const storyboard = await maya.generateStoryboard(scenes);
+      const storyboard = await maya.generateStoryboard(allScenes);
       
       contentManager.createOrUpdate({
         id: piece.id,

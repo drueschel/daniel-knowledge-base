@@ -1,4 +1,10 @@
 import { BaseAgent } from './BaseAgent';
+import { exec } from 'child_process';
+import { promisify } from 'util';
+import * as path from 'path';
+import * as fs from 'fs';
+
+const execAsync = promisify(exec);
 
 export class HephaistosVoiceAgent extends BaseAgent {
   constructor(sessionId: string) {
@@ -6,39 +12,67 @@ export class HephaistosVoiceAgent extends BaseAgent {
   }
 
   async generateVoiceover(hookText: string, scenes: any[], ctaText: string): Promise<{ audioUrl: string, timestamps: any[] }> {
-    this.log('Generiere Voiceover (ElevenLabs) & messe Wortzeiten (Whisper)...');
+    this.log('Generiere reales Voiceover (macOS TTS) & berechne Audio-Dauer...');
     
-    // In a real app, call ElevenLabs API and get timestamps
-    await new Promise(resolve => setTimeout(resolve, 3000));
-    
-    // Combine full text for logging/mocking
+    // Combine full text
     const bodyText = scenes.map(s => s.voice).join(' ');
-    const fullText = `${hookText} ${bodyText} ${ctaText}`;
+    const fullText = `${hookText} ${bodyText} ${ctaText}`.replace(/"/g, "'");
     
-    // Generate mock timestamps
-    const words = fullText.split(' ');
-    const timestamps = [];
-    let currentTime = 0;
+    const audioDir = path.join(process.cwd(), 'data', 'audio');
+    if (!fs.existsSync(audioDir)) fs.mkdirSync(audioDir, { recursive: true });
     
-    for (const word of words) {
-      if (!word.trim()) continue;
-      const duration = word.length * 0.1; // roughly 100ms per character
-      timestamps.push({
-        word: word.trim(),
-        start: parseFloat(currentTime.toFixed(2)),
-        end: parseFloat((currentTime + duration).toFixed(2))
+    const aiffFile = path.join(audioDir, `temp_${this.sessionId}.aiff`);
+    const mp3File = path.join(audioDir, `voice_${this.sessionId}.mp3`);
+    
+    try {
+      // 1. Generate audio using mac 'say' (Anna is a German voice)
+      await execAsync(`say -v "Anna" "${fullText}" -o "${aiffFile}"`);
+      
+      // 2. Convert to mp3
+      await execAsync(`ffmpeg -i "${aiffFile}" -y "${mp3File}"`);
+      
+      // 3. Get exact duration in seconds
+      const { stdout } = await execAsync(`ffprobe -i "${mp3File}" -show_entries format=duration -v quiet -of csv="p=0"`);
+      const totalDurationSec = parseFloat(stdout.trim());
+      
+      // Cleanup aiff
+      fs.unlinkSync(aiffFile);
+      
+      // 4. Distribute timestamps evenly over the words to sync perfectly
+      const words = fullText.split(' ').filter(w => w.trim().length > 0);
+      const timestamps = [];
+      
+      let currentTime = 0;
+      // We weight the duration slightly by word length for a more natural sync
+      const totalChars = words.reduce((acc, w) => acc + w.length, 0);
+      
+      for (const word of words) {
+        const wordDuration = (word.length / totalChars) * totalDurationSec;
+        timestamps.push({
+          word: word,
+          start: parseFloat(currentTime.toFixed(2)),
+          end: parseFloat((currentTime + wordDuration).toFixed(2))
+        });
+        currentTime += wordDuration;
+      }
+      
+      this.log('TTS Audio generiert & synchronisiert', 'success', { 
+        durationSec: totalDurationSec.toFixed(2),
+        wordCount: words.length
       });
-      currentTime += duration + 0.05; // 50ms gap between words
+      
+      return {
+        audioUrl: `/audio/voice_${this.sessionId}.mp3`,
+        timestamps: timestamps
+      };
+      
+    } catch (e: any) {
+      this.log(`Fehler bei TTS Generierung: ${e.message}`, 'error');
+      // Fallback
+      return {
+        audioUrl: '/audio/neo_mock_voice.mp3',
+        timestamps: []
+      };
     }
-    
-    this.log('Audio-Generierung & Timestamp-Messung abgeschlossen', 'success', { 
-      wordCount: timestamps.length,
-      durationSec: currentTime.toFixed(2)
-    });
-    
-    return {
-      audioUrl: '/audio/neo_mock_voice.mp3', // Assume we have a mock audio file or we just use a placeholder
-      timestamps: timestamps
-    };
   }
 }

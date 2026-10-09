@@ -57,16 +57,28 @@ export class MayaVisualAgent extends BaseAgent {
       ["#f59e0b", "#d97706"]  // Amber
     ];
 
+    let timestampIndex = 0;
+
     for (let i = 0; i < storyboard.length; i++) {
       const scene = storyboard[i];
       const words = scene.voice.split(' ').filter((w: string) => w.length > 0);
       
-      // Calculate duration. Default to 3 seconds if no timestamps match perfectly.
       let durationInFrames = fps * 3; 
       
-      // If we have real ElevenLabs timestamps, we could calculate the exact duration of these words.
-      // For now, we do a simple estimate based on word count (approx 3 frames per character or something simple)
-      durationInFrames = Math.max(90, words.length * 15);
+      if (timestamps && timestamps.length > timestampIndex) {
+        // Take the timestamps that correspond to the words in this scene
+        const sceneTimestamps = timestamps.slice(timestampIndex, timestampIndex + words.length);
+        if (sceneTimestamps.length > 0) {
+           const startTime = sceneTimestamps[0].start;
+           const endTime = sceneTimestamps[sceneTimestamps.length - 1].end;
+           const durationSec = endTime - startTime;
+           // Add a small buffer of 0.2s for scene transitions if needed, but exact is fine
+           durationInFrames = Math.round(durationSec * fps);
+        }
+        timestampIndex += words.length;
+      } else {
+        durationInFrames = Math.max(90, words.length * 15);
+      }
       
       remotionScenes.push({
         durationInFrames,
