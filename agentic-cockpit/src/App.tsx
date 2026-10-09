@@ -357,6 +357,16 @@ export default function App() {
     }
   };
 
+  const rerenderContent = async (id: string) => {
+    showToast('Neu-Rendern gestartet (Remotion)...', 'info');
+    try {
+      await fetch(`http://localhost:4000/api/content/${id}/render`, { method: 'POST' });
+    } catch (e) {
+      console.error(e);
+      showToast('Fehler beim Neu-Rendern', 'error');
+    }
+  };
+
   // @ts-ignore
   const resumePipeline = async (id: string) => {
     const piece = contentPieces.find(p => p.id === id);
@@ -1314,6 +1324,9 @@ export default function App() {
                 contentPieces.filter(p => p.status === 'completed' || p.status === 'production').map(piece => (
                   <div key={piece.id} className="bg-slate-100 rounded-2xl border border-slate-200 p-6 shadow-xl relative overflow-hidden">
                     <div className="absolute top-6 right-6 flex items-center gap-3">
+                      <button onClick={() => rerenderContent(piece.id)} className="text-slate-400 hover:text-indigo-600 transition-colors bg-white p-2 rounded-full shadow-sm hover:shadow-md border border-slate-200" title="Video neu rendern">
+                        <RefreshCcw className="w-4 h-4" />
+                      </button>
                       <button onClick={() => deleteContent(piece.id)} className="text-slate-400 hover:text-red-500 transition-colors bg-white p-2 rounded-full shadow-sm hover:shadow-md border border-slate-200" title="Eintrag löschen">
                         <Trash2 className="w-4 h-4" />
                       </button>
