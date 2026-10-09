@@ -472,6 +472,9 @@ export default function App() {
   const [importResponse, setImportResponse] = useState<any>(null);
 
   const checkPipelineStatus = async (sessionId: string) => {
+    if (localStorage.getItem('activePipelineSession') !== sessionId) {
+      return; // Stop polling if user reset the pipeline or started a new one
+    }
     try {
       const res = await fetch(`http://localhost:4000/api/studio/session/${sessionId}`);
       const state = await res.json();
