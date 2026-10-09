@@ -475,7 +475,12 @@ export default function App() {
     try {
       const res = await fetch(`http://localhost:4000/api/studio/session/${sessionId}`);
       const state = await res.json();
-      if (!state || Object.keys(state).length === 0) {
+      
+      const contentRes = await fetch(`http://localhost:4000/api/content`);
+      const allPieces = await contentRes.json();
+      const pieceState = allPieces.find((p: any) => p.id === sessionId);
+      
+      if ((!state || Object.keys(state).length === 0) && (!pieceState || pieceState.status === 'error')) {
         setIsRunning(false);
         localStorage.removeItem('activePipelineSession');
         setActiveStep(0);
@@ -483,25 +488,23 @@ export default function App() {
         return;
       }
       
-      if (state.status === 'completed' || state.status === 'production') {
-        setActiveStep(7);
-        setIsRunning(false);
-        localStorage.removeItem('activePipelineSession');
-        showToast('Pipeline abgeschlossen. Video ist im Content Hub!', 'success');
-        return;
-      }
-
-      if (['voiceover', 'visuals', 'visuals_ready', 'rendering'].includes(state.status)) {
-        setActiveStep(6);
-        setIsRunning(true);
-        setTimeout(() => checkPipelineStatus(sessionId), 3000);
-        return;
-      }
-      
-      if (state.status === 'review') {
-        setActiveStep(5);
-        setIsRunning(false);
-        return;
+      if (pieceState && pieceState.status !== 'error' && pieceState.status !== 'scripting' && pieceState.status !== 'idea') {
+        if (pieceState.status === 'completed' || pieceState.status === 'production') {
+          setActiveStep(7);
+          setIsRunning(false);
+          return;
+        }
+        if (['voiceover', 'audio_ready', 'visuals', 'visuals_ready', 'rendering'].includes(pieceState.status)) {
+          setActiveStep(6);
+          setIsRunning(true);
+          setTimeout(() => checkPipelineStatus(sessionId), 3000);
+          return;
+        }
+        if (pieceState.status === 'review') {
+          setActiveStep(5);
+          setIsRunning(false);
+          return;
+        }
       }
       
       if (state.qa) { setActiveStep(5); setIsRunning(false); } 
@@ -514,8 +517,6 @@ export default function App() {
          setTimeout(() => checkPipelineStatus(sessionId), 3000);
       } else {
          setIsRunning(false);
-         localStorage.removeItem('activePipelineSession');
-         showToast('Pipeline-Absturz. Bitte Logs prüfen!', 'error');
       }
     } catch (e) {
       console.error(e);

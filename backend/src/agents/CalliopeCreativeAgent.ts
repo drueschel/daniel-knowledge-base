@@ -46,14 +46,14 @@ Regeln:
 - Die hooks sind nur der erste Satz. Das Array "scenes" ist der Hauptteil (Body) NACH der Hook.
 `;
 
-    this.logActivity('Skript wird geschrieben (Tabelle: Zeit, Stimme, Bild, Beleg)...', { feedback });
+    this.log('Skript wird geschrieben (Tabelle: Zeit, Stimme, Bild, Beleg)...', 'info', { feedback });
     
     try {
       const response = await this.callLLM(prompt);
       const data = JSON.parse(response);
       return data;
     } catch (error: any) {
-      this.logActivity('Fehler beim Schreiben des Skripts', { error: error.message }, 'error');
+      this.log('Fehler beim Schreiben des Skripts', 'error', { error: error.message });
       
       // Fallback
       return {

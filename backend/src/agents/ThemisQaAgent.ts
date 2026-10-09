@@ -36,7 +36,7 @@ Gib eine JSON-Antwort (nur das JSON, ohne Markdown) in diesem Format:
 Wenn du kleine Fehler findest, verbessere sie direkt und setze status auf "approved". Bei gravierenden inhaltlichen Erfindungen setze auf "rejected".
 `;
 
-    this.logActivity('Skript wird geprüft (QA-Checkliste)...');
+    this.log('Skript wird geprüft (QA-Checkliste)...');
     
     try {
       const response = await this.callLLM(prompt);

@@ -6,7 +6,7 @@ export class MayaVisualAgent extends BaseAgent {
   }
 
   async generateStoryboard(scenes: any[]): Promise<any[]> {
-    this.logActivity('Generiere Higgsfield 3D-Metaphern (Storyboard)...');
+    this.log('Generiere Higgsfield 3D-Metaphern (Storyboard)...');
     
     await new Promise(resolve => setTimeout(resolve, 2500));
     
@@ -26,18 +26,18 @@ export class MayaVisualAgent extends BaseAgent {
       });
     }
     
-    this.logActivity('Storyboard & 3D-Assets erfolgreich generiert.', { 
+    this.log('Storyboard & 3D-Assets erfolgreich generiert.', 'success', { 
       scenesCount: storyboard.length 
-    }, 'success');
+    });
     
     return storyboard;
   }
 
   async renderVideo(manifestData: any): Promise<{ videoUrl: string }> {
-    this.logActivity('Übergebe an Remotion (HyperFrames) für finales Video-Rendering...');
+    this.log('Übergebe an Remotion (HyperFrames) für finales Video-Rendering...');
     await new Promise(resolve => setTimeout(resolve, 3500));
     
-    this.logActivity('Remotion Rendering erfolgreich!', {}, 'success');
+    this.log('Remotion Rendering erfolgreich!', 'success', {});
     return { videoUrl: '/rendered_mock.mp4' };
   }
 }

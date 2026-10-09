@@ -6,7 +6,7 @@ export class HephaistosVoiceAgent extends BaseAgent {
   }
 
   async generateVoiceover(hookText: string, scenes: any[], ctaText: string): Promise<{ audioUrl: string, timestamps: any[] }> {
-    this.logActivity('Generiere Voiceover (ElevenLabs) & messe Wortzeiten (Whisper)...');
+    this.log('Generiere Voiceover (ElevenLabs) & messe Wortzeiten (Whisper)...');
     
     // In a real app, call ElevenLabs API and get timestamps
     await new Promise(resolve => setTimeout(resolve, 3000));
@@ -31,10 +31,10 @@ export class HephaistosVoiceAgent extends BaseAgent {
       currentTime += duration + 0.05; // 50ms gap between words
     }
     
-    this.logActivity('Audio-Generierung & Timestamp-Messung abgeschlossen', { 
+    this.log('Audio-Generierung & Timestamp-Messung abgeschlossen', 'success', { 
       wordCount: timestamps.length,
       durationSec: currentTime.toFixed(2)
-    }, 'success');
+    });
     
     return {
       audioUrl: '/audio/neo_mock_voice.mp3', // Assume we have a mock audio file or we just use a placeholder
