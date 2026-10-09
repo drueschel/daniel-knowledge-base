@@ -533,7 +533,14 @@ export default function App() {
     }
   }, []);
 
+  const resetPipeline = () => {
+    localStorage.removeItem('activePipelineSession');
+    setActiveStep(0);
+    setTopic('');
+    setIsRunning(false);
+  };
   
+
   const startPipeline = async () => {
     const sessionId = `session_${Date.now()}`;
     setIsRunning(true);
@@ -1246,7 +1253,7 @@ export default function App() {
               </div>
 
               <div className="flex justify-end gap-4 mb-6 w-full">
-                {activeStep > 0 && (
+                {activeStep > 0 && activeStep < 8 && (
                   <button 
                     onClick={() => {
                       localStorage.removeItem('activePipelineSession');
@@ -1259,11 +1266,17 @@ export default function App() {
                     <RefreshCcw className="w-5 h-5" /> Pipeline verwerfen / Neustart
                   </button>
                 )}
-
                 {!isRunning ? (
-                  <button onClick={startPipeline} disabled={activeStep > 0 || !topic} className="bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-4 px-8 rounded-xl flex items-center gap-3 transition shadow-xl disabled:opacity-50 disabled:cursor-not-allowed">
-                    E2E Produktion starten
-                  </button>
+                  <div className="flex gap-4">
+                    <button onClick={startPipeline} disabled={activeStep > 0 || !topic} className="bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-4 px-8 rounded-xl flex items-center gap-3 transition shadow-xl disabled:opacity-50 disabled:cursor-not-allowed">
+                      E2E Produktion starten
+                    </button>
+                    {activeStep > 0 && (
+                      <button onClick={resetPipeline} className="bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold py-4 px-8 rounded-xl flex items-center gap-3 transition shadow-xl">
+                        Neue Produktion
+                      </button>
+                    )}
+                  </div>
                 ) : (
                   <button disabled className="bg-indigo-600 opacity-50 text-white font-bold py-4 px-8 rounded-xl flex items-center gap-3 transition shadow-xl">
                     Pipeline läuft...
