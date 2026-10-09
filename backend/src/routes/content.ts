@@ -139,7 +139,7 @@ router.post('/:id/render', (req, res) => {
       });
       
       const maya = new MayaVisualAgent(piece.id);
-      const { videoUrl } = await maya.renderVideo({ storyboard: piece.storyboard, timestamps: piece.timestamps });
+      const { videoUrl } = await maya.renderVideo({ storyboard: piece.storyboard, timestamps: piece.timestamps, audioUrl: piece.audioUrl });
       
       contentManager.createOrUpdate({
         id: piece.id,
