@@ -56,8 +56,14 @@ Gib AUSSCHLIESSLICH die IDs der Dokumente als kommagetrennte Liste zurück. Kein
       ]
     });
 
-    const selectedIdsStr = (response.content[0] as any).text.trim();
-    const selectedIds = selectedIdsStr.split(',').map((id: string) => id.trim());
+    let textContent = '';
+    if (Array.isArray(response.content) && response.content.length > 0) {
+      textContent = (response.content[0] as any).text || '';
+    } else if (typeof response.content === 'string') {
+      textContent = response.content;
+    }
+    const selectedIdsStr = textContent.trim();
+    const selectedIds = selectedIdsStr.split(',').map((id: string) => id.trim()).filter((id: string) => id.length > 0);
     
     let combinedContent = `RECHERCHE-ERGEBNISSE FÜR PROMPT: "${prompt}"\n\n`;
     
