@@ -1096,9 +1096,9 @@ export default function App() {
                               <p className="text-sm mt-1">Das Skript hat die QA bestanden. Wähle direkt hier deinen Hook, um Hephaistos (Voiceover) zu starten.</p>
                             </div>
                           ) : (
-                            <div className="p-4 bg-indigo-50 border border-indigo-200 rounded-xl mb-4 text-indigo-700">
-                              <p className="font-bold flex items-center gap-2"><Wand2 className="w-5 h-5"/> Produktion läuft (Phase 2 & 3)</p>
-                              <p className="text-sm mt-1">Die ausgewählte Hook wird verarbeitet. Du kannst den Fortschritt unten live verfolgen.</p>
+                            <div className={`p-4 border rounded-xl mb-4 ${isFinished ? "bg-emerald-50 border-emerald-200 text-emerald-700" : "bg-indigo-50 border-indigo-200 text-indigo-700"}`}>
+                              <p className="font-bold flex items-center gap-2">{isFinished ? <CheckCircle2 className="w-5 h-5"/> : <Wand2 className="w-5 h-5"/>}{isFinished ? "Produktion abgeschlossen" : "Produktion läuft (Phase 2 & 3)"}</p>
+                              <p className="text-sm mt-1">{isFinished ? "Das finale Reel steht unten zur Verfügung." : "Die ausgewählte Hook wird verarbeitet. Du kannst den Fortschritt unten live verfolgen."}</p>
                             </div>
                           )}
                           

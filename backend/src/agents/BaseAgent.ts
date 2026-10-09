@@ -1,3 +1,4 @@
+import Anthropic from '@anthropic-ai/sdk';
 import { ActivityLogger } from '../services/ActivityLogger';
 import { EmployeeService, Employee } from '../services/EmployeeService';
 
@@ -32,6 +33,29 @@ export abstract class BaseAgent {
         status: type === 'error' ? 'error' : 'success'
       });
     }
+  }
+
+  
+  protected async callLLM(prompt: string): Promise<string> {
+    const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY || '' });
+    const sys = this.profile.systemPrompt || 'Du bist ein KI-Agent.';
+    
+    const response = await anthropic.messages.create({
+      model: this.profile.aiModel || 'claude-3-5-sonnet-20241022',
+      max_tokens: 8000,
+      system: sys,
+      messages: [{ role: 'user', content: prompt }]
+    });
+
+    let textContent = '';
+    if (Array.isArray(response.content)) {
+      const block = response.content.find((c: any) => c.type === 'text');
+      textContent = block ? block.text : '';
+    } else {
+      textContent = response.content as unknown as string;
+    }
+    
+    return textContent.replace(/\x60\x60\x60json/g, '').replace(/\x60\x60\x60/g, '').trim();
   }
 
   public gainExperience() {

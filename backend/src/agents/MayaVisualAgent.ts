@@ -38,6 +38,6 @@ export class MayaVisualAgent extends BaseAgent {
     await new Promise(resolve => setTimeout(resolve, 3500));
     
     this.log('Remotion Rendering erfolgreich!', 'success', {});
-    return { videoUrl: '/rendered_mock.mp4' };
+    return { videoUrl: '/outputs/rendered_mock.mp4' };
   }
 }
