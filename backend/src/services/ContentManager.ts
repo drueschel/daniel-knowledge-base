@@ -3,8 +3,9 @@ import path from 'path';
 
 export interface ContentPiece {
   id: string;
-  topic: string;
-  status: 'idea' | 'scripting' | 'review' | 'voiceover' | 'audio_ready' | 'rendering' | 'completed' | 'error';
+  topic?: string;
+  status: 'idea' | 'scripting' | 'review' | 'voiceover' | 'audio_ready' | 'visuals' | 'visuals_ready' | 'rendering' | 'completed' | 'error' | 'storyboard_planned';
+  renderProgress?: number;
   researchData?: any;
   strategyData?: any;
   scriptData?: any;
@@ -12,6 +13,12 @@ export interface ContentPiece {
   selectedHook?: string;
   audioUrl?: string;
   videoUrl?: string;
+  mode?: 'ai' | 'ugc';
+  isUgc?: boolean;
+  ugcVideoUrl?: string;
+  timestamps?: any[];
+  plannedStoryboard?: any[];
+  storyboard?: any[];
   createdAt: string;
   updatedAt: string;
 }
@@ -30,14 +37,14 @@ export class ContentManager {
       const all = this.getAll();
       let changed = false;
       for (const piece of all) {
-        if (piece.status === 'scripting' || piece.status === 'rendering' || piece.status === 'voiceover') {
+        if (piece.status === 'scripting' || piece.status === 'rendering' || piece.status === 'voiceover' || piece.status === 'visuals') {
           piece.status = 'error' as any;
           changed = true;
         }
       }
       if (changed) {
         fs.writeFileSync(this.dbPath, JSON.stringify(all, null, 2));
-        console.log('[ContentManager] Cleaned up stuck pipeline runs (zombies)');
+        console.log('[ContentManager] Marked stuck pipeline runs (zombies) as error');
       }
     } catch (e) {
       console.error(e);
@@ -62,7 +69,7 @@ export class ContentManager {
     return this.getAll().find(p => p.id === id);
   }
 
-  public createOrUpdate(piece: Partial<ContentPiece> & { id: string, topic: string }): ContentPiece {
+  public createOrUpdate(piece: Partial<ContentPiece> & { id: string, topic?: string }): ContentPiece {
     const all = this.getAll();
     const existingIndex = all.findIndex(p => p.id === piece.id);
     
@@ -94,6 +101,7 @@ export class ContentManager {
   }
 
   public delete(id: string) {
+    console.trace('[ContentManager] Delete called for', id);
     let all = this.getAll();
     all = all.filter(p => p.id !== id);
     fs.writeFileSync(this.dbPath, JSON.stringify(all, null, 2));

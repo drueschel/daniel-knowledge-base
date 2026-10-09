@@ -50,7 +50,7 @@ export abstract class BaseAgent {
     let textContent = '';
     if (Array.isArray(response.content)) {
       const block = response.content.find((c: any) => c.type === 'text');
-      textContent = block ? block.text : '';
+      textContent = block ? (block as any).text : '';
     } else {
       textContent = response.content as unknown as string;
     }

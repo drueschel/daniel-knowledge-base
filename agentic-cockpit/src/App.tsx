@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import {  Bot, FileText, Play, CheckCircle2, Trash2, XCircle, Wand2, Users, BrainCircuit, Video, Database, Activity, X, LayoutGrid, List , RefreshCcw , Search, Zap } from 'lucide-react';
+import {  Bot, FileText, Play, CheckCircle2, Trash2, XCircle, Wand2, Users, BrainCircuit, Video, Database, Activity, X, LayoutGrid, List , RefreshCcw , Search, Zap, Image, Mic } from 'lucide-react';
 
 function LogsTab() {
   const [logs, setLogs] = useState<any[]>([]);
@@ -258,7 +258,18 @@ export default function App() {
   
   const [isRunning, setIsRunning] = useState(false);
   const [isAutopilot, setIsAutopilot] = useState(false);
+  const [showPreview, setShowPreview] = useState(false);
   
+  
+  const openPreview = async (id: string) => {
+    try {
+      showToast('Lade professionellen Timeline-Editor...', 'info');
+      await fetch(`http://localhost:4000/api/content/preview/${id}`);
+      setShowPreview(true);
+    } catch (e) {
+      showToast('Fehler beim Laden des Editors.', 'error');
+    }
+  };
   
   const generateVisuals = async (id: string) => {
     try {
@@ -278,6 +289,17 @@ export default function App() {
       showToast('Fehler beim Rendern.', 'error');
     }
   };
+
+  const startUgcDirector = async (id: string) => {
+    try {
+      showToast('UGC Director plant Storyboard...', 'info');
+      setActiveStep(6);
+      await fetch(`http://localhost:4000/api/content/${id}/ugc-director`, { method: 'POST' });
+    } catch (e) {
+      showToast('Fehler beim Director.', 'error');
+    }
+  };
+
   // @ts-ignore
   const [isWaitingForApproval, setIsWaitingForApproval] = useState(false);
   const [topic, setTopic] = useState(() => localStorage.getItem('studioTopic') || '');
@@ -341,9 +363,6 @@ export default function App() {
     return () => clearInterval(interval);
   }, [activeTab]);
 
-  const deleteContent = (id: string) => {
-    setConfirmDeleteId(id);
-  };
 
   const executeDeleteContent = async (id: string) => {
     setConfirmDeleteId(null);
@@ -357,15 +376,24 @@ export default function App() {
     }
   };
 
-  const rerenderContent = async (id: string) => {
-    showToast('Neu-Rendern gestartet (Remotion)...', 'info');
-    try {
-      await fetch(`http://localhost:4000/api/content/${id}/render`, { method: 'POST' });
-    } catch (e) {
-      console.error(e);
-      showToast('Fehler beim Neu-Rendern', 'error');
+  const [detailsPiece, setDetailsPiece] = useState<any>(null);
+
+  const editContentPiece = (piece: any) => {
+    setActiveTab('studio');
+    localStorage.setItem('activePipelineSession', piece.id);
+    setTopic(piece.topic);
+    
+    if (piece.status === 'completed' || piece.status === 'production') {
+      setActiveStep(8);
+    } else if (piece.status === 'audio_ready' || piece.status === 'visuals_ready' || piece.status === 'rendering') {
+      setActiveStep(6);
+    } else if (piece.scriptData) {
+      setActiveStep(5);
+    } else {
+      setActiveStep(1);
     }
   };
+
 
   // @ts-ignore
   const resumePipeline = async (id: string) => {
@@ -499,6 +527,13 @@ export default function App() {
         setActiveStep(0);
         showToast('Pipeline-Session abgelaufen oder ungültig.', 'error');
         return;
+      }
+      
+      if (pieceState && pieceState.isUgc && pieceState.status === 'scripting') {
+          setActiveStep(6);
+          setIsRunning(true);
+          setTimeout(() => checkPipelineStatus(sessionId), 3000);
+          return;
       }
       
       if (pieceState && pieceState.status !== 'error' && pieceState.status !== 'scripting' && pieceState.status !== 'idea') {
@@ -1107,10 +1142,16 @@ export default function App() {
                       const isFinished = activePiece.status === 'completed' || activeStep >= 8;
                       const hasAudio = activePiece.audioUrl && !isRendering && !isFinished && activePiece.status === 'audio_ready';
                       const hasStoryboard = activePiece.storyboard && !isRendering && !isFinished && activePiece.status === 'visuals_ready';
+                      const isTranscribing = activePiece.status === 'scripting' && activePiece.isUgc;
                       
                       return (
                         <div className="animate-in fade-in slide-in-from-bottom-2">
-                          {!activePiece.selectedHook ? (
+                          {activePiece.isUgc && !activePiece.storyboard ? (
+                            <div className="p-4 bg-indigo-50 border border-indigo-200 rounded-xl mb-4 text-indigo-700 animate-pulse">
+                              <p className="font-bold flex items-center gap-2"><Activity className="w-5 h-5"/> UGC Pipeline läuft...</p>
+                              <p className="text-sm mt-1">Dein Video wird transkribiert und der B-Roll-Schnitt wird von Stanley & Maya geplant.</p>
+                            </div>
+                          ) : !activePiece.selectedHook && !activePiece.isUgc ? (
                             <div className="p-4 bg-emerald-50 border border-emerald-200 rounded-xl mb-4 text-emerald-700">
                               <p className="font-bold flex items-center gap-2"><CheckCircle2 className="w-5 h-5"/> Phase 1 abgeschlossen.</p>
                               <p className="text-sm mt-1">Das Skript hat die QA bestanden. Wähle direkt hier deinen Hook, um Hephaistos (Voiceover) zu starten.</p>
@@ -1118,42 +1159,117 @@ export default function App() {
                           ) : (
                             <div className={`p-4 border rounded-xl mb-4 ${isFinished ? "bg-emerald-50 border-emerald-200 text-emerald-700" : "bg-indigo-50 border-indigo-200 text-indigo-700"}`}>
                               <p className="font-bold flex items-center gap-2">{isFinished ? <CheckCircle2 className="w-5 h-5"/> : <Wand2 className="w-5 h-5"/>}{isFinished ? "Produktion abgeschlossen" : "Produktion läuft (Phase 2 & 3)"}</p>
-                              <p className="text-sm mt-1">{isFinished ? "Das finale Reel steht unten zur Verfügung." : "Die ausgewählte Hook wird verarbeitet. Du kannst den Fortschritt unten live verfolgen."}</p>
+                              <p className="text-sm mt-1">{isFinished ? "Das finale Reel steht unten zur Verfügung." : "Inhalte werden verarbeitet. Du kannst den Fortschritt unten live verfolgen."}</p>
                             </div>
                           )}
                           
                           {/* Hook Selection (Persistent) */}
-                          <div className="grid gap-3 mb-6">
+                          {!activePiece.isUgc && (
+                            <div className="grid gap-3 mb-6">
                             {['hook_1', 'hook_2', 'hook_3'].map((h, i) => {
                               const hookText = activePiece.qaData?.final_script?.[h] || activePiece.scriptData?.[h];
                               if (!hookText) return null;
                               
                               const isSelected = activePiece.selectedHook === h;
-                              const isDisabled = activePiece.selectedHook && !isSelected;
                               
                               return (
                                 <button 
                                   key={h}
-                                  onClick={() => !activePiece.selectedHook && approveHook(activePiece.id, h)}
-                                  disabled={!!activePiece.selectedHook}
+                                  onClick={() => {
+                                    if (isSelected && isFinished) {
+                                      approveHook(activePiece.id, h); // re-trigger same hook
+                                    } else if (!isSelected) {
+                                      approveHook(activePiece.id, h);
+                                    }
+                                  }}
                                   className={`text-left p-4 rounded-xl border-2 transition-all group ${
                                     isSelected ? 'bg-indigo-50 border-indigo-500 shadow-md ring-2 ring-indigo-200' :
-                                    isDisabled ? 'bg-slate-50 border-slate-200 opacity-40 grayscale cursor-not-allowed' :
                                     'bg-white border-slate-200 hover:border-indigo-400 hover:shadow-md cursor-pointer'
                                   }`}
+                                  title="Klicken um Hook auszuwählen / Produktion neu zu starten"
                                 >
                                   <div className="flex justify-between items-center mb-1">
-                                    <p className={`text-xs font-bold uppercase tracking-wider transition-colors ${isSelected ? 'text-indigo-700' : 'text-slate-500 group-hover:text-indigo-500'}`}>Option {i+1} {isSelected && '(Ausgewählt)'}</p>
-                                    {!isDisabled && <Play className={`w-4 h-4 ${isSelected ? 'text-indigo-600' : 'text-indigo-400 opacity-0 group-hover:opacity-100'} transition-opacity`} />}
+                                    <p className={`text-xs font-bold uppercase tracking-wider transition-colors ${isSelected ? 'text-indigo-700' : 'text-slate-500 group-hover:text-indigo-500'}`}>Option {i+1} {isSelected && '(Aktive Wahl)'}</p>
+                                    <Play className={`w-4 h-4 ${isSelected ? 'text-indigo-600' : 'text-indigo-400 opacity-0 group-hover:opacity-100'} transition-opacity`} />
                                   </div>
                                   <p className={`text-sm leading-relaxed ${isSelected ? 'text-indigo-900 font-medium' : 'text-slate-900'}`}>{hookText}</p>
                                 </button>
                               );
                             })}
                           </div>
+                          )}
+
+                          {activePiece.isUgc && activePiece.status === 'audio_ready' && (
+                            <div className="bg-amber-50 border border-amber-200 p-6 rounded-xl shadow-sm mb-6">
+                              <h4 className="font-bold text-amber-800 flex items-center gap-2 mb-2">
+                                <Mic className="w-5 h-5" /> Audio-Transkription (Karaoke-Text)
+                              </h4>
+                              <p className="text-sm text-amber-700 mb-4">Gemini hat einen Platzhalter erzeugt. Bitte überschreibe diesen Text jetzt mit dem, was du im Video wirklich gesagt hast.</p>
+                              <textarea 
+                                className="w-full bg-white border border-amber-300 rounded-lg p-4 text-slate-900 focus:outline-none focus:ring-2 focus:ring-amber-500 min-h-[150px]"
+                                value={activePiece.scriptData?.body || ''}
+                                onChange={(e) => {
+                                  const newPieces = contentPieces.map(p => {
+                                    if (p.id === activePiece.id) {
+                                      return { ...p, scriptData: { ...p.scriptData, body: e.target.value } };
+                                    }
+                                    return p;
+                                  });
+                                  setContentPieces(newPieces as any);
+                                  // Auto-save to backend
+                                  fetch(`http://localhost:4000/api/content/${activePiece.id}`, {
+                                    method: 'PUT',
+                                    headers: { 'Content-Type': 'application/json' },
+                                    body: JSON.stringify({ scriptData: { ...activePiece.scriptData, body: e.target.value } })
+                                  });
+                                }}
+                              />
+                              <div className="mt-4 flex justify-end">
+                                <button 
+                                  onClick={() => startUgcDirector(activePiece.id)}
+                                  className="bg-amber-600 hover:bg-amber-500 text-white font-bold py-2 px-6 rounded-lg transition shadow-md flex items-center gap-2"
+                                >
+                                  Transkript OK - Starte Director <Wand2 className="w-4 h-4"/>
+                                </button>
+                              </div>
+                            </div>
+                          )}
+
+                          {/* UGC: STORYBOARD PLANNED */}
+                          {activePiece.isUgc && activePiece.status === 'storyboard_planned' && activePiece.plannedStoryboard && (
+                            <div className="bg-indigo-50 border border-indigo-200 p-6 rounded-xl shadow-sm mb-6">
+                              <h4 className="font-bold text-indigo-800 flex items-center gap-2 mb-2">
+                                <Wand2 className="w-5 h-5" /> Storyboard Geplant (A-Roll / B-Roll)
+                              </h4>
+                              <p className="text-sm text-indigo-700 mb-4">Stanley hat dein Video in {activePiece.plannedStoryboard.length} Szenen unterteilt. Überprüfe den Plan, bevor Maya die Bilder generiert.</p>
+                              
+                              <div className="space-y-2 mb-4 max-h-[300px] overflow-y-auto pr-2">
+                                {activePiece.plannedStoryboard.map((scene: any, i: number) => (
+                                  <div key={i} className="p-3 bg-white border border-indigo-100 rounded-lg flex items-start gap-3">
+                                    <span className={`px-2 py-1 text-xs font-bold rounded ${scene.type === 'ugc' ? 'bg-emerald-100 text-emerald-700' : 'bg-purple-100 text-purple-700'}`}>
+                                      {scene.type === 'ugc' ? 'A-ROLL (Du)' : 'B-ROLL (KI)'}
+                                    </span>
+                                    <div>
+                                      <p className="text-sm font-medium text-slate-800">"{scene.voice}"</p>
+                                      <p className="text-xs text-slate-500 mt-1 italic">Visual: {scene.visual_instruction}</p>
+                                    </div>
+                                  </div>
+                                ))}
+                              </div>
+
+                              <div className="flex justify-end">
+                                <button 
+                                  onClick={() => generateVisuals(activePiece.id)}
+                                  className="bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-2 px-6 rounded-lg transition shadow-md flex items-center gap-2"
+                                >
+                                  Plan OK - Generiere Visuals (Maya) <Play className="w-4 h-4"/>
+                                </button>
+                              </div>
+                            </div>
+                          )}
 
                           {/* Progress Tracker / Player */}
-                          {activePiece.selectedHook && (
+                          {(activePiece.selectedHook || activePiece.isUgc) && (
                             <div className="bg-white border border-slate-200 p-6 rounded-xl shadow-sm">
                               {isRendering ? (
                                 <div className="space-y-4">
@@ -1169,9 +1285,19 @@ export default function App() {
                                     {activePiece.status === 'rendering' ? <CheckCircle2 className="w-5 h-5 text-emerald-500" /> : (activePiece.status === 'visuals' ? <div className="w-5 h-5 border-2 border-purple-500 border-t-transparent rounded-full animate-spin"></div> : <div className="w-5 h-5 rounded-full border-2 border-slate-200"></div>)}
                                     <span>Maya erstellt 3D-Metaphern (Higgsfield) & Storyboard...</span>
                                   </div>
-                                  <div className={`flex items-center gap-3 transition-opacity ${activePiece.status === 'rendering' ? 'opacity-100 text-orange-600' : 'opacity-30'}`}>
-                                    {activePiece.status === 'completed' ? <CheckCircle2 className="w-5 h-5 text-emerald-500" /> : (activePiece.status === 'rendering' ? <div className="w-5 h-5 border-2 border-orange-500 border-t-transparent rounded-full animate-spin"></div> : <div className="w-5 h-5 rounded-full border-2 border-slate-200"></div>)}
-                                    <span>HyperFrames rendert das finale Video synchron...</span>
+                                  <div className={`flex flex-col gap-2 transition-opacity ${activePiece.status === 'rendering' ? 'opacity-100 text-orange-600' : 'opacity-30'}`}>
+                                    <div className="flex items-center gap-3">
+                                      {activePiece.status === 'completed' ? <CheckCircle2 className="w-5 h-5 text-emerald-500" /> : (activePiece.status === 'rendering' ? <div className="w-5 h-5 border-2 border-orange-500 border-t-transparent rounded-full animate-spin"></div> : <div className="w-5 h-5 rounded-full border-2 border-slate-200"></div>)}
+                                      <span>HyperFrames rendert das finale Video synchron...</span>
+                                    </div>
+                                    {activePiece.status === 'rendering' && activePiece.renderProgress !== undefined && (
+                                      <div className="ml-8 w-full max-w-md">
+                                        <div className="w-full bg-orange-100 rounded-full h-2.5 overflow-hidden border border-orange-200">
+                                          <div className="bg-orange-500 h-2.5 rounded-full transition-all duration-300" style={{ width: `${activePiece.renderProgress}%` }}></div>
+                                        </div>
+                                        <div className="text-xs text-orange-600 mt-1 font-bold text-right">{activePiece.renderProgress}%</div>
+                                      </div>
+                                    )}
                                   </div>
                                 </div>
                               ) : isFinished ? (
@@ -1191,12 +1317,27 @@ export default function App() {
                                     }} className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-400 hover:to-purple-500 text-white px-6 py-4 rounded-xl font-bold shadow-lg transition-colors flex items-center justify-center gap-2 text-lg">
                                       <Zap className="w-6 h-6" /> Auf Instagram veröffentlichen
                                     </button>
-                                    <div className="flex gap-4">
+                                    
+                                    <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-2">
                                       <button onClick={() => {
                                         showToast('Rendern erneut gestartet...', 'info');
                                         renderVideo(activePiece.id);
-                                      }} className="bg-slate-200 hover:bg-slate-300 text-slate-700 px-6 py-4 rounded-lg font-bold shadow-sm transition-colors flex items-center justify-center gap-2 w-full">
-                                        <RefreshCcw className="w-5 h-5" /> Neu Rendern
+                                      }} className="bg-slate-100 hover:bg-slate-200 text-slate-700 px-4 py-3 rounded-lg font-bold shadow-sm transition-colors flex flex-col items-center justify-center gap-1">
+                                        <RefreshCcw className="w-5 h-5 text-slate-500" /> 
+                                        <span className="text-xs">Video neu Rendern</span>
+                                      </button>
+                                      
+                                      <button onClick={() => {
+                                        showToast('Visuals werden neu generiert...', 'info');
+                                        generateVisuals(activePiece.id);
+                                      }} className="bg-slate-100 hover:bg-slate-200 text-slate-700 px-4 py-3 rounded-lg font-bold shadow-sm transition-colors flex flex-col items-center justify-center gap-1">
+                                        <Image className="w-5 h-5 text-purple-500" /> 
+                                        <span className="text-xs">Visuals neu generieren</span>
+                                      </button>
+                                      
+                                      <button onClick={() => approveHook(activePiece.id, activePiece.selectedHook)} className="bg-slate-100 hover:bg-slate-200 text-slate-700 px-4 py-3 rounded-lg font-bold shadow-sm transition-colors flex flex-col items-center justify-center gap-1">
+                                        <Mic className="w-5 h-5 text-blue-500" /> 
+                                        <span className="text-xs">Voice neu generieren</span>
                                       </button>
                                     </div>
                                   </div>
@@ -1211,7 +1352,11 @@ export default function App() {
                                   <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
                                     {activePiece.storyboard?.map((frame: any) => (
                                       <div key={frame.id} className="relative group rounded-lg overflow-hidden border-2 border-slate-200 shadow-sm">
-                                        <img src={frame.imageUrl} alt="Storyboard frame" className="w-full aspect-square object-cover" />
+                                        {frame.imageUrl?.match(/\.(mp4|mov)$/i) ? (
+                                          <video src={frame.imageUrl} className="w-full aspect-square object-cover" muted loop playsInline autoPlay />
+                                        ) : (
+                                          <img src={frame.imageUrl} alt="Storyboard frame" className="w-full aspect-square object-cover" />
+                                        )}
                                         <div className="absolute inset-x-0 bottom-0 bg-black/70 p-2 transform translate-y-full group-hover:translate-y-0 transition-transform">
                                           <p className="text-xs text-white line-clamp-2">{frame.voice}</p>
                                         </div>
@@ -1219,13 +1364,18 @@ export default function App() {
                                     ))}
                                   </div>
                                   
-                                  <div className="flex gap-4">
-                                    <button onClick={() => renderVideo(activePiece.id)} className="bg-orange-600 hover:bg-orange-500 text-white px-6 py-4 rounded-lg font-bold shadow-sm transition-colors flex-1 flex items-center justify-center gap-2 text-lg">
-                                      <Play className="w-5 h-5" /> Storyboard OK - Final Rendern
+                                  <div className="flex flex-col gap-4">
+                                    <button onClick={() => openPreview(activePiece.id)} className="bg-slate-800 hover:bg-slate-900 text-white px-6 py-4 rounded-lg font-bold shadow-md transition-colors flex items-center justify-center gap-2 text-lg">
+                                      <Video className="w-5 h-5" /> Pro Video Editor öffnen (Vorschau & Timeline)
                                     </button>
-                                    <button onClick={() => generateVisuals(activePiece.id)} className="bg-slate-200 hover:bg-slate-300 text-slate-700 px-6 py-4 rounded-lg font-bold shadow-sm transition-colors flex items-center justify-center gap-2">
-                                      <RefreshCcw className="w-5 h-5" /> Assets neu generieren
-                                    </button>
+                                    <div className="flex gap-4">
+                                      <button onClick={() => renderVideo(activePiece.id)} className="bg-orange-600 hover:bg-orange-500 text-white px-6 py-4 rounded-lg font-bold shadow-sm transition-colors flex-1 flex items-center justify-center gap-2 text-lg">
+                                        <Play className="w-5 h-5" /> Storyboard OK - Final Rendern
+                                      </button>
+                                      <button onClick={() => generateVisuals(activePiece.id)} className="bg-slate-200 hover:bg-slate-300 text-slate-700 px-6 py-4 rounded-lg font-bold shadow-sm transition-colors flex items-center justify-center gap-2">
+                                        <RefreshCcw className="w-5 h-5" /> Assets neu generieren
+                                      </button>
+                                    </div>
                                   </div>
                                 </div>
                               ) : hasAudio ? (
@@ -1252,6 +1402,13 @@ export default function App() {
                                     <button onClick={() => approveHook(activePiece.id, activePiece.selectedHook!)} className="bg-slate-200 hover:bg-slate-300 text-slate-700 px-6 py-4 rounded-lg font-bold shadow-sm transition-colors flex items-center justify-center gap-2">
                                       <RefreshCcw className="w-5 h-5" /> Neu vertonen
                                     </button>
+                                  </div>
+                                </div>
+                              ) : isTranscribing ? (
+                                <div>
+                                  <div className="p-4 bg-blue-50 border border-blue-200 rounded-xl mb-4 text-blue-700">
+                                    <p className="font-bold flex items-center gap-2"><div className="w-5 h-5 border-2 border-blue-500 border-t-transparent rounded-full animate-spin"></div> Audio & Video wird analysiert...</p>
+                                    <p className="text-sm mt-1">Bitte warten. Das hochgeladene Video wird verarbeitet (Transkription & Timestamps). Dies kann einige Sekunden dauern...</p>
                                   </div>
                                 </div>
                               ) : null}
@@ -1303,84 +1460,110 @@ export default function App() {
         {/* CONTENT HUB */}
         {activeTab === 'hub' && (
           <div className="px-8 md:px-12 pt-10 pb-32 max-w-7xl mx-auto w-full">
-            <header className="mb-10 flex justify-between items-center">
+            <header className="mb-10 flex flex-col md:flex-row md:justify-between items-start md:items-center gap-4">
               <div>
                 <h2 className="text-3xl font-bold mb-2 text-slate-900">Content Hub</h2>
                 <p className="text-slate-500 text-lg">Galerie deiner fertiggestellten Content-Pieces (Ready for Distribution).</p>
               </div>
-              <button onClick={() => setActiveTab('studio')} className="bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-2 px-6 rounded-xl transition shadow-xl">
-                + Neues Reel
-              </button>
+              <div className="flex gap-4">
+                <label className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2 px-6 rounded-xl transition shadow-xl cursor-pointer flex items-center gap-2">
+                  <Video className="w-5 h-5" />
+                  + UGC Video hochladen
+                  <input type="file" accept="video/mp4,video/quicktime" className="hidden" onChange={async (e) => {
+                    const file = e.target.files?.[0];
+                    if (!file) return;
+                    showToast('Video wird hochgeladen und transkribiert...', 'info');
+                    const formData = new FormData();
+                    formData.append('video', file);
+                    try {
+                      const res = await fetch('http://localhost:4000/api/content/upload-ugc', { method: 'POST', body: formData });
+                      if(res.ok) {
+                         const data = await res.json();
+                         showToast('Video hochgeladen! Transkription läuft...', 'success');
+                         const newPiecesRes = await fetch('http://localhost:4000/api/content');
+                         const newPieces = await newPiecesRes.json();
+                         setContentPieces(newPieces);
+                         localStorage.setItem('activePipelineSession', data.sessionId);
+                         setIsRunning(true);
+                         setActiveStep(6);
+                         setActiveTab('studio'); // Springe ins Studio
+                      }
+                    } catch(err: any) {
+                      showToast('Upload Fehler: ' + (err.message || String(err)), 'error');
+                      console.error("Upload Error:", err);
+                    }
+                  }} />
+                </label>
+                <button onClick={() => setActiveTab('studio')} className="bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-2 px-6 rounded-xl transition shadow-xl">
+                  + Neues AI Reel
+                </button>
+              </div>
             </header>
 
-            <div className="grid grid-cols-1 gap-6">
-              {contentPieces.filter(p => p.status === 'completed' || p.status === 'production').length === 0 ? (
-                <div className="text-center p-12 bg-slate-100/50 rounded-2xl border border-slate-200">
-                  <Database className="w-12 h-12 text-slate-600 mx-auto mb-4" />
-                  <p className="text-slate-500 text-lg">Noch keine fertigen Content-Pieces vorhanden.</p>
-                  <p className="text-slate-500 text-sm mt-2">Gehe ins Studio (Director Workspace), um deinen Content zu produzieren.</p>
-                </div>
-              ) : (
-                contentPieces.filter(p => p.status === 'completed' || p.status === 'production').map(piece => (
-                  <div key={piece.id} className="bg-slate-100 rounded-2xl border border-slate-200 p-6 shadow-xl relative overflow-hidden">
-                    <div className="absolute top-6 right-6 flex items-center gap-3">
-                      <button onClick={() => rerenderContent(piece.id)} className="text-slate-400 hover:text-indigo-600 transition-colors bg-white p-2 rounded-full shadow-sm hover:shadow-md border border-slate-200" title="Video neu rendern">
-                        <RefreshCcw className="w-4 h-4" />
-                      </button>
-                      <button onClick={() => deleteContent(piece.id)} className="text-slate-400 hover:text-red-500 transition-colors bg-white p-2 rounded-full shadow-sm hover:shadow-md border border-slate-200" title="Eintrag löschen">
-                        <Trash2 className="w-4 h-4" />
-                      </button>
-                      <span className="px-3 py-1.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-700 border border-emerald-200 shadow-sm flex items-center gap-1">
-                        <CheckCircle2 className="w-4 h-4" /> ABGESCHLOSSEN
-                      </span>
-                    </div>
-
-                    <div className="flex items-center gap-3 mb-4 pr-32">
-                      <FileText className="w-6 h-6 text-indigo-600 shrink-0" />
-                      <h3 className="text-xl font-bold text-slate-900">{piece.topic}</h3>
-                    </div>
-
-                    {piece.videoUrl && (
-                      <div className="mb-6 p-4 bg-emerald-50 border border-emerald-200 rounded-xl">
-                        <div className="flex items-center gap-2 mb-3">
-                          <div className="w-8 h-8 rounded-full bg-white shadow-sm flex items-center justify-center">
-                            <span className="text-xl">🎬</span>
-                          </div>
-                          <div>
-                            <p className="text-sm font-bold text-emerald-800">Finales Video</p>
-                            <p className="text-xs text-emerald-600">Motion Graphics & Voiceover</p>
-                          </div>
-                        </div>
-                        <div className="rounded-lg overflow-hidden border-2 border-emerald-100 shadow-sm flex justify-center bg-black">
-                          <video 
-                            controls 
-                            className="max-h-[500px] w-full object-contain" 
-                            src={`${piece.videoUrl.startsWith('http') ? piece.videoUrl : `http://localhost:4000${piece.videoUrl}`}?t=${new Date(piece.updatedAt).getTime()}`} 
-                          ></video>
-                        </div>
-                      </div>
+            <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xl">
+              <div className="overflow-x-auto">
+                <table className="w-full text-left text-sm text-slate-600">
+                  <thead className="bg-slate-50 border-b border-slate-200 text-xs uppercase font-bold text-slate-500">
+                    <tr>
+                      <th className="px-6 py-4">Name / Topic</th>
+                      <th className="px-6 py-4">Erstellt am</th>
+                      <th className="px-6 py-4">Status</th>
+                      <th className="px-6 py-4 text-right">Aktionen</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100">
+                    {contentPieces.length === 0 ? (
+                      <tr>
+                        <td colSpan={4} className="px-6 py-12 text-center text-slate-500">
+                          <Database className="w-12 h-12 text-slate-400 mx-auto mb-4" />
+                          <p className="text-lg">Noch keine Content-Pieces vorhanden.</p>
+                          <p className="text-sm mt-1">Gehe ins Studio oder lade ein UGC-Video hoch, um zu starten.</p>
+                        </td>
+                      </tr>
+                    ) : (
+                      contentPieces.map(piece => (
+                        <tr key={piece.id} className="hover:bg-slate-50 transition-colors group">
+                          <td className="px-6 py-4">
+                            <div className="flex items-center gap-3">
+                              <FileText className="w-5 h-5 text-indigo-500 shrink-0" />
+                              <span className="font-bold text-slate-900 line-clamp-1">{piece.topic}</span>
+                            </div>
+                          </td>
+                          <td className="px-6 py-4 whitespace-nowrap text-slate-500">
+                            {new Date(piece.createdAt).toLocaleString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' })}
+                          </td>
+                          <td className="px-6 py-4 whitespace-nowrap">
+                            {piece.status === 'completed' ? (
+                              <span className="px-2.5 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-700 border border-emerald-200 flex items-center w-max gap-1">
+                                <CheckCircle2 className="w-3.5 h-3.5" /> FERTIG
+                              </span>
+                            ) : (
+                              <span className="px-2.5 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-700 border border-amber-200 flex items-center w-max gap-1">
+                                <Video className="w-3.5 h-3.5" /> ENTWURF
+                              </span>
+                            )}
+                          </td>
+                          <td className="px-6 py-4 whitespace-nowrap text-right">
+                            <div className="flex justify-end items-center gap-2">
+                              {piece.videoUrl && (
+                                <button onClick={() => setDetailsPiece(piece)} className="text-indigo-600 hover:text-white hover:bg-indigo-600 transition-colors border border-indigo-200 bg-indigo-50 px-3 py-1.5 rounded-lg text-xs font-bold flex items-center gap-1">
+                                  <Play className="w-3.5 h-3.5" /> Details / Video
+                                </button>
+                              )}
+                              <button onClick={() => editContentPiece(piece)} className="text-slate-600 hover:text-white hover:bg-slate-700 transition-colors border border-slate-200 bg-white px-3 py-1.5 rounded-lg text-xs font-bold flex items-center gap-1" title="In Studio öffnen">
+                                <Wand2 className="w-3.5 h-3.5" /> Bearbeiten
+                              </button>
+                              <button onClick={() => setConfirmDeleteId(piece.id)} className="text-red-500 hover:text-white hover:bg-red-500 transition-colors border border-red-200 bg-red-50 p-1.5 rounded-lg" title="Löschen">
+                                <Trash2 className="w-4 h-4" />
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                      ))
                     )}
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
-                      <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
-                        <h4 className="text-slate-500 font-bold mb-3 uppercase tracking-wider text-xs flex items-center gap-2">
-                          <Activity className="w-4 h-4 text-emerald-500" /> Ausgewählter Hook
-                        </h4>
-                        <div className="p-4 rounded-xl border border-emerald-200 bg-emerald-50/50">
-                          <p className="text-slate-900 text-sm leading-relaxed">{piece.selectedHook ? (piece.qaData?.final_script?.[piece.selectedHook] || piece.scriptData?.[piece.selectedHook]) : 'Kein Hook ausgewählt.'}</p>
-                        </div>
-                      </div>
-
-                      <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
-                        <h4 className="text-slate-500 font-bold mb-3 uppercase tracking-wider text-xs flex items-center gap-2">
-                          <BrainCircuit className="w-4 h-4 text-pink-500" /> Skript Body
-                        </h4>
-                        <p className="text-slate-700 text-sm whitespace-pre-wrap leading-relaxed">{piece.qaData?.final_script?.body || piece.scriptData?.body}</p>
-                      </div>
-                    </div>
-                  </div>
-                ))
-              )}
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         )}
@@ -1390,7 +1573,7 @@ export default function App() {
         )}
       </div>
 
-            {confirmDeleteId && (
+      {confirmDeleteId && (
         <div className="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-in fade-in" onClick={() => setConfirmDeleteId(null)}>
           <div className="bg-white rounded-2xl w-full max-w-md overflow-hidden shadow-2xl animate-in zoom-in-95 duration-200" onClick={e => e.stopPropagation()}>
             <div className="p-6">
@@ -1407,6 +1590,57 @@ export default function App() {
             <div className="p-4 bg-slate-50 border-t border-slate-100 flex justify-end gap-3">
               <button onClick={() => setConfirmDeleteId(null)} className="px-4 py-2 font-bold text-slate-500 hover:text-slate-700 transition">Abbrechen</button>
               <button onClick={() => executeDeleteContent(confirmDeleteId)} className="px-4 py-2 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg transition shadow-sm">Löschen</button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {detailsPiece && (
+        <div className="fixed inset-0 bg-slate-900/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-in fade-in" onClick={() => setDetailsPiece(null)}>
+          <div className="bg-slate-900 rounded-2xl w-full max-w-lg overflow-hidden shadow-2xl animate-in zoom-in-95 duration-200 border border-slate-700 relative" onClick={e => e.stopPropagation()}>
+            <button onClick={() => setDetailsPiece(null)} className="absolute top-4 right-4 z-10 bg-black/50 text-white p-2 rounded-full hover:bg-black transition">
+              <XCircle className="w-6 h-6" />
+            </button>
+            <div className="p-6 bg-slate-800 border-b border-slate-700">
+              <h3 className="text-xl font-bold text-white pr-10">{detailsPiece.topic}</h3>
+            </div>
+            <div className="bg-black flex justify-center">
+              <video 
+                controls 
+                autoPlay
+                className="max-h-[70vh] w-full object-contain" 
+                src={`${detailsPiece.videoUrl?.startsWith('http') ? detailsPiece.videoUrl : `http://localhost:4000${detailsPiece.videoUrl}`}?t=${new Date(detailsPiece.updatedAt).getTime()}`} 
+              ></video>
+            </div>
+            <div className="p-4 bg-slate-800 flex justify-end gap-3">
+              <button onClick={() => { setDetailsPiece(null); editContentPiece(detailsPiece); }} className="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-lg transition shadow-sm flex items-center gap-2">
+                <Wand2 className="w-4 h-4" /> Bearbeiten / Re-Rendern
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {showPreview && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4">
+          <div className="bg-slate-900 w-full h-full max-w-7xl max-h-[90vh] rounded-2xl flex flex-col border border-slate-700 shadow-2xl overflow-hidden">
+            <div className="flex justify-between items-center p-4 border-b border-slate-700 bg-slate-800">
+              <h3 className="text-white font-bold text-lg flex items-center gap-2">
+                <Video className="w-5 h-5 text-orange-500" /> Remotion Pro Editor
+              </h3>
+              <div className="flex items-center gap-4">
+                <span className="text-slate-400 text-sm">Änderungen werden live in storyboard.json gespeichert</span>
+                <button onClick={() => setShowPreview(false)} className="text-slate-400 hover:text-white transition-colors bg-slate-700 hover:bg-slate-600 p-2 rounded-lg">
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
+            </div>
+            <div className="flex-1 bg-black w-full h-full">
+              <iframe 
+                src="http://localhost:3000" 
+                className="w-full h-full border-none"
+                title="Remotion Studio"
+              />
             </div>
           </div>
         </div>

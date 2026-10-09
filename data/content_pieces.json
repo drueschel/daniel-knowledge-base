@@ -1,0 +1,1231 @@
+[
+  {
+    "status": "audio_ready",
+    "researchData": null,
+    "strategyData": null,
+    "scriptData": {
+      "ugc_hook": "Dein Video",
+      "body": "Also, da gibt es die Menschen, die kümmern sich einfach um jeden. Die wissen auch gar nicht, dass sie existieren. diese menschen ihre ganze aufmerksamkeit geht nach außen was braucht mein gegenüber was braucht mein gegenüber damit es ihm gut geht und dann geht es mir gut ja hier ist etwas verdreht und ja wie das passiert ist ist einfach so diese menschen als sie aufgewachsen sind als sie klein waren sind sie in einem umfeld aufgewachsen das so instabil war dass dieser kleine baby organismus oder kleinkind organismus angefangen hat zu glauben erst wenn es dir gut geht dann geht es mir gut Und wenn du stirbst dann sterbe ich dieses kind hat angefangen zu lernen sich um andere zu k damit es das umfeld war so besch dass das kleinkind einfach zu wenig abbekommen hat zu wenig von allem bindung nähe aufmerksamkeit vielleicht sicherheit ja Ja, und das manifestiert sich heute so, dass dieses Kind als Erwachsene die Lippen anderer lesen möchte. Es möchte den anderen Wünsche erfüllen, weil es unbewusst so tief immer noch glaubt, das ist im Nervensystem wie fest eingebrannt, wenn du gehst, wenn du weg bist, dann sterbe ich. Also, was früher die Lösung war, ist heute das Problem. Denn in Erwachsenenbeziehungen will kein Erwachsener dieses Kümmern erleben. Ein Erwachsener will autonom sein und in Bindung gehen, wenn er möchte. Er möchte kein Gegenüber haben, das sich um ihn kümmert. Überkümmert. Ein Erwachsener, der übergibt."
+    },
+    "qaData": null,
+    "id": "session_1791573186967",
+    "topic": "Eigenes Video (UGC)",
+    "mode": "ugc",
+    "selectedHook": "ugc_hook",
+    "audioUrl": "/audio/voice_session_1791573186967.mp3",
+    "timestamps": [
+      {
+        "word": "Also,",
+        "start": 0.5,
+        "end": 1.1000000000000014
+      },
+      {
+        "word": "da",
+        "start": 1.1000000000000014,
+        "end": 1.1400000000000006
+      },
+      {
+        "word": "gibt",
+        "start": 1.1400000000000006,
+        "end": 1.3399999999999999
+      },
+      {
+        "word": "es",
+        "start": 1.3399999999999999,
+        "end": 1.3999999999999986
+      },
+      {
+        "word": "die",
+        "start": 1.3999999999999986,
+        "end": 1.5799999999999983
+      },
+      {
+        "word": "Menschen,",
+        "start": 1.5799999999999983,
+        "end": 2.780000000000001
+      },
+      {
+        "word": "die",
+        "start": 2.780000000000001,
+        "end": 2.879999999999999
+      },
+      {
+        "word": "kümmern",
+        "start": 2.879999999999999,
+        "end": 3.3000000000000007
+      },
+      {
+        "word": "sich",
+        "start": 3.3000000000000007,
+        "end": 3.6799999999999997
+      },
+      {
+        "word": "einfach",
+        "start": 3.6799999999999997,
+        "end": 4.199999999999999
+      },
+      {
+        "word": "um",
+        "start": 4.199999999999999,
+        "end": 4.440000000000001
+      },
+      {
+        "word": "jeden.",
+        "start": 4.440000000000001,
+        "end": 4.82
+      },
+      {
+        "word": "Die",
+        "start": 7.559999999999999,
+        "end": 7.699999999999999
+      },
+      {
+        "word": "wissen",
+        "start": 7.699999999999999,
+        "end": 7.940000000000001
+      },
+      {
+        "word": "auch",
+        "start": 7.940000000000001,
+        "end": 8.16
+      },
+      {
+        "word": "gar",
+        "start": 8.16,
+        "end": 8.36
+      },
+      {
+        "word": "nicht,",
+        "start": 8.36,
+        "end": 8.54
+      },
+      {
+        "word": "dass",
+        "start": 8.54,
+        "end": 8.68
+      },
+      {
+        "word": "sie",
+        "start": 8.68,
+        "end": 8.760000000000002
+      },
+      {
+        "word": "existieren.",
+        "start": 8.760000000000002,
+        "end": 9.32
+      },
+      {
+        "word": "diese",
+        "start": 8.84,
+        "end": 10.98
+      },
+      {
+        "word": "menschen",
+        "start": 10.98,
+        "end": 11.600000000000001
+      },
+      {
+        "word": "ihre",
+        "start": 11.600000000000001,
+        "end": 13.46
+      },
+      {
+        "word": "ganze",
+        "start": 13.46,
+        "end": 13.780000000000001
+      },
+      {
+        "word": "aufmerksamkeit",
+        "start": 13.780000000000001,
+        "end": 14.719999999999999
+      },
+      {
+        "word": "geht",
+        "start": 14.719999999999999,
+        "end": 14.96
+      },
+      {
+        "word": "nach",
+        "start": 14.96,
+        "end": 15.14
+      },
+      {
+        "word": "außen",
+        "start": 15.14,
+        "end": 15.64
+      },
+      {
+        "word": "was",
+        "start": 15.64,
+        "end": 16.999999999999996
+      },
+      {
+        "word": "braucht",
+        "start": 16.999999999999996,
+        "end": 17.52
+      },
+      {
+        "word": "mein",
+        "start": 17.52,
+        "end": 17.779999999999998
+      },
+      {
+        "word": "gegenüber",
+        "start": 17.779999999999998,
+        "end": 18.3
+      },
+      {
+        "word": "was",
+        "start": 20.779999999999998,
+        "end": 21.16
+      },
+      {
+        "word": "braucht",
+        "start": 21.16,
+        "end": 21.48
+      },
+      {
+        "word": "mein",
+        "start": 21.48,
+        "end": 21.66
+      },
+      {
+        "word": "gegenüber",
+        "start": 21.66,
+        "end": 22.16
+      },
+      {
+        "word": "damit",
+        "start": 22.16,
+        "end": 22.98
+      },
+      {
+        "word": "es",
+        "start": 22.98,
+        "end": 23.2
+      },
+      {
+        "word": "ihm",
+        "start": 23.2,
+        "end": 23.360000000000003
+      },
+      {
+        "word": "gut",
+        "start": 23.360000000000003,
+        "end": 23.680000000000003
+      },
+      {
+        "word": "geht",
+        "start": 23.680000000000003,
+        "end": 23.959999999999997
+      },
+      {
+        "word": "und",
+        "start": 23.959999999999997,
+        "end": 24.360000000000003
+      },
+      {
+        "word": "dann",
+        "start": 24.360000000000003,
+        "end": 24.88
+      },
+      {
+        "word": "geht",
+        "start": 24.88,
+        "end": 25.2
+      },
+      {
+        "word": "es",
+        "start": 25.2,
+        "end": 25.34
+      },
+      {
+        "word": "mir",
+        "start": 25.34,
+        "end": 25.540000000000003
+      },
+      {
+        "word": "gut",
+        "start": 25.540000000000003,
+        "end": 25.84
+      },
+      {
+        "word": "ja",
+        "start": 25.84,
+        "end": 26.84
+      },
+      {
+        "word": "hier",
+        "start": 26.84,
+        "end": 28.499999999999996
+      },
+      {
+        "word": "ist",
+        "start": 28.499999999999996,
+        "end": 28.639999999999997
+      },
+      {
+        "word": "etwas",
+        "start": 28.599999999999998,
+        "end": 28.88
+      },
+      {
+        "word": "verdreht",
+        "start": 28.88,
+        "end": 29.44
+      },
+      {
+        "word": "und",
+        "start": 29.44,
+        "end": 31.98
+      },
+      {
+        "word": "ja",
+        "start": 31.98,
+        "end": 32.5
+      },
+      {
+        "word": "wie",
+        "start": 32.5,
+        "end": 32.620000000000005
+      },
+      {
+        "word": "das",
+        "start": 32.620000000000005,
+        "end": 32.8
+      },
+      {
+        "word": "passiert",
+        "start": 32.8,
+        "end": 33.18000000000001
+      },
+      {
+        "word": "ist",
+        "start": 33.18000000000001,
+        "end": 33.7
+      },
+      {
+        "word": "ist",
+        "start": 33.7,
+        "end": 35.94
+      },
+      {
+        "word": "einfach",
+        "start": 35.94,
+        "end": 36.2
+      },
+      {
+        "word": "so",
+        "start": 36.2,
+        "end": 36.56
+      },
+      {
+        "word": "diese",
+        "start": 36.56,
+        "end": 37.040000000000006
+      },
+      {
+        "word": "menschen",
+        "start": 37.040000000000006,
+        "end": 37.5
+      },
+      {
+        "word": "als",
+        "start": 37.5,
+        "end": 38.5
+      },
+      {
+        "word": "sie",
+        "start": 38.5,
+        "end": 38.599999999999994
+      },
+      {
+        "word": "aufgewachsen",
+        "start": 38.599999999999994,
+        "end": 39.260000000000005
+      },
+      {
+        "word": "sind",
+        "start": 38.980000000000004,
+        "end": 39.480000000000004
+      },
+      {
+        "word": "als",
+        "start": 39.480000000000004,
+        "end": 39.64
+      },
+      {
+        "word": "sie",
+        "start": 39.64,
+        "end": 39.68000000000001
+      },
+      {
+        "word": "klein",
+        "start": 39.68000000000001,
+        "end": 40.040000000000006
+      },
+      {
+        "word": "waren",
+        "start": 40.040000000000006,
+        "end": 40.36
+      },
+      {
+        "word": "sind",
+        "start": 40.36,
+        "end": 40.58
+      },
+      {
+        "word": "sie",
+        "start": 40.58,
+        "end": 40.7
+      },
+      {
+        "word": "in",
+        "start": 40.7,
+        "end": 40.81999999999999
+      },
+      {
+        "word": "einem",
+        "start": 40.81999999999999,
+        "end": 41.019999999999996
+      },
+      {
+        "word": "umfeld",
+        "start": 41.019999999999996,
+        "end": 41.5
+      },
+      {
+        "word": "aufgewachsen",
+        "start": 41.5,
+        "end": 42.28
+      },
+      {
+        "word": "das",
+        "start": 42.28,
+        "end": 43.34
+      },
+      {
+        "word": "so",
+        "start": 43.34,
+        "end": 43.8
+      },
+      {
+        "word": "instabil",
+        "start": 43.8,
+        "end": 44.34
+      },
+      {
+        "word": "war",
+        "start": 44.34,
+        "end": 44.68000000000001
+      },
+      {
+        "word": "dass",
+        "start": 44.68000000000001,
+        "end": 45.540000000000006
+      },
+      {
+        "word": "dieser",
+        "start": 45.540000000000006,
+        "end": 45.86
+      },
+      {
+        "word": "kleine",
+        "start": 45.86,
+        "end": 46.379999999999995
+      },
+      {
+        "word": "baby",
+        "start": 45.959999999999994,
+        "end": 46.78
+      },
+      {
+        "word": "organismus",
+        "start": 46.78,
+        "end": 47.519999999999996
+      },
+      {
+        "word": "oder",
+        "start": 47.519999999999996,
+        "end": 47.92
+      },
+      {
+        "word": "kleinkind",
+        "start": 47.92,
+        "end": 48.38000000000001
+      },
+      {
+        "word": "organismus",
+        "start": 48.38000000000001,
+        "end": 48.94
+      },
+      {
+        "word": "angefangen",
+        "start": 48.94,
+        "end": 49.540000000000006
+      },
+      {
+        "word": "hat",
+        "start": 49.540000000000006,
+        "end": 49.72
+      },
+      {
+        "word": "zu",
+        "start": 49.72,
+        "end": 49.88000000000001
+      },
+      {
+        "word": "glauben",
+        "start": 49.88000000000001,
+        "end": 50.22
+      },
+      {
+        "word": "erst",
+        "start": 50.22,
+        "end": 52.260000000000005
+      },
+      {
+        "word": "wenn",
+        "start": 52.260000000000005,
+        "end": 52.5
+      },
+      {
+        "word": "es",
+        "start": 52.5,
+        "end": 52.68000000000001
+      },
+      {
+        "word": "dir",
+        "start": 52.68000000000001,
+        "end": 53.06
+      },
+      {
+        "word": "gut",
+        "start": 53.06,
+        "end": 53.34
+      },
+      {
+        "word": "geht,",
+        "start": 53.16,
+        "end": 54.66
+      },
+      {
+        "word": "dann",
+        "start": 54.66,
+        "end": 54.78
+      },
+      {
+        "word": "geht",
+        "start": 54.78,
+        "end": 55.040000000000006
+      },
+      {
+        "word": "es",
+        "start": 55.040000000000006,
+        "end": 55.2
+      },
+      {
+        "word": "mir",
+        "start": 55.2,
+        "end": 55.36
+      },
+      {
+        "word": "gut.",
+        "start": 55.36,
+        "end": 55.72
+      },
+      {
+        "word": "Und",
+        "start": 55.72,
+        "end": 57
+      },
+      {
+        "word": "wenn",
+        "start": 57,
+        "end": 57.24000000000001
+      },
+      {
+        "word": "du",
+        "start": 57.24000000000001,
+        "end": 57.5
+      },
+      {
+        "word": "stirbst,",
+        "start": 57.5,
+        "end": 58.8
+      },
+      {
+        "word": "dann",
+        "start": 58.8,
+        "end": 58.96000000000001
+      },
+      {
+        "word": "sterbe",
+        "start": 58.96000000000001,
+        "end": 59.400000000000006
+      },
+      {
+        "word": "ich",
+        "start": 59.419340000000005,
+        "end": 60.85934
+      },
+      {
+        "word": "dieses",
+        "start": 60.85934,
+        "end": 62.639340000000004
+      },
+      {
+        "word": "kind",
+        "start": 62.639340000000004,
+        "end": 62.93934
+      },
+      {
+        "word": "hat",
+        "start": 62.93934,
+        "end": 63.01934
+      },
+      {
+        "word": "angefangen",
+        "start": 63.01934,
+        "end": 63.43934
+      },
+      {
+        "word": "zu",
+        "start": 63.43934,
+        "end": 63.639340000000004
+      },
+      {
+        "word": "lernen",
+        "start": 63.639340000000004,
+        "end": 63.919340000000005
+      },
+      {
+        "word": "sich",
+        "start": 63.919340000000005,
+        "end": 64.35934
+      },
+      {
+        "word": "um",
+        "start": 63.839344,
+        "end": 64.51934
+      },
+      {
+        "word": "andere",
+        "start": 64.51934,
+        "end": 64.87934
+      },
+      {
+        "word": "zu",
+        "start": 64.87934,
+        "end": 65.15933600000001
+      },
+      {
+        "word": "kümmern",
+        "start": 65.15933600000001,
+        "end": 65.49934
+      },
+      {
+        "word": "damit",
+        "start": 65.49934,
+        "end": 66.199344
+      },
+      {
+        "word": "es",
+        "start": 66.199344,
+        "end": 66.35934
+      },
+      {
+        "word": "überlebt",
+        "start": 66.35934,
+        "end": 66.95934
+      },
+      {
+        "word": "das",
+        "start": 66.95934,
+        "end": 67.91934
+      },
+      {
+        "word": "umfeld",
+        "start": 67.91934,
+        "end": 68.23934
+      },
+      {
+        "word": "war",
+        "start": 68.23934,
+        "end": 68.41934
+      },
+      {
+        "word": "so",
+        "start": 68.41934,
+        "end": 68.63934
+      },
+      {
+        "word": "beschäftigt",
+        "start": 68.63934,
+        "end": 69.51934
+      },
+      {
+        "word": "dass",
+        "start": 69.51934,
+        "end": 69.99934
+      },
+      {
+        "word": "das",
+        "start": 69.99934,
+        "end": 70.15933600000001
+      },
+      {
+        "word": "kleinkind",
+        "start": 70.15933600000001,
+        "end": 70.53934000000001
+      },
+      {
+        "word": "einfach",
+        "start": 70.53934000000001,
+        "end": 70.839344
+      },
+      {
+        "word": "zu",
+        "start": 70.839344,
+        "end": 71.01934
+      },
+      {
+        "word": "wenig",
+        "start": 70.41934,
+        "end": 71.27934
+      },
+      {
+        "word": "abbekommen",
+        "start": 71.27934,
+        "end": 71.71934
+      },
+      {
+        "word": "hat",
+        "start": 71.71934,
+        "end": 72.37934
+      },
+      {
+        "word": "zu",
+        "start": 72.37934,
+        "end": 72.65933600000001
+      },
+      {
+        "word": "wenig",
+        "start": 72.65933600000001,
+        "end": 72.89934000000001
+      },
+      {
+        "word": "von",
+        "start": 72.89934000000001,
+        "end": 73.13934
+      },
+      {
+        "word": "allem",
+        "start": 73.13934,
+        "end": 74.25934000000001
+      },
+      {
+        "word": "bindung",
+        "start": 74.25934000000001,
+        "end": 75.47934000000001
+      },
+      {
+        "word": "nähe",
+        "start": 75.47934000000001,
+        "end": 76.55934
+      },
+      {
+        "word": "aufmerksamkeit",
+        "start": 76.55934,
+        "end": 77.839344
+      },
+      {
+        "word": "vielleicht",
+        "start": 77.839344,
+        "end": 78.23934
+      },
+      {
+        "word": "sicherheit",
+        "start": 78.23934,
+        "end": 78.93934
+      },
+      {
+        "word": "ja",
+        "start": 78.93934,
+        "end": 80.55934
+      },
+      {
+        "word": "Ja,",
+        "start": 80.29934,
+        "end": 82.89934000000001
+      },
+      {
+        "word": "und",
+        "start": 82.89934000000001,
+        "end": 82.99934
+      },
+      {
+        "word": "das",
+        "start": 82.99934,
+        "end": 83.23934
+      },
+      {
+        "word": "manifestiert",
+        "start": 83.23934,
+        "end": 83.87934
+      },
+      {
+        "word": "sich",
+        "start": 83.87934,
+        "end": 84.09934
+      },
+      {
+        "word": "heute",
+        "start": 84.09934,
+        "end": 84.45934
+      },
+      {
+        "word": "so,",
+        "start": 84.45934,
+        "end": 85.35934
+      },
+      {
+        "word": "dass",
+        "start": 85.35934,
+        "end": 85.45934
+      },
+      {
+        "word": "dieses",
+        "start": 85.45934,
+        "end": 86.53934000000001
+      },
+      {
+        "word": "Kind",
+        "start": 86.53934000000001,
+        "end": 86.87934
+      },
+      {
+        "word": "als",
+        "start": 86.87934,
+        "end": 87.13934
+      },
+      {
+        "word": "Erwachsene",
+        "start": 87.13934,
+        "end": 87.75934000000001
+      },
+      {
+        "word": "die",
+        "start": 87.75934000000001,
+        "end": 88.919346
+      },
+      {
+        "word": "Lippen",
+        "start": 88.919346,
+        "end": 89.59934
+      },
+      {
+        "word": "anderer",
+        "start": 89.59934,
+        "end": 89.97934000000001
+      },
+      {
+        "word": "lesen",
+        "start": 89.97934000000001,
+        "end": 90.37934
+      },
+      {
+        "word": "möchte.",
+        "start": 90.37934,
+        "end": 90.99934
+      },
+      {
+        "word": "Es",
+        "start": 90.27934,
+        "end": 91.07934
+      },
+      {
+        "word": "möchte",
+        "start": 91.07934,
+        "end": 91.39934000000001
+      },
+      {
+        "word": "den",
+        "start": 91.39934000000001,
+        "end": 91.57934
+      },
+      {
+        "word": "anderen",
+        "start": 91.57934,
+        "end": 91.85934
+      },
+      {
+        "word": "Wünsche",
+        "start": 91.85934,
+        "end": 92.17934000000001
+      },
+      {
+        "word": "erfüllen,",
+        "start": 92.17934000000001,
+        "end": 92.65933600000001
+      },
+      {
+        "word": "weil",
+        "start": 92.65933600000001,
+        "end": 94.35934
+      },
+      {
+        "word": "es",
+        "start": 94.35934,
+        "end": 94.51934
+      },
+      {
+        "word": "unbewusst",
+        "start": 94.51934,
+        "end": 95.21934
+      },
+      {
+        "word": "so",
+        "start": 95.21934,
+        "end": 95.51934
+      },
+      {
+        "word": "tief",
+        "start": 95.51934,
+        "end": 95.97934000000001
+      },
+      {
+        "word": "immer",
+        "start": 95.97934000000001,
+        "end": 96.27934
+      },
+      {
+        "word": "noch",
+        "start": 96.27934,
+        "end": 96.47934000000001
+      },
+      {
+        "word": "glaubt,",
+        "start": 96.47934000000001,
+        "end": 97.01934
+      },
+      {
+        "word": "das",
+        "start": 97.17934000000001,
+        "end": 97.35934
+      },
+      {
+        "word": "ist",
+        "start": 97.35934,
+        "end": 97.53934000000001
+      },
+      {
+        "word": "im",
+        "start": 97.53934000000001,
+        "end": 97.67934000000001
+      },
+      {
+        "word": "Nervensystem",
+        "start": 97.67934000000001,
+        "end": 98.53934000000001
+      },
+      {
+        "word": "wie",
+        "start": 98.53934000000001,
+        "end": 98.97934000000001
+      },
+      {
+        "word": "fest",
+        "start": 98.97934000000001,
+        "end": 99.419346
+      },
+      {
+        "word": "eingebrannt,",
+        "start": 99.419346,
+        "end": 100.55934500000001
+      },
+      {
+        "word": "wenn",
+        "start": 100.55934500000001,
+        "end": 100.73934
+      },
+      {
+        "word": "du",
+        "start": 100.73934,
+        "end": 100.919346
+      },
+      {
+        "word": "gehst,",
+        "start": 100.919346,
+        "end": 101.97934000000001
+      },
+      {
+        "word": "wenn",
+        "start": 101.97934000000001,
+        "end": 102.11934000000001
+      },
+      {
+        "word": "du",
+        "start": 102.11934000000001,
+        "end": 102.25934000000001
+      },
+      {
+        "word": "weg",
+        "start": 102.25934000000001,
+        "end": 102.51934
+      },
+      {
+        "word": "bist,",
+        "start": 102.51934,
+        "end": 103.11934000000001
+      },
+      {
+        "word": "dann",
+        "start": 103.11934000000001,
+        "end": 103.299335
+      },
+      {
+        "word": "sterbe",
+        "start": 103.299335,
+        "end": 103.59934
+      },
+      {
+        "word": "ich.",
+        "start": 103.59934,
+        "end": 103.85934
+      },
+      {
+        "word": "Also,",
+        "start": 105.199344,
+        "end": 105.59934
+      },
+      {
+        "word": "was",
+        "start": 105.59934,
+        "end": 106.39934000000001
+      },
+      {
+        "word": "früher",
+        "start": 106.39934000000001,
+        "end": 106.839344
+      },
+      {
+        "word": "die",
+        "start": 106.839344,
+        "end": 106.99934
+      },
+      {
+        "word": "Lösung",
+        "start": 106.99934,
+        "end": 107.35934
+      },
+      {
+        "word": "war,",
+        "start": 107.35934,
+        "end": 108.09934
+      },
+      {
+        "word": "ist",
+        "start": 108.09934,
+        "end": 108.299335
+      },
+      {
+        "word": "heute",
+        "start": 108.299335,
+        "end": 108.57934
+      },
+      {
+        "word": "das",
+        "start": 108.57934,
+        "end": 108.73934
+      },
+      {
+        "word": "Problem.",
+        "start": 108.73934,
+        "end": 109.09934
+      },
+      {
+        "word": "Denn",
+        "start": 109.199344,
+        "end": 110.21934
+      },
+      {
+        "word": "in",
+        "start": 110.21934,
+        "end": 110.37934
+      },
+      {
+        "word": "Erwachsenenbeziehungen",
+        "start": 110.37934,
+        "end": 111.53934000000001
+      },
+      {
+        "word": "will",
+        "start": 111.53934000000001,
+        "end": 112.49933000000001
+      },
+      {
+        "word": "kein",
+        "start": 112.49933000000001,
+        "end": 112.87934000000001
+      },
+      {
+        "word": "Erwachsener",
+        "start": 112.87934000000001,
+        "end": 113.67934
+      },
+      {
+        "word": "dieses",
+        "start": 113.67934,
+        "end": 114.25934000000001
+      },
+      {
+        "word": "Kümmern",
+        "start": 114.25934000000001,
+        "end": 114.65934000000001
+      },
+      {
+        "word": "erleben.",
+        "start": 114.65934000000001,
+        "end": 115.13935000000001
+      },
+      {
+        "word": "Ein",
+        "start": 115.81934000000001,
+        "end": 115.95934
+      },
+      {
+        "word": "Erwachsener",
+        "start": 115.95934,
+        "end": 116.37934000000001
+      },
+      {
+        "word": "will",
+        "start": 116.37934000000001,
+        "end": 116.47934000000001
+      },
+      {
+        "word": "autonom",
+        "start": 116.47934000000001,
+        "end": 116.95934
+      },
+      {
+        "word": "sein",
+        "start": 116.95934,
+        "end": 117.31934000000001
+      },
+      {
+        "word": "und",
+        "start": 117.31934000000001,
+        "end": 117.69934
+      },
+      {
+        "word": "in",
+        "start": 117.69934,
+        "end": 117.85935
+      },
+      {
+        "word": "Bindung",
+        "start": 117.85935,
+        "end": 118.15934000000001
+      },
+      {
+        "word": "gehen,",
+        "start": 118.15934000000001,
+        "end": 118.33933999999999
+      },
+      {
+        "word": "wenn",
+        "start": 118.33933999999999,
+        "end": 118.49933000000001
+      },
+      {
+        "word": "er",
+        "start": 118.49933000000001,
+        "end": 118.59934000000001
+      },
+      {
+        "word": "möchte.",
+        "start": 118.59934000000001,
+        "end": 118.95934
+      },
+      {
+        "word": "Er",
+        "start": 120.29935,
+        "end": 120.39934
+      },
+      {
+        "word": "möchte",
+        "start": 120.39934,
+        "end": 120.65934000000001
+      },
+      {
+        "word": "kein",
+        "start": 120.65934000000001,
+        "end": 120.93933000000001
+      },
+      {
+        "word": "Gegenüber",
+        "start": 120.93933000000001,
+        "end": 121.45934
+      },
+      {
+        "word": "haben,",
+        "start": 121.45934,
+        "end": 122.05933000000002
+      },
+      {
+        "word": "das",
+        "start": 122.05933000000002,
+        "end": 122.19934
+      },
+      {
+        "word": "sich",
+        "start": 122.19934,
+        "end": 122.31934000000001
+      },
+      {
+        "word": "um",
+        "start": 122.31934000000001,
+        "end": 122.45934
+      },
+      {
+        "word": "ihn",
+        "start": 122.45934,
+        "end": 122.53934000000001
+      },
+      {
+        "word": "kümmert.",
+        "start": 122.53934000000001,
+        "end": 122.93933000000001
+      },
+      {
+        "word": "Überkümmert.",
+        "start": 124.21933000000001,
+        "end": 125.41935000000001
+      },
+      {
+        "word": "Ein",
+        "start": 125.41935000000001,
+        "end": 125.49933000000001
+      },
+      {
+        "word": "Erwachsener,",
+        "start": 125.49933000000001,
+        "end": 125.99933000000001
+      },
+      {
+        "word": "der",
+        "start": 125.99933000000001,
+        "end": 126.09934000000001
+      },
+      {
+        "word": "übergibt.",
+        "start": 126.09934000000001,
+        "end": 127.05933000000002
+      }
+    ],
+    "createdAt": "2026-10-09T19:15:29.697Z",
+    "updatedAt": "2026-10-09T19:16:08.775Z"
+  }
+]

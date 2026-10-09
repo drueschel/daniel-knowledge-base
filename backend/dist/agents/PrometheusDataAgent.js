@@ -1,0 +1,95 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.PrometheusDataAgent = void 0;
+const BaseAgent_1 = require("./BaseAgent");
+const KnowledgeBaseService_1 = require("../services/KnowledgeBaseService");
+const sdk_1 = __importDefault(require("@anthropic-ai/sdk"));
+class PrometheusDataAgent extends BaseAgent_1.BaseAgent {
+    kbService;
+    anthropic;
+    constructor(sessionId) {
+        super('data', sessionId); // Matches ID in employees.json
+        this.anthropic = new sdk_1.default({
+            apiKey: process.env.ANTHROPIC_API_KEY || '',
+        });
+        this.kbService = new KnowledgeBaseService_1.KnowledgeBaseService();
+    }
+    async research(prompt, researchScope = 'kb_and_web', moduleFilter = 'all') {
+        this.log(`Analysiere Prompt (Scope: ${researchScope}, Filter: ${moduleFilter})...`);
+        let contextText = '';
+        // 1. Dynamic RAG Search (if not web_only)
+        if (researchScope === 'kb_only' || researchScope === 'kb_and_web') {
+            contextText = await this.kbService.search(prompt, moduleFilter);
+            this.log('Knowledge Base erfolgreich durchsucht.');
+        }
+        else {
+            contextText = "User hat explizit angefordert, NICHT in der Knowledge Base zu suchen. Nutze nur allgemeines Wissen aus dem Internet.";
+        }
+        let instructionText = '';
+        if (researchScope === 'kb_only') {
+            instructionText = 'WICHTIG: Nutze AUSSCHLIESSLICH das Wissen aus der bereitgestellten Knowledge Base (GEFUNDENES WISSEN). Erfinde keine externen Fakten hinzu.';
+        }
+        else if (researchScope === 'web_only') {
+            instructionText = 'WICHTIG: Nutze dein gesamtes Weltwissen / Internet-Trends. Die lokale Knowledge Base wurde ignoriert.';
+        }
+        else {
+            instructionText = 'Nutze DEIN WISSEN ZU AKTUELLEN TRENDS AUS DEM INTERNET, um das Wissen aus der Datenbank mit dem aktuellen Zeitgeist zu verbinden.';
+        }
+        // Dynamic HR Prompt injection
+        const dynamicRules = `
+[Deine Personalakte / Persönlichkeit]
+${this.profile.systemPrompt}
+
+[Deine No-Go Liste (Strikt verbote)]
+${this.profile.noGoList.map(n => `- ${n}`).join('\n')}
+
+[Deine Learnings / Gedächtnis aus vergangenem Feedback]
+${this.profile.memory.map(m => `- ${m}`).join('\n')}
+    `;
+        const systemPrompt = `${dynamicRules}
+
+Deine Aufgabe ist es, User-Prompts in harte Social-Media-Fakten zu übersetzen.
+${instructionText}
+ANTWORTE AUSSCHLIESSLICH IN VALIDEM JSON FORMAT OHNE MARKDOWN BLÖCKE!`;
+        const userMessage = `User-Prompt (Was der CEO produzieren will): "${prompt}"
+
+--- GEFUNDENES WISSEN (KNOWLEDGE BASE) ---
+${contextText}
+---
+
+Extrahiere:
+1. core_pain: Was ist das konkrete, gefühlte Problem im Alltag?
+2. aha_moment: Was ist die kontraintuitive Einsicht oder harte Wahrheit?
+3. solution: Was ist der Lösungsansatz?
+
+Gib ein JSON zurück mit den Keys "core_pain", "aha_moment", "solution". Keine anderen Zeichen!`;
+        const response = await this.anthropic.messages.create({
+            model: this.profile.aiModel || 'claude-sonnet-5-5',
+            max_tokens: 8000,
+            system: systemPrompt,
+            messages: [{ role: 'user', content: userMessage }]
+        });
+        let textContent = '';
+        if (Array.isArray(response.content)) {
+            const block = response.content.find((c) => c.type === 'text');
+            textContent = block ? block.text : '';
+        }
+        else {
+            textContent = response.content;
+        }
+        let cleanJson = textContent.replace(/```json/g, '').replace(/```/g, '').trim();
+        try {
+            const parsed = JSON.parse(cleanJson);
+            this.log(`Recherche (${researchScope}) erfolgreich extrahiert.`, 'success', parsed);
+            return parsed;
+        }
+        catch (e) {
+            this.log('Fehler beim Parsen', 'error', { text: textContent });
+            throw new Error("Prometheus's output was not valid JSON");
+        }
+    }
+}
+exports.PrometheusDataAgent = PrometheusDataAgent;

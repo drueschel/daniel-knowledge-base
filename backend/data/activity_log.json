@@ -1,176 +1,128 @@
 [
   {
-    "agentId": "production",
-    "sessionId": "session_1791526477106",
-    "action": "Voiceover erfolgreich generiert",
-    "details": "{\"fileName\":\"voice_session_1791526477106.mp3\",\"sizeMB\":\"0.53\"}",
-    "status": "success",
-    "id": "3d2zvmd",
-    "timestamp": "2026-10-09T06:52:45.465Z"
-  },
-  {
-    "agentId": "human",
-    "sessionId": "session_1791526477106",
-    "action": "Skript freigegeben",
-    "details": "Hook ausgewählt: hook_2\nVoiceover gestartet!",
-    "status": "success",
-    "id": "pctm22k",
-    "timestamp": "2026-10-09T06:52:40.274Z"
-  },
-  {
-    "agentId": "production",
-    "sessionId": "session_1791526477106",
-    "action": "Voiceover erfolgreich generiert",
-    "details": "{\"fileName\":\"voice_session_1791526477106.mp3\",\"sizeMB\":\"0.50\"}",
-    "status": "success",
-    "id": "trod6qf",
-    "timestamp": "2026-10-09T06:29:56.490Z"
-  },
-  {
-    "agentId": "human",
-    "sessionId": "session_1791526477106",
-    "action": "Skript freigegeben",
-    "details": "Hook ausgewählt: hook_2\nVoiceover gestartet!",
-    "status": "success",
-    "id": "oa4fyiz",
-    "timestamp": "2026-10-09T06:29:52.493Z"
-  },
-  {
-    "agentId": "production",
-    "sessionId": "session_1791526477106",
-    "action": "Voiceover erfolgreich generiert",
-    "details": "{\"fileName\":\"voice_session_1791526477106.mp3\",\"sizeMB\":\"0.52\"}",
-    "status": "success",
-    "id": "2hwsfc1",
-    "timestamp": "2026-10-09T06:28:26.761Z"
-  },
-  {
-    "agentId": "human",
-    "sessionId": "session_1791526477106",
-    "action": "Skript freigegeben",
-    "details": "Hook ausgewählt: hook_2\nVoiceover gestartet!",
-    "status": "success",
-    "id": "magdd53",
-    "timestamp": "2026-10-09T06:28:22.491Z"
-  },
-  {
-    "agentId": "production",
-    "sessionId": "session_1791526477106",
-    "action": "Voiceover erfolgreich generiert",
-    "details": "{\"fileName\":\"voice_session_1791526477106.mp3\",\"sizeMB\":\"0.51\"}",
-    "status": "success",
-    "id": "k7ic096",
-    "timestamp": "2026-10-09T06:20:21.518Z"
-  },
-  {
-    "agentId": "human",
-    "sessionId": "session_1791526477106",
-    "action": "Skript freigegeben",
-    "details": "Hook ausgewählt: hook_2\nVoiceover gestartet!",
-    "status": "success",
-    "id": "wv75ij5",
-    "timestamp": "2026-10-09T06:20:17.295Z"
-  },
-  {
-    "agentId": "production",
-    "sessionId": "session_1791526477106",
-    "action": "Voiceover erfolgreich generiert",
-    "details": "{\"fileName\":\"voice_session_1791526477106.mp3\",\"sizeMB\":\"0.48\"}",
-    "status": "success",
-    "id": "j5sqkaw",
-    "timestamp": "2026-10-09T06:19:26.275Z"
-  },
-  {
-    "agentId": "human",
-    "sessionId": "session_1791526477106",
-    "action": "Skript freigegeben",
-    "details": "Hook ausgewählt: hook_2\nVoiceover gestartet!",
-    "status": "success",
-    "id": "macn4oq",
-    "timestamp": "2026-10-09T06:19:22.276Z"
-  },
-  {
-    "agentId": "production",
-    "sessionId": "session_1791526477106",
-    "action": "Voiceover erfolgreich generiert",
-    "details": "{\"fileName\":\"voice_session_1791526477106.mp3\",\"sizeMB\":\"0.53\"}",
-    "status": "success",
-    "id": "9exgb9h",
-    "timestamp": "2026-10-09T06:19:19.182Z"
-  },
-  {
-    "agentId": "human",
-    "sessionId": "session_1791526477106",
-    "action": "Skript freigegeben",
-    "details": "Hook ausgewählt: hook_2\nVoiceover gestartet!",
-    "status": "success",
-    "id": "bfa33lh",
-    "timestamp": "2026-10-09T06:19:14.894Z"
-  },
-  {
-    "agentId": "production",
-    "sessionId": "session_1791526477106",
-    "action": "Voiceover erfolgreich generiert",
-    "details": "{\"fileName\":\"voice_session_1791526477106.mp3\",\"sizeMB\":\"0.49\"}",
-    "status": "success",
-    "id": "dk25gzf",
-    "timestamp": "2026-10-09T06:16:12.118Z"
-  },
-  {
-    "agentId": "human",
-    "sessionId": "session_1791526477106",
-    "action": "Skript freigegeben",
-    "details": "Hook ausgewählt: hook_2\nVoiceover gestartet!",
-    "status": "success",
-    "id": "nqj2ojw",
-    "timestamp": "2026-10-09T06:16:07.638Z"
-  },
-  {
-    "agentId": "qa",
-    "sessionId": "session_1791526477106",
-    "action": "QA Review",
-    "details": "Status: rejected. Feedback: Body ist mit ~130 Wörtern zu lang (Limit: 100-120). Kürze den Text um ca. 15-20 Wörter. Die drei Schritte (Trigger identifizieren, nachfragen, wiederholen) sind stark, aber die Formulierung ist zu ausschweifend. Beispiel: 'Ich kämpfe um Liebe, bis ich nicht mehr kann. Oder ich arbeite, scrolle, funktioniere, damit mich keiner erreicht.' könnte gerafft werden. Die Hooks sind gut und emotional treffend. Storyboard ist detailliert und passend. Bitte Body kürzen und erneut einreichen.",
+    "agentId": "visuals",
+    "sessionId": "ugc_1791576758462",
+    "action": "Fehler beim Remotion Rendering: Command failed: npx remotion render MyComp out/video.mp4\nCould not extract frame from compositor Error: Received a status code of 404 while downloading file http://localhost:4000/data/uploads/ugc_1791576758462.mp4.\nThe response body was:\n---\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /data/uploads/ugc_1791576758462.mp4</pre>\n</body>\n</html>\n\n---\n    at readFile (/Users/danielrueschel/DEV/daniel-knowledge-base/video-engine/node_modules/@remotion/renderer/dist/assets/read-file.js:59:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n[http://localhost:3002/proxy?src=http%3A%2F%2Flocalhost%3A4000%2Fdata%2Fuploads%2Fugc_1791576758462.mp4&time=0.1&transparent=false&toneMapped=true] Failed to load resource: the server responded with a status of 500 (Internal Server Error)\n Error  Received a status code of 404 while downloading file http://localhost:4000/data/uploads/ugc_1791576758462.mp4.\nThe response body was:\n---\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /data/uploads/ugc_1791576758462.mp4</pre>\n</body>\n</html>\n\n---\n    at readFile (/Users/danielrueschel/DEV/daniel-knowledge-base/video-engine/node_modules/@remotion/renderer/dist/assets/read-file.js:59:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at readFile (/Users/danielrueschel/DEV/daniel-knowledge-base/video-engine/node_modules/@remotion/renderer/dist/assets/read-file.js:59:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n",
+    "details": "",
     "status": "error",
-    "model": "claude-haiku-4-5",
-    "id": "ixkb814",
-    "timestamp": "2026-10-09T06:15:37.426Z"
+    "id": "qyhv8h7",
+    "timestamp": "2026-10-09T20:12:54.008Z"
   },
   {
-    "agentId": "creative",
-    "sessionId": "session_1791526477106",
-    "action": "Script written",
-    "details": "Wrote 3 hooks and body (58 words)",
+    "agentId": "human",
+    "sessionId": "ugc_1791576758462",
+    "action": "Storyboard freigegeben",
+    "details": "HyperFrames startet mit dem Remotion Rendering!",
     "status": "success",
-    "model": "claude-sonnet-5-5",
-    "id": "krmo8ry",
-    "timestamp": "2026-10-09T06:15:30.566Z"
+    "id": "8duyqq6",
+    "timestamp": "2026-10-09T20:12:50.595Z"
   },
   {
-    "agentId": "strategy",
-    "sessionId": "session_1791526477106",
-    "action": "Format Strategy defined",
-    "details": "Chose format: POV: Du bist der Mensch, der seit Jahren alles gibt und innerlich trotzdem leer ist. Erzählt aus der Ich-Perspektive in zwei Rollen (Verschmelzungstyp und Autonomietyp). Die Auflösung kommt über den Realitätsabgleich in 3 klaren Schritten.. Target emotion: Anfang: Schmerzhaftes Wiedererkennen und Beklemmung ('Das bin ich'). Ende: Erleichterung und Hoffnung, weil das Muster erklärbar und veränderbar ist.",
+    "agentId": "visuals",
+    "sessionId": "ugc_1791576758462",
+    "action": "Storyboard & 3D-Assets erfolgreich generiert.",
+    "details": "{\"scenesCount\":1}",
     "status": "success",
-    "model": "claude-sonnet-5-5",
-    "id": "0hdorgm",
-    "timestamp": "2026-10-09T06:15:02.412Z"
+    "id": "okwavvc",
+    "timestamp": "2026-10-09T20:12:50.215Z"
   },
   {
-    "agentId": "data",
-    "sessionId": "session_1791526477106",
-    "action": "Recherche (kb_and_web) erfolgreich extrahiert.",
-    "details": "{\"core_pain\":\"Erwachsene erleben Depression als tiefe Hoffnungslosigkeit und Resignation. Beim Verschmelzungstyp: Jahrelanges Kämpfen um Liebe führt zu Erschöpfung, weil die Beziehungsstrategie nicht funktioniert. Beim Autonomietyp: Flucht in Gedanken, Erfolg oder Ablenkung führt zu innerer Leere, weil die eigentliche Sehnsucht nach Nähe unbewusst bleibt.\",\"aha_moment\":\"Depression ist kein isoliertes Symptom, sondern der Ausdruck gescheiterter Überlebensmuster aus der Kindheit. Der Verschmelzungstyp gibt auf, weil er unbewusst glaubt, dass Unabhängigkeit automatisch Verlassenheit bedeutet. Der Autonomietyp löscht sich selbst aus, um nicht in Gefahr zu geraten. Beide Muster sind Schutzstrategien, die als Erwachsener nicht mehr funktionieren.\",\"solution\":\"Realitätsabgleich der Kernprojektionen im Hier und Jetzt: (1) Identifiziere die exakten Sinnesreize (Blick, Stimme, Körperhaltung), die deine alte Projektion triggern. (2) Frage die andere Person direkt, was wirklich in ihr vorgeht, statt der automatischen Gehirninterpretation zu glauben. (3) Wiederhole diesen Abgleich systematisch, bis die falsche Interpretation sich auflöst und echter Kontakt möglich wird.\"}",
+    "agentId": "human",
+    "sessionId": "ugc_1791576758462",
+    "action": "Visuals gestartet",
+    "details": "Maya baut das 3D Storyboard",
     "status": "success",
-    "id": "12hxar1",
-    "timestamp": "2026-10-09T06:14:43.520Z"
+    "id": "2p1yl3m",
+    "timestamp": "2026-10-09T20:12:47.713Z"
   },
   {
-    "agentId": "data",
-    "sessionId": "session_1791526408978",
-    "action": "Recherche (kb_and_web) erfolgreich extrahiert.",
-    "details": "{\"core_pain\":\"Erwachsene mit Depression erleben tiefe Hoffnungslosigkeit und haben ihre Beziehungsstrategien aus der Kindheit aufgegeben. Beim Verschmelzungstyp: jahrelanges erfolglose Kämpfen um Liebe führt zu Erschöpfung und Rückzug. Beim Autonomietyp: gescheiterte Fluchtversuche (Verstand, Spiritualität, Erfolg) hinterlassen innere Leere, während unbewusste Nähesucht blockiert wird.\",\"aha_moment\":\"Depression ist nicht primär eine neurologische Dysfunktion, sondern ein Ausdruck fehlgeschlagener Bindungsstrategien aus der Kindheit. Die Depression signalisiert: 'Meine bisherigen Wege, Liebe/Nähe zu bekommen, funktionieren nicht mehr.' Beim Verschmelzungstyp zeigt sich dies als Resignation nach Aufopferung. Beim Autonomietyp als innere Leere nach Flucht in mentale Räume.\",\"solution\":\"Trigger-Identifikation durch sensorische Forschung: Welche exakten visuellen oder akustischen Reize aktivieren die alte Kernprojektion (Verlassenheit beim Verschmelzungstyp, Gefahr in Nähe beim Autonomietyp)? Realitätsabgleich durch direktes Nachfragen beim Gegenüber statt automatischen Interpretationen. Wiederholte Überprüfung der falschen Annahmen entschärft die Trigger graduell und ermöglicht echten Kontakt und neue Bindungserfahrungen.\"}",
+    "agentId": "production",
+    "sessionId": "ugc_1791576758462",
+    "action": "Stanley hat 1 Szenen geplant. Warte auf User-Freigabe...",
+    "details": "",
     "status": "success",
-    "id": "25s7z4t",
-    "timestamp": "2026-10-09T06:13:35.409Z"
+    "id": "q8i851o",
+    "timestamp": "2026-10-09T20:12:45.411Z"
+  },
+  {
+    "agentId": "production",
+    "sessionId": "ugc_1791576758462",
+    "action": "Fehler bei UGC Verarbeitung: Command failed: ffmpeg -y -i \"/Users/danielrueschel/DEV/daniel-knowledge-base/backend/data/uploads/ugc_1791576758460_dummy.mp4\" -q:a 0 -map a \"/Users/danielrueschel/DEV/daniel-knowledge-base/backend/data/audio/voice_ugc_1791576758462.mp3\"\nffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers\n  built with Apple clang version 21.0.0 (clang-2100.0.123.102)\n  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/8.1.2 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gpl --enable-libsvtav1 --enable-libopus --enable-libx264 --enable-libmp3lame --enable-libdav1d --enable-libvmaf --enable-libvpx --enable-libx265 --enable-openssl --enable-videotoolbox --enable-audiotoolbox --enable-neon\n  libavutil      60. 26.102 / 60. 26.102\n  libavcodec     62. 28.102 / 62. 28.102\n  libavformat    62. 12.102 / 62. 12.102\n  libavdevice    62.  3.102 / 62.  3.102\n  libavfilter    11. 14.102 / 11. 14.102\n  libswscale      9.  5.102 /  9.  5.102\n  libswresample   6.  3.102 /  6.  3.102\n[in#0 @ 0xc40800000] Format mov,mp4,m4a,3gp,3g2,mj2 detected only with low score of 1, misdetection possible!\n[in#0 @ 0xc40800000] moov atom not found\n[in#0 @ 0xc41010000] Error opening input: Invalid data found when processing input\nError opening input file /Users/danielrueschel/DEV/daniel-knowledge-base/backend/data/uploads/ugc_1791576758460_dummy.mp4.\nError opening input files: Invalid data found when processing input\n",
+    "details": "",
+    "status": "error",
+    "id": "6oo8sle",
+    "timestamp": "2026-10-09T20:12:38.530Z"
+  },
+  {
+    "agentId": "visuals",
+    "sessionId": "ugc_1791576697106",
+    "action": "Storyboard & 3D-Assets erfolgreich generiert.",
+    "details": "{\"scenesCount\":1}",
+    "status": "success",
+    "id": "3hc87af",
+    "timestamp": "2026-10-09T20:11:48.860Z"
+  },
+  {
+    "agentId": "human",
+    "sessionId": "ugc_1791576697106",
+    "action": "Visuals gestartet",
+    "details": "Maya baut das 3D Storyboard",
+    "status": "success",
+    "id": "t3uh8cf",
+    "timestamp": "2026-10-09T20:11:46.356Z"
+  },
+  {
+    "agentId": "production",
+    "sessionId": "ugc_1791576697106",
+    "action": "Stanley hat 1 Szenen geplant. Warte auf User-Freigabe...",
+    "details": "",
+    "status": "success",
+    "id": "57tcg2r",
+    "timestamp": "2026-10-09T20:11:43.202Z"
+  },
+  {
+    "agentId": "production",
+    "sessionId": "ugc_1791576697106",
+    "action": "Fehler bei UGC Verarbeitung: Command failed: ffmpeg -y -i \"/Users/danielrueschel/DEV/daniel-knowledge-base/backend/data/uploads/ugc_1791576697105_dummy.mp4\" -q:a 0 -map a \"/Users/danielrueschel/DEV/daniel-knowledge-base/backend/data/audio/voice_ugc_1791576697106.mp3\"\nffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers\n  built with Apple clang version 21.0.0 (clang-2100.0.123.102)\n  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/8.1.2 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gpl --enable-libsvtav1 --enable-libopus --enable-libx264 --enable-libmp3lame --enable-libdav1d --enable-libvmaf --enable-libvpx --enable-libx265 --enable-openssl --enable-videotoolbox --enable-audiotoolbox --enable-neon\n  libavutil      60. 26.102 / 60. 26.102\n  libavcodec     62. 28.102 / 62. 28.102\n  libavformat    62. 12.102 / 62. 12.102\n  libavdevice    62.  3.102 / 62.  3.102\n  libavfilter    11. 14.102 / 11. 14.102\n  libswscale      9.  5.102 /  9.  5.102\n  libswresample   6.  3.102 /  6.  3.102\n[in#0 @ 0x845400000] Format mov,mp4,m4a,3gp,3g2,mj2 detected only with low score of 1, misdetection possible!\n[in#0 @ 0x845400000] moov atom not found\n[in#0 @ 0x844808000] Error opening input: Invalid data found when processing input\nError opening input file /Users/danielrueschel/DEV/daniel-knowledge-base/backend/data/uploads/ugc_1791576697105_dummy.mp4.\nError opening input files: Invalid data found when processing input\n",
+    "details": "",
+    "status": "error",
+    "id": "kpzsp8b",
+    "timestamp": "2026-10-09T20:11:37.183Z"
+  },
+  {
+    "agentId": "visuals",
+    "sessionId": "ugc_1791576586441",
+    "action": "Storyboard & 3D-Assets erfolgreich generiert.",
+    "details": "{\"scenesCount\":1}",
+    "status": "success",
+    "id": "bzzef9m",
+    "timestamp": "2026-10-09T20:09:55.461Z"
+  },
+  {
+    "agentId": "human",
+    "sessionId": "ugc_1791576586441",
+    "action": "Visuals gestartet",
+    "details": "Maya baut das 3D Storyboard",
+    "status": "success",
+    "id": "jgjk4q7",
+    "timestamp": "2026-10-09T20:09:52.960Z"
+  },
+  {
+    "agentId": "production",
+    "sessionId": "ugc_1791576586441",
+    "action": "Stanley hat 1 Szenen geplant. Warte auf User-Freigabe...",
+    "details": "",
+    "status": "success",
+    "id": "7tiwmsg",
+    "timestamp": "2026-10-09T20:09:49.587Z"
+  },
+  {
+    "agentId": "production",
+    "sessionId": "ugc_1791576586441",
+    "action": "Fehler bei UGC Verarbeitung: Command failed: ffmpeg -y -i \"/Users/danielrueschel/DEV/daniel-knowledge-base/backend/data/uploads/ugc_1791576586438_dummy.mp4\" -q:a 0 -map a \"/Users/danielrueschel/DEV/daniel-knowledge-base/backend/data/audio/voice_ugc_1791576586441.mp3\"\nffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers\n  built with Apple clang version 21.0.0 (clang-2100.0.123.102)\n  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/8.1.2 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gpl --enable-libsvtav1 --enable-libopus --enable-libx264 --enable-libmp3lame --enable-libdav1d --enable-libvmaf --enable-libvpx --enable-libx265 --enable-openssl --enable-videotoolbox --enable-audiotoolbox --enable-neon\n  libavutil      60. 26.102 / 60. 26.102\n  libavcodec     62. 28.102 / 62. 28.102\n  libavformat    62. 12.102 / 62. 12.102\n  libavdevice    62.  3.102 / 62.  3.102\n  libavfilter    11. 14.102 / 11. 14.102\n  libswscale      9.  5.102 /  9.  5.102\n  libswresample   6.  3.102 /  6.  3.102\n[in#0 @ 0xb3100c000] Format mov,mp4,m4a,3gp,3g2,mj2 detected only with low score of 1, misdetection possible!\n[in#0 @ 0xb3100c000] moov atom not found\n[in#0 @ 0xb30c20000] Error opening input: Invalid data found when processing input\nError opening input file /Users/danielrueschel/DEV/daniel-knowledge-base/backend/data/uploads/ugc_1791576586438_dummy.mp4.\nError opening input files: Invalid data found when processing input\n",
+    "details": "",
+    "status": "error",
+    "id": "ozkn4g6",
+    "timestamp": "2026-10-09T20:09:46.506Z"
   }
 ]

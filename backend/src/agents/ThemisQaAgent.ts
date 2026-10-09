@@ -2,7 +2,7 @@ import { BaseAgent } from './BaseAgent';
 
 export class ThemisQaAgent extends BaseAgent {
   constructor(sessionId: string) {
-    super('qa', sessionId, 'Themis (QA/Compliance)');
+    super('qa', sessionId);
   }
 
   async reviewScript(scriptData: any, research: any, strategy: any): Promise<any> {

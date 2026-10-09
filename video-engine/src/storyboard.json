@@ -1,29 +1,24 @@
 {
-  "title": "Der Verschmelzungstyp",
+  "audioUrl": "http://localhost:4000/data/audio/voice_ugc_1791576758462.mp3",
   "scenes": [
     {
-      "headline": "DIÄTEN HELFEN NICHT",
-      "words": ["Warum", "Diäten", "beim", "Verschmelzungstyp", "oft", "scheitern"],
       "durationInFrames": 90,
-      "gradient": ["#ff7e5f", "#feb47b"]
-    },
-    {
-      "headline": "DIE SCHUTZMAUER",
-      "words": ["Körperfülle", "als", "unbewusster", "Schutz", "vor", "Vereinnahmung"],
-      "durationInFrames": 120,
-      "gradient": ["#11998e", "#38ef7d"]
-    },
-    {
-      "headline": "DAS WAHRE BEDÜRFNIS",
-      "words": ["Der", "tiefe", "Hunger", "nach", "echter", "emotionaler", "Nähe"],
-      "durationInFrames": 120,
-      "gradient": ["#8E2DE2", "#4A00E0"]
-    },
-    {
-      "headline": "DIE LÖSUNG",
-      "words": ["Sicherheit", "durch", "klare", "Grenzen", "aufbauen"],
-      "durationInFrames": 150,
-      "gradient": ["#c31432", "#240b36"]
+      "headline": "Originales Video",
+      "words": [
+        {
+          "word": "Fehler",
+          "startFrame": 10
+        },
+        {
+          "word": "beim",
+          "startFrame": 18
+        },
+        {
+          "word": "Verarbeiten",
+          "startFrame": 26
+        }
+      ],
+      "imageUrl": "http://localhost:4000/data/uploads/ugc_1791576758462.mp4"
     }
   ]
 }

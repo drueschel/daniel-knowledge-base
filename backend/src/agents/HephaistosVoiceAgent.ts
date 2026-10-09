@@ -8,7 +8,7 @@ const execAsync = promisify(exec);
 
 export class HephaistosVoiceAgent extends BaseAgent {
   constructor(sessionId: string) {
-    super('production', sessionId, 'Hephaistos (Audio & Voice)');
+    super('production', sessionId);
   }
 
   async generateVoiceover(hookText: string, scenes: any[], ctaText: string): Promise<{ audioUrl: string, timestamps: any[] }> {
@@ -21,22 +21,53 @@ export class HephaistosVoiceAgent extends BaseAgent {
     const audioDir = path.join(process.cwd(), 'data', 'audio');
     if (!fs.existsSync(audioDir)) fs.mkdirSync(audioDir, { recursive: true });
     
-    const aiffFile = path.join(audioDir, `temp_${this.sessionId}.aiff`);
-    const mp3File = path.join(audioDir, `voice_${this.sessionId}.mp3`);
+    const aiffFile = path.join(audioDir, `temp_${this.currentSessionId}.aiff`);
+    const mp3File = path.join(audioDir, `voice_${this.currentSessionId}.mp3`);
     
     try {
-      // 1. Generate audio using mac 'say' (Anna is a German voice)
-      await execAsync(`say -v "Anna" "${fullText}" -o "${aiffFile}"`);
+      const apiKey = process.env.ELEVENLABS_API_KEY;
+      const useLocal = process.env.USE_LOCAL_TTS === 'true';
       
-      // 2. Convert to mp3
-      await execAsync(`ffmpeg -i "${aiffFile}" -y "${mp3File}"`);
+      if (apiKey && apiKey !== '' && !useLocal) {
+        this.log('Nutze ElevenLabs API für Voiceover...');
+        const voiceId = 'CwhRBWXzGAHq8TQ4Fs17'; // Roger
+        const url = `https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`;
+        
+        const response = await fetch(url, {
+          method: 'POST',
+          headers: {
+            'xi-api-key': apiKey,
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            text: fullText,
+            model_id: "eleven_multilingual_v2",
+            voice_settings: {
+              stability: 0.5,
+              similarity_boost: 0.75
+            }
+          })
+        });
+        
+        if (!response.ok) {
+          throw new Error(`ElevenLabs API Error: ${await response.text()}`);
+        }
+        
+        const arrayBuffer = await response.arrayBuffer();
+        fs.writeFileSync(mp3File, Buffer.from(arrayBuffer));
+      } else {
+        this.log('Kein ElevenLabs API Key gefunden. Nutze lokales macOS TTS (Anna)...');
+        // 1. Generate audio using mac 'say' (Anna is a German voice)
+        await execAsync(`say -v "Anna" "${fullText}" -o "${aiffFile}"`);
+        // 2. Convert to mp3
+        await execAsync(`ffmpeg -i "${aiffFile}" -y "${mp3File}"`);
+        // Cleanup aiff
+        fs.unlinkSync(aiffFile);
+      }
       
       // 3. Get exact duration in seconds
       const { stdout } = await execAsync(`ffprobe -i "${mp3File}" -show_entries format=duration -v quiet -of csv="p=0"`);
       const totalDurationSec = parseFloat(stdout.trim());
-      
-      // Cleanup aiff
-      fs.unlinkSync(aiffFile);
       
       // 4. Distribute timestamps evenly over the words to sync perfectly
       const words = fullText.split(' ').filter(w => w.trim().length > 0);
@@ -62,7 +93,7 @@ export class HephaistosVoiceAgent extends BaseAgent {
       });
       
       return {
-        audioUrl: `/audio/voice_${this.sessionId}.mp3`,
+        audioUrl: `/audio/voice_${this.currentSessionId}.mp3`,
         timestamps: timestamps
       };
       

@@ -2,7 +2,7 @@ import { BaseAgent } from './BaseAgent';
 
 export class CalliopeCreativeAgent extends BaseAgent {
   constructor(sessionId: string) {
-    super('creative', sessionId, 'Calliope (Scriptwriter)');
+    super('creative', sessionId);
   }
 
   async writeScript(research: any, strategy: any, feedback?: string): Promise<any> {

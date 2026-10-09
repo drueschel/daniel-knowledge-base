@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, useCurrentFrame, useVideoConfig, spring, interpolate, Sequence, Img, Audio } from "remotion";
+import { AbsoluteFill, useCurrentFrame, useVideoConfig, spring, interpolate, Sequence, Img, Audio, OffthreadVideo } from "remotion";
 import storyboard from "./storyboard.json";
 
 const fontFace = `
@@ -16,11 +16,11 @@ const ProgressBar: React.FC<{ totalFrames: number }> = ({ totalFrames }) => {
   );
 };
 
-const AnimatedWord: React.FC<{ word: string; index: number }> = ({ word, index }) => {
+const AnimatedWord: React.FC<{ word: string; startFrame: number; index: number }> = ({ word, startFrame, index }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   
-  const delay = index * 8 + 10; 
+  const delay = startFrame; 
   const progress = spring({ frame: frame - delay, fps, config: { damping: 14, mass: 0.8 } });
   
   const scale = interpolate(progress, [0, 1], [0.5, 1]);
@@ -51,7 +51,7 @@ const AnimatedWord: React.FC<{ word: string; index: number }> = ({ word, index }
   );
 };
 
-const Scene: React.FC<{ headline: string; words: string[]; imageUrl?: string }> = ({ headline, words, imageUrl }) => {
+const Scene: React.FC<{ headline: string; words: { word: string, startFrame: number }[]; imageUrl?: string, sceneStartFrame: number }> = ({ headline, words, imageUrl, sceneStartFrame }) => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
   
@@ -63,8 +63,11 @@ const Scene: React.FC<{ headline: string; words: string[]; imageUrl?: string }> 
 
   return (
     <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#111" }}>
-      {/* Background Image with blur */}
-      {imageUrl && (
+      {imageUrl && imageUrl.match(/\.(mp4|mov)$/i) ? (
+         <AbsoluteFill>
+             <OffthreadVideo src={imageUrl} startFrom={sceneStartFrame} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+         </AbsoluteFill>
+      ) : imageUrl ? (
         <>
           <AbsoluteFill style={{ transform: `scale(1.2)` }}>
              <Img src={imageUrl} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "blur(40px) brightness(0.3)" }} />
@@ -73,7 +76,7 @@ const Scene: React.FC<{ headline: string; words: string[]; imageUrl?: string }> 
              <Img src={imageUrl} style={{ width: "90%", height: "auto", maxHeight: "50%", objectFit: "contain", borderRadius: "24px", boxShadow: "0 20px 50px rgba(0,0,0,0.5)" }} />
           </AbsoluteFill>
         </>
-      )}
+      ) : null}
 
       {/* Dark gradient overlay for text readability */}
       <AbsoluteFill style={{ background: "linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0.1) 100%)" }} />
@@ -100,7 +103,7 @@ const Scene: React.FC<{ headline: string; words: string[]; imageUrl?: string }> 
         {/* Kinetic Words at the bottom */}
         <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", textAlign: "center" }}>
           {words.map((w, i) => (
-            <AnimatedWord key={i} word={w} index={i} />
+            <AnimatedWord key={i} word={w.word} startFrame={w.startFrame} index={i} />
           ))}
         </div>
       </AbsoluteFill>
@@ -124,7 +127,7 @@ export const MyVideo: React.FC = () => {
         
         return (
           <Sequence key={index} from={startFrame} durationInFrames={scene.durationInFrames}>
-            <Scene headline={scene.headline} words={scene.words} imageUrl={scene.imageUrl} />
+            <Scene headline={scene.headline} words={scene.words} imageUrl={scene.imageUrl} sceneStartFrame={startFrame} />
           </Sequence>
         );
       })}
