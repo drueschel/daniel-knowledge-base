@@ -952,8 +952,8 @@ export default function App() {
                   <textarea 
                     value={topic} 
                     onChange={(e) => setTopic(e.target.value)} 
-                    placeholder="Bsp: Sammle Informationen wie sich Entwicklungstrauma heute zeigt, warum wir alle betroffen sind und erstelle ein anschauliches Video dazu..."
-                    className="relative w-full bg-white border border-slate-200 rounded-xl p-5 text-slate-900 font-medium focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition shadow-inner min-h-[120px] resize-y placeholder:text-slate-600"
+                    placeholder="👉 Bitte tippe hier dein Thema ein (z.B. 'Warum Stoizismus im Alltag hilft...')"
+                    className="relative w-full bg-white border border-slate-200 rounded-xl p-5 text-slate-900 font-medium focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition shadow-inner min-h-[120px] resize-y placeholder:text-slate-400 placeholder:italic"
                   />
                 </div>
                 
