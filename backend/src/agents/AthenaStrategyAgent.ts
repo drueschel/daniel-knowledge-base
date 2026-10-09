@@ -62,7 +62,7 @@ Keine anderen Zeichen!`;
       this.log('Sende Strategie-Anfrage an Claude...');
       const response = await this.anthropic.messages.create({
         model: this.profile.aiModel || 'claude-sonnet-5-5',
-        max_tokens: 2000,
+        max_tokens: 8000,
         system: systemPrompt,
         messages: [{ role: 'user', content: userMessage }]
       });

@@ -1,0 +1,8 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+    <rect width="512" height="512" fill="#1e1e24"/>
+    <g transform="translate(128, 128) scale(10.66)">
+      <g style="color: #ffa500; drop-shadow(0 0 10px #ffa500)">
+        <path d="M19 3H5V9L10 14L5 19V25H19V19L14 14L19 9V3ZM15 19.5V23H9V19.5L12 16.5L15 19.5ZM9 4.5H15V8L12 11L9 8V4.5Z" fill="currentColor" />
+      </g>
+    </g>
+  </svg>

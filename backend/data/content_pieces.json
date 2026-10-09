@@ -1,0 +1,259 @@
+[
+  {
+    "status": "review",
+    "researchData": {
+      "core_pain": "Erwachsene mit Depression haben den Kampf um Liebe und Verbindung aufgegeben. Beim Verschmelzungstyp: Erschöpfung durch unbewusste Überanpassung an andere, bei gleichzeitiger Blockade echter Zuwendung. Beim Autonomietyp: Innere Leere nach gescheiterten Fluchtversuchen (Gedanken, Erfolg, Spiritualität), während die eigentliche Sehnsucht nach Nähe verdrängt bleibt.",
+      "aha_moment": "Depression ist nicht primär ein chemisches Defizit, sondern ein relationales Aufgeben. Beim Verschmelzungstyp: Die Überzeugung, dass eigene Kraft automatisch Verlassenheit bedeutet, ist eine unbewusste Projektion, nicht die Realität. Beim Autonomietyp: Die Selbstauslöschung schützt vor Kontakt-Angst, verstärkt aber die Leere. Der wahre Trigger ist immer ein spezifischer Sinneseindruck, nicht die Situation selbst.",
+      "solution": "Trigger-Identifikation und Realitätsabgleich: (1) Beobachte genau, welcher optische oder akustische Sinneseindruck die Projektion aktiviert. (2) Frage die andere Person direkt ab, was wirklich in ihr vorgeht, anstatt die automatische Interpretation zu glauben. (3) Wiederhole diesen Prozess, bis die falsche Interpretation auflöst und echter Kontakt möglich wird. Das ist kein therapeutischer Prozess, sondern konkrete Forschungsarbeit in echten Beziehungen."
+    },
+    "strategyData": {
+      "format_type": "POV: Du sitzt am Esstisch und siehst, wie das Gesicht deines Gegenübers kurz einfriert. Dein Körper reagiert sofort mit Rückzug, obwohl niemand etwas gesagt hat. Das Format zeigt in drei visuellen Akten den Trigger-Moment (Sinneseindruck), die automatische Interpretation (Projektion) und den Realitätsabgleich durch eine direkte Frage an die andere Person. Pro Akt ein harter Schnitt, damit die Retention nach Sekunde 3 nicht abfällt.",
+      "visual_style": "Hook in den ersten 2 Sekunden: Extreme Nahaufnahme von einem Augenpaar, das über einem dampfenden Kaffeebecher zur Seite blickt, dazu eingeblendeter Text in großer weißer Schrift 'Das war der Moment, in dem ich innerlich aufgegeben habe'. Danach Ich-Perspektive-Kamera (POV) an einem schlicht beleuchteten Esstisch bei kaltem Fensterlicht, Handkamera mit leichtem Zittern. Sekunde 3 bis 10: Zeitlupen-B-Roll von einer Hand, die sich vom Tisch zurückzieht, und einem Mundwinkel, der minimal nach unten geht, mit gelb markiertem Kreis um den auslösenden Sinneseindruck. Sekunde 10 bis 20: Farbgrading wechselt von kaltem Blau zu neutralem Grau, Split-Screen zwischen dem, was ich denke (rot getönt, Untertitel in Gedankenblasen) und dem, was die andere Person wirklich sagt (warmes Licht). Sekunde 20 bis 30: Warmer Goldton, die Kamera schwenkt langsam auf das Gesicht des Gegenübers, das sich zum ersten Mal entspannt, Schlusstext 'Frag nach. Statt zu glauben.' Alle 2 bis 3 Sekunden ein neuer Schnitt oder Texteinblendung, große Untertitel im Karaoke-Stil.",
+      "target_emotion": "Start: Beklemmendes Wiedererkennen und stilles Unbehagen, weil der Zuschauer den eigenen Rückzug sofort fühlt. Ende: Erleichterung und konkrete Handlungsmacht, mit dem Gefühl, dass der Rückzug kein Schicksal ist, sondern ein überprüfbarer Irrtum.",
+      "music_vibe": "Beginnt mit einem tiefen, dumpfen Sub-Bass-Puls und einem einzelnen gedämpften Klavierton in Moll bei Sekunde 0 bis 10, dazu ein leises Raumgeräusch von Besteck und Tassen. Bei Sekunde 10 hörbarer Bruch durch eine Sekunde Stille, danach baut sich ein ruhiger Ambient-Synth-Teppich mit sanfter Streicher-Schicht in Dur auf, der bis Sekunde 30 langsam wärmer und heller wird. Keine Vocals, damit das Voiceover klar bleibt.",
+      "word_limit": 75,
+      "target_length": "30s"
+    },
+    "scriptData": {
+      "hook_1": "Das Gesicht deines Gegenübers friert kurz ein. Und du ziehst dich zurück, bevor jemand ein Wort sagt.",
+      "hook_2": "Niemand hat etwas gesagt. Trotzdem hast du innerlich gerade aufgegeben.",
+      "hook_3": "Dein Körper zieht sich zurück, noch bevor du verstanden hast, warum.",
+      "body": "Nicht die Situation hat dich getroffen. Nur ein Eindruck: ein Blick, ein Mundwinkel, ein Tonfall. Dein Kopf macht daraus: Ich bin zu viel, gleich bin ich allein. Das ist eine Annahme, keine Tatsache. Also frag: Was geht gerade in dir vor? Und hör die Antwort. Immer wieder, bis die Annahme kippt.",
+      "cta": "Frag nach. Statt zu glauben.",
+      "storyboard": [
+        {
+          "duration": 4,
+          "voiceover_text": "Das Gesicht deines Gegenübers friert kurz ein. Und du ziehst dich zurück, bevor jemand ein Wort sagt.",
+          "metaphor_type": "TENSION",
+          "visual_description": "Kaltes Blau, fast monochrom. Zwei dünne, leicht zitternde Linien nähern sich einander an, eine davon stockt abrupt und weicht zurück. Handkamera-artiges Mikrozittern, großer weißer Karaoke-Untertitel, tiefer dumpfer Puls im Rhythmus der Bewegung. Harter Schnitt zum nächsten Akt."
+        },
+        {
+          "duration": 5,
+          "voiceover_text": "Nicht die Situation hat dich getroffen. Nur ein Eindruck: ein Blick, ein Mundwinkel, ein Tonfall.",
+          "metaphor_type": "TENSION",
+          "visual_description": "Eine ruhige, weich verlaufende Fläche in kaltem Blaugrau. Ein winziger Punkt in ihrer Mitte kippt minimal und wird von einem gelb leuchtenden, hauchdünnen Kreis markiert. Die Linien ringsum zittern in dem Moment, in dem der Kreis erscheint. Drei kurze Impulse im Takt der drei Eindrücke."
+        },
+        {
+          "duration": 5,
+          "voiceover_text": "Dein Kopf macht daraus: Ich bin zu viel, gleich bin ich allein.",
+          "metaphor_type": "FUSION",
+          "visual_description": "Rot getönter Bildbereich in Gedankenblasen-Optik. Eine kleine, warm schimmernde Form schrumpft und löst sich an den Rändern in eine größere, dunklere Form auf, bis sie fast verschwindet. Dahinter wird es leer und grau. Sub-Bass und Klavierton in Moll am Höhepunkt."
+        },
+        {
+          "duration": 4,
+          "voiceover_text": "Das ist eine Annahme, keine Tatsache.",
+          "metaphor_type": "AUTONOMY",
+          "visual_description": "Eine Sekunde Stille, dann Split-Screen: links die rot getönte Gedankenwelt, rechts ein neutraler grauer Raum. Zwischen beiden zieht sich eine klare, ruhige Trennlinie. Die rote Form flackert kurz und wird durchsichtig, als würde man hindurchsehen. Das Farbgrading wechselt von Blau zu neutralem Grau."
+        },
+        {
+          "duration": 5,
+          "voiceover_text": "Also frag: Was geht gerade in dir vor? Und hör die Antwort.",
+          "metaphor_type": "CONTACT",
+          "visual_description": "Aus der kleinen Form wächst eine feine, goldene Verbindungslinie zur anderen Form. Beim Berühren entsteht ein weicher Lichtpuls, der sich als warmes Leuchten im rechten Bildteil ausbreitet. Ein sanfter Ambient-Synth beginnt, die Streicher setzen in Dur ein."
+        },
+        {
+          "duration": 4,
+          "voiceover_text": "Immer wieder, bis die Annahme kippt.",
+          "metaphor_type": "CONTACT",
+          "visual_description": "Mehrere Verbindungslinien entstehen nacheinander, jede etwas fester und heller als die vorige. Die rote Form dahinter löst sich in feine Partikel auf und schmilzt in einen warmen Goldton. Die Kamera fährt langsam auf die beiden nun ruhig leuchtenden Formen zu."
+        },
+        {
+          "duration": 3,
+          "voiceover_text": "Frag nach. Statt zu glauben.",
+          "metaphor_type": "CONTACT",
+          "visual_description": "Zwei klar umrissene, warm leuchtende Formen stehen nebeneinander, verbunden durch eine ruhige goldene Linie. Weicher Goldverlauf im Hintergrund. Schlusstext in großer weißer Schrift: Frag nach. Statt zu glauben."
+        }
+      ]
+    },
+    "qaData": {
+      "status": "approved",
+      "feedback": "Excellente Arbeit, Calliope. Die Hooks sind präzise, emotional und nicht Cringe. Der Body (ca. 90 Wörter) trifft den Kern perfekt: Sinneseindruck → automatische Projektion → Realitätsabgleich durch Nachfragen. Die Kernfakten von Prometheus sind vollständig repräsentiert: Pain Point (unbewusste Überanpassung & Flucht führen zur Leere), Aha-Moment (spezifischer Sinneseindruck als Trigger, nicht die Realität), Solution (Beobachtung → Nachfrage → Wiederholung). Das Storyboard unterstützt die Dramaturgie perfekt von Tension über Projektion zur echten Kontakt-Wiederherstellung. Die CTA ist konkret und handlungsorientiert. Ready to produce."
+    },
+    "id": "session_1791525949435",
+    "topic": "Erstelle mir ein Video wie sich Depression für erw...",
+    "createdAt": "2026-10-09T06:05:55.831Z",
+    "updatedAt": "2026-10-09T06:06:31.940Z"
+  },
+  {
+    "status": "scripting",
+    "researchData": {
+      "core_pain": "Erwachsene mit Depression erleben tiefe Hoffnungslosigkeit und haben den Kampf um Liebe/Nähe aufgegeben. Beim Verschmelzungstyp: Jahrelanges Sich-für-andere-Abarbeiten führt zu Erschöpfung, da die gewünschte Liebe nie kommt. Beim Autonomietyp: Flucht in Gedanken, Spiritualität oder Erfolg führt zu innerer Leere, wenn alle Fluchtmechanismen scheitern.",
+      "aha_moment": "Depression ist nicht primär eine chemische Störung, sondern der sichtbare Ausdruck gescheiterter Bindungsstrategien aus der Kindheit. Der Verschmelzungstyp merkt: 'Meine Liebe reicht nicht aus, um den anderen bei mir zu halten.' Der Autonomietyp merkt: 'Alle meine Fluchtrouten führen ins Leere – und ich erkenne nicht, dass ich eigentlich nach Nähe hungere.'",
+      "solution": "Beide Typen müssen ihre Kernprojektionen durch Realitätsabgleich entschärfen: (1) Trigger identifizieren (welche Sinneseindrücke lösen die alte Angst aus?). (2) Direkt nachfragen beim anderen statt Annahmen zu glauben. (3) Wiederholter Abgleich: 'Geht der andere wirklich weg, oder interpretiere ich nur?' Erst wenn die falschen Interpretationen auflösen, wird echter Kontakt möglich."
+    },
+    "strategyData": {
+      "format_type": "POV: Du bist der Verschmelzungstyp, der sich jahrelang für andere abarbeitet. Der Zuschauer erlebt die Ich-Perspektive in drei Schritten: erst die Erschöpfung (Hook), dann der Aha-Moment, dass die eigene Liebe nie ausreichen konnte, um jemanden zu halten, und zuletzt die Auflösung durch Realitätsabgleich (Trigger erkennen, direkt nachfragen, Annahme prüfen). Der Autonomietyp wird in einem einzigen Satz als Spiegelmoment eingebaut, damit sich beide Gruppen angesprochen fühlen. Der Hook steht in den ersten 2 Sekunden als klares Bild und Textzeile auf dem Screen: Eine Hand stellt zum dritten Mal Geschirr für zwei Personen auf den Tisch, der zweite Platz bleibt leer.",
+      "visual_style": "Kinematische Ich-Perspektiven-B-Roll in kühlem, entsättigtem Blau-Grau. Der Hook in Sekunde 0 bis 3 ist ein starkes Bild: Eine Hand deckt abends den Tisch für zwei, der zweite Stuhl bleibt leer, ein Handydisplay mit unbeantworteter Nachricht leuchtet im dunklen Raum. Danach schnelle Schnitte alle 2 bis 3 Sekunden: überfüllter Kalender, Blick aus dem Fenster, Spiegelbild mit müden Augen. Beim Wendepunkt (ab ca. Sekunde 18) wechselt die Farbgebung zu warmem Licht: Die Hand tippt eine direkte Frage in den Chat, Vorhänge werden geöffnet, Sonnenlicht fällt auf den Tisch. Große, gut lesbare Untertitel im Wort-für-Wort-Rhythmus, ein Schlüsselbegriff pro Einblendung farblich hervorgehoben.",
+      "target_emotion": "Start: Erschöpftes Wiedererkennen und ein Kloß im Hals (\"Das bin ich\"). Ende: Erleichterung und leise Hoffnung, kombiniert mit dem Impuls, das Video zu speichern und an eine nahestehende Person zu schicken.",
+      "music_vibe": "Melancholisch und minimalistisch: ein sanftes Piano mit dumpfem Raumklang und einem langsamen Herzschlag-Bass. Ab dem Aha-Moment (ca. Sekunde 18) baut sich die Musik schrittweise mit warmen Streichern und einem leichten Beat auf. Am Ende steht ein ruhiger, hoffnungsvoller Akkord. Das Voiceover ist leise, nah am Mikrofon und ohne Pathos.",
+      "word_limit": 75,
+      "target_length": "30s"
+    },
+    "scriptData": {
+      "hook_1": "Du deckst den Tisch für zwei. Der zweite Platz bleibt leer.",
+      "hook_2": "Du hast so lange alles gegeben, dass nichts mehr von dir übrig ist.",
+      "hook_3": "Du gibst und gibst, und trotzdem bleibt niemand.",
+      "body": "Jahrelang gabst du alles, damit jemand bleibt. Und bist dabei leer geworden. Deine Liebe allein hält niemanden. Das ist kein Versagen. Oder du fliehst in Arbeit, Kopf oder Erfolg und hungerst heimlich nach Nähe. Prüf es nach: Was löst die Angst aus? Frag direkt, statt zu raten. Geht da wirklich jemand, oder deute ich nur?",
+      "cta": "Speicher das und schick es weiter.",
+      "storyboard": [
+        {
+          "duration": 3,
+          "voiceover_text": "Du deckst den Tisch für zwei. Der zweite Platz bleibt leer.",
+          "metaphor_type": "TENSION",
+          "visual_description": "Kühles, entsättigtes Blau-Grau. Zwei weich umrissene Kreise als Teller auf einer dunklen Fläche. Neben dem ersten glimmt ein warmer, schwacher Punkt, neben dem zweiten bleibt nur eine leere, hauchdünn zitternde Kontur. Ein kleines Rechteck leuchtet im Dunkeln wie ein unbeantwortetes Handydisplay. Große Untertitel Wort für Wort, das Wort 'leer' farblich hervorgehoben."
+        },
+        {
+          "duration": 3,
+          "voiceover_text": "Jahrelang gabst du alles, damit jemand bleibt.",
+          "metaphor_type": "CONTACT",
+          "visual_description": "Aus einer müden, blau-grauen Form strecken sich viele feine, glühende Linien zu einer zweiten, entfernten Form. Die Linien werden immer dünner und heller, je mehr sich die erste Form verbraucht. Schneller Schnitt, kühles Licht."
+        },
+        {
+          "duration": 3,
+          "voiceover_text": "Und bist dabei leer geworden.",
+          "metaphor_type": "TENSION",
+          "visual_description": "Die Ausgangsform verliert Farbe und Leuchtkraft, ihre Kontur wird durchsichtig wie Rauch. Im Hintergrund ein langsamer Puls, der leiser wird. Entsättigtes Blau-Grau, viel Leerraum im Bild."
+        },
+        {
+          "duration": 4,
+          "voiceover_text": "Deine Liebe allein hält niemanden. Das ist kein Versagen.",
+          "metaphor_type": "AUTONOMY",
+          "visual_description": "Die Verbindungslinien lösen sich sanft auf. Die erschöpfte Form steht ruhig für sich in einem klaren, abgegrenzten Kreis. Zum ersten Mal färbt sich ein warmer, goldener Rand ein, der Wendepunkt beginnt. Das Wort 'Versagen' wird durchgestrichen eingeblendet."
+        },
+        {
+          "duration": 4,
+          "voiceover_text": "Oder du fliehst in Arbeit, Kopf oder Erfolg und hungerst heimlich nach Nähe.",
+          "metaphor_type": "AUTONOMY",
+          "visual_description": "Ein zweiter, scharf umrissener Kreis entfernt sich von einem blassen Punkt. Er rennt durch abstrakte Fluchträume aus Linien, Wolken und Treppen, die alle ins Leere führen. Im Zentrum pulsiert schwach ein warmes Licht, das nach Kontakt sucht. Der Farbton wechselt langsam von Kühlblau zu Warmgrau."
+        },
+        {
+          "duration": 4,
+          "voiceover_text": "Prüf es nach: Was löst die Angst aus?",
+          "metaphor_type": "TENSION",
+          "visual_description": "Eine Lupe aus Licht wandert über zitternde, dünne Linien. Eine einzelne Linie leuchtet kurz auf, als wäre sie der Auslöser. Warmes, weiches Licht beginnt den Raum zu füllen. Schlüsselwort 'Angst' in Farbe hervorgehoben."
+        },
+        {
+          "duration": 3,
+          "voiceover_text": "Frag direkt, statt zu raten.",
+          "metaphor_type": "CONTACT",
+          "visual_description": "Eine einzelne, klare Lichtlinie schießt von der ersten Form zur zweiten, ruhig und direkt. Wo sie ankommt, entsteht ein kleiner Lichtkreis. Warmes Gold, Vorhänge aus Licht öffnen sich im Hintergrund."
+        },
+        {
+          "duration": 4,
+          "voiceover_text": "Geht da wirklich jemand, oder deute ich nur?",
+          "metaphor_type": "FUSION",
+          "visual_description": "Ein dunkler Schatten zwischen den beiden Formen löst sich Stück für Stück in warme Partikel auf. Dahinter wird sichtbar, dass die zweite Form nie weggegangen ist. Die beiden Formen nähern sich weich an und überlappen nur am Rand, ohne zu verschmelzen. Sonnenlicht fällt in Verläufen über die Fläche."
+        },
+        {
+          "duration": 3,
+          "voiceover_text": "Speicher das und schick es weiter.",
+          "metaphor_type": "CONTACT",
+          "visual_description": "Zwei ruhige, warm leuchtende Kreise nebeneinander, verbunden durch eine feine, stabile Lichtlinie. Das Bild endet auf einem ruhigen, hoffnungsvollen Standbild. Dezenter Untertitel mit 'Speichern' und 'Teilen' in Akzentfarbe."
+        }
+      ]
+    },
+    "qaData": null,
+    "id": "session_1791526297435",
+    "topic": "Erstelle mir ein Video wie sich Depression für erw...",
+    "createdAt": "2026-10-09T06:11:43.716Z",
+    "updatedAt": "2026-10-09T06:13:19.752Z"
+  },
+  {
+    "status": "scripting",
+    "researchData": {
+      "core_pain": "Erwachsene mit Depression erleben tiefe Hoffnungslosigkeit und haben ihre Beziehungsstrategien aus der Kindheit aufgegeben. Beim Verschmelzungstyp: jahrelanges erfolglose Kämpfen um Liebe führt zu Erschöpfung und Rückzug. Beim Autonomietyp: gescheiterte Fluchtversuche (Verstand, Spiritualität, Erfolg) hinterlassen innere Leere, während unbewusste Nähesucht blockiert wird.",
+      "aha_moment": "Depression ist nicht primär eine neurologische Dysfunktion, sondern ein Ausdruck fehlgeschlagener Bindungsstrategien aus der Kindheit. Die Depression signalisiert: 'Meine bisherigen Wege, Liebe/Nähe zu bekommen, funktionieren nicht mehr.' Beim Verschmelzungstyp zeigt sich dies als Resignation nach Aufopferung. Beim Autonomietyp als innere Leere nach Flucht in mentale Räume.",
+      "solution": "Trigger-Identifikation durch sensorische Forschung: Welche exakten visuellen oder akustischen Reize aktivieren die alte Kernprojektion (Verlassenheit beim Verschmelzungstyp, Gefahr in Nähe beim Autonomietyp)? Realitätsabgleich durch direktes Nachfragen beim Gegenüber statt automatischen Interpretationen. Wiederholte Überprüfung der falschen Annahmen entschärft die Trigger graduell und ermöglicht echten Kontakt und neue Bindungserfahrungen."
+    },
+    "strategyData": null,
+    "scriptData": null,
+    "qaData": null,
+    "id": "session_1791526408978",
+    "topic": "Erstelle mir ein Video wie sich Depression für erw...",
+    "createdAt": "2026-10-09T06:13:35.409Z",
+    "updatedAt": "2026-10-09T06:13:35.409Z"
+  },
+  {
+    "status": "audio_ready",
+    "researchData": {
+      "core_pain": "Erwachsene erleben Depression als tiefe Hoffnungslosigkeit und Resignation. Beim Verschmelzungstyp: Jahrelanges Kämpfen um Liebe führt zu Erschöpfung, weil die Beziehungsstrategie nicht funktioniert. Beim Autonomietyp: Flucht in Gedanken, Erfolg oder Ablenkung führt zu innerer Leere, weil die eigentliche Sehnsucht nach Nähe unbewusst bleibt.",
+      "aha_moment": "Depression ist kein isoliertes Symptom, sondern der Ausdruck gescheiterter Überlebensmuster aus der Kindheit. Der Verschmelzungstyp gibt auf, weil er unbewusst glaubt, dass Unabhängigkeit automatisch Verlassenheit bedeutet. Der Autonomietyp löscht sich selbst aus, um nicht in Gefahr zu geraten. Beide Muster sind Schutzstrategien, die als Erwachsener nicht mehr funktionieren.",
+      "solution": "Realitätsabgleich der Kernprojektionen im Hier und Jetzt: (1) Identifiziere die exakten Sinnesreize (Blick, Stimme, Körperhaltung), die deine alte Projektion triggern. (2) Frage die andere Person direkt, was wirklich in ihr vorgeht, statt der automatischen Gehirninterpretation zu glauben. (3) Wiederhole diesen Abgleich systematisch, bis die falsche Interpretation sich auflöst und echter Kontakt möglich wird."
+    },
+    "strategyData": {
+      "format_type": "POV: Du bist der Mensch, der seit Jahren alles gibt und innerlich trotzdem leer ist. Erzählt aus der Ich-Perspektive in zwei Rollen (Verschmelzungstyp und Autonomietyp). Die Auflösung kommt über den Realitätsabgleich in 3 klaren Schritten.",
+      "visual_style": "Kinematische B-Roll in kühlen, entsättigten Blautönen. Sekunde 0-3 (Hook): Extreme Nahaufnahme eines Gesichts im Dunkeln, nur vom bläulichen Handylicht beleuchtet, daneben ein unbeantworteter Chat mit sichtbarem 'Gelesen'-Haken. Danach harte Schnitte alle 2-3 Sekunden: eine Person sitzt auf der Bettkante und starrt ins Leere, ein Arbeitslaptop leuchtet nachts im leeren Büro, eine Hand lässt ein klingelndes Telefon liegen, zwei Menschen am Küchentisch mit Abstand und gesenktem Blick. Ab Sekunde 20 wechselt die Farbgebung zu warmem Tageslicht: Nahaufnahme von Augenkontakt, eine Person sagt etwas und das Gegenüber antwortet ruhig, ein erstes Lächeln. Große weiße Untertitel im Wort-für-Wort-Takt, Schlüsselwörter in Gelb hervorgehoben.",
+      "target_emotion": "Anfang: Schmerzhaftes Wiedererkennen und Beklemmung ('Das bin ich'). Ende: Erleichterung und Hoffnung, weil das Muster erklärbar und veränderbar ist.",
+      "music_vibe": "Melancholisch und reduziert: ein einzelnes Klavier mit leisem tiefem Drone in den ersten 15 Sekunden. Beim Aha-Moment (ca. Sekunde 15-18) setzt ein kurzer Stille-Break ein, danach bauen sich sanfte Streicher und ein ruhiger Beat zu einem warmen, aufbauenden Finale auf.",
+      "word_limit": 75,
+      "target_length": "30s"
+    },
+    "scriptData": {
+      "hook_1": "Du gibst seit Jahren alles und fühlst dich trotzdem leer.",
+      "hook_2": "Gelesen. Keine Antwort. Und du denkst wieder: Ich bin zu viel.",
+      "hook_3": "Du funktionierst perfekt und spürst trotzdem nichts.",
+      "body": "Ich kämpfe um Liebe, bis ich nicht mehr kann. Oder ich arbeite, scrolle, funktioniere, damit mich keiner erreicht. Beides sind alte Überlebensstrategien aus deiner Kindheit. Heute halten sie dich nur leer. Stopp. Erstens: Was genau triggert dich? Ein Blick, eine Stimme? Zweitens: Frag nach, was wirklich in der Person vorgeht. Drittens: Wiederhole das, bis die alte Story verblasst.",
+      "cta": "Speicher dir das ab.",
+      "storyboard": [
+        {
+          "duration": 3,
+          "voiceover_text": "Du gibst seit Jahren alles und fühlst dich trotzdem leer.",
+          "metaphor_type": "TENSION",
+          "visual_description": "Tiefdunkler Raum in kühlen, entsättigten Blautönen. Eine einzelne weich glimmende Form pulsiert schwach in der Mitte, daneben eine zweite, fast erloschene Form, zwischen beiden eine dünne, zitternde Linie, die ins Leere läuft. Große weiße Wort-für-Wort-Untertitel, 'alles' und 'leer' in Gelb."
+        },
+        {
+          "duration": 4,
+          "voiceover_text": "Ich kämpfe um Liebe, bis ich nicht mehr kann.",
+          "metaphor_type": "FUSION",
+          "visual_description": "Eine organische blaue Form drängt sich immer wieder an eine größere, kühle Form heran und verschmilzt mit ihr. Jedes Mal wird sie von der größeren Form weggedrückt, verliert dabei Leuchtkraft und sinkt erschöpft nach unten. Weiche Verläufe, gedämpfte Farben."
+        },
+        {
+          "duration": 4,
+          "voiceover_text": "Oder ich arbeite, scrolle, funktioniere, damit mich keiner erreicht.",
+          "metaphor_type": "AUTONOMY",
+          "visual_description": "Ein klar abgetrennter Kreis in Eisblau, umgeben von schnell vorbeiziehenden, harten Lichtstreifen und flackernden Rechtecken. Hinter einer milchigen Glasschicht strecken sich dünne Linien nach dem Kreis aus, aber er dreht sich weg. Harte Schnitte im 2-Sekunden-Takt."
+        },
+        {
+          "duration": 5,
+          "voiceover_text": "Beides sind alte Überlebensstrategien aus deiner Kindheit. Heute halten sie dich nur leer.",
+          "metaphor_type": "CONTACT",
+          "visual_description": "Kurzer Stille-Break: Alles friert ein, dann schwarzer Moment. Danach treten zwei feine, glühende Linien hervor, die beide Formen mit einem winzigen, warmen Punkt weit in der Tiefe verbinden, wie ein Ursprung. Die Szene zeigt eine alte Schutzschicht um beide Formen, die jetzt nur noch einengt. Erster zarter Hauch von Gold im Blau."
+        },
+        {
+          "duration": 5,
+          "voiceover_text": "Stopp. Erstens: Was genau triggert dich? Ein Blick, eine Stimme?",
+          "metaphor_type": "TENSION",
+          "visual_description": "Der Bildschirm wird ruhig. Die zitternden Linien verlangsamen sich, und drei kleine Lichtpunkte werden sichtbar: Blick, Stimme, Haltung. Sie leuchten nacheinander in Gelb auf, um den Auslöser zu isolieren. Der Hintergrund wechselt langsam von kaltem Blau zu neutralem Grau."
+        },
+        {
+          "duration": 4,
+          "voiceover_text": "Zweitens: Frag nach, was wirklich in der Person vorgeht.",
+          "metaphor_type": "CONTACT",
+          "visual_description": "Aus der Form des Betrachters wächst eine glühende Linie zur zweiten Form. Diese Linie trifft auf ein ruhiges Gegenlicht, das antwortet. Eine verzerrte Schattenform, die zuvor über der anderen schwebte, löst sich in weiches Licht auf. Warme Pfirsich- und Goldtöne ersetzen das Blau."
+        },
+        {
+          "duration": 4,
+          "voiceover_text": "Drittens: Wiederhole das, bis die alte Story verblasst.",
+          "metaphor_type": "FUSION",
+          "visual_description": "Mehrere Wiederholungen derselben Bewegung als sanfte Wellen. Mit jeder Welle verblasst die alte, graue Schattenschicht mehr, und die beiden Formen leuchten in warmem Tageslicht, getrennt und doch verbunden. Sie bleiben klar umrissen, aber die Linie zwischen ihnen pulsiert stabil und ruhig."
+        },
+        {
+          "duration": 3,
+          "voiceover_text": "Speicher dir das ab.",
+          "metaphor_type": "CONTACT",
+          "visual_description": "Zwei klar umrissene, warm leuchtende Kreise mit einer ruhigen, stabilen Verbindungslinie, sanfter Goldverlauf im Hintergrund. Große weiße Schrift 'Speicher dir das ab' mit 'ab' in Gelb. Sanftes Ausblenden bei aufbauenden Streichern."
+        }
+      ]
+    },
+    "qaData": {
+      "status": "rejected",
+      "feedback": "Body ist mit ~130 Wörtern zu lang (Limit: 100-120). Kürze den Text um ca. 15-20 Wörter. Die drei Schritte (Trigger identifizieren, nachfragen, wiederholen) sind stark, aber die Formulierung ist zu ausschweifend. Beispiel: 'Ich kämpfe um Liebe, bis ich nicht mehr kann. Oder ich arbeite, scrolle, funktioniere, damit mich keiner erreicht.' könnte gerafft werden. Die Hooks sind gut und emotional treffend. Storyboard ist detailliert und passend. Bitte Body kürzen und erneut einreichen."
+    },
+    "id": "session_1791526477106",
+    "topic": "Erstelle mir ein Video wie sich Depression für erw...",
+    "createdAt": "2026-10-09T06:14:43.520Z",
+    "updatedAt": "2026-10-09T06:29:56.490Z",
+    "selectedHook": "hook_2",
+    "audioUrl": "http://localhost:4000/audio/voice_session_1791526477106.mp3"
+  }
+]

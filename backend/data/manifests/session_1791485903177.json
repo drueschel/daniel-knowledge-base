@@ -1,0 +1,54 @@
+{
+  "audioUrl": "http://localhost:4000/audio/voice_session_1791485903177.mp3",
+  "videos": [
+    "https://videos.pexels.com/video-files/3252069/3252069-uhd_1440_2560_25fps.mp4",
+    "https://videos.pexels.com/video-files/4122171/4122171-uhd_1440_2560_25fps.mp4",
+    "https://videos.pexels.com/video-files/5195029/5195029-uhd_1440_2560_25fps.mp4"
+  ],
+  "text": "Dein Partner sagt nur: Hm. Und in dir bricht ein Sturm los.",
+  "storyboard": [
+    {
+      "duration": 5,
+      "voiceover_text": "Dein Partner sagt nur: Hm. Und in dir bricht ein Sturm los.",
+      "metaphor_type": "TENSION",
+      "visual_description": "Grobe Filmkörnung, dunkles gedämpftes Blau. Eine einzelne dünne, leuchtende Linie zittert in der Bildmitte und reißt an einer Stelle fast ab. Im Takt eines tiefen Herzschlags pulsiert ein weicher Lichtkreis dahinter. Im Hintergrund ein flackerndes Glimmen, wie von einem Handydisplay."
+    },
+    {
+      "duration": 5,
+      "voiceover_text": "Eine Stimme in dir flüstert: Er verlässt mich. Du klammerst, passt dich an, gibst alles.",
+      "metaphor_type": "FUSION",
+      "visual_description": "Linke Bildhälfte, warme enge Farbwelt in Bernstein und Rosé. Eine organische Form streckt sich verzweifelt einer zweiten, sich entfernenden Form entgegen und verformt sich dabei, bis sie fast ihre eigene Kontur verliert. Leuchtende Kreise markieren Reizpunkte wie Stimme, Blick und Haltung."
+    },
+    {
+      "duration": 6,
+      "voiceover_text": "Die andere sagt: Sie will mich vereinnahmen. Du ziehst dich zurück und fühlst irgendwann nur noch Leere.",
+      "metaphor_type": "AUTONOMY",
+      "visual_description": "Rechte Bildhälfte, kalte weite Farbwelt in Eisblau und Graphit. Ein klar abgegrenzter Kreis weicht langsam vor einer sich ausbreitenden warmen Fläche zurück. Sein Leuchten wird schwächer, bis er allein in einem großen dunklen Raum schwebt. Viel Negativraum."
+    },
+    {
+      "duration": 3,
+      "voiceover_text": "Beides soll dich schützen. Beides hält Nähe fern.",
+      "metaphor_type": "TENSION",
+      "visual_description": "Bruch mit Stille. Der Split-Screen friert ein. Zwischen der warmen und der kalten Hälfte steht eine dünne, flimmernde Trennlinie, die langsam zu verblassen beginnt. Die Körnung lässt nach."
+    },
+    {
+      "duration": 4,
+      "voiceover_text": "Finde heraus, was dich anspringt: Stimme, Blick, Haltung.",
+      "metaphor_type": "CONTACT",
+      "visual_description": "Drei weiche, leuchtende Kreise tauchen nacheinander auf und markieren die Auslöser. Jeder pulsiert kurz und wird dann ruhiger. Das Bild klärt sich, sanfte Piano-Töne setzen ein."
+    },
+    {
+      "duration": 4,
+      "voiceover_text": "Dann frag: Was geht gerade wirklich in dir vor?",
+      "metaphor_type": "CONTACT",
+      "visual_description": "Aus beiden Formen wachsen feine, goldene Verbindungslinien aufeinander zu. Wo sie sich treffen, entsteht ein heller, warmer Punkt, der sich zu einem Lichtfeld weitet. Die warmen und kalten Farben beginnen sich zu mischen."
+    },
+    {
+      "duration": 3,
+      "voiceover_text": "Speicher das für das nächste Hm.",
+      "metaphor_type": "FUSION",
+      "visual_description": "Beide Hälften verschmelzen zu einem ruhigen, warmen Bild in weichem Tageslicht-Gold. Zwei organische Formen berühren sich sanft an den Rändern, ohne ineinander zu verschwinden. Klare Bildschärfe, ohne Körnung, die Streicher tragen die Hoffnung."
+    }
+  ],
+  "visualStyle": "abstract_metaphors"
+}

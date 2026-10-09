@@ -1,0 +1,8 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+    <rect width="512" height="512" fill="#1e1e24"/>
+    <g transform="translate(128, 128) scale(10.66)">
+      <g style="color: #00ff7f; drop-shadow(0 0 10px #00ff7f)">
+        <path d="M12 3V13.55C11.41 13.21 10.73 13 10 13C7.79 13 6 14.79 6 17C6 19.21 7.79 21 10 21C12.21 21 14 19.21 14 17V7H18V3H12Z" fill="currentColor" />
+      </g>
+    </g>
+  </svg>

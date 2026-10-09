@@ -1,0 +1,14 @@
+const { chromium } = require('playwright');
+const fs = require('fs');
+
+(async () => {
+  const userDataDir = '/Users/danielrueschel/.gemini/antigravity/brain/28c5d4e2-236e-4239-bde8-c035eb0b91ea/scratch/gopal_chrome_profile';
+  const context = await chromium.launchPersistentContext(userDataDir, { headless: false });
+  const page = await context.newPage();
+  
+  await page.goto('https://gopal.learningsuite.io/student/course/die-befreiung/FSJ6ryZc', { waitUntil: 'networkidle' });
+  await page.waitForTimeout(8000);
+  await page.screenshot({ path: '/Users/danielrueschel/.gemini/antigravity/brain/28c5d4e2-236e-4239-bde8-c035eb0b91ea/course_main.png', fullPage: true });
+
+  await context.close();
+})();

@@ -1,0 +1,32 @@
+import dotenv from 'dotenv';
+dotenv.config(); // MUST BE FIRST
+
+import express from 'express';
+import cors from 'cors';
+import ingestRouter from './routes/ingest';
+import agentsRouter from './routes/agents';
+import studioRouter from './routes/studio';
+import contentRouter from './routes/content';
+
+const app = express();
+app.use(cors());
+app.use(express.json());
+
+// Routes
+app.use('/api/ingest', ingestRouter);
+app.use('/api/agents', agentsRouter);
+app.use('/api/studio', studioRouter);
+app.use('/api/content', contentRouter);
+
+import employeesRouter from './routes/employees';
+app.use('/api/employees', employeesRouter);
+
+// Healthcheck
+app.get('/health', (req, res) => {
+  res.json({ status: 'Agentic Backend is running.', version: '1.0.0' });
+});
+
+const PORT = process.env.PORT || 4000;
+app.listen(PORT, () => {
+  console.log(`[Server] Agentic Backend listening on port ${PORT}`);
+});

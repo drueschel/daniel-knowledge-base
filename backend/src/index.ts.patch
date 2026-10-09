@@ -1,0 +1,18 @@
+--- backend/src/index.ts
++++ backend/src/index.ts
+@@ -8,6 +8,7 @@
+ import agentsRouter from './routes/agents';
+ import studioRouter from './routes/studio';
+ import contentRouter from './routes/content';
++import knowledgeRouter from './routes/knowledge';
+ 
+ const app = express();
+ app.use(cors());
+@@ -17,6 +18,7 @@
+ app.use('/api/agents', agentsRouter);
+ app.use('/api/studio', studioRouter);
+ app.use('/api/content', contentRouter);
++app.use('/api/knowledge', knowledgeRouter);
+ 
+ import employeesRouter from './routes/employees';
+ app.use('/api/employees', employeesRouter);

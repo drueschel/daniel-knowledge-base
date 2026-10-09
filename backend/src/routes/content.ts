@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import { ContentManager } from '../services/ContentManager';
 import { HephaistosVoiceAgent } from '../agents/HephaistosVoiceAgent';
+import { MayaVisualAgent } from '../agents/MayaVisualAgent';
 import { ActivityLogger } from '../services/ActivityLogger';
 
 
@@ -30,24 +31,23 @@ router.post('/:id/approve', (req, res) => {
     id: piece.id,
     topic: piece.topic,
     selectedHook,
-    status: 'production'
+    status: 'voiceover'
   });
 
-  res.json({ success: true, message: 'Freigabe erteilt. Phase 2 (Produktion) gestartet.' });
+  res.json({ success: true, message: 'Skript freigegeben. Voiceover Generierung gestartet.' });
 
-  // Fire off background production
+  // Fire off background Voiceover
   (async () => {
     try {
       const hrLogger = new ActivityLogger();
       hrLogger.log({
         agentId: 'human',
         sessionId: piece.id,
-        action: 'Freigabe erteilt',
-        details: `Hook ausgewählt: ${selectedHook}\nProduktion gestartet!`,
+        action: 'Skript freigegeben',
+        details: `Hook ausgewählt: ${selectedHook}\nVoiceover gestartet!`,
         status: 'success'
       });
 
-      // 1. Voiceover
       const scriptData = piece.scriptData;
       if (!scriptData) throw new Error("Kein Script Data gefunden");
 
@@ -58,30 +58,63 @@ router.post('/:id/approve', (req, res) => {
       const hephaistos = new HephaistosVoiceAgent(piece.id);
       const audioUrl = await hephaistos.generateVoiceover(hookText, bodyText, ctaText);
 
-      // Save audio URL back to DB
+      // Save audio URL back to DB and mark audio_ready
       contentManager.createOrUpdate({
         id: piece.id,
         topic: piece.topic,
-        audioUrl: audioUrl
+        audioUrl: audioUrl,
+        status: 'audio_ready'
       });
 
     } catch (err: any) {
-      console.error("[Production Pipeline Error]", err);
-      
+      console.error("[Voiceover Pipeline Error]", err);
       const errLogger = new ActivityLogger();
-      errLogger.log({
-        agentId: 'system',
-        sessionId: piece.id,
-        action: 'Fehler in Produktion',
-        details: err.message || 'Unbekannter Fehler bei Hephaistos',
-        status: 'error'
-      });
+      errLogger.log({ agentId: 'system', sessionId: piece.id, action: 'Fehler in Voiceover', details: err.message, status: 'error' });
+      contentManager.createOrUpdate({ id: piece.id, topic: piece.topic, status: 'error' });
+    }
+  })();
+});
 
+router.post('/:id/render', (req, res) => {
+  const piece = contentManager.getById(req.params.id);
+  if (!piece) return res.status(404).json({ error: 'Not found' });
+  if (!piece.audioUrl) return res.status(400).json({ error: 'Audio fehlt für Video Rendering' });
+
+  contentManager.createOrUpdate({
+    id: piece.id,
+    topic: piece.topic,
+    status: 'rendering'
+  });
+
+  res.json({ success: true, message: 'Audio freigegeben. Video Rendering (Maya) gestartet.' });
+
+  // Fire off background Render
+  (async () => {
+    try {
+      const hrLogger = new ActivityLogger();
+      hrLogger.log({
+        agentId: 'human',
+        sessionId: piece.id,
+        action: 'Audio freigegeben',
+        details: `Maya startet mit dem Remotion Rendering!`,
+        status: 'success'
+      });
+      
+      const maya = new MayaVisualAgent(piece.id);
+      const { manifestPath, videoUrl } = await maya.generateVisualManifest(piece.scriptData, piece.audioUrl!);
+      
       contentManager.createOrUpdate({
         id: piece.id,
         topic: piece.topic,
-        status: 'error'
+        status: 'completed',
+        videoUrl: videoUrl
       });
+
+    } catch (err: any) {
+      console.error("[Render Pipeline Error]", err);
+      const errLogger = new ActivityLogger();
+      errLogger.log({ agentId: 'system', sessionId: piece.id, action: 'Fehler im Rendering', details: err.message, status: 'error' });
+      contentManager.createOrUpdate({ id: piece.id, topic: piece.topic, status: 'error' });
     }
   })();
 });

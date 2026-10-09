@@ -18,6 +18,7 @@ import path from 'path';
 
 // Serve audio files statically
 app.use('/audio', express.static(path.join(__dirname, '..', 'data', 'audio')));
+app.use('/outputs', express.static(path.join(__dirname, '..', 'public', 'outputs')));
 
 // Routes
 app.use('/api/ingest', ingestRouter);

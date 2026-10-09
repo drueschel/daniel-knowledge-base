@@ -1,0 +1,60 @@
+{
+  "audioUrl": "http://localhost:4000/audio/voice_session_1791487423444.mp3",
+  "videos": [
+    "https://videos.pexels.com/video-files/3252069/3252069-uhd_1440_2560_25fps.mp4",
+    "https://videos.pexels.com/video-files/4122171/4122171-uhd_1440_2560_25fps.mp4",
+    "https://videos.pexels.com/video-files/5195029/5195029-uhd_1440_2560_25fps.mp4"
+  ],
+  "text": "Du tippst die Nachricht und löschst sie wieder.",
+  "storyboard": [
+    {
+      "duration": 3,
+      "voiceover_text": "Du tippst die Nachricht und löschst sie wieder.",
+      "metaphor_type": "TENSION",
+      "visual_description": "Extreme Nahaufnahme aus der Ich-Perspektive: kaltes, bläuliches Licht auf einer dunklen Fläche, ein einzelner schwebender Lichtpunkt, der zittert und wieder verlischt. Entsättigte, kühle Farbwelt, tiefer Klavierton mit dumpfem Herzschlag-Bass."
+    },
+    {
+      "duration": 4,
+      "voiceover_text": "Du kämpfst seit Jahren um Liebe. Und bist müde.",
+      "metaphor_type": "TENSION",
+      "visual_description": "Eine warme, glimmende Form streckt sich immer wieder dünnen Linien entgegen, die sich zurückziehen. Mit jedem Versuch verliert die Form an Leuchtkraft und sackt weich in sich zusammen. Harter Schnitt alle 2 bis 3 Sekunden, leicht handgeführte Kamerabewegung."
+    },
+    {
+      "duration": 4,
+      "voiceover_text": "In dir läuft ein Satz: Wenn ich stark bin, geht er.",
+      "metaphor_type": "AUTONOMY",
+      "visual_description": "Schwarzes Bild, große weiße Schrift: 'Wenn ich stark bin, geht er.' Daneben zwei klar umrissene Kreise, die langsam auseinanderdriften, sobald der eine heller wird."
+    },
+    {
+      "duration": 4,
+      "voiceover_text": "Er dreht die Schultern weg, sein Ton wird kühl, und dein Kopf sagt: Er geht.",
+      "metaphor_type": "TENSION",
+      "visual_description": "Ein weicher Schatten kippt langsam zur Seite und zieht sich aus dem Bild zurück. Eine zitternde, dünne Linie, die sich spannt, bis sie fast reißt. Kühle Blau-Grau-Töne, ein Türrahmen im Gegenlicht als abstrakte Lichtkante."
+    },
+    {
+      "duration": 3,
+      "voiceover_text": "Das ist keine Tatsache, das ist eine Annahme.",
+      "metaphor_type": "FUSION",
+      "visual_description": "Eine Sekunde Stille und Schwarz. Dann löst sich die gespannte Linie in feine Lichtpartikel auf, die ruhig im Raum schweben. Erste Spur von warmem Licht am Bildrand, die Musik setzt mit leisen Streichern wieder ein."
+    },
+    {
+      "duration": 4,
+      "voiceover_text": "Also frag: Heißt diese Haltung, dass du gehen willst?",
+      "metaphor_type": "CONTACT",
+      "visual_description": "Aus der Form der Betrachterin wächst eine glühende Linie zur zweiten Form hinüber und bleibt ruhig stehen. Die zweite Form antwortet mit einem sanften Pulsieren. Tageslicht-Verlauf von Gold in Cremeweiß."
+    },
+    {
+      "duration": 4,
+      "voiceover_text": "Wiederhole das, bis echte Antworten alte Bilder ersetzen.",
+      "metaphor_type": "CONTACT",
+      "visual_description": "Mehrere Verbindungslinien entstehen nacheinander, jede etwas heller und stabiler als die vorherige. Die alten, grauen Schattenformen verblassen, während warme Farbflächen den Raum füllen. Synthflächen und Streicher bauen sich auf."
+    },
+    {
+      "duration": 4,
+      "voiceover_text": "Frag heute einmal nach, statt zu raten.",
+      "metaphor_type": "FUSION",
+      "visual_description": "Zwei klar abgegrenzte, warm leuchtende Kreise berühren sich an einer Stelle und fließen dort weich ineinander, ohne ihre eigene Form zu verlieren. Helle, warme Farbwelt, ruhiger Ausklang der Musik."
+    }
+  ],
+  "visualStyle": "abstract_metaphors"
+}

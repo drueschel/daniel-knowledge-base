@@ -79,12 +79,12 @@ Bitte erstelle ein professionelles Markdown-Dokument mit folgender Struktur:
 Formatiere alles sauber in Deutsch. Verhalte dich wie ein hochprofessioneller Analyst. Antworte NUR mit dem finalen Markdown-Text, ohne "Hier ist deine Zusammenfassung" oder ähnliches.`;
 
     try {
-      const modelName = "claude-sonnet-5-5"; 
+      const modelName = "claude-3-5-sonnet-20241022"; 
       this.log(`Versuche Modell: ${modelName}`);
       
       const response = await this.anthropic.messages.create({
         model: modelName,
-        max_tokens: 4096,
+        max_tokens: 8192,
         system: systemPrompt,
         messages: [
           { role: 'user', content: userMessage }

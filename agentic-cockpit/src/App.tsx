@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Bot, FileText, Play, CheckCircle2, Circle, Trash2, XCircle, Wand2, Users, BrainCircuit, Video, Database, Activity, X, LayoutGrid, List , RefreshCcw } from 'lucide-react';
+import {  Bot, FileText, Play, CheckCircle2, Trash2, XCircle, Wand2, Users, BrainCircuit, Video, Database, Activity, X, LayoutGrid, List , RefreshCcw , Search, Zap } from 'lucide-react';
 
 function LogsTab() {
   const [logs, setLogs] = useState<any[]>([]);
@@ -255,8 +255,22 @@ export default function App() {
   }, []);
 
   const [activeStep, setActiveStep] = useState(0);
-  const [stepTimes, setStepTimes] = useState<Record<string, string>>({});
+  
   const [isRunning, setIsRunning] = useState(false);
+  const [isAutopilot, setIsAutopilot] = useState(false);
+  
+  
+  const renderVideo = async (id: string) => {
+    try {
+      showToast('Rendering gestartet (Maya & HyperFrames)...', 'info');
+      setActiveStep(7);
+      await fetch(`http://localhost:4000/api/content/${id}/render`, { method: 'POST' });
+    } catch (e) {
+      showToast('Fehler beim Rendern.', 'error');
+    }
+  };
+  // @ts-ignore
+  const [isWaitingForApproval, setIsWaitingForApproval] = useState(false);
   const [topic, setTopic] = useState(() => localStorage.getItem('studioTopic') || '');
   const [researchScope, setResearchScope] = useState<'kb_only' | 'kb_and_web' | 'web_only'>(() => (localStorage.getItem('studioScope') as any) || 'kb_and_web');
   const [moduleFilter, setModuleFilter] = useState(() => localStorage.getItem('studioFilter') || 'all');
@@ -292,9 +306,9 @@ export default function App() {
 
   const [contentPieces, setContentPieces] = useState<any[]>([]);
   const [kbStructure, setKbStructure] = useState<any[]>([]);
-  const [toast, setToast] = useState<{message: string, type: 'success' | 'error'} | null>(null);
+  const [toast, setToast] = useState<{message: string, type: 'success' | 'error' | 'info'} | null>(null);
   
-  const showToast = (message: string, type: 'success' | 'error' = 'success') => {
+  const showToast = (message: string, type: 'success' | 'error' | 'info' = 'success') => {
     setToast({ message, type });
     setTimeout(() => setToast(null), 4000);
   };
@@ -311,7 +325,7 @@ export default function App() {
         .catch(console.error);
     };
     
-    if (activeTab === 'hub') {
+    if (activeTab === 'hub' || activeTab === 'studio') {
       fetchContent();
       interval = setInterval(fetchContent, 3000);
     }
@@ -334,6 +348,7 @@ export default function App() {
     }
   };
 
+  // @ts-ignore
   const resumePipeline = async (id: string) => {
     const piece = contentPieces.find(p => p.id === id);
     if (!piece) return;
@@ -369,7 +384,9 @@ export default function App() {
   };
 
   const approveHook = async (id: string, hookKey: string) => {
-    setToast({ message: 'Voiceover wird generiert (Hephaistos arbeitet)...', type: 'info' });
+    showToast('Produktion gestartet (Hephaistos & HyperFrames arbeiten)...', 'info');
+    setIsRunning(true);
+    setActiveStep(6);
     try {
       const resp = await fetch(`http://localhost:4000/api/content/${id}/approve`, {
         method: 'POST',
@@ -380,12 +397,12 @@ export default function App() {
       const json = await resp.json();
       if (!resp.ok) throw new Error(json.error || 'Generierung fehlgeschlagen');
       
-      setToast({ message: 'Voiceover erfolgreich generiert!', type: 'success' });
+      checkPipelineStatus(id);
     } catch (e: any) {
       console.error(e);
-      setToast({ message: `Voiceover-Fehler: ${e.message}`, type: 'error' });
+      showToast(`Produktions-Fehler: ${e.message}`, 'error');
+      setIsRunning(false);
     } finally {
-      // Refresh
       const res = await fetch('http://localhost:4000/api/content');
       setContentPieces(await res.json());
     }
@@ -449,18 +466,7 @@ export default function App() {
     try {
       const res = await fetch(`http://localhost:4000/api/studio/session/${sessionId}`);
       const state = await res.json();
-      setStepTimes(prev => {
-        const next = { ...prev };
-        const now = new Date().toLocaleTimeString('de-DE');
-        if (state.research && !next.prometheus) next.prometheus = now;
-        if (state.strategy && !next.athena) next.athena = now;
-        if (state.script && !next.calliope) next.calliope = now;
-        if (state.qa && !next.themis) next.themis = now;
-        if (state.status === 'review' && !next.done) next.done = now;
-        return next;
-      });
       if (!state || Object.keys(state).length === 0) {
-        // Backend doesn't know this session (server restart or deleted). Clear it.
         setIsRunning(false);
         localStorage.removeItem('activePipelineSession');
         setActiveStep(0);
@@ -468,27 +474,36 @@ export default function App() {
         return;
       }
       
-      if (state.status === 'review') {
-        setActiveStep(6);
+      if (state.status === 'completed' || state.status === 'production') {
+        setActiveStep(7);
         setIsRunning(false);
         localStorage.removeItem('activePipelineSession');
-        showToast('Pipeline abgeschlossen. Skript ist im Content Hub!', 'success');
+        showToast('Pipeline abgeschlossen. Video ist im Content Hub!', 'success');
+        return;
+      }
+
+      if (['voiceover', 'visuals', 'render'].includes(state.status)) {
+        setActiveStep(6);
+        setIsRunning(true);
+        setTimeout(() => checkPipelineStatus(sessionId), 3000);
         return;
       }
       
-      if (state.script || state.qa) {
-        setActiveStep(6);
-      } else if (state.strategy) {
-        setActiveStep(3);
-      } else if (state.research) {
-        setActiveStep(2);
-      } else {
-        setActiveStep(1);
+      if (state.status === 'review') {
+        setActiveStep(5);
+        setIsRunning(false);
+        return;
       }
       
-      if (state.status !== 'review' && state.status !== 'error') {
+      if (state.qa) { setActiveStep(5); setIsRunning(false); } 
+      else if (state.script) { setActiveStep(4); setIsRunning(false); } 
+      else if (state.strategy) { setActiveStep(3); setIsRunning(false); } 
+      else if (state.research) { setActiveStep(2); setIsRunning(false); } 
+      else { setActiveStep(1); }
+      
+      if (state.status !== 'error') {
          setTimeout(() => checkPipelineStatus(sessionId), 3000);
-      } else if (state.status === 'error') {
+      } else {
          setIsRunning(false);
          localStorage.removeItem('activePipelineSession');
          showToast('Pipeline-Absturz. Bitte Logs prüfen!', 'error');
@@ -508,20 +523,56 @@ export default function App() {
     }
   }, []);
 
+  
   const startPipeline = async () => {
     const sessionId = `session_${Date.now()}`;
     setIsRunning(true);
     setActiveStep(1);
-    setStepTimes({});
     localStorage.setItem('activePipelineSession', sessionId);
     
+    if (isAutopilot) {
+      try {
+        await fetch(`http://localhost:4000/api/studio/pipeline/start`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ sessionId, prompt: topic, researchScope, moduleFilter })
+        });
+        checkPipelineStatus(sessionId);
+      } catch (e) {
+        showToast('Backend nicht erreichbar', 'error');
+        setIsRunning(false);
+      }
+    } else {
+      // Director Mode: Step-by-step
+      try {
+        await fetch(`http://localhost:4000/api/studio/data`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ sessionId, prompt: topic, researchScope, moduleFilter })
+        });
+        setIsRunning(false);
+        setActiveStep(2);
+        showToast('Prometheus (Research) abgeschlossen.', 'success');
+      } catch (e) {
+        showToast('Backend nicht erreichbar', 'error');
+        setIsRunning(false);
+      }
+    }
+  };
+
+  const nextStepDirector = async (endpoint: string, nextStep: number, agentName: string) => {
+    const sessionId = localStorage.getItem('activePipelineSession');
+    if (!sessionId) return;
+    setIsRunning(true);
     try {
-      await fetch(`http://localhost:4000/api/studio/pipeline/start`, {
+      await fetch(`http://localhost:4000/api/studio/${endpoint}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ sessionId, prompt: topic, researchScope, moduleFilter })
       });
-      checkPipelineStatus(sessionId);
+      setIsRunning(false);
+      setActiveStep(nextStep);
+      showToast(`${agentName} abgeschlossen.`, 'success');
     } catch (e) {
       showToast('Backend nicht erreichbar', 'error');
       setIsRunning(false);
@@ -569,9 +620,9 @@ export default function App() {
     employees.find(e => e.id === 'data') || { name: 'Prometheus', avatar: '/avatars/prometheus.svg' },
     employees.find(e => e.id === 'strategy') || { name: 'Athena', avatar: '/avatars/athena.svg' },
     employees.find(e => e.id === 'creative') || { name: 'Calliope', avatar: '/avatars/calliope.svg' },
+    employees.find(e => e.id === 'qa') || { name: 'Themis', avatar: '/avatars/themis.svg' },
     employees.find(e => e.id === 'production') || { name: 'Hephaistos', avatar: '/avatars/hephaistos.svg' },
     { id: 'render', name: 'HyperFrames', avatar: '🎬', role: 'System' },
-    employees.find(e => e.id === 'qa') || { name: 'Themis', avatar: '/avatars/themis.svg' },
     employees.find(e => e.id === 'community') || { name: 'Aphrodite', avatar: '/avatars/aphrodite.svg' }
   ];
 
@@ -802,14 +853,14 @@ export default function App() {
 
         {/* YOUTUBE IMPORT */}
         {activeTab === 'import' && (
-          <div className="px-8 md:px-12 pt-10 pb-32 max-w-7xl mx-auto w-full">
-             <header className="mb-10">
-              <h2 className="text-3xl font-bold mb-2 text-slate-900">YouTube &rarr; Obsidian</h2>
+          <div className="px-8 md:px-12 pt-10 pb-32 max-w-5xl mx-auto w-full">
+            <header className="mb-10">
+              <h2 className="text-3xl font-bold mb-2 text-slate-900">Knowledge Base Ingestion (Felix)</h2>
+              <p className="text-slate-500 text-lg">YouTube-Videos analysieren und als Markdown in Obsidian speichern.</p>
             </header>
-            <div className="bg-slate-100 rounded-2xl border border-slate-200 p-8 shadow-2xl">
-              <div className="flex gap-4 items-end mb-10">
-                <div className="flex-1">
-                  <label className="block text-sm font-bold text-slate-600 mb-3 uppercase tracking-wide">YouTube Video URL</label>
+            
+            <div className="bg-slate-100 rounded-2xl border border-slate-200 p-8 shadow-2xl mb-10">
+              <div className="flex gap-4 items-end mb-8">
                   <input type="text" placeholder="https://youtube.com/watch?v=..." value={ytUrl} onChange={(e) => setYtUrl(e.target.value)} className="w-full bg-white border border-slate-300 rounded-xl p-4 text-slate-900 font-medium focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 transition shadow-inner" />
                 </div>
                 <button onClick={startImport} disabled={isImporting || !ytUrl} className="bg-red-600 hover:bg-red-500 text-white font-bold py-4 px-8 rounded-xl flex items-center gap-2 disabled:opacity-50 transition transform hover:scale-105 active:scale-95 shadow-xl">
@@ -850,19 +901,26 @@ export default function App() {
                   </div>
                 )}
               </div>
-
-            </div>
           </div>
         )}
 
         {/* PRODUCTION STUDIO */}
         {activeTab === 'studio' && (
           <div className="px-8 md:px-12 pt-10 pb-32 max-w-7xl mx-auto w-full">
-            <header className="mb-10">
-              <h2 className="text-3xl font-bold mb-2 text-slate-900">Reel-Studio (E2E Pipeline)</h2>
-              <p className="text-slate-500 text-lg">Der wasserdichte Produktionszyklus inkl. A/B-Hooks, Video-QA und Upload-Paket.</p>
+            <header className="mb-10 flex justify-between items-end">
+              <div>
+                <h2 className="text-3xl font-bold mb-2 text-slate-900">Reel-Studio (E2E Pipeline)</h2>
+                <p className="text-slate-500 text-lg">Der wasserdichte Produktionszyklus inkl. A/B-Hooks, Video-QA und Upload-Paket.</p>
+              </div>
+              <div className="flex items-center gap-3 bg-white border border-slate-200 p-2 rounded-xl shadow-sm">
+                <span className={`text-sm font-bold px-3 py-1.5 rounded-lg transition-colors ${!isAutopilot ? 'bg-indigo-100 text-indigo-700' : 'text-slate-500 hover:bg-slate-50 cursor-pointer'}`} onClick={() => setIsAutopilot(false)}>
+                  Director Mode
+                </span>
+                <span className={`text-sm font-bold px-3 py-1.5 rounded-lg transition-colors ${isAutopilot ? 'bg-purple-100 text-purple-700' : 'text-slate-500 hover:bg-slate-50 cursor-pointer'}`} onClick={() => setIsAutopilot(true)}>
+                  Autopilot
+                </span>
+              </div>
             </header>
-
             <div className="bg-slate-100 rounded-2xl border border-slate-200 p-8 shadow-2xl">
               <div className="mb-10 relative">
                 <label className="block text-sm font-bold text-slate-600 mb-3 uppercase tracking-wide flex items-center gap-2">
@@ -942,57 +1000,202 @@ export default function App() {
                 {/* Pipeline visual */}
                 <div className="flex justify-between items-center mb-8 relative px-2">
                   <div className="absolute left-4 right-4 top-1/2 -translate-y-1/2 h-1 bg-slate-100 rounded-full"></div>
-                  <div className="absolute left-4 top-1/2 -translate-y-1/2 h-1 bg-gradient-to-r from-cyan-500 via-purple-500 to-emerald-500 rounded-full transition-all duration-700 ease-in-out" style={{ width: `${Math.min((activeStep / (studioPipeline.length - 1)) * 100, 100)}%`, maxWidth: 'calc(100% - 2rem)' }}></div>
+                  <div className="absolute left-4 top-1/2 -translate-y-1/2 h-1 bg-indigo-500 rounded-full transition-all duration-700 ease-in-out" style={{ width: `${Math.min((Math.max(0, activeStep - 1) / (studioPipeline.length - 1)) * 100, 100)}%`, maxWidth: 'calc(100% - 2rem)' }}></div>
                   
                   {studioPipeline.map((step, idx) => (
                     <div key={idx} className="relative z-10 flex flex-col items-center gap-2">
                       <div className={`w-10 h-10 rounded-full flex items-center justify-center text-lg border-2 shadow-lg transition-all duration-300 ${
-                        idx < activeStep ? 'bg-slate-100 border-indigo-500' : 
-                        idx === activeStep && isRunning ? 'bg-slate-100 border-purple-400 animate-pulse scale-125' : 
+                        idx < (activeStep - 1) ? 'bg-slate-100 border-indigo-500' : 
+                        idx === (activeStep - 1) ? (isRunning ? 'bg-slate-100 border-purple-400 animate-pulse scale-125' : 'bg-white border-indigo-300 shadow-md scale-110') : 
                         'bg-white border-slate-200 opacity-50 grayscale'
                       }`}>
-                        {idx < activeStep ? <CheckCircle2 className="w-5 h-5 text-indigo-600" /> : (step?.avatar?.startsWith('/') ? <img src={step.avatar} className="w-6 h-6 object-cover rounded-full" alt={step.name} /> : step?.avatar)}
+                        {idx < (activeStep - 1) ? <CheckCircle2 className="w-5 h-5 text-indigo-600" /> : (step?.avatar?.startsWith('/') ? <img src={step.avatar} className="w-6 h-6 object-cover rounded-full" alt={step.name} /> : step?.avatar)}
                       </div>
-                      <span className={`text-[9px] font-bold uppercase tracking-wider ${idx <= activeStep ? 'text-slate-900' : 'text-slate-500'}`}>{step?.name}</span>
+                      <span className={`text-[9px] font-bold uppercase tracking-wider ${idx === (activeStep - 1) ? 'text-indigo-600 font-extrabold' : (idx < (activeStep - 1) ? 'text-slate-900' : 'text-slate-400')}`}>{step?.name}</span>
                     </div>
                   ))}
                 </div>
-
-                {/* Status Console */}
-                <div className="bg-slate-900 rounded-lg p-5 min-h-[220px] border border-slate-800 shadow-inner font-mono text-sm leading-relaxed flex flex-col gap-2">
-                  {activeStep === 0 && !isRunning && <p className="text-slate-500">Warten auf Creative Director Briefing (Dein Prompt)...</p>}
+                {/* Director Workspace Pipeline Interactive Area */}
+                <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+                  <h3 className="font-bold mb-4 flex items-center gap-2 text-indigo-700">
+                    <Search className="w-5 h-5"/> Director Workspace
+                  </h3>
                   
-                  {isRunning && (
-                    <p className="text-cyan-400 animate-in fade-in slide-in-from-left-2 duration-300">» Zeus: Initialisiere Studio Pipeline...</p>
-                  )}
-                  {activeStep >= 1 && (
-                    <p className="text-blue-600 animate-in fade-in slide-in-from-left-2 duration-300">» Prometheus: Scanne Knowledge Base via Semantic Search und extrahiere Fakten...</p>
-                  )}
-                  {activeStep >= 2 && (
-                    <p className="text-purple-600 animate-in fade-in slide-in-from-left-2 duration-300">» Athena: Analysiere Prompt-Intent. Passe Content-Format und visuelle Strategie an...</p>
-                  )}
-                  {activeStep >= 3 && (
-                    <p className="text-green-400 animate-in fade-in slide-in-from-left-2 duration-300">» Calliope: Schreibe dynamisches Skript/Drehbuch (inkl. 3 A/B Hooks) basierend auf Strategie...</p>
-                  )}
-                  {activeStep >= 4 && (
-                    <p className="text-teal-400 animate-in fade-in slide-in-from-left-2 duration-300">» Themis: Multimodal QA! Prüfe Skript und Metriken.</p>
-                  )}
-                  {activeStep >= 6 && (
-                    <div className="mt-2 p-3 bg-emerald-500/20 border border-emerald-500/30 rounded text-emerald-400 flex items-center gap-2 animate-in fade-in slide-in-from-bottom-2 duration-500">
-                      <CheckCircle2 className="w-5 h-5" />
-                      <span>Pipeline gestoppt für Human-in-the-Loop. Content wartet im Hub auf Freigabe!</span>
-                    </div>
-                  )}
+                  {(() => {
+                    const activePiece = contentPieces.find(p => p.id === localStorage.getItem('activePipelineSession'));
+                    
+                    if (activeStep === 0) return <div className="text-slate-500">Gebe oben dein Thema ein und klicke auf "E2E Produktion starten".</div>;
+                    if (!activePiece) return <div className="text-slate-500 animate-pulse">Initialisiere Pipeline (Zeus)...</div>;
+
+                    if (activeStep === 1) return <div className="text-blue-600 font-bold animate-pulse flex items-center gap-2"><div className="w-5 h-5 border-2 border-blue-500 border-t-transparent rounded-full animate-spin"></div> Prometheus forscht in der Knowledge Base...</div>;
+                    
+                    if (activeStep === 2 && !isRunning && !isAutopilot) return (
+                      <div className="animate-in fade-in">
+                        <div className="p-4 bg-blue-50 border border-blue-200 rounded-xl mb-4 text-blue-800">
+                          <h4 className="font-bold flex items-center gap-2 mb-2"><CheckCircle2 className="w-5 h-5"/> Phase 1: Research (Prometheus) abgeschlossen.</h4>
+                          <p className="text-sm line-clamp-3 mb-2">{activePiece?.researchData?.core_pain || "Daten geladen..."}</p>
+                          <button onClick={() => nextStepDirector('strategy', 3, 'Athena (Strategie)')} className="mt-2 bg-purple-600 hover:bg-purple-500 text-white font-bold py-2 px-6 rounded-lg transition shadow-md">
+                            Review OK – Weiter: Athena starten
+                          </button>
+                        </div>
+                      </div>
+                    );
+
+                    if (activeStep === 2) return <div className="text-purple-600 font-bold animate-pulse flex items-center gap-2"><div className="w-5 h-5 border-2 border-purple-500 border-t-transparent rounded-full animate-spin"></div> Athena entwirft Format & Strategie...</div>;
+                    
+                    if (activeStep === 3 && !isRunning && !isAutopilot) return (
+                      <div className="animate-in fade-in">
+                        <div className="p-4 bg-purple-50 border border-purple-200 rounded-xl mb-4 text-purple-800">
+                          <h4 className="font-bold flex items-center gap-2 mb-2"><CheckCircle2 className="w-5 h-5"/> Phase 2: Strategie (Athena) abgeschlossen.</h4>
+                          <p className="text-sm line-clamp-3 mb-2">Format: {activePiece?.strategyData?.format_type || "Strategie definiert..."}</p>
+                          <button onClick={() => nextStepDirector('creative', 4, 'Calliope (Script)')} className="mt-2 bg-green-600 hover:bg-green-500 text-white font-bold py-2 px-6 rounded-lg transition shadow-md">
+                            Review OK – Weiter: Calliope starten
+                          </button>
+                        </div>
+                      </div>
+                    );
+
+                    if (activeStep === 3) return <div className="text-green-600 font-bold animate-pulse flex items-center gap-2"><div className="w-5 h-5 border-2 border-green-500 border-t-transparent rounded-full animate-spin"></div> Calliope schreibt das Drehbuch & Hooks...</div>;
+                    
+                    if (activeStep === 4 && !isRunning && !isAutopilot) return (
+                      <div className="animate-in fade-in">
+                        <div className="p-4 bg-green-50 border border-green-200 rounded-xl mb-4 text-green-800">
+                          <h4 className="font-bold flex items-center gap-2 mb-2"><CheckCircle2 className="w-5 h-5"/> Phase 3: Drehbuch (Calliope) abgeschlossen.</h4>
+                          <p className="text-sm line-clamp-3 mb-2">{activePiece?.scriptData?.body || "Skript generiert..."}</p>
+                          <button onClick={() => nextStepDirector('qa', 5, 'Themis (QA)')} className="mt-2 bg-teal-600 hover:bg-teal-500 text-white font-bold py-2 px-6 rounded-lg transition shadow-md">
+                            Review OK – Weiter: Themis (QA) starten
+                          </button>
+                        </div>
+                      </div>
+                    );
+
+                    if (activeStep === 4) return <div className="text-teal-600 font-bold animate-pulse flex items-center gap-2"><div className="w-5 h-5 border-2 border-teal-500 border-t-transparent rounded-full animate-spin"></div> Themis prüft das Skript (QA)...</div>;
+                    
+
+                    if (activeStep === 5) {
+                      return (
+                        <div className="animate-in fade-in slide-in-from-bottom-2">
+                          <div className="p-4 bg-emerald-50 border border-emerald-200 rounded-xl mb-4 text-emerald-700">
+                            <p className="font-bold flex items-center gap-2"><CheckCircle2 className="w-5 h-5"/> Phase 1 abgeschlossen.</p>
+                            <p className="text-sm mt-1">Das Skript hat die QA bestanden. Wähle direkt hier deinen Hook, um Hephaistos (Voiceover) zu starten.</p>
+                          </div>
+                          <div className="grid gap-3">
+                            {['hook_1', 'hook_2', 'hook_3'].map((h, i) => {
+                              const hookText = activePiece.qaData?.final_script?.[h] || activePiece.scriptData?.[h];
+                              if (!hookText) return null;
+                              return (
+                                <button 
+                                  key={h}
+                                  onClick={() => approveHook(activePiece.id, h)}
+                                  className="text-left p-4 rounded-xl border-2 bg-white border-slate-200 hover:border-indigo-500 hover:shadow-md transition-all group"
+                                >
+                                  <div className="flex justify-between items-center mb-1">
+                                    <p className="text-xs font-bold text-slate-500 uppercase tracking-wider group-hover:text-indigo-500 transition-colors">Option {i+1}</p>
+                                    <Play className="w-4 h-4 text-indigo-400 opacity-0 group-hover:opacity-100 transition-opacity" />
+                                  </div>
+                                  <p className="text-sm text-slate-900 leading-relaxed">{hookText}</p>
+                                </button>
+                              );
+                            })}
+                          </div>
+                        </div>
+                      );
+                    }
+                    
+                    if (activeStep === 6) {
+                      if (activePiece.status === 'voiceover') {
+                        return <div className="text-blue-600 font-bold animate-pulse text-lg flex items-center gap-3 p-6 bg-blue-50 rounded-xl border border-blue-100 shadow-inner"><Wand2 className="w-6 h-6 animate-spin" /> Hephaistos generiert das Voiceover (ElevenLabs)...</div>;
+                      }
+                      return (
+                        <div className="animate-in fade-in slide-in-from-bottom-2">
+                          <div className="p-4 bg-blue-50 border border-blue-200 rounded-xl mb-4 text-blue-700">
+                            <p className="font-bold flex items-center gap-2"><CheckCircle2 className="w-5 h-5"/> Audio bereit.</p>
+                            <p className="text-sm mt-1">Hephaistos hat das Voiceover erstellt. Du kannst es jetzt probehören oder das Video rendern.</p>
+                          </div>
+                          <audio controls className="w-full mb-4 h-12 rounded-lg bg-slate-50 border border-slate-200 shadow-sm" src={`${activePiece.audioUrl}?t=${new Date(activePiece.updatedAt).getTime()}`} />
+                          <div className="flex gap-4">
+                            <button onClick={() => renderVideo(activePiece.id)} className="bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-4 rounded-lg font-bold shadow-sm transition-colors flex-1 flex items-center justify-center gap-2 text-lg">
+                              <Play className="w-5 h-5" /> Video Rendern (Maya)
+                            </button>
+                            <button onClick={() => approveHook(activePiece.id, activePiece.selectedHook!)} className="bg-slate-200 hover:bg-slate-300 text-slate-700 px-6 py-4 rounded-lg font-bold shadow-sm transition-colors flex items-center justify-center gap-2">
+                              <RefreshCcw className="w-5 h-5" /> Neu vertonen
+                            </button>
+                          </div>
+                        </div>
+                      );
+                    }
+                    
+                    if (activeStep === 7) {
+                      return <div className="text-indigo-600 font-bold animate-pulse text-lg flex items-center gap-3 p-6 bg-indigo-50 rounded-xl border border-indigo-100 shadow-inner"><Wand2 className="w-6 h-6 animate-spin" /> Maya & HyperFrames rendern das Video...</div>;
+                    }
+                    
+                    if (activeStep >= 8) {
+                      return (
+                        <div className="animate-in fade-in slide-in-from-bottom-2">
+                          <div className="p-4 bg-purple-50 border border-purple-200 rounded-xl mb-4 text-purple-700 flex justify-between items-center">
+                            <div>
+                              <p className="font-bold flex items-center gap-2"><CheckCircle2 className="w-5 h-5"/> Video fertig gerendert!</p>
+                              <p className="text-sm mt-1">Das Video liegt bereit zur Distribution auf Instagram (Aphrodite).</p>
+                            </div>
+                          </div>
+                          
+                          <div className="mb-6 rounded-xl overflow-hidden border-4 border-slate-200 shadow-md bg-black">
+                            <video controls className="w-full max-h-[500px]" src={`${activePiece.videoUrl?.startsWith('http') ? activePiece.videoUrl : `http://localhost:4000${activePiece.videoUrl}`}?t=${new Date(activePiece.updatedAt).getTime()}`} />
+                          </div>
+
+                          <div className="flex flex-col gap-3">
+                            <button onClick={() => { 
+                              showToast("Distribution auf Instagram gestartet!", "info");
+                              setTimeout(() => {
+                                showToast("Reel erfolgreich auf Instagram veröffentlicht! Pipeline abgeschlossen.", "success");
+                                localStorage.removeItem('activePipelineSession');
+                                setActiveStep(0);
+                                setIsWaitingForApproval(false);
+                              }, 3000);
+                            }} className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-400 hover:to-purple-500 text-white px-6 py-4 rounded-xl font-bold shadow-lg transition-colors flex items-center justify-center gap-2 text-lg">
+                              <Zap className="w-6 h-6" /> Auf Instagram veröffentlichen
+                            </button>
+                            <div className="flex gap-3">
+                              <button onClick={() => renderVideo(activePiece.id)} className="bg-slate-200 hover:bg-slate-300 text-slate-700 px-4 py-3 rounded-lg font-bold shadow-sm transition-colors flex-1 flex items-center justify-center gap-2">
+                                <Play className="w-4 h-4" /> Neu rendern
+                              </button>
+                              <button onClick={() => approveHook(activePiece.id, activePiece.selectedHook!)} className="bg-slate-200 hover:bg-slate-300 text-slate-700 px-4 py-3 rounded-lg font-bold shadow-sm transition-colors flex-1 flex items-center justify-center gap-2">
+                                <RefreshCcw className="w-4 h-4" /> Neu vertonen
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    }
+                  })()}
                 </div>
               </div>
 
-              <div className="flex justify-end mb-6">
-                <button onClick={startPipeline} disabled={isRunning || activeStep >= 7} className="bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-4 px-8 rounded-xl flex items-center gap-3 transition shadow-xl disabled:opacity-50">
-                  {isRunning ? 'Pipeline läuft...' : 'E2E Produktion starten'} 
-                </button>
+              <div className="flex justify-end gap-4 mb-6 w-full">
+                {activeStep > 0 && (
+                  <button 
+                    onClick={() => {
+                      localStorage.removeItem('activePipelineSession');
+                      setActiveStep(0);
+                      setIsRunning(false);
+                      setIsWaitingForApproval(false);
+                    }} 
+                    className="bg-white border-2 border-slate-200 hover:border-red-300 text-slate-600 hover:text-red-600 hover:bg-red-50 font-bold py-4 px-6 rounded-xl flex items-center gap-2 transition-all shadow-sm"
+                  >
+                    <RefreshCcw className="w-5 h-5" /> Pipeline verwerfen / Neustart
+                  </button>
+                )}
+
+                {!isRunning ? (
+                  <button onClick={startPipeline} disabled={activeStep > 0 || !topic} className="bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-4 px-8 rounded-xl flex items-center gap-3 transition shadow-xl disabled:opacity-50 disabled:cursor-not-allowed">
+                    E2E Produktion starten
+                  </button>
+                ) : (
+                  <button disabled className="bg-indigo-600 opacity-50 text-white font-bold py-4 px-8 rounded-xl flex items-center gap-3 transition shadow-xl">
+                    Pipeline läuft...
+                  </button>
+                )}
               </div>
-
-
             </div>
           </div>
         )}
@@ -1003,7 +1206,7 @@ export default function App() {
             <header className="mb-10 flex justify-between items-center">
               <div>
                 <h2 className="text-3xl font-bold mb-2 text-slate-900">Content Hub</h2>
-                <p className="text-slate-500 text-lg">Übersicht aller Skripte und Freigaben. Entscheide, was produziert wird.</p>
+                <p className="text-slate-500 text-lg">Galerie deiner fertiggestellten Content-Pieces (Ready for Distribution).</p>
               </div>
               <button onClick={() => setActiveTab('studio')} className="bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-2 px-6 rounded-xl transition shadow-xl">
                 + Neues Reel
@@ -1011,156 +1214,67 @@ export default function App() {
             </header>
 
             <div className="grid grid-cols-1 gap-6">
-              {contentPieces.length === 0 ? (
+              {contentPieces.filter(p => p.status === 'completed' || p.status === 'production').length === 0 ? (
                 <div className="text-center p-12 bg-slate-100/50 rounded-2xl border border-slate-200">
                   <Database className="w-12 h-12 text-slate-600 mx-auto mb-4" />
-                  <p className="text-slate-500 text-lg">Noch keine Content-Pieces vorhanden.</p>
-                  <p className="text-slate-500 text-sm mt-2">Gehe ins Reel-Studio, um dein erstes Skript zu generieren.</p>
+                  <p className="text-slate-500 text-lg">Noch keine fertigen Content-Pieces vorhanden.</p>
+                  <p className="text-slate-500 text-sm mt-2">Gehe ins Studio (Director Workspace), um deinen Content zu produzieren.</p>
                 </div>
               ) : (
-                contentPieces.map(piece => (
+                contentPieces.filter(p => p.status === 'completed' || p.status === 'production').map(piece => (
                   <div key={piece.id} className="bg-slate-100 rounded-2xl border border-slate-200 p-6 shadow-xl relative overflow-hidden">
-                    {/* Actions & Status Badge */}
                     <div className="absolute top-6 right-6 flex items-center gap-3">
-                      {(piece.status === 'review' || piece.status === 'production') && (
-                        <button onClick={async () => {
-                          setToast({ message: 'Skript wird neu generiert...', type: 'success' });
-                          await fetch(`http://localhost:4000/api/studio/pipeline/regenerate-script/${piece.id}`, { method: 'POST' });
-                          setActiveTab('studio');
-                          setIsRunning(true);
-                          setActiveStep(3);
-                          localStorage.setItem('activePipelineSession', piece.id);
-                          checkPipelineStatus(piece.id);
-                        }} className="text-indigo-500 hover:text-indigo-600 transition-colors bg-indigo-50 p-2 rounded-full shadow-sm hover:shadow-md border border-indigo-100 flex items-center gap-1" title="Skript neu generieren (Calliope & Themis)">
-                          <RefreshCcw className="w-4 h-4" />
-                          <span className="text-xs font-bold pr-1">Regenerate</span>
-                        </button>
-                      )}
                       <button onClick={() => deleteContent(piece.id)} className="text-slate-400 hover:text-red-500 transition-colors bg-white p-2 rounded-full shadow-sm hover:shadow-md border border-slate-200" title="Eintrag löschen">
                         <Trash2 className="w-4 h-4" />
                       </button>
-                      <span className={`px-3 py-1.5 rounded-full text-xs font-bold ${
-                        piece.status === 'review' ? 'bg-amber-100 text-amber-700 border border-amber-200 shadow-sm' : 
-                        piece.status === 'production' ? 'bg-emerald-100 text-emerald-700 border border-emerald-200 shadow-sm' : 
-                        piece.status === 'scripting' ? 'bg-indigo-100 text-indigo-700 border border-indigo-200 shadow-sm' :
-                        piece.status === 'error' ? 'bg-red-100 text-red-700 border border-red-200 shadow-sm' :
-                        'bg-slate-100 text-slate-600 border border-slate-200'
-                      }`}>
-                        {piece.status === 'review' ? '⏳ WARTET AUF FREIGABE' : 
-                         piece.status === 'production' ? '🎬 IN PRODUKTION' : 
-                         piece.status === 'scripting' ? '✍️ IN ARBEIT' : 
-                         piece.status.toUpperCase()}
+                      <span className="px-3 py-1.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-700 border border-emerald-200 shadow-sm flex items-center gap-1">
+                        <CheckCircle2 className="w-4 h-4" /> ABGESCHLOSSEN
                       </span>
                     </div>
 
-                    <div className="flex items-center gap-3 mb-4">
-                      <FileText className="w-6 h-6 text-indigo-600" />
+                    <div className="flex items-center gap-3 mb-4 pr-32">
+                      <FileText className="w-6 h-6 text-indigo-600 shrink-0" />
                       <h3 className="text-xl font-bold text-slate-900">{piece.topic}</h3>
                     </div>
 
-                    {piece.audioUrl && (
+                    {piece.videoUrl && (
                       <div className="mb-6 p-4 bg-emerald-50 border border-emerald-200 rounded-xl">
-                        <div className="flex items-center justify-between mb-2">
-                          <div className="flex items-center gap-2">
-                            <div className="w-8 h-8 rounded-full bg-white shadow-sm flex items-center justify-center">
-                              <span className="text-xl">🎙️</span>
-                            </div>
-                            <div>
-                              <p className="text-sm font-bold text-emerald-800">Voiceover Generiert (Hephaistos)</p>
-                              <p className="text-xs text-emerald-600">ElevenLabs API</p>
-                            </div>
+                        <div className="flex items-center gap-2 mb-3">
+                          <div className="w-8 h-8 rounded-full bg-white shadow-sm flex items-center justify-center">
+                            <span className="text-xl">🎬</span>
                           </div>
-                          {piece.selectedHook && (
-                            <button 
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                approveHook(piece.id, piece.selectedHook!);
-                              }}
-                              className="text-xs flex items-center gap-1 text-emerald-700 hover:text-emerald-900 bg-emerald-100 hover:bg-emerald-200 px-3 py-1.5 rounded-lg transition-colors font-bold shadow-sm"
-                            >
-                              <RefreshCcw className="w-3 h-3" />
-                              Neu vertonen
-                            </button>
-                          )}
+                          <div>
+                            <p className="text-sm font-bold text-emerald-800">Finales Video</p>
+                            <p className="text-xs text-emerald-600">Motion Graphics & Voiceover</p>
+                          </div>
                         </div>
-                        <audio controls className="w-full mt-2 h-10" src={`${piece.audioUrl}?t=${new Date(piece.updatedAt).getTime()}`} key={piece.audioUrl + piece.updatedAt}></audio>
+                        <div className="rounded-lg overflow-hidden border-2 border-emerald-100 shadow-sm flex justify-center bg-black">
+                          <video 
+                            controls 
+                            className="max-h-[500px] w-full object-contain" 
+                            src={`${piece.videoUrl.startsWith('http') ? piece.videoUrl : `http://localhost:4000${piece.videoUrl}`}?t=${new Date(piece.updatedAt).getTime()}`} 
+                          ></video>
+                        </div>
                       </div>
                     )}
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
-                      <div>
+                      <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
                         <h4 className="text-slate-500 font-bold mb-3 uppercase tracking-wider text-xs flex items-center gap-2">
-                          <Wand2 className="w-4 h-4 text-indigo-400" /> Hooks (Wähle einen aus)
+                          <Activity className="w-4 h-4 text-emerald-500" /> Ausgewählter Hook
                         </h4>
-                        <div className="space-y-3">
-                          {piece.status === 'error' ? (
-                            <div className="p-6 rounded-xl border-2 border-red-100 bg-red-50/30 flex flex-col items-center justify-center h-40 text-center">
-                              <p className="text-red-600 text-sm font-bold mb-1">Pipeline-Absturz</p>
-                              <p className="text-red-500 text-xs mb-3">Ein Fehler ist aufgetreten.</p>
-                              <button onClick={() => resumePipeline(piece.id)} className="px-4 py-2 bg-red-600 text-white rounded-lg text-sm font-bold shadow-md hover:bg-red-700 transition-colors flex items-center gap-2">
-                                <Play className="w-4 h-4" />
-                                Fortsetzen
-                              </button>
-                            </div>
-                          ) : piece.status === 'scripting' ? (
-                            <div className="p-6 rounded-xl border-2 border-indigo-100 bg-indigo-50/30 flex flex-col items-center justify-center h-40">
-                              <div className="w-6 h-6 border-2 border-indigo-500 border-t-transparent rounded-full animate-spin mb-3"></div>
-                              <p className="text-indigo-600 text-sm font-medium">KI schreibt Skript & Hooks...</p>
-                            </div>
-                          ) : (
-                            ['hook_1', 'hook_2', 'hook_3'].map((h, i) => {
-                              const hookText = piece.qaData?.final_script?.[h] || piece.scriptData?.[h];
-                              const isSelected = piece.selectedHook === h;
-                              if (!hookText) return null;
-                              return (
-                                <div 
-                                  key={h} 
-                                  onClick={() => piece.status === 'review' && approveHook(piece.id, h)}
-                                  className={`p-5 rounded-xl border-2 transition cursor-pointer ${isSelected ? 'bg-indigo-50 border-indigo-500 shadow-md ring-2 ring-indigo-200 ring-offset-1' : 'bg-white border-slate-200 hover:border-indigo-300 hover:shadow-sm'}`}
-                                >
-                                  <div className="flex justify-between items-center mb-2">
-                                    <span className={`text-sm font-bold uppercase tracking-wider ${isSelected ? 'text-indigo-700' : 'text-slate-500'}`}>Option {i+1}</span>
-                                    {isSelected && <CheckCircle2 className="w-4 h-4 text-indigo-600" />}
-                                  </div>
-                                  <p className="text-slate-900 text-sm leading-relaxed">{hookText}</p>
-                                </div>
-                              );
-                            })
-                          )}
+                        <div className="p-4 rounded-xl border border-emerald-200 bg-emerald-50/50">
+                          <p className="text-slate-900 text-sm leading-relaxed">{piece.selectedHook ? (piece.qaData?.final_script?.[piece.selectedHook] || piece.scriptData?.[piece.selectedHook]) : 'Kein Hook ausgewählt.'}</p>
                         </div>
                       </div>
 
-                      <div>
+                      <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
                         <h4 className="text-slate-500 font-bold mb-3 uppercase tracking-wider text-xs flex items-center gap-2">
-                          <FileText className="w-4 h-4 text-slate-400" /> Body
+                          <BrainCircuit className="w-4 h-4 text-pink-500" /> Skript Body
                         </h4>
-                        {piece.status === 'error' ? (
-                            <div className="p-6 rounded-xl border-2 border-red-100 bg-red-50/30 flex flex-col items-center justify-center h-40 text-center">
-                              <p className="text-red-600 text-sm font-bold mb-1">Pipeline-Absturz</p>
-                              <button onClick={() => resumePipeline(piece.id)} className="mt-2 px-4 py-1.5 bg-red-600 text-white rounded-lg text-xs font-bold shadow-sm hover:bg-red-700 transition-colors flex items-center gap-1 mx-auto">
-                                <Play className="w-3 h-3" />
-                                Fortsetzen
-                              </button>
-                            </div>
-                        ) : piece.status === 'scripting' ? (
-                            <div className="p-6 rounded-xl border-2 border-slate-100 bg-slate-50 flex flex-col items-center justify-center h-40">
-                              <p className="text-slate-400 text-sm font-medium">Wartet auf Skript-Entwurf...</p>
-                            </div>
-                        ) : (
-                          <div className="bg-white p-5 rounded-xl border border-slate-200 h-full shadow-sm">
-                            <p className="text-slate-700 text-sm leading-relaxed whitespace-pre-wrap">
-                              {piece.qaData?.final_script?.body || piece.scriptData?.body || 'Noch kein Body generiert.'}
-                            </p>
-                          </div>
-                        )}
+                        <p className="text-slate-700 text-sm whitespace-pre-wrap leading-relaxed">{piece.qaData?.final_script?.body || piece.scriptData?.body}</p>
                       </div>
                     </div>
-
-                    {piece.status === 'review' && !piece.selectedHook && (
-                      <div className="mt-6 p-4 bg-amber-900/20 border border-amber-500/30 rounded-xl flex items-center justify-between">
-                        <p className="text-amber-400 text-sm font-medium">Klicke oben auf einen Hook, um dieses Skript für die Video-Produktion freizugeben.</p>
-                      </div>
-                    )}
                   </div>
                 ))
               )}
@@ -1196,8 +1310,8 @@ export default function App() {
       )}
 
       {toast && (
-        <div className={`fixed bottom-8 left-1/2 -translate-x-1/2 px-6 py-4 rounded-xl shadow-2xl font-bold flex items-center gap-3 z-50 transition-all duration-300 animate-in fade-in slide-in-from-bottom-5 ${toast.type === 'success' ? 'bg-emerald-600 text-white' : 'bg-red-500 text-white'}`}>
-          {toast.type === 'success' ? <CheckCircle2 className="w-6 h-6" /> : <XCircle className="w-6 h-6" />}
+        <div className={`fixed bottom-8 left-1/2 -translate-x-1/2 px-6 py-4 rounded-xl shadow-2xl font-bold flex items-center gap-3 z-50 transition-all duration-300 animate-in fade-in slide-in-from-bottom-5 ${toast.type === 'success' ? 'bg-emerald-600 text-white' : toast.type === 'info' ? 'bg-blue-600 text-white' : 'bg-red-500 text-white'}`}>
+          {toast.type === 'success' ? <CheckCircle2 className="w-6 h-6" /> : toast.type === 'info' ? <Activity className="w-6 h-6 animate-pulse" /> : <XCircle className="w-6 h-6" />}
           {toast.message}
         </div>
       )}

@@ -32,10 +32,10 @@ Deine Skripte sind maximal 120 Wörter lang (ca. 45 Sekunden gesprochen).
 Du schreibst in einer sehr direkten, umgangssprachlichen Sprache ("Du"-Form). Keine therapeutischen Fachwörter!
 Der Text muss emotional fesseln.
 
-Regeln:
-1. Das Skript besteht aus einem Hook (Aufhänger) und einem Body (Hauptteil) sowie einem klaren Call-to-Action.
-2. Du musst 3 unterschiedliche Hooks schreiben (zum A/B Testen).
-3. Du hältst dich strikt an das Format der Strategin Athena.
+WICHTIG: Visuelles Storyboarding (Psychologische Metaphern)
+Anstatt nur Fließtext zu liefern, zerlegst du den 'body' zusätzlich in ein didaktisch wertvolles Storyboard.
+Anstatt kitschige AI-Avatare oder unpassende Stock-Videos zu planen, denkst du in hochwertigen, abstrakten, aber visuell reichen Metaphern (z.B. organische 2D-Formen, weiche Farbverläufe, glühende Linien, morphing Effekte).
+Beispiele für metaphor_type: "CONTACT" (Verbindungslinien), "FUSION" (ineinanderfließende Formen), "AUTONOMY" (klare, abgetrennte Kreise), "TENSION" (zitternde, dünne Linien).
 
 ANTWORTE AUSSCHLIESSLICH IN VALIDEM JSON FORMAT OHNE MARKDOWN BLÖCKE!
 ERWARTETES JSON SCHEMA:
@@ -44,7 +44,15 @@ ERWARTETES JSON SCHEMA:
   "hook_2": "Zweiter alternativer Hook (max 2 Sätze)",
   "hook_3": "Dritter alternativer Hook (max 2 Sätze)",
   "body": "Der Hauptteil des Skripts (max 100 Wörter)",
-  "cta": "Der Call-to-Action am Ende (max 2 Sätze)"
+  "cta": "Der Call-to-Action am Ende (max 2 Sätze)",
+  "storyboard": [
+    {
+      "duration": 5,
+      "voiceover_text": "Text-Snippet für diese Szene",
+      "metaphor_type": "FUSION",
+      "visual_description": "Hochwertige, abstrakte Beschreibung (z.B. Zwei organische, weich leuchtende Formen, die ineinanderfließen, warme reduzierte Farbwelt)"
+    }
+  ]
 }
 `;
 
@@ -58,15 +66,13 @@ ${JSON.stringify(strategyData, null, 2)}
       if (qaFeedback) {
         userMessage += `\nACHTUNG: Themis (Die Quality Assurance) hat dein letztes Skript mit folgendem Feedback ABGELEHNT:\n"${qaFeedback}"\n\nBitte schreibe das Skript komplett neu und behebe diese Mängel!\n`;
       } else {
-        userMessage += `\nSchreibe das finale Skript.\n`;
+        userMessage += `\nSchreibe das finale Skript inkl. Storyboard.\n`;
       }
 
       userMessage += `Gib ein JSON zurück mit den Keys:
-- "hook_1" (aggressiv, aufmerksamkeitserregend)
-- "hook_2" (empathisch, fragend)
-- "hook_3" (Neugier-Lücke, kontraintuitiv)
-- "body" (Der Hauptteil des Skripts, max 100 Wörter)
-- "call_to_action" (Der Handlungsaufruf am Ende, 1 Satz)
+- "hook_1", "hook_2", "hook_3"
+- "body" und "cta"
+- "storyboard" (Array aus Szene-Objekten mit duration, voiceover_text, metaphor_type, visual_description)
 Keine anderen Zeichen!`;
 
       this.log('Sende Script-Anfrage an Claude...');
@@ -74,7 +80,7 @@ Keine anderen Zeichen!`;
       console.log('=== USER MESSAGE ===\n', userMessage);
       const response = await this.anthropic.messages.create({
         model: this.profile.aiModel || 'claude-sonnet-5-5',
-        max_tokens: 2000,
+        max_tokens: 8000,
         system: systemPrompt,
         messages: [{ role: 'user', content: userMessage }]
       });
@@ -96,6 +102,8 @@ Keine anderen Zeichen!`;
       this.gainExperience();
 
       return parsed;
+
+      
     } catch (error: any) {
       this.log(`Fehler bei Skript-Erstellung: ${error.message}`);
       this.activityLogger.log({

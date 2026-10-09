@@ -57,9 +57,9 @@ router.post('/pipeline/start', async (req, res) => {
   
   // Run asynchronously in the background
   (async () => {
+    const topic = prompt.substring(0, 50) + '...';
+    const state = getState(sessionId, topic);
     try {
-      const topic = prompt.substring(0, 50) + '...';
-      const state = getState(sessionId, topic);
       
       // If resuming from error, reset status to scripting
       if (state.status === 'error') {

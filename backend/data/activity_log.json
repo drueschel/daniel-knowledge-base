@@ -1,0 +1,158 @@
+[
+  {
+    "agentId": "production",
+    "sessionId": "session_1791526477106",
+    "action": "Voiceover erfolgreich generiert",
+    "details": "{\"fileName\":\"voice_session_1791526477106.mp3\",\"sizeMB\":\"0.50\"}",
+    "status": "success",
+    "id": "trod6qf",
+    "timestamp": "2026-10-09T06:29:56.490Z"
+  },
+  {
+    "agentId": "human",
+    "sessionId": "session_1791526477106",
+    "action": "Skript freigegeben",
+    "details": "Hook ausgewählt: hook_2\nVoiceover gestartet!",
+    "status": "success",
+    "id": "oa4fyiz",
+    "timestamp": "2026-10-09T06:29:52.493Z"
+  },
+  {
+    "agentId": "production",
+    "sessionId": "session_1791526477106",
+    "action": "Voiceover erfolgreich generiert",
+    "details": "{\"fileName\":\"voice_session_1791526477106.mp3\",\"sizeMB\":\"0.52\"}",
+    "status": "success",
+    "id": "2hwsfc1",
+    "timestamp": "2026-10-09T06:28:26.761Z"
+  },
+  {
+    "agentId": "human",
+    "sessionId": "session_1791526477106",
+    "action": "Skript freigegeben",
+    "details": "Hook ausgewählt: hook_2\nVoiceover gestartet!",
+    "status": "success",
+    "id": "magdd53",
+    "timestamp": "2026-10-09T06:28:22.491Z"
+  },
+  {
+    "agentId": "production",
+    "sessionId": "session_1791526477106",
+    "action": "Voiceover erfolgreich generiert",
+    "details": "{\"fileName\":\"voice_session_1791526477106.mp3\",\"sizeMB\":\"0.51\"}",
+    "status": "success",
+    "id": "k7ic096",
+    "timestamp": "2026-10-09T06:20:21.518Z"
+  },
+  {
+    "agentId": "human",
+    "sessionId": "session_1791526477106",
+    "action": "Skript freigegeben",
+    "details": "Hook ausgewählt: hook_2\nVoiceover gestartet!",
+    "status": "success",
+    "id": "wv75ij5",
+    "timestamp": "2026-10-09T06:20:17.295Z"
+  },
+  {
+    "agentId": "production",
+    "sessionId": "session_1791526477106",
+    "action": "Voiceover erfolgreich generiert",
+    "details": "{\"fileName\":\"voice_session_1791526477106.mp3\",\"sizeMB\":\"0.48\"}",
+    "status": "success",
+    "id": "j5sqkaw",
+    "timestamp": "2026-10-09T06:19:26.275Z"
+  },
+  {
+    "agentId": "human",
+    "sessionId": "session_1791526477106",
+    "action": "Skript freigegeben",
+    "details": "Hook ausgewählt: hook_2\nVoiceover gestartet!",
+    "status": "success",
+    "id": "macn4oq",
+    "timestamp": "2026-10-09T06:19:22.276Z"
+  },
+  {
+    "agentId": "production",
+    "sessionId": "session_1791526477106",
+    "action": "Voiceover erfolgreich generiert",
+    "details": "{\"fileName\":\"voice_session_1791526477106.mp3\",\"sizeMB\":\"0.53\"}",
+    "status": "success",
+    "id": "9exgb9h",
+    "timestamp": "2026-10-09T06:19:19.182Z"
+  },
+  {
+    "agentId": "human",
+    "sessionId": "session_1791526477106",
+    "action": "Skript freigegeben",
+    "details": "Hook ausgewählt: hook_2\nVoiceover gestartet!",
+    "status": "success",
+    "id": "bfa33lh",
+    "timestamp": "2026-10-09T06:19:14.894Z"
+  },
+  {
+    "agentId": "production",
+    "sessionId": "session_1791526477106",
+    "action": "Voiceover erfolgreich generiert",
+    "details": "{\"fileName\":\"voice_session_1791526477106.mp3\",\"sizeMB\":\"0.49\"}",
+    "status": "success",
+    "id": "dk25gzf",
+    "timestamp": "2026-10-09T06:16:12.118Z"
+  },
+  {
+    "agentId": "human",
+    "sessionId": "session_1791526477106",
+    "action": "Skript freigegeben",
+    "details": "Hook ausgewählt: hook_2\nVoiceover gestartet!",
+    "status": "success",
+    "id": "nqj2ojw",
+    "timestamp": "2026-10-09T06:16:07.638Z"
+  },
+  {
+    "agentId": "qa",
+    "sessionId": "session_1791526477106",
+    "action": "QA Review",
+    "details": "Status: rejected. Feedback: Body ist mit ~130 Wörtern zu lang (Limit: 100-120). Kürze den Text um ca. 15-20 Wörter. Die drei Schritte (Trigger identifizieren, nachfragen, wiederholen) sind stark, aber die Formulierung ist zu ausschweifend. Beispiel: 'Ich kämpfe um Liebe, bis ich nicht mehr kann. Oder ich arbeite, scrolle, funktioniere, damit mich keiner erreicht.' könnte gerafft werden. Die Hooks sind gut und emotional treffend. Storyboard ist detailliert und passend. Bitte Body kürzen und erneut einreichen.",
+    "status": "error",
+    "model": "claude-haiku-4-5",
+    "id": "ixkb814",
+    "timestamp": "2026-10-09T06:15:37.426Z"
+  },
+  {
+    "agentId": "creative",
+    "sessionId": "session_1791526477106",
+    "action": "Script written",
+    "details": "Wrote 3 hooks and body (58 words)",
+    "status": "success",
+    "model": "claude-sonnet-5-5",
+    "id": "krmo8ry",
+    "timestamp": "2026-10-09T06:15:30.566Z"
+  },
+  {
+    "agentId": "strategy",
+    "sessionId": "session_1791526477106",
+    "action": "Format Strategy defined",
+    "details": "Chose format: POV: Du bist der Mensch, der seit Jahren alles gibt und innerlich trotzdem leer ist. Erzählt aus der Ich-Perspektive in zwei Rollen (Verschmelzungstyp und Autonomietyp). Die Auflösung kommt über den Realitätsabgleich in 3 klaren Schritten.. Target emotion: Anfang: Schmerzhaftes Wiedererkennen und Beklemmung ('Das bin ich'). Ende: Erleichterung und Hoffnung, weil das Muster erklärbar und veränderbar ist.",
+    "status": "success",
+    "model": "claude-sonnet-5-5",
+    "id": "0hdorgm",
+    "timestamp": "2026-10-09T06:15:02.412Z"
+  },
+  {
+    "agentId": "data",
+    "sessionId": "session_1791526477106",
+    "action": "Recherche (kb_and_web) erfolgreich extrahiert.",
+    "details": "{\"core_pain\":\"Erwachsene erleben Depression als tiefe Hoffnungslosigkeit und Resignation. Beim Verschmelzungstyp: Jahrelanges Kämpfen um Liebe führt zu Erschöpfung, weil die Beziehungsstrategie nicht funktioniert. Beim Autonomietyp: Flucht in Gedanken, Erfolg oder Ablenkung führt zu innerer Leere, weil die eigentliche Sehnsucht nach Nähe unbewusst bleibt.\",\"aha_moment\":\"Depression ist kein isoliertes Symptom, sondern der Ausdruck gescheiterter Überlebensmuster aus der Kindheit. Der Verschmelzungstyp gibt auf, weil er unbewusst glaubt, dass Unabhängigkeit automatisch Verlassenheit bedeutet. Der Autonomietyp löscht sich selbst aus, um nicht in Gefahr zu geraten. Beide Muster sind Schutzstrategien, die als Erwachsener nicht mehr funktionieren.\",\"solution\":\"Realitätsabgleich der Kernprojektionen im Hier und Jetzt: (1) Identifiziere die exakten Sinnesreize (Blick, Stimme, Körperhaltung), die deine alte Projektion triggern. (2) Frage die andere Person direkt, was wirklich in ihr vorgeht, statt der automatischen Gehirninterpretation zu glauben. (3) Wiederhole diesen Abgleich systematisch, bis die falsche Interpretation sich auflöst und echter Kontakt möglich wird.\"}",
+    "status": "success",
+    "id": "12hxar1",
+    "timestamp": "2026-10-09T06:14:43.520Z"
+  },
+  {
+    "agentId": "data",
+    "sessionId": "session_1791526408978",
+    "action": "Recherche (kb_and_web) erfolgreich extrahiert.",
+    "details": "{\"core_pain\":\"Erwachsene mit Depression erleben tiefe Hoffnungslosigkeit und haben ihre Beziehungsstrategien aus der Kindheit aufgegeben. Beim Verschmelzungstyp: jahrelanges erfolglose Kämpfen um Liebe führt zu Erschöpfung und Rückzug. Beim Autonomietyp: gescheiterte Fluchtversuche (Verstand, Spiritualität, Erfolg) hinterlassen innere Leere, während unbewusste Nähesucht blockiert wird.\",\"aha_moment\":\"Depression ist nicht primär eine neurologische Dysfunktion, sondern ein Ausdruck fehlgeschlagener Bindungsstrategien aus der Kindheit. Die Depression signalisiert: 'Meine bisherigen Wege, Liebe/Nähe zu bekommen, funktionieren nicht mehr.' Beim Verschmelzungstyp zeigt sich dies als Resignation nach Aufopferung. Beim Autonomietyp als innere Leere nach Flucht in mentale Räume.\",\"solution\":\"Trigger-Identifikation durch sensorische Forschung: Welche exakten visuellen oder akustischen Reize aktivieren die alte Kernprojektion (Verlassenheit beim Verschmelzungstyp, Gefahr in Nähe beim Autonomietyp)? Realitätsabgleich durch direktes Nachfragen beim Gegenüber statt automatischen Interpretationen. Wiederholte Überprüfung der falschen Annahmen entschärft die Trigger graduell und ermöglicht echten Kontakt und neue Bindungserfahrungen.\"}",
+    "status": "success",
+    "id": "25s7z4t",
+    "timestamp": "2026-10-09T06:13:35.409Z"
+  }
+]

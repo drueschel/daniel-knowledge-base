@@ -1,8 +1,7 @@
 import { Router } from 'express';
-import { FelixIngestionAgent } from '../agents/FelixIngestionAgent';
+import { PrometheusIngestionAgent } from '../agents/PrometheusIngestionAgent';
 
 const router = Router();
-const felix = new FelixIngestionAgent();
 
 router.post('/youtube', async (req, res) => {
   const { url } = req.body;
@@ -12,12 +11,15 @@ router.post('/youtube', async (req, res) => {
   }
 
   try {
-    const savedPath = await felix.processYouTubeVideo(url);
+    // Instantiate Prometheus here so env vars are guaranteed to be loaded
+    const prometheusIngest = new PrometheusIngestionAgent();
+    
+    const savedPath = await prometheusIngest.processYouTubeVideo(url);
     res.json({ 
       success: true, 
-      message: 'Video erfolgreich von Felix importiert und strukturiert.',
+      message: 'Video erfolgreich von Prometheus importiert und strukturiert.',
       path: savedPath,
-      agentState: felix.getProfile()
+      agentState: prometheusIngest.getProfile()
     });
   } catch (error: any) {
     res.status(500).json({ error: error.message });

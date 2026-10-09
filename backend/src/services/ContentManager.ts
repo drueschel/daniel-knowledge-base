@@ -4,12 +4,14 @@ import path from 'path';
 export interface ContentPiece {
   id: string;
   topic: string;
-  status: 'idea' | 'scripting' | 'review' | 'production' | 'completed';
+  status: 'idea' | 'scripting' | 'review' | 'voiceover' | 'audio_ready' | 'rendering' | 'completed' | 'error';
   researchData?: any;
   strategyData?: any;
   scriptData?: any;
   qaData?: any;
   selectedHook?: string;
+  audioUrl?: string;
+  videoUrl?: string;
   createdAt: string;
   updatedAt: string;
 }
@@ -28,7 +30,7 @@ export class ContentManager {
       const all = this.getAll();
       let changed = false;
       for (const piece of all) {
-        if (piece.status === 'scripting' || piece.status === 'production') {
+        if (piece.status === 'scripting' || piece.status === 'rendering' || piece.status === 'voiceover') {
           piece.status = 'error' as any;
           changed = true;
         }

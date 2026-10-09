@@ -36,7 +36,7 @@ export abstract class BaseAgent {
 
   public gainExperience() {
     this.profile.level += 1;
-    this.log(`Leveled up to Lvl ${this.profile.level}!`, 'success');
+    // this.log(`Leveled up to Lvl ${this.profile.level}!`, 'success');
     const hr = new EmployeeService();
     hr.update(this.profile.id, { level: this.profile.level });
   }
