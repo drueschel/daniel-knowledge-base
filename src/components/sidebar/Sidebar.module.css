@@ -2,7 +2,7 @@
    Editorial Minimalist Sidebar - Design Tokens & Container
    ========================================================================== */
 .sidebar {
-  width: 310px;
+  width: 324px;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -19,7 +19,7 @@
 
 /* Header */
 .sidebarHeader {
-  padding: 16px 18px 14px 18px;
+  padding: 15px 18px 13px 18px;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -57,7 +57,7 @@
 }
 
 .sidebarLogoTitle {
-  font-size: 0.92rem;
+  font-size: 0.90rem;
   font-weight: 700;
   color: #09090b;
   letter-spacing: -0.015em;
@@ -68,7 +68,7 @@
 }
 
 .sidebarLogoSubtitle {
-  font-size: 0.72rem;
+  font-size: 0.71rem;
   color: #71717a;
   font-weight: 500;
   line-height: 1.2;
@@ -102,8 +102,8 @@
 
 .searchInput {
   width: 100%;
-  padding: 7px 28px 7px 30px;
-  font-size: 0.82rem;
+  padding: 6.5px 28px 6.5px 30px;
+  font-size: 0.81rem;
   border-radius: 7px;
   border: 1px solid #e4e4e7;
   background: #ffffff;
@@ -144,7 +144,7 @@
 
 .searchMatchBanner {
   margin-top: 6px;
-  font-size: 0.73rem;
+  font-size: 0.72rem;
   color: #71717a;
   font-weight: 500;
   display: flex;
@@ -164,7 +164,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6px 14px;
+  padding: 5px 14px;
   border-bottom: 1px solid #f4f4f5;
   background: #ffffff;
   flex-shrink: 0;
@@ -180,13 +180,13 @@
   background: transparent;
   border: 1px solid transparent;
   cursor: pointer;
-  padding: 4px 8px;
+  padding: 3.5px 8px;
   border-radius: 5px;
   color: #71717a;
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  font-size: 0.72rem;
+  font-size: 0.71rem;
   font-weight: 500;
   transition: all 0.15s ease;
   font-family: inherit;
@@ -204,7 +204,7 @@
   flex: 1;
   overflow-y: auto;
   overflow-x: hidden;
-  padding: 8px 10px 24px 10px;
+  padding: 6px 10px 24px 10px;
 }
 
 .treeRoot {
@@ -213,23 +213,25 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 2px;
 }
 
 .subTree {
   list-style: none;
   margin: 0;
-  padding: 2px 0 3px 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 1.5px;
 }
 
 /* Visual Tree Guide Line */
 .guidedSubTree {
   margin-left: 14px;
-  padding-left: 12px;
+  padding-left: 10px;
   border-left: 1px solid #e4e4e7;
+  margin-top: 2px;
+  margin-bottom: 3px;
 }
 
 .treeFolder {
@@ -239,23 +241,32 @@
 }
 
 .courseFolder {
-  margin-top: 6px;
+  margin-top: 12px;
   margin-bottom: 2px;
+}
+
+.courseFolder:first-child {
+  margin-top: 2px;
 }
 
 .folderHeader {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 6px 8px;
+  gap: 7px;
+  padding: 5px 7px;
   border-radius: 6px;
   cursor: pointer;
   color: #3f3f46;
-  font-size: 0.82rem;
+  font-size: 0.81rem;
   font-weight: 500;
   transition: background-color 0.12s ease, color 0.12s ease;
   outline: none;
-  min-height: 32px;
+  min-height: 30px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.folderHeader:focus {
+  outline: none;
 }
 
 .folderHeader:hover {
@@ -264,16 +275,17 @@
 }
 
 .folderHeader:focus-visible {
-  box-shadow: 0 0 0 2px #71717a;
+  outline: none;
+  box-shadow: 0 0 0 2px #a1a1aa;
 }
 
 /* Top-Level Course Header */
 .courseHeader {
-  font-size: 0.85rem;
+  font-size: 0.84rem;
   font-weight: 700;
   color: #09090b;
-  padding: 8px 8px;
-  letter-spacing: -0.01em;
+  padding: 6.5px 7px;
+  letter-spacing: -0.012em;
 }
 
 .chevronSlot {
@@ -281,8 +293,8 @@
   align-items: center;
   justify-content: center;
   color: #a1a1aa;
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   flex-shrink: 0;
 }
 
@@ -295,6 +307,8 @@
   align-items: center;
   justify-content: center;
   color: #71717a;
+  width: 15px;
+  height: 15px;
   flex-shrink: 0;
 }
 
@@ -319,14 +333,15 @@
 }
 
 .leafCounter {
-  font-size: 0.68rem;
-  font-weight: 600;
+  font-size: 0.67rem;
+  font-weight: 500;
   color: #71717a;
   background: #f4f4f5;
   padding: 1px 6px;
   border-radius: 9999px;
   flex-shrink: 0;
-  margin-left: 4px;
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
 }
 
 /* ==========================================================================
@@ -341,17 +356,22 @@
 .leafLink {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 5px 8px;
+  gap: 7px;
+  padding: 4.5px 7px;
   border-radius: 6px;
   color: #52525b;
-  font-size: 0.80rem;
+  font-size: 0.79rem;
   line-height: 1.35;
   text-decoration: none;
   transition: all 0.12s ease;
-  min-height: 30px;
+  min-height: 28px;
   outline: none;
   border-left: 2px solid transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.leafLink:focus {
+  outline: none;
 }
 
 .leafLink:hover {
@@ -360,7 +380,16 @@
 }
 
 .leafLink:focus-visible {
-  box-shadow: 0 0 0 2px #71717a;
+  outline: none;
+  box-shadow: 0 0 0 2px #a1a1aa;
+}
+
+/* Spacer ensuring leaf icon aligns in the same column as folder icons */
+.chevronSpacer {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  display: inline-block;
 }
 
 .leafIconSlot {
@@ -368,6 +397,8 @@
   align-items: center;
   justify-content: center;
   color: #a1a1aa;
+  width: 15px;
+  height: 15px;
   flex-shrink: 0;
 }
 
@@ -415,6 +446,7 @@
   align-items: center;
   gap: 3px;
   flex-shrink: 0;
+  margin-left: auto;
 }
 
 /* ==========================================================================
@@ -449,17 +481,17 @@
   }
 
   .folderHeader {
-    min-height: 44px;
-    padding: 10px 10px;
-  }
-
-  .leafLink {
     min-height: 42px;
     padding: 8px 10px;
   }
 
+  .leafLink {
+    min-height: 40px;
+    padding: 7px 10px;
+  }
+
   .controlBtn {
-    min-height: 38px;
-    padding: 6px 10px;
+    min-height: 36px;
+    padding: 5px 10px;
   }
 }

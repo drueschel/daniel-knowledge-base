@@ -52,9 +52,9 @@ export default async function LangLayout({
           overflow-x: hidden;
         }
         .main-content {
-          margin-left: 310px; /* Sidebar width */
-          width: calc(100% - 310px);
-          max-width: calc(100% - 310px);
+          margin-left: 324px; /* Sidebar width */
+          width: calc(100% - 324px);
+          max-width: calc(100% - 324px);
           display: flex;
           flex-direction: column;
         }

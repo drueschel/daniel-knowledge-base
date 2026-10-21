@@ -38,10 +38,14 @@ function countLeaves(item: NavItem): number {
   return item.children.reduce((acc, child) => acc + countLeaves(child), 0);
 }
 
-function isPalItem(item: NavItem): boolean {
-  const t = item.title.toLowerCase();
-  const slugJoined = item.slug ? item.slug.join('/').toLowerCase() : '';
-  return t.includes('pal') || slugJoined.includes('pal') || t.includes('avatar');
+// Strictly target ONLY the interactive PAL Live Avatar session page
+function isPalLiveAvatar(item: NavItem): boolean {
+  if (!item.slug) return false;
+  const slugJoined = item.slug.join('/');
+  return (
+    slugJoined.includes('PAL/01_PAL_Avatar_Uebersicht') ||
+    slugJoined.includes('PAL/01_PAL_Avatar_Overview')
+  );
 }
 
 export const SidebarNode: React.FC<SidebarNodeProps> = memo(({
@@ -67,27 +71,31 @@ export const SidebarNode: React.FC<SidebarNodeProps> = memo(({
   if (isLeaf && item.slug) {
     const url = `/${lang}/${item.slug.join('/')}`;
     const isActive = url === pathname;
-    const isPal = isPalItem(item);
+    const isPalLive = isPalLiveAvatar(item);
 
     return (
       <li className={styles.treeLeaf} role="none">
         <Link
           href={url}
-          className={`${styles.leafLink} ${isActive ? styles.activeLeaf : ''} ${isPal ? styles.palLeaf : ''}`}
+          className={`${styles.leafLink} ${isActive ? styles.activeLeaf : ''} ${isPalLive ? styles.palLeaf : ''}`}
           onClick={onSelectLeaf}
           data-active={isActive ? 'true' : 'false'}
           role="treeitem"
           aria-selected={isActive}
+          title={cleanLabel}
         >
+          {/* Spacer aligning leaf icon with sibling folder icons */}
+          <span className={styles.chevronSpacer} aria-hidden="true" />
+          
           <span className={styles.leafIconSlot}>
-            {isPal ? (
+            {isPalLive ? (
               <VideoIcon size={14} className={styles.palIcon} />
             ) : (
               <DocumentIcon size={13} className={styles.docIcon} />
             )}
           </span>
           <span className={styles.leafText}>{cleanLabel}</span>
-          {isPal && (
+          {isPalLive && (
             <span className={styles.palBadge}>
               <SparklesIcon size={10} />
               <span>LIVE</span>
@@ -139,6 +147,7 @@ export const SidebarNode: React.FC<SidebarNodeProps> = memo(({
         aria-expanded={open}
         aria-selected={false}
         tabIndex={0}
+        title={cleanLabel}
       >
         <span className={styles.chevronSlot}>
           <ChevronIcon open={open} size={13} />
@@ -157,7 +166,7 @@ export const SidebarNode: React.FC<SidebarNodeProps> = memo(({
 
       {open && children.length > 0 && (
         <ul
-          className={`${styles.subTree} ${level > 0 ? styles.guidedSubTree : ''}`}
+          className={`${styles.subTree} ${styles.guidedSubTree}`}
           role="group"
         >
           {children.map((child) => (
