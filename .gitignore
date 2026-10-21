@@ -39,3 +39,16 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# media and temporary downloads
+/tmp_downloads/
+/tmp_transcripts/
+*.MOV
+*.mp4
+*.wav
+*.mp3
+backend/data/uploads/
+backend/data/audio/
+# MPEG Transport Stream video segments (do not ignore TypeScript source files)
+/tmp_downloads/**/*.ts
+

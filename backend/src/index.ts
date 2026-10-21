@@ -20,6 +20,7 @@ import path from 'path';
 app.use('/audio', express.static(path.join(__dirname, '..', 'data', 'audio')));
 app.use('/outputs', express.static(path.join(__dirname, '..', 'public', 'outputs')));
 app.use('/uploads', express.static(path.join(__dirname, '..', 'data', 'uploads')));
+app.use('/data', express.static(path.join(__dirname, '..', 'data')));
 
 // Routes
 app.use('/api/ingest', ingestRouter);
@@ -30,7 +31,9 @@ app.use('/api/knowledge', knowledgeRouter);
 app.use('/api/activity', activityRouter);
 
 import employeesRouter from './routes/employees';
+import tavusRouter from './routes/tavus';
 app.use('/api/employees', employeesRouter);
+app.use('/api/tavus', tavusRouter);
 
 // Healthcheck
 app.get('/health', (req, res) => {

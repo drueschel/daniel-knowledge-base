@@ -61,7 +61,10 @@ export function getAllContent(): MarkdownFile[] {
 
 export function getContentBySlug(lang: string, slug: string[]): MarkdownFile | null {
   const allContent = getAllContent();
-  const decodedTargetSlug = slug.map(s => decodeURIComponent(s).normalize('NFC'));
+  const decodedTargetSlug = slug.map((s, idx) => {
+    const decoded = decodeURIComponent(s).normalize('NFC');
+    return idx === slug.length - 1 ? decoded.replace(/\.md$/, '') : decoded;
+  });
   return allContent.find(c => c.lang === lang && c.slug.join('/') === decodedTargetSlug.join('/')) || null;
 }
 
@@ -95,14 +98,31 @@ const EXPLICIT_ORDER: Record<string, number> = {
   "Fallanalyse: Stress & Burnout": 60,
   "Frageprotokoll: Stress (VT)": 70,
   "Transkripte Bibliothek": 80,
-  "Willkommen": 81,
-  "Das Fundament": 82,
-  "Geldmangel": 83,
-  "Stress und Burnout": 84,
-  "Angst und Panik": 85,
-  "Gopal antwortet": 86,
-  "Live Calls": 87,
-  "Praxis-Guides & Arbeitsmaterial": 90
+  "Praxis-Guides & Arbeitsmaterial": 90,
+  "PAL": 95,
+
+  // Transkripte Bibliothek - Kursreihenfolge (Gopal antwortet unter Fundament, Live Calls ganz unten)
+  "Willkommen": 101,
+  "Das Fundament": 102,
+  "Gopal antwortet": 103,
+  "Geldmangel": 104,
+  "Stress und Burnout": 105,
+  "Stress & Burnout": 105,
+  "Angst und Panik": 106,
+  "Angst & Panik": 106,
+  "Abhaengigkeit": 107,
+  "Abhängigkeit": 107,
+  "Abhängigkeit & Sucht": 107,
+  "Koerperschmerzen": 108,
+  "Körperschmerzen": 108,
+  "Konflikte": 109,
+  "Konflikte mit dem Partner": 109,
+  "Trigger": 110,
+  "Depression": 111,
+  "Einsamkeit": 112,
+  "Uebergewicht": 113,
+  "Übergewicht": 113,
+  "Live Calls": 199
 };
 
 function sortNavItems(items: NavItem[]) {

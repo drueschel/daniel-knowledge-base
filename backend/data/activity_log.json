@@ -1,6 +1,168 @@
 [
   {
     "agentId": "visuals",
+    "sessionId": "session_zellen_1791737774953",
+    "action": "Remotion Rendering erfolgreich!",
+    "details": "{\"outputFilename\":\"rendered_session_zellen_1791737774953.mp4\"}",
+    "status": "success",
+    "id": "ozxqvcq",
+    "timestamp": "2026-10-11T16:58:40.243Z"
+  },
+  {
+    "agentId": "human",
+    "sessionId": "session_zellen_1791737774953",
+    "action": "Storyboard freigegeben",
+    "details": "HyperFrames startet mit dem Remotion Rendering!",
+    "status": "success",
+    "id": "j52ruiv",
+    "timestamp": "2026-10-11T16:56:52.399Z"
+  },
+  {
+    "agentId": "visuals",
+    "sessionId": "session_zellen_1791737774953",
+    "action": "Storyboard & 3D-Assets erfolgreich generiert.",
+    "details": "{\"scenesCount\":8}",
+    "status": "success",
+    "id": "6wbknls",
+    "timestamp": "2026-10-11T16:56:42.870Z"
+  },
+  {
+    "agentId": "human",
+    "sessionId": "session_zellen_1791737774953",
+    "action": "Visuals gestartet",
+    "details": "Maya baut das 3D Storyboard",
+    "status": "success",
+    "id": "qjcmj3n",
+    "timestamp": "2026-10-11T16:56:40.367Z"
+  },
+  {
+    "agentId": "production",
+    "sessionId": "session_zellen_1791737774953",
+    "action": "TTS Audio generiert & synchronisiert",
+    "details": "{\"durationSec\":\"71.10\",\"wordCount\":166}",
+    "status": "success",
+    "id": "xm7achh",
+    "timestamp": "2026-10-11T16:56:31.230Z"
+  },
+  {
+    "agentId": "human",
+    "sessionId": "session_zellen_1791737774953",
+    "action": "Skript freigegeben",
+    "details": "Hook ausgewählt: hook_1\nVoiceover gestartet!",
+    "status": "success",
+    "id": "0s62k88",
+    "timestamp": "2026-10-11T16:56:20.703Z"
+  },
+  {
+    "agentId": "visuals",
+    "sessionId": "session_projektion_1791735198457",
+    "action": "Remotion Rendering erfolgreich!",
+    "details": "{\"outputFilename\":\"rendered_session_projektion_1791735198457.mp4\"}",
+    "status": "success",
+    "id": "5fjy724",
+    "timestamp": "2026-10-11T16:17:17.953Z"
+  },
+  {
+    "agentId": "human",
+    "sessionId": "session_projektion_1791735198457",
+    "action": "Storyboard freigegeben",
+    "details": "HyperFrames startet mit dem Remotion Rendering!",
+    "status": "success",
+    "id": "sqy1odw",
+    "timestamp": "2026-10-11T16:14:47.988Z"
+  },
+  {
+    "agentId": "visuals",
+    "sessionId": "session_projektion_1791735198457",
+    "action": "Storyboard & 3D-Assets erfolgreich generiert.",
+    "details": "{\"scenesCount\":8}",
+    "status": "success",
+    "id": "bvijttm",
+    "timestamp": "2026-10-11T16:14:16.881Z"
+  },
+  {
+    "agentId": "human",
+    "sessionId": "session_projektion_1791735198457",
+    "action": "Visuals gestartet",
+    "details": "Maya baut das 3D Storyboard",
+    "status": "success",
+    "id": "t2wu63s",
+    "timestamp": "2026-10-11T16:14:14.378Z"
+  },
+  {
+    "agentId": "production",
+    "sessionId": "session_projektion_1791735198457",
+    "action": "TTS Audio generiert & synchronisiert",
+    "details": "{\"durationSec\":\"88.98\",\"wordCount\":232}",
+    "status": "success",
+    "id": "25evkn1",
+    "timestamp": "2026-10-11T16:13:51.434Z"
+  },
+  {
+    "agentId": "human",
+    "sessionId": "session_projektion_1791735198457",
+    "action": "Skript freigegeben",
+    "details": "Hook ausgewählt: hook_3\nVoiceover gestartet!",
+    "status": "success",
+    "id": "l8acw2a",
+    "timestamp": "2026-10-11T16:13:37.495Z"
+  },
+  {
+    "agentId": "visuals",
+    "sessionId": "ugc_1791577372363",
+    "action": "Fehler beim Remotion Rendering: Command failed: npx remotion render MyComp out/video.mp4\nCould not extract frame from compositor Error: Received a status code of 404 while downloading file http://localhost:4000/data/uploads/ugc_1791577372363.mp4.\nThe response body was:\n---\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /data/uploads/ugc_1791577372363.mp4</pre>\n</body>\n</html>\n\n---\n    at readFile (/Users/danielrueschel/DEV/daniel-knowledge-base/video-engine/node_modules/@remotion/renderer/dist/assets/read-file.js:59:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n[http://localhost:3002/proxy?src=http%3A%2F%2Flocalhost%3A4000%2Fdata%2Fuploads%2Fugc_1791577372363.mp4&time=0.1&transparent=false&toneMapped=true] Failed to load resource: the server responded with a status of 500 (Internal Server Error)\n Error  Received a status code of 404 while downloading file http://localhost:4000/data/uploads/ugc_1791577372363.mp4.\nThe response body was:\n---\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /data/uploads/ugc_1791577372363.mp4</pre>\n</body>\n</html>\n\n---\n    at readFile (/Users/danielrueschel/DEV/daniel-knowledge-base/video-engine/node_modules/@remotion/renderer/dist/assets/read-file.js:59:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at readFile (/Users/danielrueschel/DEV/daniel-knowledge-base/video-engine/node_modules/@remotion/renderer/dist/assets/read-file.js:59:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n",
+    "details": "",
+    "status": "error",
+    "id": "k3egzed",
+    "timestamp": "2026-10-09T20:35:49.400Z"
+  },
+  {
+    "agentId": "human",
+    "sessionId": "ugc_1791577372363",
+    "action": "Storyboard freigegeben",
+    "details": "HyperFrames startet mit dem Remotion Rendering!",
+    "status": "success",
+    "id": "t62iqvn",
+    "timestamp": "2026-10-09T20:35:46.568Z"
+  },
+  {
+    "agentId": "visuals",
+    "sessionId": "ugc_1791577372363",
+    "action": "Storyboard & 3D-Assets erfolgreich generiert.",
+    "details": "{\"scenesCount\":11}",
+    "status": "success",
+    "id": "kytn4n4",
+    "timestamp": "2026-10-09T20:23:44.951Z"
+  },
+  {
+    "agentId": "human",
+    "sessionId": "ugc_1791577372363",
+    "action": "Visuals gestartet",
+    "details": "Maya baut das 3D Storyboard",
+    "status": "success",
+    "id": "hyy7iln",
+    "timestamp": "2026-10-09T20:23:42.449Z"
+  },
+  {
+    "agentId": "production",
+    "sessionId": "ugc_1791577372363",
+    "action": "Stanley hat 11 Szenen geplant. Warte auf User-Freigabe...",
+    "details": "",
+    "status": "success",
+    "id": "0k4qtw6",
+    "timestamp": "2026-10-09T20:23:35.198Z"
+  },
+  {
+    "agentId": "production",
+    "sessionId": "ugc_1791577372363",
+    "action": "UGC Video erfolgreich verarbeitet & synchronisiert.",
+    "details": "",
+    "status": "success",
+    "id": "8731ok9",
+    "timestamp": "2026-10-09T20:23:07.871Z"
+  },
+  {
+    "agentId": "visuals",
     "sessionId": "ugc_1791576758462",
     "action": "Fehler beim Remotion Rendering: Command failed: npx remotion render MyComp out/video.mp4\nCould not extract frame from compositor Error: Received a status code of 404 while downloading file http://localhost:4000/data/uploads/ugc_1791576758462.mp4.\nThe response body was:\n---\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /data/uploads/ugc_1791576758462.mp4</pre>\n</body>\n</html>\n\n---\n    at readFile (/Users/danielrueschel/DEV/daniel-knowledge-base/video-engine/node_modules/@remotion/renderer/dist/assets/read-file.js:59:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n[http://localhost:3002/proxy?src=http%3A%2F%2Flocalhost%3A4000%2Fdata%2Fuploads%2Fugc_1791576758462.mp4&time=0.1&transparent=false&toneMapped=true] Failed to load resource: the server responded with a status of 500 (Internal Server Error)\n Error  Received a status code of 404 while downloading file http://localhost:4000/data/uploads/ugc_1791576758462.mp4.\nThe response body was:\n---\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /data/uploads/ugc_1791576758462.mp4</pre>\n</body>\n</html>\n\n---\n    at readFile (/Users/danielrueschel/DEV/daniel-knowledge-base/video-engine/node_modules/@remotion/renderer/dist/assets/read-file.js:59:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at readFile (/Users/danielrueschel/DEV/daniel-knowledge-base/video-engine/node_modules/@remotion/renderer/dist/assets/read-file.js:59:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n",
     "details": "",

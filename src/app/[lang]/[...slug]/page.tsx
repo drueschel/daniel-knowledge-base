@@ -4,6 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
 import Highlighter from '@/components/Highlighter';
+import PalLiveSession from '@/components/PalLiveSession';
 import { Suspense } from 'react';
 
 export async function generateStaticParams() {
@@ -38,6 +39,29 @@ export default async function ContentPage({
         remarkPlugins={[remarkGfm]} 
         rehypePlugins={[rehypeRaw]}
         components={{
+          a: ({ href, children, ...props }) => {
+            if (!href) return <a {...props}>{children}</a>;
+            if (href.startsWith('http://') || href.startsWith('https://') || href.startsWith('#') || href.startsWith('mailto:')) {
+              return (
+                <a href={href} target="_blank" rel="noopener noreferrer" {...props}>
+                  {children}
+                </a>
+              );
+            }
+            // Strip .md extension from internal links so relative and direct links work seamlessly in Next.js
+            const cleanHref = href.replace(/\.md$/, '').replace(/\.md#/, '#');
+            return (
+              <a href={cleanHref} {...props}>
+                {children}
+              </a>
+            );
+          },
+          div: ({ node, id, ...props }) => {
+            if (id === 'pal-live-session') {
+              return <PalLiveSession lang={lang} />;
+            }
+            return <div id={id} {...props} />;
+          },
           iframe: ({ node, ...props }) => {
             if (typeof props.src === 'string' && props.src.endsWith('.pdf')) {
               // Ensure we hide navpanes and fit to width so the PDF is as wide as possible

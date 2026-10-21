@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import {  Bot, FileText, Play, CheckCircle2, Trash2, XCircle, Wand2, Users, BrainCircuit, Video, Database, Activity, X, LayoutGrid, List , RefreshCcw , Search, Zap, Image, Mic } from 'lucide-react';
+import {  Bot, FileText, Play, CheckCircle2, Trash2, XCircle, Wand2, Users, BrainCircuit, Video, Database, Activity, X, LayoutGrid, List , RefreshCcw , Search, Zap, Image, Mic, Sparkles } from 'lucide-react';
+import RealityCheckLive from './components/RealityCheckLive';
 
 function LogsTab() {
   const [logs, setLogs] = useState<any[]>([]);
@@ -244,7 +245,7 @@ export default function App() {
   const [confirmDeleteId, setConfirmDeleteId] = useState<string | null>(null);
   const [employees, setEmployees] = useState<any[]>([]);
     const [teamViewMode, setTeamViewMode] = useState<'grid' | 'list'>('grid');
-  const [activeTab, setActiveTab] = useState<'team' | 'studio' | 'import' | 'hub' | 'logs'>(() => (localStorage.getItem('activeTab') as any) || 'team');
+  const [activeTab, setActiveTab] = useState<'team' | 'studio' | 'import' | 'hub' | 'logs' | 'avatar'>(() => (localStorage.getItem('activeTab') as any) || 'team');
   useEffect(() => { localStorage.setItem('activeTab', activeTab); }, [activeTab]);
 
   // Clean up dirty URLs
@@ -725,6 +726,10 @@ export default function App() {
           <button onClick={() => setActiveTab('logs')} className={`w-full flex items-center gap-3 p-3 rounded-xl transition-all ${activeTab === 'logs' ? 'bg-orange-500/10 text-orange-500' : 'text-slate-500 hover:bg-slate-100/50 hover:text-slate-900'}`}>
             <Activity className="w-5 h-5" />
             <span className="font-medium">Aktivitäts-Log</span>
+          </button>
+          <button onClick={() => setActiveTab('avatar')} className={`w-full flex items-center gap-3 p-3 rounded-xl transition-all ${activeTab === 'avatar' ? 'bg-purple-500/10 text-purple-600' : 'text-slate-500 hover:bg-slate-100/50 hover:text-slate-900'}`}>
+            <Sparkles className="w-5 h-5 text-purple-500" />
+            <span className="font-medium">Live Reality-Check</span>
           </button>
         </div>
         
@@ -1570,6 +1575,10 @@ export default function App() {
 
         {activeTab === 'logs' && (
           <LogsTab />
+        )}
+
+        {activeTab === 'avatar' && (
+          <RealityCheckLive />
         )}
       </div>
 

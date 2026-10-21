@@ -1,0 +1,96 @@
+openapi: 3.1.0
+info:
+  title: Daniels Knowledge Base API
+  description: API für die Knowledge Base & PAL Live Reality-Check Avatar Integration
+  version: 1.0.0
+paths:
+  /api/search:
+    get:
+      summary: Volltextsuche in den Kompendien und Transkripten
+      parameters:
+        - name: q
+          in: query
+          required: true
+          schema:
+            type: string
+          description: Suchbegriff
+      responses:
+        '200':
+          description: Suchergebnisse
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    title:
+                      type: string
+                    slug:
+                      type: string
+                    snippet:
+                      type: string
+
+  /api/pal/session:
+    post:
+      summary: Startet eine 1:1 Live-Videositzung mit dem Gopal Reality-Check PAL
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                personaId:
+                  type: string
+                  default: p10c7cf5763b
+                  description: Tavus Persona / PAL ID
+                replicaId:
+                  type: string
+                  default: rc39f215e8cb
+                  description: Tavus Replica / Face ID
+                testMode:
+                  type: boolean
+                  default: false
+                  description: Test-Modus ohne Verbrauch von Video-Credits
+      responses:
+        '200':
+          description: Erfolgreich erstellte Sitzung
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                  conversationId:
+                    type: string
+                  conversationUrl:
+                    type: string
+        '500':
+          description: Konfigurations- oder Verbindungsfehler
+    delete:
+      summary: Beendet eine aktive PAL Live-Sitzung
+      parameters:
+        - name: conversationId
+          in: query
+          required: true
+          schema:
+            type: string
+          description: Die zu beendende Tavus Conversation ID
+      responses:
+        '200':
+          description: Sitzung erfolgreich beendet
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                  data:
+                    type: object
+        '400':
+          description: Fehlende conversationId
+        '500':
+          description: Serverfehler beim Beenden

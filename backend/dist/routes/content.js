@@ -72,6 +72,7 @@ router.post('/upload-ugc', upload.single('video'), async (req, res) => {
             topic: 'UGC Upload',
             status: 'scripting',
             isUgc: true,
+            ugcVideoUrl: videoUrl,
             audioUrl: videoUrl // we'll use the video itself for audio extraction or playback
         });
         res.json({ success: true, sessionId });
@@ -85,6 +86,7 @@ router.post('/upload-ugc', upload.single('video'), async (req, res) => {
                     topic: 'UGC: ' + transcript.substring(0, 30) + '...',
                     status: 'audio_ready', // User must review transcript next
                     audioUrl: "/data/audio/voice_" + sessionId + ".mp3",
+                    ugcVideoUrl: videoUrl,
                     scriptData: { body: transcript }, // Save transcript for user editing
                     timestamps
                 });
@@ -181,7 +183,8 @@ router.post('/:id/ugc-director', (req, res) => {
             const director = new UgcDirectorAgent_1.UgcDirectorAgent(piece.id);
             // Pass the manually reviewed transcript
             const transcript = piece.scriptData?.body || '';
-            const plannedStoryboard = await director.planStoryboard(transcript, piece.audioUrl.replace('/data/audio/voice_', '/data/uploads/').replace('.mp3', '.mp4'));
+            const videoSource = piece.ugcVideoUrl || piece.audioUrl?.replace('/data/audio/voice_', '/data/uploads/') || '';
+            const plannedStoryboard = await director.planStoryboard(transcript, videoSource);
             contentManager.createOrUpdate({
                 id: piece.id,
                 topic: piece.topic,
@@ -332,11 +335,15 @@ router.get('/preview/:id', async (req, res) => {
             const boundary = sceneBoundaries[i];
             const durationSec = boundary.end - boundary.start;
             const durationInFrames = Math.max(30, Math.round(durationSec * fps));
+            let imageUrl = scene.imageUrl || `https://picsum.photos/seed/${piece.id}_${i}_${Date.now()}/800/800`;
+            if (imageUrl.startsWith('/')) {
+                imageUrl = `http://localhost:4000${imageUrl}`;
+            }
             remotionScenes.push({
                 durationInFrames,
                 headline: scene.visual_instruction || `Szene ${i + 1}`,
                 words: boundary.words,
-                imageUrl: scene.imageUrl || `https://picsum.photos/seed/${piece.id}_${i}_${Date.now()}/800/800`
+                imageUrl
             });
         }
         const remotionData = {
