@@ -17,5 +17,5 @@
 
 ---
 
-> ℹ️ *Interested in the technical system architecture, guardrails, and system prompt?*  
-> 👉 [Read the full documentation & clinical prompt here](/en/1_Die_Befreiung/PAL/PAL_Avatar_Gopal_Documentation)
+> **Background:** Interested in the technical system architecture, guardrails, and system prompt?  
+> [Read the full documentation & clinical prompt here →](/en/1_Die_Befreiung/PAL/PAL_Avatar_Gopal_Documentation)

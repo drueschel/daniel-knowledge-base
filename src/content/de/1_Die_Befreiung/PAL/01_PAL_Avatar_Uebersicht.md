@@ -17,5 +17,5 @@
 
 ---
 
-> ℹ️ *Interessierst du dich für die technischen Hintergründe, Guardrails und Prompt-Architektur?*  
-> 👉 [Hier geht es zur vollständigen Dokumentation & zum System-Prompt](/de/1_Die_Befreiung/PAL/PAL_Avatar_Gopal_Dokumentation)
+> **Hintergrund:** Interessierst du dich für die technischen Hintergründe, Guardrails und Prompt-Architektur?  
+> [Zur vollständigen Dokumentation & zum System-Prompt →](/de/1_Die_Befreiung/PAL/PAL_Avatar_Gopal_Dokumentation)

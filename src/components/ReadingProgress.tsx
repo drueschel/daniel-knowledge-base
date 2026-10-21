@@ -72,7 +72,7 @@ export default function ReadingProgress() {
             borderRadius: '9999px',
             backgroundColor: '#ffffff',
             border: '1px solid #e4e4e7',
-            boxShadow: '0 4px 14px rgba(0, 0, 0, 0.08)',
+            boxShadow: 'none',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',

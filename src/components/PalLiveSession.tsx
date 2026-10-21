@@ -84,11 +84,10 @@ export default function PalLiveSession({
     <div
       style={{
         width: '100%',
-        margin: '1.5rem 0 3rem 0',
-        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
+        margin: '1.5rem 0 2.5rem 0'
       }}
     >
-      {/* Zoom Container */}
+      {/* Zoom Container - TasteSkill: 1px border, subtle tone shift, no heavy glow */}
       <div
         style={{
           position: isFullscreen ? 'fixed' : 'relative',
@@ -98,9 +97,10 @@ export default function PalLiveSession({
           height: isFullscreen ? '100vh' : 'auto',
           zIndex: isFullscreen ? 99999 : 1,
           backgroundColor: '#090d16',
-          borderRadius: isFullscreen ? '0px' : '16px',
+          borderRadius: isFullscreen ? '0px' : '12px',
           overflow: 'hidden',
-          boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(147, 51, 234, 0.25)',
+          border: '1px solid #1e293b',
+          boxShadow: '0 4px 20px rgba(0, 0, 0, 0.08)',
           display: 'flex',
           flexDirection: 'column'
         }}
@@ -111,51 +111,51 @@ export default function PalLiveSession({
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
-            padding: '12px 18px',
+            padding: '11px 16px',
             backgroundColor: '#0f172a',
-            borderBottom: '1px solid rgba(255, 255, 255, 0.08)'
+            borderBottom: '1px solid #1e293b'
           }}
         >
           {/* Left: Window dots + Title */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
             {/* macOS Window Controls */}
-            <div style={{ display: 'flex', gap: '6px' }}>
-              <span style={{ width: '11px', height: '11px', borderRadius: '50%', backgroundColor: '#ef4444', display: 'inline-block' }}></span>
-              <span style={{ width: '11px', height: '11px', borderRadius: '50%', backgroundColor: '#f59e0b', display: 'inline-block' }}></span>
-              <span style={{ width: '11px', height: '11px', borderRadius: '50%', backgroundColor: '#10b981', display: 'inline-block' }}></span>
+            <div style={{ display: 'flex', gap: '6px' }} aria-hidden="true">
+              <span style={{ width: '10px', height: '10px', borderRadius: '50%', backgroundColor: '#ef4444', display: 'inline-block' }}></span>
+              <span style={{ width: '10px', height: '10px', borderRadius: '50%', backgroundColor: '#f59e0b', display: 'inline-block' }}></span>
+              <span style={{ width: '10px', height: '10px', borderRadius: '50%', backgroundColor: '#10b981', display: 'inline-block' }}></span>
             </div>
 
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <span style={{ color: '#ffffff', fontWeight: 600, fontSize: '0.9rem', letterSpacing: '-0.01em' }}>
+              <span style={{ color: '#f8fafc', fontWeight: 600, fontSize: '0.85rem', letterSpacing: '-0.01em' }}>
                 Zoom Reality-Check • Gopal Norbert Klein
               </span>
               {conversationUrl ? (
                 <span
                   style={{
-                    backgroundColor: 'rgba(16, 185, 129, 0.2)',
+                    backgroundColor: 'rgba(16, 185, 129, 0.15)',
                     color: '#34d399',
-                    fontSize: '0.7rem',
-                    fontWeight: 700,
-                    padding: '2px 8px',
-                    borderRadius: '9999px',
-                    border: '1px solid rgba(16, 185, 129, 0.4)',
+                    fontSize: '0.6875rem',
+                    fontWeight: 600,
+                    padding: '2px 7px',
+                    borderRadius: '4px',
+                    border: '1px solid rgba(16, 185, 129, 0.3)',
                     display: 'inline-flex',
                     alignItems: 'center',
                     gap: '4px'
                   }}
                 >
-                  <span style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#10b981', display: 'inline-block' }}></span>
+                  <span style={{ width: '5px', height: '5px', borderRadius: '50%', backgroundColor: '#10b981', display: 'inline-block' }}></span>
                   LIVE
                 </span>
               ) : (
                 <span
                   style={{
-                    backgroundColor: 'rgba(148, 163, 184, 0.15)',
+                    backgroundColor: 'rgba(148, 163, 184, 0.12)',
                     color: '#94a3b8',
-                    fontSize: '0.7rem',
-                    fontWeight: 600,
-                    padding: '2px 8px',
-                    borderRadius: '9999px'
+                    fontSize: '0.6875rem',
+                    fontWeight: 500,
+                    padding: '2px 7px',
+                    borderRadius: '4px'
                   }}
                 >
                   BEREIT
@@ -169,37 +169,46 @@ export default function PalLiveSession({
             <button
               onClick={() => setShowCheatSheet(!showCheatSheet)}
               style={{
-                backgroundColor: showCheatSheet ? '#7c3aed' : 'rgba(255, 255, 255, 0.08)',
-                color: '#ffffff',
-                border: 'none',
-                padding: '6px 12px',
-                borderRadius: '8px',
+                backgroundColor: showCheatSheet ? '#27272a' : 'rgba(255, 255, 255, 0.06)',
+                color: '#f8fafc',
+                border: '1px solid rgba(255, 255, 255, 0.1)',
+                padding: '5px 11px',
+                borderRadius: '6px',
                 fontSize: '0.75rem',
-                fontWeight: 600,
+                fontWeight: 500,
                 cursor: 'pointer',
                 display: 'inline-flex',
                 alignItems: 'center',
                 gap: '6px'
               }}
             >
-              📖 {isDe ? '5-Phasen Spickzettel' : '5-Phase Guide'}
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+              </svg>
+              <span>{isDe ? '5-Phasen Leitfaden' : '5-Phase Guide'}</span>
             </button>
 
             {conversationUrl && (
               <button
                 onClick={() => setIsFullscreen(!isFullscreen)}
                 style={{
-                  backgroundColor: 'rgba(255, 255, 255, 0.08)',
+                  backgroundColor: 'rgba(255, 255, 255, 0.06)',
                   color: '#ffffff',
-                  border: 'none',
-                  padding: '6px 10px',
-                  borderRadius: '8px',
+                  border: '1px solid rgba(255, 255, 255, 0.1)',
+                  padding: '5px 9px',
+                  borderRadius: '6px',
                   fontSize: '0.75rem',
-                  cursor: 'pointer'
+                  cursor: 'pointer',
+                  display: 'inline-flex',
+                  alignItems: 'center'
                 }}
                 title={isFullscreen ? 'Vollbild beenden' : 'Vollbild'}
+                aria-label={isFullscreen ? 'Vollbild beenden' : 'Vollbild'}
               >
-                {isFullscreen ? '✕' : '⛶'}
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+                </svg>
               </button>
             )}
           </div>
@@ -210,48 +219,48 @@ export default function PalLiveSession({
           <div
             style={{
               backgroundColor: '#0b1120',
-              borderBottom: '1px solid rgba(147, 51, 234, 0.3)',
-              padding: '16px 20px',
+              borderBottom: '1px solid #1e293b',
+              padding: '14px 18px',
               color: '#e2e8f0',
               fontSize: '0.8rem',
-              lineHeight: 1.5
+              lineHeight: 1.55
             }}
           >
-            <div style={{ fontWeight: 700, color: '#c084fc', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.05em', fontSize: '0.75rem' }}>
+            <div style={{ fontWeight: 600, color: '#93c5fd', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.04em', fontSize: '0.71rem' }}>
               {isDe ? 'Die 5 Phasen im Überblick' : '5-Phase Overview'}
             </div>
             <div
               style={{
                 display: 'grid',
                 gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
-                gap: '10px'
+                gap: '8px'
               }}
             >
-              <div style={{ background: 'rgba(255, 255, 255, 0.04)', padding: '10px', borderRadius: '8px' }}>
-                <b style={{ color: '#a855f7' }}>1. Erdung:</b> Äußeres Thema in 1 Satz nennen – dann sofort ins Hier & Jetzt.
+              <div style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.06)', padding: '9px 11px', borderRadius: '6px' }}>
+                <b style={{ color: '#60a5fa' }}>1. Erdung:</b> Äußeres Thema in 1 Satz nennen – dann sofort ins Hier & Jetzt.
               </div>
-              <div style={{ background: 'rgba(255, 255, 255, 0.04)', padding: '10px', borderRadius: '8px' }}>
-                <b style={{ color: '#a855f7' }}>2. Weiche:</b> Anstrengen/brav sein (Verschmelzung) oder Distanz/Rückzug (Autonomie)?
+              <div style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.06)', padding: '9px 11px', borderRadius: '6px' }}>
+                <b style={{ color: '#60a5fa' }}>2. Weiche:</b> Anstrengen/brav sein (Verschmelzung) oder Distanz/Rückzug (Autonomie)?
               </div>
-              <div style={{ background: 'rgba(255, 255, 255, 0.04)', padding: '10px', borderRadius: '8px' }}>
-                <b style={{ color: '#a855f7' }}>3. 4 Säulen:</b> Droht Angreifen, Verlassen, Ignorieren oder Manipulieren?
+              <div style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.06)', padding: '9px 11px', borderRadius: '6px' }}>
+                <b style={{ color: '#60a5fa' }}>3. 4 Säulen:</b> Droht Angreifen, Verlassen, Ignorieren oder Manipulieren?
               </div>
-              <div style={{ background: 'rgba(255, 255, 255, 0.04)', padding: '10px', borderRadius: '8px' }}>
-                <b style={{ color: '#a855f7' }}>4. Reality-Check:</b> Frage Gopal direkt: „Hast du vor, mich zu verlassen?“
+              <div style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.06)', padding: '9px 11px', borderRadius: '6px' }}>
+                <b style={{ color: '#60a5fa' }}>4. Reality-Check:</b> Frage Gopal direkt: „Hast du vor, mich zu verlassen?“
               </div>
-              <div style={{ background: 'rgba(255, 255, 255, 0.04)', padding: '10px', borderRadius: '8px' }}>
-                <b style={{ color: '#a855f7' }}>5. Stille:</b> Bei Zweifeln: „Lügst du mich an?“ Bei Tränen/Seufzen: Stille halten.
+              <div style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.06)', padding: '9px 11px', borderRadius: '6px' }}>
+                <b style={{ color: '#60a5fa' }}>5. Stille:</b> Bei Zweifeln: „Lügst du mich an?“ Bei Tränen/Seufzen: Stille halten.
               </div>
             </div>
           </div>
         )}
 
-        {/* Video Stage (The actual Zoom View) */}
+        {/* Video Stage */}
         <div
           style={{
             position: 'relative',
             width: '100%',
-            height: isFullscreen ? 'calc(100vh - 120px)' : '620px',
+            height: isFullscreen ? 'calc(100vh - 120px)' : '580px',
             backgroundColor: '#000000',
             display: 'flex',
             alignItems: 'center',
@@ -280,43 +289,42 @@ export default function PalLiveSession({
                 flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
-                padding: '40px 24px',
+                padding: '36px 20px',
                 textAlign: 'center',
-                maxWidth: '520px'
+                maxWidth: '480px'
               }}
             >
-              {/* Avatar Photo / Icon Placeholder */}
+              {/* Product Monogram Avatar Badge - TasteSkill: High contrast, genuine monogram */}
               <div
                 style={{
-                  width: '96px',
-                  height: '96px',
+                  width: '76px',
+                  height: '76px',
                   borderRadius: '50%',
-                  background: 'linear-gradient(135deg, #7c3aed 0%, #ec4899 100%)',
-                  padding: '3px',
-                  marginBottom: '20px',
-                  boxShadow: '0 0 30px rgba(124, 58, 237, 0.4)'
+                  backgroundColor: '#1e293b',
+                  border: '1px solid #334155',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  marginBottom: '18px',
+                  boxShadow: '0 2px 8px rgba(0, 0, 0, 0.2)'
                 }}
               >
-                <div
+                <span
                   style={{
-                    width: '100%',
-                    height: '100%',
-                    borderRadius: '50%',
-                    backgroundColor: '#0f172a',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    fontSize: '2.5rem'
+                    color: '#f8fafc',
+                    fontSize: '1.25rem',
+                    fontWeight: 700,
+                    letterSpacing: '0.04em'
                   }}
                 >
-                  🧘‍♂️
-                </div>
+                  GNK
+                </span>
               </div>
 
               <h2
                 style={{
                   color: '#ffffff',
-                  fontSize: '1.5rem',
+                  fontSize: '1.35rem',
                   fontWeight: 700,
                   margin: '0 0 8px 0',
                   letterSpacing: '-0.02em'
@@ -328,9 +336,9 @@ export default function PalLiveSession({
               <p
                 style={{
                   color: '#94a3b8',
-                  fontSize: '0.9rem',
-                  lineHeight: 1.5,
-                  margin: '0 0 24px 0'
+                  fontSize: '0.875rem',
+                  lineHeight: 1.55,
+                  margin: '0 0 22px 0'
                 }}
               >
                 {isDe
@@ -342,13 +350,13 @@ export default function PalLiveSession({
                 <div
                   style={{
                     width: '100%',
-                    padding: '12px 16px',
-                    borderRadius: '10px',
-                    backgroundColor: 'rgba(239, 68, 68, 0.15)',
-                    border: '1px solid rgba(239, 68, 68, 0.4)',
+                    padding: '10px 14px',
+                    borderRadius: '8px',
+                    backgroundColor: 'rgba(239, 68, 68, 0.12)',
+                    border: '1px solid rgba(239, 68, 68, 0.3)',
                     color: '#fca5a5',
-                    fontSize: '0.85rem',
-                    marginBottom: '20px',
+                    fontSize: '0.8125rem',
+                    marginBottom: '18px',
                     textAlign: 'left'
                   }}
                 >
@@ -356,53 +364,83 @@ export default function PalLiveSession({
                 </div>
               )}
 
-              {/* Big Zoom Call Button */}
+              {/* Big Zoom Call Button - TasteSkill: Solid flat tone, no gradient, no shadow */}
               <button
                 onClick={startSession}
                 disabled={isLoading}
                 style={{
                   display: 'inline-flex',
                   alignItems: 'center',
-                  gap: '10px',
-                  padding: '14px 32px',
-                  borderRadius: '9999px',
-                  background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
+                  gap: '8px',
+                  padding: '12px 28px',
+                  borderRadius: '8px',
+                  backgroundColor: '#047857',
                   color: '#ffffff',
-                  fontSize: '1rem',
-                  fontWeight: 700,
-                  border: 'none',
+                  fontSize: '0.925rem',
+                  fontWeight: 600,
+                  border: '1px solid #065f46',
                   cursor: isLoading ? 'not-allowed' : 'pointer',
                   opacity: isLoading ? 0.7 : 1,
-                  boxShadow: '0 10px 25px -5px rgba(16, 185, 129, 0.5)',
-                  transition: 'transform 0.15s ease, box-shadow 0.15s ease'
+                  boxShadow: 'none',
+                  transition: 'background-color 0.15s ease'
+                }}
+                onMouseEnter={(e) => {
+                  if (!isLoading) e.currentTarget.style.backgroundColor = '#065f46';
+                }}
+                onMouseLeave={(e) => {
+                  if (!isLoading) e.currentTarget.style.backgroundColor = '#047857';
                 }}
               >
                 {isLoading ? (
                   <>
-                    <span style={{ display: 'inline-block', animation: 'spin 1s linear infinite' }}>⏳</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" style={{ animation: 'spin 1s linear infinite' }} aria-hidden="true">
+                      <line x1="12" y1="2" x2="12" y2="6"/>
+                      <line x1="12" y1="18" x2="12" y2="22"/>
+                      <line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/>
+                      <line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/>
+                      <line x1="2" y1="12" x2="6" y2="12"/>
+                      <line x1="18" y1="12" x2="22" y2="12"/>
+                      <line x1="4.93" y1="19.07" x2="7.76" y2="16.24"/>
+                      <line x1="16.24" y1="7.76" x2="19.07" y2="4.93"/>
+                    </svg>
                     <span>{statusMessage || (isDe ? 'Verbinde...' : 'Connecting...')}</span>
                   </>
                 ) : (
                   <>
-                    <span style={{ fontSize: '1.2rem' }}>📞</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
                     <span>{isDe ? 'Sitzung starten (Video beitreten)' : 'Start Video Call'}</span>
                   </>
                 )}
               </button>
 
+              {/* Status footer with vector icons */}
               <div
                 style={{
-                  marginTop: '18px',
+                  marginTop: '16px',
                   display: 'flex',
                   alignItems: 'center',
-                  gap: '16px',
-                  color: '#64748b',
+                  gap: '14px',
+                  color: '#94a3b8',
                   fontSize: '0.75rem'
                 }}
               >
-                <span>🎥 Kamera & Mikrofon aktiv</span>
+                <span style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <polygon points="23 7 16 12 23 17 23 7"/>
+                    <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+                  </svg>
+                  <span>Kamera & Mikrofon aktiv</span>
+                </span>
                 <span>•</span>
-                <span>🔒 Ende-zu-Ende WebRTC</span>
+                <span style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                  </svg>
+                  <span>Ende-zu-Ende WebRTC</span>
+                </span>
               </div>
             </div>
           )}
@@ -414,18 +452,20 @@ export default function PalLiveSession({
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
-            padding: '14px 24px',
+            padding: '12px 20px',
             backgroundColor: '#0f172a',
-            borderTop: '1px solid rgba(255, 255, 255, 0.08)'
+            borderTop: '1px solid #1e293b'
           }}
         >
           {/* Left Controls: Audio/Video Indicators */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '16px', color: '#94a3b8', fontSize: '0.8rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '14px', color: '#94a3b8', fontSize: '0.78rem' }}>
             <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-              <span style={{ color: '#10b981' }}>●</span> Mikrofon bereit
+              <span style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#10b981', display: 'inline-block' }}></span>
+              Mikrofon bereit
             </span>
             <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-              <span style={{ color: '#10b981' }}>●</span> Kamera bereit
+              <span style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#10b981', display: 'inline-block' }}></span>
+              Kamera bereit
             </span>
           </div>
 
@@ -437,23 +477,21 @@ export default function PalLiveSession({
                 style={{
                   display: 'inline-flex',
                   alignItems: 'center',
-                  gap: '8px',
-                  padding: '8px 20px',
-                  borderRadius: '9999px',
-                  backgroundColor: '#ef4444',
+                  gap: '6px',
+                  padding: '7px 16px',
+                  borderRadius: '6px',
+                  backgroundColor: '#dc2626',
                   color: '#ffffff',
-                  fontSize: '0.85rem',
-                  fontWeight: 700,
-                  border: 'none',
-                  cursor: 'pointer',
-                  boxShadow: '0 4px 12px rgba(239, 68, 68, 0.4)'
+                  fontSize: '0.8125rem',
+                  fontWeight: 600,
+                  border: '1px solid #b91c1c',
+                  cursor: 'pointer'
                 }}
               >
-                <span>✕</span>
-                <span>{isDe ? 'Sitzung beenden' : 'End Call'}</span>
+                <span>Sitzung beenden</span>
               </button>
             ) : (
-              <span style={{ color: '#64748b', fontSize: '0.8rem' }}>
+              <span style={{ color: '#94a3b8', fontSize: '0.78rem' }}>
                 Klicke auf „Sitzung starten“, um das Video-Fenster zu öffnen
               </span>
             )}
