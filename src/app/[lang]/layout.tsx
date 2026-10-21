@@ -62,18 +62,19 @@ export default async function LangLayout({
           display: flex;
           justify-content: space-between;
           align-items: center;
-          padding: 1rem 2rem; /* Reduced padding to prevent overflow on medium screens */
+          padding: 0.85rem 2.25rem;
           border-bottom: 1px solid var(--border-color);
-          background: rgba(248, 250, 252, 0.95);
-          backdrop-filter: blur(8px);
+          background: rgba(250, 250, 249, 0.88);
+          backdrop-filter: blur(12px);
+          -webkit-backdrop-filter: blur(12px);
           position: sticky;
           top: 0;
-          z-index: 10;
+          z-index: 20;
         }
         .topbar-left {
           display: flex;
           align-items: center;
-          gap: 10px;
+          gap: 12px;
           min-width: 0;
           flex: 1;
         }
@@ -86,17 +87,17 @@ export default async function LangLayout({
         .topbar-right {
           display: flex;
           align-items: center;
-          gap: 1rem;
-          flex-shrink: 1; /* Allow shrinking so it doesn't overflow */
+          gap: 0.85rem;
+          flex-shrink: 0;
           min-width: 0;
         }
         .breadcrumb {
-          font-weight: 600;
+          font-weight: 500;
           color: var(--text-muted);
         }
         .content-inner {
-          padding: 2.5rem;
-          max-width: 800px;
+          padding: 2.5rem 3rem 4rem 3rem;
+          max-width: 820px;
           margin: 0 auto;
           width: 100%;
         }

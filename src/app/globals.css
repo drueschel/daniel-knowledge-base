@@ -1,14 +1,32 @@
 :root {
-  --background: #f8fafc; /* slate-50 - very soft off-white */
-  --foreground: #334155; /* slate-700 */
-  --primary: #3b82f6; /* blue-500 - elegant modern blue */
-  --primary-hover: #eff6ff; /* blue-50 */
-  --primary-border: #60a5fa; /* blue-400 */
-  --sidebar-bg: #ffffff; /* pure white sidebar */
-  --glass-border: #e2e8f0; /* slate-200 */
+  /* Editorial Minimalist Canvas & Surfaces (Warm Calm Neutral) */
+  --background: #fafaf9; /* Stone-50 / Warm off-white */
+  --foreground: #27272a; /* Zinc-800 - crisp, high-contrast reading text */
+  --foreground-heading: #09090b; /* Zinc-950 - deep obsidian headlines */
   --card-bg: #ffffff;
-  --text-muted: #64748b; /* slate-500 */
-  --border-color: #f1f5f9; /* slate-100 */
+  --sidebar-bg: #ffffff;
+  --sidebar-border: #e4e4e7; /* Zinc-200 hairline border */
+  
+  /* Primary & Functional Accents (Restrained, No AI Neon Cliché) */
+  --primary: #18181b; /* Zinc-900 - authorative, elegant structure */
+  --primary-hover: #f4f4f5; /* Zinc-100 */
+  --primary-border: #d4d4d8; /* Zinc-300 */
+  --accent: #2563eb; /* Calm functional blue (links/indicators only) */
+  --accent-soft: rgba(37, 99, 235, 0.08); /* Soft active pill tint */
+  --accent-border: #bfdbfe;
+  
+  /* Secondary & Muted States */
+  --text-muted: #71717a; /* Zinc-500 */
+  --text-faint: #a1a1aa; /* Zinc-400 */
+  --border-color: #e4e4e7; /* Zinc-200 */
+  --border-subtle: #f4f4f5; /* Zinc-100 */
+  --tree-guide: #e4e4e7; /* Visual guide line in sidebar */
+  
+  /* Radii & Shadows */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --shadow-subtle: 0 1px 3px 0 rgba(0, 0, 0, 0.04), 0 1px 2px -1px rgba(0, 0, 0, 0.04);
 }
 
 html,
@@ -16,12 +34,12 @@ body {
   overflow-x: hidden;
   background-color: var(--background);
   color: var(--foreground);
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -33,117 +51,143 @@ a {
   box-sizing: border-box;
 }
 
-/* Glassmorphism Utilities */
-.glass {
-  background: var(--sidebar-bg);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-right: 1px solid var(--glass-border);
+/* Custom Scrollbar for Documentation & Sidebar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4d4d8;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1aa;
 }
 
-/* Markdown Styles */
+/* Glassmorphism Utilities */
+.glass {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-right: 1px solid var(--sidebar-border);
+}
+
+/* Markdown Reader Styles */
 .markdown {
-  font-family: 'Inter', -apple-system, sans-serif;
-  color: #334155; /* slate-700 */
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--foreground);
+  line-height: 1.7;
 }
 
 .markdown h1 {
-  font-size: 2.25rem;
+  font-size: 2.2rem;
+  margin-top: 0.5rem;
   margin-bottom: 1.5rem;
-  font-weight: 800; /* Extra bold */
-  letter-spacing: -0.025em;
-  color: #0f172a; /* Dark slate */
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--foreground-heading);
+  line-height: 1.25;
 }
 
 .markdown h2 {
-  font-size: 1.5rem;
-  margin-top: 2rem;
+  font-size: 1.45rem;
+  margin-top: 2.25rem;
   margin-bottom: 1rem;
   font-weight: 700;
-  color: #0f172a; /* Dark slate */
+  letter-spacing: -0.02em;
+  color: var(--foreground-heading);
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 0.5rem;
 }
 
 .markdown h3 {
-  font-size: 1.25rem;
-  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  margin-top: 1.75rem;
   margin-bottom: 0.75rem;
-  font-weight: 700;
-  color: #1e293b;
+  font-weight: 600;
+  color: #18181b;
 }
 
 .markdown p {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.35rem;
   font-size: 1.05rem;
-  line-height: 1.6;
-  color: #334155; /* slate-700 */
+  line-height: 1.72;
+  color: #3f3f46;
 }
 
-.markdown ul, .markdown ol {
-  margin-bottom: 1.25rem;
-  padding-left: 1.5rem;
-  color: #334155;
+.markdown ul,
+.markdown ol {
+  margin-bottom: 1.35rem;
+  padding-left: 1.6rem;
+  color: #3f3f46;
   font-size: 1.05rem;
 }
 
 .markdown li {
   margin-bottom: 0.5rem;
+  line-height: 1.65;
 }
 
 .markdown a {
-  color: #2563eb;
+  color: #1d4ed8;
   text-decoration: underline;
   text-underline-offset: 4px;
+  transition: color 0.15s ease;
 }
 
 .markdown a:hover {
-  opacity: 0.8;
+  color: #1e40af;
 }
 
 .markdown blockquote {
-  border-left: 4px solid #2563eb;
-  padding-left: 1.25rem;
-  margin-left: 0;
-  color: #475569; /* slate-600 */
-  font-style: italic;
-  background-color: #f8fafc;
-  padding: 1.25rem;
-  border-radius: 0 0.5rem 0.5rem 0;
-  margin-bottom: 1.5rem;
+  border-left: 3px solid #0f172a;
+  background-color: #f4f4f5;
+  padding: 1.1rem 1.4rem;
+  margin: 1.75rem 0;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  color: #3f3f46;
+  font-style: normal;
 }
 
-/* Markdown Tables based on screenshot */
+.markdown blockquote p {
+  margin-bottom: 0;
+}
+
+/* Markdown Tables */
 .markdown table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 1.5rem;
-  margin-bottom: 2rem;
+  margin: 1.75rem 0;
   background-color: #ffffff;
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   overflow: hidden;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05); /* very subtle shadow */
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-subtle);
 }
 
 .markdown th {
-  background-color: #f8fafc; /* very light grey */
-  color: #475569; /* slate-600 */
-  font-weight: 700;
+  background-color: #f8fafc;
+  color: #475569;
+  font-weight: 600;
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  padding: 1rem 1.25rem;
+  padding: 0.85rem 1.15rem;
   text-align: left;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .markdown td {
-  padding: 1rem 1.25rem;
-  color: #334155; /* slate-700 */
+  padding: 0.9rem 1.15rem;
+  color: #334155;
   font-size: 0.95rem;
-  border-bottom: 1px solid #f1f5f9; /* extremely light grey divider */
+  border-bottom: 1px solid #f1f5f9;
   vertical-align: top;
 }
 
 .markdown tr:last-child td {
   border-bottom: none;
 }
-
