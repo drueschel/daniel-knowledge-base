@@ -1,7 +1,6 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
+# dependencies (in root and all subprojects)
+node_modules/
+**/node_modules/
 /.pnp
 .pnp.*
 .yarn/*
@@ -13,24 +12,29 @@
 # testing
 /coverage
 
-# next.js
-/.next/
-/out/
-
-# production
-/build
+# next.js & build outputs
+.next/
+out/
+build/
+dist/
+backend/dist/
+agentic-cockpit/dist/
+video-engine/out/
+backend/public/outputs/
 
 # misc
 .DS_Store
 *.pem
 
-# debug
+# debug & cache
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+.cache/
+**/.cache/
 
-# env files (can opt-in for committing if needed)
+# env files
 .env*
 
 # vercel
@@ -40,15 +44,13 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# media and temporary downloads
-/tmp_downloads/
-/tmp_transcripts/
+# media, temporary downloads, uploads and heavy videos
+tmp_downloads/
+tmp_transcripts/
+backend/data/uploads/
+backend/data/audio/
 *.MOV
 *.mp4
 *.wav
 *.mp3
-backend/data/uploads/
-backend/data/audio/
-# MPEG Transport Stream video segments (do not ignore TypeScript source files)
 /tmp_downloads/**/*.ts
-
