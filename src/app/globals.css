@@ -156,6 +156,36 @@ a {
   margin-bottom: 0;
 }
 
+/* Markdown Inline Code & Pre Blocks */
+.markdown code {
+  background: #f4f4f5;
+  color: #18181b;
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+  font-size: 0.875em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  border: 1px solid #e4e4e7;
+}
+
+.markdown pre {
+  background: #18181b;
+  color: #f4f4f5;
+  padding: 1.15rem 1.35rem;
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  margin: 1.5rem 0;
+}
+
+.markdown pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+
 /* Markdown Tables */
 .markdown table {
   width: 100%;

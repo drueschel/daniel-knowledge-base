@@ -5,6 +5,9 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import TopbarSearch from '@/components/TopbarSearch';
 import { MobileMenuProvider } from '@/components/MobileMenuContext';
 import HamburgerMenu from '@/components/HamburgerMenu';
+import { CommandPaletteProvider } from '@/components/CommandPaletteContext';
+import CommandPalette from '@/components/CommandPalette';
+import ReadingProgress from '@/components/ReadingProgress';
 
 export async function generateStaticParams() {
   return [{ lang: 'de' }, { lang: 'en' }];
@@ -23,7 +26,10 @@ export default async function LangLayout({
 
   return (
     <MobileMenuProvider>
-      <div className="layout">
+      <CommandPaletteProvider>
+        <ReadingProgress />
+        <CommandPalette lang={lang} />
+        <div className="layout">
         <Sidebar nav={nav} lang={lang} />
         
         <main className="main-content">
@@ -127,6 +133,7 @@ export default async function LangLayout({
         }
       `}</style>
       </div>
+      </CommandPaletteProvider>
     </MobileMenuProvider>
   );
 }
