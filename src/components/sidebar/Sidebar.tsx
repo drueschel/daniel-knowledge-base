@@ -9,6 +9,7 @@ import { SidebarSearch } from './SidebarSearch';
 import { SidebarNode } from './SidebarNode';
 import { useTreeState, getAllFolderKeys } from './useTreeState';
 import { useTreeFilter } from './useTreeFilter';
+import { useSidebarResize } from './useSidebarResize';
 import { ExpandIcon, CollapseIcon } from './SidebarIcons';
 import styles from './Sidebar.module.css';
 
@@ -28,6 +29,17 @@ export const Sidebar: React.FC<SidebarProps> = ({ nav, lang }) => {
 
   // Tree Open/Collapse State
   const { isOpen, toggle, expandAll, collapseAll } = useTreeState(nav, pathname);
+
+  // Draggable / Resizable Sidebar State
+  const {
+    width: sidebarWidth,
+    isDragging,
+    minWidth,
+    maxWidth,
+    handlePointerDown,
+    handleDoubleClick,
+    handleKeyDown,
+  } = useSidebarResize();
 
   // All folder keys for expand all
   const allFolderKeys = useMemo(() => getAllFolderKeys(nav), [nav]);
@@ -132,6 +144,28 @@ export const Sidebar: React.FC<SidebarProps> = ({ nav, lang }) => {
             ))}
           </ul>
         </nav>
+
+        {/* Draggable Desktop Resizer Divider */}
+        <div
+          className={`${styles.resizer} ${isDragging ? styles.resizerDragging : ''}`}
+          onPointerDown={handlePointerDown}
+          onDoubleClick={handleDoubleClick}
+          onKeyDown={handleKeyDown}
+          role="separator"
+          aria-orientation="vertical"
+          aria-valuenow={sidebarWidth}
+          aria-valuemin={minWidth}
+          aria-valuemax={maxWidth}
+          aria-label={lang === 'en' ? 'Resize sidebar width' : 'Sidebar-Breite anpassen'}
+          tabIndex={0}
+          title={
+            lang === 'en'
+              ? 'Drag to resize · Double-click to reset'
+              : 'Ziehen zum Anpassen · Doppelklick zum Zurücksetzen'
+          }
+        >
+          <div className={styles.resizerLine} />
+        </div>
       </aside>
     </>
   );

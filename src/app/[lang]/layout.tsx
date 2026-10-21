@@ -58,9 +58,9 @@ export default async function LangLayout({
           overflow-x: hidden;
         }
         .main-content {
-          margin-left: 324px; /* Sidebar width */
-          width: calc(100% - 324px);
-          max-width: calc(100% - 324px);
+          margin-left: var(--sidebar-width, 320px);
+          width: calc(100% - var(--sidebar-width, 320px));
+          max-width: calc(100% - var(--sidebar-width, 320px));
           display: flex;
           flex-direction: column;
         }
@@ -103,9 +103,16 @@ export default async function LangLayout({
         }
         .content-inner {
           padding: 2.5rem 3rem 4rem 3rem;
-          max-width: 820px;
+          max-width: 1060px;
           margin: 0 auto;
           width: 100%;
+        }
+
+        @media (min-width: 1440px) {
+          .content-inner {
+            max-width: 1160px;
+            padding: 2.75rem 3.5rem 5rem 3.5rem;
+          }
         }
 
         @media (max-width: 768px) {

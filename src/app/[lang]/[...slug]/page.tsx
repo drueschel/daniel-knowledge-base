@@ -1,11 +1,47 @@
-import { getAllContent, getContentBySlug } from '@/lib/markdown';
-import { notFound } from 'next/navigation';
+import { getAllContent, getContentBySlug, getSidebarNavigation, NavItem } from '@/lib/markdown';
+import { notFound, redirect } from 'next/navigation';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
 import Highlighter from '@/components/Highlighter';
 import PalLiveSession from '@/components/PalLiveSession';
 import { Suspense } from 'react';
+
+function findFolderFirstLeaf(nav: NavItem[], slug: string[]): string[] | null {
+  let currentLevel = nav;
+  let targetNode: NavItem | undefined = undefined;
+
+  for (let i = 0; i < slug.length; i++) {
+    const segment = decodeURIComponent(slug[i]).normalize('NFC');
+    const node = currentLevel.find(n => {
+      if (n.slug) {
+        return n.slug[n.slug.length - 1] === segment;
+      } else {
+        return n.originalName === segment || n.title === segment.replace(/^\d+_/, '').replace(/_/g, ' ');
+      }
+    });
+
+    if (!node) return null;
+    targetNode = node;
+    currentLevel = node.children || [];
+  }
+
+  if (targetNode && targetNode.children && targetNode.children.length > 0) {
+    const getFirstLeaf = (item: NavItem): string[] | null => {
+      if (item.slug && item.slug.length > 0) return item.slug;
+      if (item.children) {
+        for (const child of item.children) {
+          const res = getFirstLeaf(child);
+          if (res) return res;
+        }
+      }
+      return null;
+    };
+    return getFirstLeaf(targetNode);
+  }
+
+  return null;
+}
 
 export async function generateStaticParams() {
   const content = getAllContent();
@@ -24,6 +60,12 @@ export default async function ContentPage({
   const post = getContentBySlug(lang, slug);
 
   if (!post) {
+    // Check if the requested slug is a directory/category and redirect to its first child
+    const nav = getSidebarNavigation(lang);
+    const firstLeafSlug = findFolderFirstLeaf(nav, slug);
+    if (firstLeafSlug) {
+      redirect(`/${lang}/${firstLeafSlug.join('/')}`);
+    }
     notFound();
   }
 

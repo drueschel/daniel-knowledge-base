@@ -2,7 +2,7 @@
    Editorial Minimalist Sidebar - Design Tokens & Container
    ========================================================================== */
 .sidebar {
-  width: 324px;
+  width: var(--sidebar-width, 320px);
   height: 100vh;
   position: fixed;
   top: 0;
@@ -12,7 +12,6 @@
   display: flex;
   flex-direction: column;
   z-index: 300;
-  overflow: hidden;
   user-select: none;
   font-family: inherit;
 }
@@ -494,4 +493,49 @@
     min-height: 36px;
     padding: 5px 10px;
   }
+
+  .resizer {
+    display: none !important;
+  }
 }
+
+/* ==========================================================================
+   Draggable / Resizable Border Handle
+   ========================================================================== */
+.resizer {
+  position: absolute;
+  top: 0;
+  right: -4px;
+  width: 9px;
+  height: 100%;
+  cursor: col-resize;
+  z-index: 50;
+  user-select: none;
+  touch-action: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resizer:focus-visible {
+  outline: none;
+}
+
+.resizerLine {
+  width: 2px;
+  height: 100%;
+  background-color: transparent;
+  transition: background-color 0.15s ease;
+  pointer-events: none;
+}
+
+.resizer:hover .resizerLine,
+.resizerDragging .resizerLine {
+  background-color: #2563eb;
+}
+
+.resizer:focus-visible .resizerLine {
+  background-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.25);
+}
+

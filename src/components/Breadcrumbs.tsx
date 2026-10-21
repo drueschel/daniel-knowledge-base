@@ -27,7 +27,7 @@ export default function Breadcrumbs({ nav }: { nav: NavItem[] }) {
   const currentLang = segments[0];
 
   let currentLevel = nav;
-  const breadcrumbItems = [];
+  const breadcrumbItems: string[] = [];
   
   for (let i = 0; i < pathSegments.length; i++) {
     const segment = pathSegments[i];
@@ -38,11 +38,9 @@ export default function Breadcrumbs({ nav }: { nav: NavItem[] }) {
     if (currentLevel) {
       const node = currentLevel.find(n => {
         if (n.slug) {
-          // Leaf node match by slug
           return n.slug[n.slug.length - 1] === decodedSegment;
         } else {
-          // Folder node match by clean title
-          return n.title === cleanTitle(decodedSegment);
+          return n.originalName === decodedSegment || n.title === cleanTitle(decodedSegment);
         }
       });
       
@@ -50,28 +48,25 @@ export default function Breadcrumbs({ nav }: { nav: NavItem[] }) {
         title = node.title;
         currentLevel = node.children || [];
       } else {
-        currentLevel = []; // Stop digging if path is broken
+        currentLevel = [];
       }
     }
-    
-    const url = `/${currentLang}/${pathSegments.slice(0, i + 1).join('/')}`;
-    breadcrumbItems.push({ title, url });
+
+    breadcrumbItems.push(title);
   }
 
   return (
     <div className={styles.breadcrumbs}>
       <Link href={`/${currentLang}`} className={styles.link}>Home</Link>
-      {breadcrumbItems.map((item, index) => {
+      {breadcrumbItems.map((title, index) => {
         const isLast = index === breadcrumbItems.length - 1;
 
         return (
-          <span key={item.url} className={styles.segment}>
+          <span key={`${title}-${index}`} className={styles.segment}>
             <span className={styles.separator}>{'>'}</span>
-            {isLast ? (
-              <span className={styles.current}>{item.title}</span>
-            ) : (
-              <Link href={item.url} className={styles.link}>{item.title}</Link>
-            )}
+            <span className={isLast ? styles.current : styles.segmentText}>
+              {title}
+            </span>
           </span>
         );
       })}

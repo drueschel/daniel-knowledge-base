@@ -4,9 +4,9 @@
   flex-wrap: nowrap;
   overflow-x: auto;
   scrollbar-width: none; /* Hide scrollbar in Firefox */
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: #1e293b;
-  font-weight: 700;
+  font-weight: 500;
   -ms-overflow-style: none;
 }
 .breadcrumbs::-webkit-scrollbar {
@@ -19,16 +19,19 @@
 }
 
 .separator {
-  margin: 0 10px;
-  color: #94a3b8; /* Light gray */
-  font-size: 0.8rem;
+  margin: 0 8px;
+  color: #a1a1aa; /* Zinc-400 */
+  font-size: 0.78rem;
   font-weight: 400;
   display: flex;
   align-items: center;
+  user-select: none;
 }
 
 .link {
-  transition: color 0.2s;
+  color: #1e293b;
+  font-weight: 600;
+  transition: color 0.15s ease;
   white-space: nowrap;
 }
 
@@ -37,8 +40,14 @@
   text-decoration: underline;
 }
 
+.segmentText {
+  color: #71717a; /* Zinc-500 neutral text */
+  font-weight: 500;
+  white-space: nowrap;
+}
+
 .current {
-  color: #475569;
-  font-weight: 700;
+  color: #09090b; /* Zinc-950 clear active leaf */
+  font-weight: 600;
   white-space: nowrap;
 }
