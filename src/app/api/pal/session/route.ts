@@ -10,15 +10,15 @@ export async function POST(req: Request) {
   }
 
   try {
-    let body: any = {};
+    let body: Record<string, unknown> = {};
     try {
-      body = await req.json();
+      body = (await req.json()) as Record<string, unknown>;
     } catch {
       // Body may be empty
     }
 
-    const personaId = body.personaId || 'p10c7cf5763b';
-    const replicaId = body.replicaId || 'rc39f215e8cb';
+    const personaId = (body.personaId as string) || 'p10c7cf5763b';
+    const replicaId = (body.replicaId as string) || 'rc39f215e8cb';
 
     const payload: Record<string, unknown> = {
       persona_id: personaId,

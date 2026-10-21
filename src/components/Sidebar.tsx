@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import styles from './Sidebar.module.css';
@@ -11,7 +11,6 @@ function SidebarDetails({
   className, 
   icon, 
   isActive,
-  level,
   expandSignal,
   collapseSignal,
   children 
@@ -20,27 +19,36 @@ function SidebarDetails({
   className: string; 
   icon?: React.ReactNode; 
   isActive: boolean;
-  level: number;
   expandSignal: number;
   collapseSignal: number;
   children: React.ReactNode 
 }) {
   const [isOpen, setIsOpen] = useState(isActive);
+  const [prevIsActive, setPrevIsActive] = useState(isActive);
+  const [prevExpandSignal, setPrevExpandSignal] = useState(expandSignal);
+  const [prevCollapseSignal, setPrevCollapseSignal] = useState(collapseSignal);
 
-  // Auto-expand if a child becomes active (e.g., from search or main content link)
-  useEffect(() => {
-    if (isActive) {
+  // Sync state with props during render without effects (React 19 compliant)
+  if (isActive && !prevIsActive) {
+    setPrevIsActive(true);
+    setIsOpen(true);
+  } else if (!isActive && prevIsActive) {
+    setPrevIsActive(false);
+  }
+
+  if (expandSignal !== prevExpandSignal) {
+    setPrevExpandSignal(expandSignal);
+    if (expandSignal > 0) {
       setIsOpen(true);
     }
-  }, [isActive]);
+  }
 
-  useEffect(() => {
-    if (expandSignal > 0) setIsOpen(true);
-  }, [expandSignal]);
-
-  useEffect(() => {
-    if (collapseSignal > 0) setIsOpen(false);
-  }, [collapseSignal]);
+  if (collapseSignal !== prevCollapseSignal) {
+    setPrevCollapseSignal(collapseSignal);
+    if (collapseSignal > 0) {
+      setIsOpen(false);
+    }
+  }
 
   return (
     <details 
@@ -151,7 +159,6 @@ export default function Sidebar({ nav, lang }: { nav: NavItem[], lang: string })
                 className={`${styles.navCourse} ${!hasContent ? styles.lockedCourse : ''}`}
                 icon={hasContent ? '🔓' : '🔒'}
                 isActive={isActive}
-                level={level}
                 expandSignal={expandSignal}
                 collapseSignal={collapseSignal}
               >
@@ -169,7 +176,6 @@ export default function Sidebar({ nav, lang }: { nav: NavItem[], lang: string })
                 className={styles.navDim}
                 icon={isPraxis ? '🛠️' : '📖'}
                 isActive={isActive}
-                level={level}
                 expandSignal={expandSignal}
                 collapseSignal={collapseSignal}
               >
@@ -185,7 +191,6 @@ export default function Sidebar({ nav, lang }: { nav: NavItem[], lang: string })
               title={displayTitle(item.title)} 
               className={styles.navMod}
               isActive={isActive}
-              level={level}
               expandSignal={expandSignal}
               collapseSignal={collapseSignal}
             >

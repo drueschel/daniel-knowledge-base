@@ -9,7 +9,6 @@ export default function LangSwitcher({ currentLang, routeMappings }: { currentLa
   // Try to find exact mapping, fallback to root language paths if not found
   const decodedPathname = decodeURIComponent(pathname);
   
-  const targetLang = currentLang === 'de' ? 'en' : 'de';
   let deUrl = '/de';
   let enUrl = '/en';
 

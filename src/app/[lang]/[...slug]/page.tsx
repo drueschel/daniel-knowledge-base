@@ -56,13 +56,15 @@ export default async function ContentPage({
               </a>
             );
           },
-          div: ({ node, id, ...props }) => {
+          div: ({ node: _node, id, ...props }) => {
+            void _node;
             if (id === 'pal-live-session') {
               return <PalLiveSession lang={lang} />;
             }
             return <div id={id} {...props} />;
           },
-          iframe: ({ node, ...props }) => {
+          iframe: ({ node: _node, ...props }) => {
+            void _node;
             if (typeof props.src === 'string' && props.src.endsWith('.pdf')) {
               // Ensure we hide navpanes and fit to width so the PDF is as wide as possible
               const optimizedSrc = props.src.includes('#') ? props.src : `${props.src}#navpanes=0&view=FitH`;

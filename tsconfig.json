@@ -38,12 +38,11 @@
   ],
   "exclude": [
     "node_modules",
+    "backend",
     "video-engine",
     "agentic-cockpit",
-    "test_ugc_e2e.spec.ts",
-    "remotion.config.ts",
-    "src/MyVideo.tsx",
-    "src/Root.tsx",
-    "src/index.ts"
+    "scripts",
+    "test-results",
+    "test_ugc_e2e.spec.ts"
   ]
 }
