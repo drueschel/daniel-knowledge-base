@@ -18,7 +18,6 @@ export default function PalLiveSession({
   const [conversationUrl, setConversationUrl] = useState<string | null>(null);
   const [conversationId, setConversationId] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [showCheatSheet, setShowCheatSheet] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
 
   const isDe = lang === 'de';
@@ -166,29 +165,6 @@ export default function PalLiveSession({
 
           {/* Right: Quick actions */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <button
-              onClick={() => setShowCheatSheet(!showCheatSheet)}
-              style={{
-                backgroundColor: showCheatSheet ? '#27272a' : 'rgba(255, 255, 255, 0.06)',
-                color: '#f8fafc',
-                border: '1px solid rgba(255, 255, 255, 0.1)',
-                padding: '5px 11px',
-                borderRadius: '6px',
-                fontSize: '0.75rem',
-                fontWeight: 500,
-                cursor: 'pointer',
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '6px'
-              }}
-            >
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
-              </svg>
-              <span>{isDe ? '5-Phasen Leitfaden' : '5-Phase Guide'}</span>
-            </button>
-
             {conversationUrl && (
               <button
                 onClick={() => setIsFullscreen(!isFullscreen)}
@@ -213,47 +189,6 @@ export default function PalLiveSession({
             )}
           </div>
         </div>
-
-        {/* Collapsible Guidance Drawer */}
-        {showCheatSheet && (
-          <div
-            style={{
-              backgroundColor: '#0b1120',
-              borderBottom: '1px solid #1e293b',
-              padding: '14px 18px',
-              color: '#e2e8f0',
-              fontSize: '0.8rem',
-              lineHeight: 1.55
-            }}
-          >
-            <div style={{ fontWeight: 600, color: '#93c5fd', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.04em', fontSize: '0.71rem' }}>
-              {isDe ? 'Die 5 Phasen im Überblick' : '5-Phase Overview'}
-            </div>
-            <div
-              style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
-                gap: '8px'
-              }}
-            >
-              <div style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.06)', padding: '9px 11px', borderRadius: '6px' }}>
-                <b style={{ color: '#60a5fa' }}>1. Erdung:</b> Äußeres Thema in 1 Satz nennen – dann sofort ins Hier & Jetzt.
-              </div>
-              <div style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.06)', padding: '9px 11px', borderRadius: '6px' }}>
-                <b style={{ color: '#60a5fa' }}>2. Weiche:</b> Anstrengen/brav sein (Verschmelzung) oder Distanz/Rückzug (Autonomie)?
-              </div>
-              <div style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.06)', padding: '9px 11px', borderRadius: '6px' }}>
-                <b style={{ color: '#60a5fa' }}>3. 4 Säulen:</b> Droht Angreifen, Verlassen, Ignorieren oder Manipulieren?
-              </div>
-              <div style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.06)', padding: '9px 11px', borderRadius: '6px' }}>
-                <b style={{ color: '#60a5fa' }}>4. Reality-Check:</b> Frage Gopal direkt: „Hast du vor, mich zu verlassen?“
-              </div>
-              <div style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.06)', padding: '9px 11px', borderRadius: '6px' }}>
-                <b style={{ color: '#60a5fa' }}>5. Stille:</b> Bei Zweifeln: „Lügst du mich an?“ Bei Tränen/Seufzen: Stille halten.
-              </div>
-            </div>
-          </div>
-        )}
 
         {/* Video Stage */}
         <div
