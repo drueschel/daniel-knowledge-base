@@ -1,7 +1,5 @@
 # Modul 2: Freiheit im intimen Leben
 
-![Platzhalter: Grafik Baum/Frau einfügen](/images/placeholder_mod2_tree_woman.jpg)
-
 ## Die zwei Wege in Beziehungen
 
 Ein Mann kann in seinem intimen Leben zwischen zwei Wegen wählen:
@@ -44,8 +42,6 @@ Wenn du das nächste Mal das Bedürfnis verspürst, deine Frau "reparieren" zu w
 
 ### Praxis 2: Sich vom Leben nähren lassen (Self-Nourishment)
 
-![Platzhalter: Grafik Nähren einfügen](/images/placeholder_mod2_nourish.jpg)
-
 Wenn sie distanziert ist und du in Panik oder Verlustangst verfällst, darfst du dieses Gefühl nicht mit deiner Mission betäuben. Du musst Resilienz aufbauen, indem du lernst, dich selbst zu nähren.
 
 *   **Bewusste Berührung:** Streiche sanft über deinen eigenen Körper (Gesicht, Hals, Brust, Arme, Bauch, Beine). Dies ist nicht sexuell, sondern beruhigt das Nervensystem. Umarme dich selbst (eventuell mit einem Kissen). Es ist die Verkörperung davon, deinen "inneren Jungen" zu halten.
@@ -72,8 +68,6 @@ Bleibt sie hart, beleidigend oder im Opfermodus? -> **Trauma-Projektion.** *(In 
 ---
 
 ## Heilung der Vater- und Mutterwunde
-
-![Platzhalter: Grafik Eltern einfügen](/images/placeholder_mod2_parents.jpg)
 
 ### Die Mutterwunde
 Äußert sich oft darin, dass du dich zu Frauen hingezogen fühlst, die sich nicht auf dich einlassen können. Je mehr sie dich ablehnen, desto mehr willst du sie (du willst der "Retter" sein). Oft suchst du unbewusst nach der bedingungslosen Liebe (Bemutterung), die du als Kind nicht erhalten hast, bei deinen Partnerinnen.

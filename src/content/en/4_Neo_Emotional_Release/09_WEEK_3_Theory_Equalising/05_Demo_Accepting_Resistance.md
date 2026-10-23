@@ -1,6 +1,6 @@
 # Demo: Accepting Resistance
 
-In this demonstration, David guides a client (Dennis) through the process of accepting resistance and uncomfortable emotions linked to attention and focus issues. By systematically identifying and welcoming physical sensations and their underlying emotions, the client learns to release the resistance that constructs the "problem," thereby accessing a renewed source of energy and hope.
+In this demonstration, a client is guided through the process of accepting resistance and uncomfortable emotions linked to attention and focus issues. By systematically identifying and welcoming physical sensations and their underlying emotions, the client learns to release the resistance that constructs the "problem," thereby accessing a renewed source of energy and hope.
 
 ## The Illusion of the "Problem"
 - **Mind's Construction:** The mind often constructs a "problem" out of reality by comparing the current state (e.g., lack of focus) with an idealized future state (e.g., high productivity).

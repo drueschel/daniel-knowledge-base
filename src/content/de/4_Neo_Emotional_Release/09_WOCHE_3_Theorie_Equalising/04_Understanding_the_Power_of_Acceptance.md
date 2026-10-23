@@ -1,6 +1,6 @@
 # Die Kraft der Akzeptanz verstehen
 
-In dieser Lektion beleuchtet David Manning die tiefgreifende Wirkung von Akzeptanz innerhalb der Neo-Emotional Release (NER) Methode. Er entlarvt die Illusion der "bedingten Ganzheit" und erklärt, wie Akzeptanz als kraftvolles Werkzeug dient, um Dualitäten zu vereinen, das Nervensystem zu beruhigen und tiefere somatische Prozesse zu ermöglichen.
+In dieser Lektion wird die tiefgreifende Wirkung von Akzeptanz innerhalb der Neo-Emotional Release (NER) Methode beleuchtet. Es wird die Illusion der "bedingten Ganzheit" dekonstruiert und dargelegt, wie Akzeptanz als kraftvolles Werkzeug dient, um Dualitäten zu vereinen, das Nervensystem zu beruhigen und tiefere somatische Prozesse zu ermöglichen.
 
 ## Die Illusion der bedingten Ganzheit
 - Das Ego funktioniert oft nach einer "Wenn-Dann"-Bedingung: *Wenn ich diese Emotion loslasse, dann fühle ich mich gut* oder *Wenn ich meine Wunde heile, dann bin ich ganz.*

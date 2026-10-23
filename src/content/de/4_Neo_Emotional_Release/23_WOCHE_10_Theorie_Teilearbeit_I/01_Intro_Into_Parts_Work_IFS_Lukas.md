@@ -1,4 +1,4 @@
-# Intro Into Parts Work/IFS | Lukas
+# Intro Into Parts Work/IFS
 
 ## Wichtige Konzepte
 - **Phantom-Dialog:** Eine Technik für innere Familienaufstellungen, bei der eine Person aus der Vergangenheit visualisiert und mit ihr kommuniziert wird, um sich von Emotionen zu entmischen (Unblending) und Beziehungsdynamiken zu beobachten.

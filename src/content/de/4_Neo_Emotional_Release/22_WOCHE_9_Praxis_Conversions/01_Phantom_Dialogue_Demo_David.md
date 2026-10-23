@@ -1,4 +1,4 @@
-# Phantom Dialogue - Demo | David
+# Phantom Dialogue: Demo
 
 ## Wichtige Konzepte
 - **Die Sprache der Symbole:** Conversions verwandeln physische Empfindungen und Emotionen in symbolische Darstellungen und nutzen so die natürliche Sprache des Unterbewusstseins.

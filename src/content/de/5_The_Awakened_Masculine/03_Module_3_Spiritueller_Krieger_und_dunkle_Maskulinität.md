@@ -1,7 +1,5 @@
 # Modul 3: Spiritueller Krieger & Dunkle Maskuline Energie
 
-![Platzhalter: Grafik Samurai Krieger einfügen](/images/placeholder_mod3_samurai.jpg)
-
 ## Der Archetyp des Kriegers
 
 Der Krieger-Archetyp ist der am meisten missverstandene Archetyp in der maskulinen Psyche. Unser Kollektiv verbindet ihn oft fälschlicherweise mit brutaler Kriegsführung, Ego und dem unbewussten Ausdruck von dunkler maskuliner Energie. Infolgedessen drängen viele moderne Männer diesen Anteil in den Schatten, was paradoxerweise dazu führt, dass sich diese unterdrückte Energie irgendwann auf zerstörerische Weise entlädt.
@@ -32,8 +30,6 @@ Es gibt Mächte (im Schamanismus "Geister der Dunkelheit", psychologisch "der Sc
 ---
 
 ## Embodiment Praxis: "Fuck-Yes" (Die Wut kanalisieren)
-
-![Platzhalter: Praxis Fuck-Yes einfügen](/images/placeholder_mod3_fuckyes.jpg)
 
 Diese Übung ist extrem kraftvoll, um den Krieger-Archetypen zu verkörpern, primale Energie abzurufen und aufgestaute Wut zu lösen. (Besonders wichtig für Männer, die die Rolle des "Nice Guys" spielen).
 

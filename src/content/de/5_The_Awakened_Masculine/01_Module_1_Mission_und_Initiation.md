@@ -1,7 +1,5 @@
 # Modul 1: Mission & Initiation
 
-![Platzhalter: Grafik Mann meditierend in den Bergen einfügen](/images/placeholder_mod1_meditation.jpg)
-
 ## Einführung
 Was bedeutet „erwachte Männlichkeit“? In der heutigen Zeit ist es verwirrender denn je, wirklich zu verstehen, was es heißt, ein Mann zu sein. Die alten Tugenden (keine Tränen zeigen, Schmerz unterdrücken) sind nicht der richtige Weg. Doch auch die bloße Übernahme spiritueller Überzeugungen wie Liebe und Herzöffnung reicht nicht aus, um die volle Tiefe maskuliner Ausdruckskraft zu leben.
 
@@ -35,8 +33,6 @@ Ein erwachter Mann bewohnt seinen gesamten Körper und verkörpert beide Energie
 
 ### 1. Maskuline Präsenz-Haltung (Masculine Presence Posture)
 
-![Platzhalter: Grafik Maskuline Präsenz-Haltung einfügen](/images/placeholder_mod1_posture.jpg)
-
 Die Art, wie du deinen Körper hältst, beeinflusst deine Hormone (steigert Testosteron, senkt Cortisol). Wenn du in Angst oder Unsicherheit verfällst, kollabiert deine Körperhaltung. 
 
 **So geht die Übung:**
@@ -49,8 +45,6 @@ Die Art, wie du deinen Körper hältst, beeinflusst deine Hormone (steigert Test
 
 ### 2. Bewusste Becken-Atmung (Conscious Cock-Breathing)
 
-![Platzhalter: Grafik Becken-Atmung einfügen](/images/placeholder_mod1_breathing.jpg)
-
 *   Nimm die maskuline Präsenz-Haltung ein.
 *   Zunge an den Gaumen, Lippen geschlossen, nur durch die Nase atmen.
 *   Lenke deine Aufmerksamkeit in deinen Beckenbereich (Cock & Balls).
@@ -60,8 +54,6 @@ Die Art, wie du deinen Körper hältst, beeinflusst deine Hormone (steigert Test
 *   Mindestens 10 Atemzüge lang praktizieren.
 
 ### 3. Fortgeschrittene Übung: Der mikrokosmische Atemkreislauf
-
-![Platzhalter: Grafik Mikrokosmischer Atemkreislauf einfügen](/images/placeholder_mod1_orbit.jpg)
 
 Diese Praxis ist Teil des „Warrior Trainings“ und intensiviert deine maskuline Energie:
 *   Stell dir beim **Einatmen** ein weißes Licht vor, das von oben durch dein Drittes Auge eintritt, an der Vorderseite deines Körpers (Herz, Solarplexus) hinabfließt und im Perineum (Damm) endet.
@@ -100,8 +92,6 @@ Nur meditieren reicht nicht („Spiritual Bypassing“). Maskuline Erfüllung ko
 
 ## Der Codex des erwachten Mannes
 
-![Platzhalter: Grafik Der Codex einfügen](/images/placeholder_mod1_codex.jpg)
-
 1.  **Lebe mit Integrität:** Respektiere dich selbst. Verliere lieber kurzfristig, als dich durch Manipulation oder Unehrlichkeit selbst zu verraten.
 2.  **Erschaffe jederzeit Tiefe:** Bringe Bewusstsein in alltägliche Dinge (z. B. bewusstes Essen, Natur genießen, achtsamer Sex).
 3.  **Verpflichte dich voll und ganz (Commitment):** Echte Freiheit entsteht paradoxerweise durch absolute Hingabe an deine Mission und deine Beziehung.
@@ -113,8 +103,6 @@ Nur meditieren reicht nicht („Spiritual Bypassing“). Maskuline Erfüllung ko
 ---
 
 ## Journaling-Praxis: Heilung der Beziehung zum maskulinen Kern
-
-![Platzhalter: Grafik Journaling einfügen](/images/placeholder_mod1_journaling.jpg)
 
 Setze dich in einen geschützten Raum und beantworte diese Fragen radikal ehrlich:
 

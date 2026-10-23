@@ -1,6 +1,6 @@
 # Einführung in das Resourcing
 
-In dieser Lektion führt David Manning das Konzept des "Resourcings" ein, eine grundlegende Technik des Neo-Emotional Release (NER), die darauf abzielt, ein Gefühl von Sicherheit, Trost und Wohlbefinden im Körper wiederherzustellen.
+In dieser Lektion wird das Konzept des »Resourcings« vermittelt – eine grundlegende Technik des Neo-Emotional Release (NER), die darauf abzielt, ein Gefühl von Sicherheit, Trost und Wohlbefinden im Körper wiederherzustellen.
 
 ## Alle Qualitäten sind immer präsent
 * **Inhärente Ganzheit:** Alle menschlichen Qualitäten – Verletzlichkeit, Stärke, Traurigkeit, Freude und Sicherheit – existieren immer in unserem Bewusstsein.

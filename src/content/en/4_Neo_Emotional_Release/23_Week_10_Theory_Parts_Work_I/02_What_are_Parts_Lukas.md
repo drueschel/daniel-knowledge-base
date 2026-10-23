@@ -1,13 +1,13 @@
-# What are Parts? | Lukas
+# What are Parts?
 
 ## Key Concepts
-- **Phantom Dialogue**: A technique of imagining a person is present to interact with them, which can sometimes create shifts in the actual relationship on a quantum level.
-- **Connecting via the Eyes**: Visualizing the other person's eyes to tune into their emotional state and asking, "If the eyes could speak, what would they say?"
-- **Parts Work Integration**: Stepping back to observe different aspects of oneself (e.g., a "warrior" part), giving them space to express, and unblending from them.
-- **Self-to-Part Relationship**: Establishing a healthy connection with one's parts by asking what they need, which is essential for setting boundaries in future situations.
-- **Checking the Flow**: Assessing the balance of giving and receiving between the self and the phantom person to identify restrictive roles or suppressed emotions like anger.
+- **Phantom Dialogue:** A technique establishing the visualized presence of another person to dialogue and recalibrate internal relational dynamics.
+- **Connection through the Gaze:** Visualizing the eyes of the other person to attune to their emotional state, asking: *"If their eyes could speak, what would they say?"*
+- **Integrating Parts Work:** Stepping back to witness distinct aspects of the self (e.g., a "warrior" part), allowing them expression while establishing healthy unblending.
+- **Self-to-Part Relationship:** Developing an ongoing communicative bond with internal parts by discerning their core needs, which is foundational for setting authentic boundaries.
+- **Tracking Relational Reciprocity:** Assessing the balance of give-and-take between the self and the phantom persona to uncover self-sacrificing roles and repressed anger.
 
 ## Summary
-In this analysis, Lukas breaks down a demonstration combining the Phantom Dialogue technique with Parts Work. The Phantom Dialogue involves establishing the energetic presence of another person and interacting with them. Lukas highlights that shifting the internal dynamics of this relationship can often lead to real-world changes, even at a distance. Practitioners can guide clients to tune into the phantom's state by visualizing their eyes and exploring the flow of connection, which often reveals hidden roles and suppressed emotions, such as anger hidden behind a caretaking role.
+This technical analysis deconstructs a clinical demonstration combining the Phantom Dialogue technique with Parts Work. The Phantom Dialogue establishes the energetic presence of another person within the therapeutic space. Modifying the internal relational architecture of this connection frequently catalyzes tangible relief in real-world functioning. Practitioners guide clients to attune to the phantom's affective state by visualizing their gaze and evaluating the relational flow, which often exposes enmeshed behavioral roles and suppressed emotions, such as buried rage masked behind chronic caretaking.
 
-To process these emotions, Lukas introduces Parts Work, encouraging the client to step back and observe the activated emotion as a distinct "part" of themselves—in this case, a "warrior" part. By unblending from the part and witnessing it objectively, the client can understand what the part truly needs. Building a healthy, ongoing relationship with these internal parts empowers the client to access them in future situations, such as when they need to set strong boundaries.
+To process these emerging affects, Parts Work is integrated: The client is guided to take a mindful step back and observe the activated sensation as a distinct internal "part"—such as a protective "warrior" aspect. By unblending from the part and witnessing it objectively, the client discerns what the part authentically requires. Building a trusting, conscious relationship with these internal resources equips the client to access grounded power and assert decisive boundaries in daily life.

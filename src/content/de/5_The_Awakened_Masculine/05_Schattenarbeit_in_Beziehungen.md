@@ -1,7 +1,5 @@
 # Schattenarbeit in Beziehungen (E-Book)
 
-![Platzhalter: Grafik Rote Blume einfügen](/images/placeholder_ebook_cover.jpg)
-
 ## Der Schatten in der Beziehung
 
 Der Schatten in Beziehungen versucht aktiv zu verhindern, dass du eine zutiefst liebevolle und bewusste Beziehung erlebst. Er braucht Drama, Schmerz und Zurückweisung, um zu gedeihen. Wenn Missverständnisse schnell gelöst werden und Argumente in tiefere Verbundenheit münden, hungert der Schatten aus.
@@ -58,8 +56,6 @@ Die Lösung erfordert von beiden Seiten absolute Bewusstheit:
 
 ## Der sexuelle Schatten
 
-![Platzhalter: Grafik Sonne/Mond/Pflanze einfügen](/images/placeholder_ebook_sexual.jpg)
-
 Der sexuelle Schatten besteht aus **Scham + Schuld + sexuelle Energie & Erregung**.
 
 Diese Kombination erzeugt eine obsessive, zerstörerische Energie (z. B. extreme Pornosucht, untreue Handlungen). Unterdrückte sexuelle Fantasien (oft durch gesellschaftliche oder religiöse Prägung als "sündhaft" abgestempelt) sammeln sich im Schatten.
@@ -77,8 +73,6 @@ Die Heilung geschieht nicht durch noch mehr Unterdrückung ("NoFap" aus Bestrafu
 ---
 
 ## Schattenarbeit Journaling-Praxis
-
-![Platzhalter: Grafik Buch Journaling einfügen](/images/placeholder_ebook_journal.jpg)
 
 **Fragen für die Beziehung:**
 1. Welche wiederkehrenden Muster fallen dir in deinem intimen Leben auf?

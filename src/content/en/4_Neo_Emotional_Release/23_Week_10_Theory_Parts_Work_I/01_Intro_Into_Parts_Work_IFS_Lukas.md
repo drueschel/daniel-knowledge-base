@@ -1,4 +1,4 @@
-# Intro Into Parts Work/IFS | Lukas
+# Intro Into Parts Work/IFS
 
 ## Key Concepts
 - **Phantom Dialogue:** A technique for inner family constellations, involving visualizing and communicating with a person from one's past to unblend and observe relational dynamics.

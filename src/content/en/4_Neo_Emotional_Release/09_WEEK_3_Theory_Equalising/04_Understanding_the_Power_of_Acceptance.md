@@ -1,6 +1,6 @@
 # Understanding the Power of Acceptance
 
-In this lesson, David Manning explores the profound impact of acceptance within the Neo-Emotional Release (NER) framework. He dismantles the illusion of "conditional wholeness" and explains how acceptance acts as a powerful tool to merge dualities, calm the nervous system, and allow for deeper somatic processing.
+In this lesson, the profound impact of acceptance within the Neo-Emotional Release (NER) framework is explored. It dismantles the illusion of "conditional wholeness" and explains how acceptance acts as a powerful tool to merge dualities, calm the nervous system, and allow for deeper somatic processing.
 
 ## The Illusion of Conditional Wholeness
 - The ego often operates on a "when/then" condition: *When I release this emotion, then I will feel good* or *When I lose my wound, then I am complete.*

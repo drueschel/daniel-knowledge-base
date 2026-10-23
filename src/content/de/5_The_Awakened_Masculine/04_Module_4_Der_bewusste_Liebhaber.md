@@ -1,7 +1,5 @@
 # Modul 4: Der bewusste Liebhaber
 
-![Platzhalter: Grafik Liebhaber im Feuer einfügen](/images/placeholder_mod4_lover.jpg)
-
 ## Der Archetyp des Liebhabers
 
 Viele Männer tragen ein unbewusstes Vorurteil gegenüber dem Archetypen des Liebhabers in sich. Der Liebhaber steht für Verspieltheit, Sinnlichkeit, Vergnügen, tiefes Fühlen und die Kunst der Hingabe.
@@ -44,8 +42,6 @@ Während des Liebesspiels bleibe mit deiner Aufmerksamkeit ganz bei deinem eigen
 ---
 
 ## Erotisierte Wunden (Eroticised Wounds)
-
-![Platzhalter: Grafik Wunde einfügen](/images/placeholder_mod4_wound.jpg)
 
 Eine "erotisierte Wunde" entsteht, wenn wir das tiefe Bedürfnis unseres Herzens nach Sicherheit für sexuelle Befriedigung umgehen.
 **Beispiele:**
@@ -104,8 +100,6 @@ Wenn wir sexuelle Energie unterdrücken, ist es, als würden wir einen wilden Ti
 ---
 
 ## Journaling: Sexuelle Scham loslassen
-
-![Platzhalter: Grafik Buch einfügen](/images/placeholder_mod4_journal.jpg)
 
 1. Wie ist meine Beziehung zum Liebhaber-Archetypen?
 2. Welche unbewussten Urteile habe ich über ihn?

@@ -1,10 +1,10 @@
-# Conversions | Die symbolische Sprache des Körpers | David
+# Conversions: Die symbolische Sprache des Körpers
 
 ## Wichtige Konzepte
-* Dies ist die letzte Praxisübung für das Modul des Neo-Emotional Release (NER), bei der alle bisherigen somatischen Techniken zusammengeführt werden.
-* Es werden drei wirkungsvolle Fragen eingeführt, um Emotionen tiefer zu erforschen: historische Verbindungen, männliche/weibliche Assoziationen und Farbvisualisierungen.
-* Ein neues physisches Werkzeug, "die Emotion in den Händen halten", ermöglicht eine tiefere Verarbeitung, sobald die Emotion ausreichend ausgeglichen (equalized) ist.
-* Die Übungszeit wird auf 30 Minuten erhöht, um eine umfassende Sitzung zu ermöglichen, bevor der Kurs zur Teilearbeit (Parts Work) übergeht.
+* **Zusammenführung somatischer Techniken:** Diese Übung konsolidiert die Kerntechniken des Neo-Emotional Release (NER) vor dem Übergang zu komplexeren Konversionen.
+* **Die drei Sondierungsfragen:** Vertiefte Erforschung der Emotion durch gezielte Fragen nach biographischen Erinnerungen, männlichen/weiblichen Assoziationen und Farbwahrnehmung.
+* **Somatische Handpositionierung:** Das bewusste „Halten der Emotion in den Händen“ oder Auflegen einer Hand auf das somatische Zentrum vertieft die Eigenwahrnehmung und Integration.
+* **Erweiterter Zeitrahmen:** Eine 30-minütige Sequenz erlaubt es, den Bogen von der ersten Empfindung bis zum vollständigen Ausgleichen (Equalizing) stabil zu halten.
 
 ## Zusammenfassung
 In dieser Praxis-Session der achten Woche liegt der Schwerpunkt auf dem Abschluss des Neo-Emotional Release (NER)-Moduls. Dabei werden bewährte Techniken mit neuen Werkzeugen zur tieferen Erforschung kombiniert. Der Prozess beginnt mit dem bekannten Rahmen der somatischen Integration: Man startet mit einem Problem, findet die körperliche Empfindung, definiert sie durch eine Emotion, lokalisiert und beschreibt sie und stellt sicher, dass sie vollständig ausgeglichen und vom Klienten willkommen geheißen wird.

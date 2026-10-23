@@ -1,6 +1,6 @@
 # Demo: Widerstand Akzeptieren
 
-In dieser Demonstration führt David einen Klienten (Dennis) durch den Prozess, Widerstand und unangenehme Emotionen im Zusammenhang mit Aufmerksamkeits- und Fokusproblemen zu akzeptieren. Indem er systematisch physische Empfindungen und die zugrunde liegenden Emotionen identifiziert und willkommen heißt, lernt der Klient, den Widerstand loszulassen, der das "Problem" konstruiert. Dadurch erhält er Zugang zu einer neuen Quelle von Energie und Hoffnung.
+In dieser Demonstration wird ein Klient durch den Prozess geführt, Widerstand und unangenehme Emotionen im Zusammenhang mit Aufmerksamkeits- und Fokusproblemen zu akzeptieren. Indem systematisch physische Empfindungen und die zugrunde liegenden Emotionen identifiziert und willkommen geheißen werden, lernt der Klient, den Widerstand loszulassen, der das "Problem" konstruiert. Dadurch erhält er Zugang zu einer neuen Quelle von Energie und Hoffnung.
 
 ## Die Illusion des "Problems"
 - **Konstruktion des Verstandes:** Der Verstand konstruiert oft ein "Problem" aus der Realität, indem er den aktuellen Zustand (z. B. mangelnder Fokus) mit einem idealisierten zukünftigen Zustand (z. B. hohe Produktivität) vergleicht.

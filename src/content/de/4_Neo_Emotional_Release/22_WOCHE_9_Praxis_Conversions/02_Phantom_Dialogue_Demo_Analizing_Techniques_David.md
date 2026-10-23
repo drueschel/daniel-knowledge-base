@@ -1,10 +1,10 @@
-# Phantom Dialogue - Demo Analizing Techniques | David
+# Phantom Dialogue: Demo Analysetechniken
 
 ## Wichtige Konzepte
-- **Definition von Conversions (Umwandlungen)**: Die Fähigkeit, Klienten dabei zu helfen, somatische Empfindungen und Emotionen in visuelle Symbole zu übersetzen, um tiefergehende Arbeit zu ermöglichen.
-- **Integration bisheriger Fähigkeiten**: Conversions bauen auf grundlegenden Techniken wie Connected Awareness, dem "Log-in", somatischer Integration und dem Definieren von Emotionen auf.
-- **Arten von Conversions**: Umfassen Phantom Dialogue (Repräsentation einer Person aus Vergangenheit oder Gegenwart), Parts Work (Verbindung von Emotionen mit spezifischen inneren Anteilen) und Free Conversion (Arbeit mit bereits vorhandenen Symbolen in der inneren Welt des Klienten).
-- **Sitzungsstruktur**: Übungssitzungen, die Conversions beinhalten, werden auf etwa 45 Minuten verlängert, um den zusätzlichen Schritten gerecht zu werden.
+- **Definition von Conversions (Umwandlungen):** Die Fähigkeit, Klienten dabei zu helfen, somatische Empfindungen und Emotionen in visuelle Symbole zu übersetzen, um tiefergehende Arbeit zu ermöglichen.
+- **Integration bisheriger Fähigkeiten:** Conversions bauen auf grundlegenden Techniken wie Connected Awareness, dem "Log-in", somatischer Integration und dem Definieren von Emotionen auf.
+- **Arten von Conversions:** Umfassen Phantom Dialogue (Repräsentation einer Person aus Vergangenheit oder Gegenwart), Parts Work (Verbindung von Emotionen mit spezifischen inneren Anteilen) und Free Conversion (Arbeit mit bereits vorhandenen Symbolen in der inneren Welt des Klienten).
+- **Sitzungsstruktur:** Übungssitzungen, die Conversions beinhalten, werden auf etwa 45 Minuten verlängert, um den zusätzlichen Schritten gerecht zu werden.
 
 ## Zusammenfassung
 In diesem Abschnitt des Kurses wird das Konzept der "Conversions" (Umwandlungen) eingeführt. Dabei handelt es sich um eine entscheidende Fähigkeit, die Klienten dabei unterstützt, ihre somatischen Empfindungen und definierten Emotionen in visuelle Symbole zu übersetzen. Dieser Prozess baut auf den grundlegenden Techniken der vorherigen Module auf. Praktizierende beginnen die Sitzungen weiterhin mit Connected Awareness, loggen sich beim Klienten ein und führen ihn durch die somatische Integration, bevor Emotionen definiert werden. Erst nach Abschluss dieser Schritte beginnt der eigentliche Umwandlungsprozess, bei dem diese Gefühle in greifbare visuelle oder kinästhetische Repräsentationen transformiert werden.
