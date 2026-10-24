@@ -1,0 +1,7 @@
+# Session 3: Zusatzmaterial – The Body Speaks from Sex When You Don't Feel Like It
+
+Hier kannst du dir den Begleittext / das Kapitel von Cyndi Darnell ansehen.
+
+**Original-PDF:** [The Body Speaks from Sex When You Don't Feel Like It herunterladen / öffnen](/materials/embodied_intimacy/Modul_1/The_Body_Speaks_from_Sex_When_You_Don_t_Feel_Like_It.pdf)
+
+<iframe src="/materials/embodied_intimacy/Modul_1/The_Body_Speaks_from_Sex_When_You_Don_t_Feel_Like_It.pdf" width="100%" height="800px" style="border: 1px solid #ccc; border-radius: 8px; margin-top: 1rem; margin-bottom: 2rem;"></iframe>
